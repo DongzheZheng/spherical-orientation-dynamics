@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.lake/
+results/
+verification-results/
+*.aux
+*.synctex.gz
+.DS_Store
+*.olean
+*.ilean
+*.trace
+*.o
+*.so
+venv/

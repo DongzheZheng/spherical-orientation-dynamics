@@ -1,0 +1,4 @@
+DFL.Spectral.alignedMeasure_bounds (d : ℕ) (r : ℝ) :
+  ENNReal.ofReal (Real.exp (-2 * |r|)) • DFL.Spectral.alignedMeasure d 0 ≤ DFL.Spectral.alignedMeasure d r ∧
+    DFL.Spectral.alignedMeasure d r ≤ ENNReal.ofReal (Real.exp (2 * |r|)) • DFL.Spectral.alignedMeasure d 0
+'DFL.Spectral.alignedMeasure_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+'DFL.Geometry.betaCoordinateMeasure_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Geometry.sphereMomentBridge_succ_of_coordinateLaw' depends on axioms: [propext, Classical.choice, Quot.sound]

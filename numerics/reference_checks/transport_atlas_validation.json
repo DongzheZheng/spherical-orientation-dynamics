@@ -1,0 +1,192 @@
+{
+  "geometry": "n=3 (d=2), unit first-order SOH time and space scales",
+  "transport_states_at_same_r2": {
+    "linear": {
+      "rho": 3.7222133004134164,
+      "Theta": -0.12294726180124282,
+      "gamma": 1.5246597932187242,
+      "c": 0.5373147207275482,
+      "c_tilde": 0.3177780506510732,
+      "critical_angle_deg": 66.92934983898998,
+      "transverse_abs_imaginary_speed": 0.2570240721001664
+    },
+    "hysteresis": {
+      "rho": 1.8611066502067082,
+      "Theta": -11.004421856143052,
+      "gamma": 18.77133696954317,
+      "c": 0.5373147207275482,
+      "c_tilde": 0.3177780506510732,
+      "critical_angle_deg": 75.23592164566497,
+      "transverse_abs_imaginary_speed": 2.4316327552493675
+    },
+    "regularized": {
+      "rho": 2.7916599753100617,
+      "Theta": 0.3814863111951607,
+      "gamma": 0.7251539068664626,
+      "c": 0.5373147207275482,
+      "c_tilde": 0.3177780506510732,
+      "critical_angle_deg": null,
+      "transverse_abs_imaginary_speed": 0.0
+    }
+  },
+  "regularized_model": "nu(J)=J/(epsilon+J), noise=tau0; epsilon=1 in physical-density curves",
+  "phase_boundary": {
+    "r_peak": 2.1530258556423956,
+    "tau_peak": 0.040028996232937784,
+    "rho_over_rhoc_at_peak": 1.3952547748549078,
+    "analytic_sufficient_threshold": 0.22360679774997896,
+    "boundary_r_at_ratio4": 10.14007411256986
+  },
+  "fold_angle_wedge": {
+    "r_star": 1.901364387725759,
+    "rho_star": 1.8602147570272067,
+    "R_second": 0.1901825521674887,
+    "c_star": 0.5196996770258046,
+    "ctilde_star": 0.30355470435886256,
+    "A_star": 0.6704445114916352,
+    "B_theta": 0.34288030120924834,
+    "B_gamma": 0.5527295497930008,
+    "C_wedge_degrees": 87.51599521623436,
+    "C_imaginary": 0.4221312376464894,
+    "sampled_delta_rho_range": [
+      9.5055568749558e-08,
+      0.04621561418804676
+    ],
+    "smallest_delta_half_width_ratio_to_no_fit_asymptotic": 0.9997389578056213,
+    "smallest_delta_imag_ratio_to_no_fit_asymptotic": 0.9999523417032748,
+    "first_20_log_slope_half_width": 0.2498021633915807,
+    "first_20_log_slope_imag": -0.25003611921493124,
+    "resolution_change_r_star": 1.021405182655144e-14,
+    "resolution_change_rho_star": 1.9317880628477724e-14,
+    "resolution_change_R_second": 1.1102230246251565e-16
+  },
+  "validation": {
+    "S2_analytic_checks": [
+      {
+        "r": 0.05,
+        "S2_mean_abs_error": 4.163336342344337e-16,
+        "S2_variance_abs_error": 1.0436096431476471e-14
+      },
+      {
+        "r": 0.5,
+        "S2_mean_abs_error": 6.38378239159465e-16,
+        "S2_variance_abs_error": 1.3322676295501878e-15
+      },
+      {
+        "r": 2.0,
+        "S2_mean_abs_error": 1.6653345369377348e-15,
+        "S2_variance_abs_error": 2.7755575615628914e-16
+      },
+      {
+        "r": 5.0,
+        "S2_mean_abs_error": 1.7763568394002505e-15,
+        "S2_variance_abs_error": 2.220446049250313e-16
+      },
+      {
+        "r": 8.0,
+        "S2_mean_abs_error": 1.887379141862766e-15,
+        "S2_variance_abs_error": 1.1102230246251565e-16
+      }
+    ],
+    "resolution_checks": [
+      {
+        "r": 0.05,
+        "fixed_gap_difference_K24N240_vs_K16N160": 2.6645352591003757e-15,
+        "gci_speed_difference_K24N240_vs_K16N160": 1.3877787807814457e-17,
+        "boundary_tau_difference": 3.8163916471489756e-17
+      },
+      {
+        "r": 0.5,
+        "fixed_gap_difference_K24N240_vs_K16N160": 8.881784197001252e-16,
+        "gci_speed_difference_K24N240_vs_K16N160": 1.249000902703301e-16,
+        "boundary_tau_difference": 5.551115123125783e-17
+      },
+      {
+        "r": 2.0,
+        "fixed_gap_difference_K24N240_vs_K16N160": 0.0,
+        "gci_speed_difference_K24N240_vs_K16N160": 3.885780586188048e-16,
+        "boundary_tau_difference": 4.163336342344337e-17
+      },
+      {
+        "r": 5.0,
+        "fixed_gap_difference_K24N240_vs_K16N160": 3.2862601528904634e-14,
+        "gci_speed_difference_K24N240_vs_K16N160": 1.2212453270876722e-15,
+        "boundary_tau_difference": 3.5388358909926865e-16
+      },
+      {
+        "r": 8.0,
+        "fixed_gap_difference_K24N240_vs_K16N160": 5.5067062021407764e-14,
+        "gci_speed_difference_K24N240_vs_K16N160": 1.9984014443252818e-15,
+        "boundary_tau_difference": 9.454242944073599e-16
+      }
+    ],
+    "principal_symbol_direct_matrix_checks": [
+      {
+        "model": "linear",
+        "angle_deg": 0,
+        "eigenvalue_error": 5.551115123125783e-17
+      },
+      {
+        "model": "linear",
+        "angle_deg": 45,
+        "eigenvalue_error": 5.551115123125783e-17
+      },
+      {
+        "model": "linear",
+        "angle_deg": 70,
+        "eigenvalue_error": 5.551115123125783e-17
+      },
+      {
+        "model": "linear",
+        "angle_deg": 90,
+        "eigenvalue_error": 4.930380657631324e-32
+      },
+      {
+        "model": "hysteresis",
+        "angle_deg": 0,
+        "eigenvalue_error": 1.7208456881689926e-15
+      },
+      {
+        "model": "hysteresis",
+        "angle_deg": 45,
+        "eigenvalue_error": 1.2212453270876722e-15
+      },
+      {
+        "model": "hysteresis",
+        "angle_deg": 70,
+        "eigenvalue_error": 8.881784197001252e-16
+      },
+      {
+        "model": "hysteresis",
+        "angle_deg": 90,
+        "eigenvalue_error": 4.440892098500626e-16
+      },
+      {
+        "model": "regularized",
+        "angle_deg": 0,
+        "eigenvalue_error": 5.551115123125783e-17
+      },
+      {
+        "model": "regularized",
+        "angle_deg": 45,
+        "eigenvalue_error": 3.8163916471489756e-17
+      },
+      {
+        "model": "regularized",
+        "angle_deg": 70,
+        "eigenvalue_error": 0.0
+      },
+      {
+        "model": "regularized",
+        "angle_deg": 90,
+        "eigenvalue_error": 1.1102230246251565e-16
+      }
+    ],
+    "slow_rate": {
+      "r_zero_fixed_gap": 2.0,
+      "r_zero_guaranteed_rate": 0.0,
+      "asymptotic_ratio_r002": 1.3333225386533127
+    }
+  },
+  "scope": "K2=0 first-order symbol; for K2>0 only its first-order part; no kinetic ill-posedness assertion"
+}

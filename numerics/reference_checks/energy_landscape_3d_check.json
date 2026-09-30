@@ -1,0 +1,54 @@
+{
+  "formula": "E_rho(m)=-rho log(sinh(r)/r)+rho*r*m-(rho*m)^2/2-(rho*m)^3/3, m=coth(r)-1/r",
+  "cross_section": "m=(m_x,m_y,0), |m|<=0.78",
+  "rho_fold": 1.860214757027201,
+  "r_fold": 1.9013643877257538,
+  "panels": [
+    {
+      "rho": 1.8,
+      "uniform_energy": 0.0,
+      "barrier": null,
+      "ordered": null,
+      "global_minimum": "uniform"
+    },
+    {
+      "rho": 1.9,
+      "uniform_energy": 0.0,
+      "barrier": {
+        "r": 1.3260893787493457,
+        "m": 0.3975915703474946,
+        "energy": 0.04528477898366445
+      },
+      "ordered": {
+        "r": 2.6359191026369677,
+        "m": 0.6309470063444931,
+        "energy": 0.027159421428678332
+      },
+      "global_minimum": "uniform"
+    },
+    {
+      "rho": 2.0,
+      "uniform_energy": 0.0,
+      "barrier": {
+        "r": 0.9235024019521529,
+        "m": 0.2916415793567164,
+        "energy": 0.025790555417530225
+      },
+      "ordered": {
+        "r": 3.4578536245846294,
+        "m": 0.712789388260048,
+        "energy": -0.09854894531886305
+      },
+      "global_minimum": "ordered"
+    }
+  ],
+  "inverse_max_residual": 3.983491314585308e-11,
+  "output_pdf": "figures/energy_landscape_3d.pdf",
+  "existing_phase_check_difference": {
+    "rho_star": 0.0,
+    "rho_1p9_barrier_m": 0.0,
+    "rho_1p9_ordered_m": 0.0,
+    "rho_1p9_barrier_energy": 0.0,
+    "rho_1p9_ordered_energy": 0.0
+  }
+}

@@ -1,0 +1,624 @@
+{
+  "verification_log_digests": [
+    {
+      "file": "build.log",
+      "sha256": "7cca1829b196c22b61b92d99efce4a7a93b693a01e2330a7d5c864c2c1b9381e"
+    },
+    {
+      "file": "strict.log",
+      "sha256": "5fcba79d314b359fdb70ed5f626857027fc666766ce14a6436f66a55044ac2a8"
+    },
+    {
+      "file": "public-kernel-dependencies.log",
+      "sha256": "15981d2d14ad2ae132c4c8493b87fa0ff73c5b3b404373d6d11dbfeaf15bf903"
+    },
+    {
+      "file": "source-closure.json",
+      "sha256": "883e81c1e5cf0a66e9e1dd2e8bb06f234c28178e47e1f3c6c53ab886c80d94b1"
+    },
+    {
+      "file": "source-closure-summary.log",
+      "sha256": "5f8b6ada0aef1b7c825d7d9216e1e7cac4aeafc17560a753ce00afc2db89dc2a"
+    },
+    {
+      "file": "strict-sources.txt",
+      "sha256": "9d6b3c9560a5a72706ac9dc064430fa67e849388e018b23754c8e351f308f05f"
+    },
+    {
+      "file": "upstream-tracked-diff.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__CompactFormGround.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__ContinuationVerification.lean.log",
+      "sha256": "15981d2d14ad2ae132c4c8493b87fa0ff73c5b3b404373d6d11dbfeaf15bf903"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__H1ClosabilityAudit.lean.log",
+      "sha256": "d975e8d938a77433308dc8d039a60a2549cc06584eea49107726cba109adc96d"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__H1SpectralPoincare.lean.log",
+      "sha256": "f5d13611a7234d5fa30bb096f39dd36830f76f4388c9fa8ef6af750e9a938c51"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__LatitudePiconeGround.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__OriginalLatitude__AngularComparison.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__OriginalLatitude__EigenbranchParameter.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__OriginalLatitude__GroundConcavity.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__OriginalLatitude__GroundFlux.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__OriginalLatitude__GroundHF.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__OriginalLatitude__GroundMoments.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__OriginalLatitude__PhysicalModeDerivatives.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__OriginalLatitude__RadialPartner.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__OriginalLatitude__SphereMeasure.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__RoundSphereCoordinates.lean.log",
+      "sha256": "8242e1c224fbd77cf263ffe3f11d986b8a42f52bbcc481ee04d9cec8f7692c88"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__RoundSphereFirstEigenspace.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__RoundSpherePoincare.lean.log",
+      "sha256": "6c47aa73694bab15984c231b03703e383b20f069afc1025ba984ee8250adb477"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__RoundSpherePotentialGround.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__RoundSphereSharpGap.lean.log",
+      "sha256": "149f4931ed26231bccf90e47d3660f49f1008a3ba57bf2b9a82d34119fead982"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__Verification.lean.log",
+      "sha256": "fc5889dd2ec8737b5b1dabea9f8b08d3eab37a90db75617ce4200ef32210d459"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__WeakH1Completion.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFLSphere433__WeightedSpherePoincare.lean.log",
+      "sha256": "79d541fb92483c0300dbc66f28b7ab75f1f3b3b268c21761094a0dd697487956"
+    },
+    {
+      "file": "strict-sources/continuation.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__ActualDriftBaseline.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__ActualRadialCandidate.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__ActualTiltProfileWitness.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__AngularMeanProjection.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__AuxiliaryRadialSmooth.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CircleFirstDimension.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CircleFirstEigenspace.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CircleFirstSmoothBasis.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CircleFourierFrequency.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CircleGapEquality.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CircleOddEigenvalue.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CircleOddGeometry.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CircleOddProfile.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CircleParity.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CircleRoundMetric.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CircleSpectralLower.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__ClassicalPotentialWeak.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CompactC2WeakH1.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CompactFirstPositive.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CompactPotentialDomain.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CompactPotentialFirstPositive.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CompactPotentialGround.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotAngularCoercivity.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotAngularDeviationCoercivity.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotAngularEquality.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotAngularPoincare.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotAngularProjection.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotScalarCutoff.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotScalarPicone.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotScalarPiconeEquality.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotSphereBochnerEnergy.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotSphereDiffeomorph.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotSphereDifferential.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotSphereEnergy.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotSphereFullIntegral.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotSphereMetric.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotSphereVolume.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotTransverseEquality.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__CotTransversePiconeLower.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__EvenSquareFiniteProfile.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__EvenSquareProfile.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__FirstAngularIntegratedEquality.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__FullSphereFirstLower.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__FullSphereFirstMeanZero.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__GenericRoundPoincare.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__GroundStateContinuity.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__HalfDensityEnergy.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__LatMeasureBochner.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__LatMeasureIdentity.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__MeanSphereDomain.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__MeanSphereEnergySplit.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__MeanSphereNormSplit.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__MeanSpherePoleFamily.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__NormalizedFirstModeClassification.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__NormalizedVMFWeakGap.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__OriginalTiltEigenspaceSimple.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__OriginalTiltGroundExists.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__OriginalWeakFirstEquality.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__OriginalWeightedGround.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__OriginalWeightedWeakGap.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__OrthogonalStationarity.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PhysicalDriftFirstPositive.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PhysicalFirstDimension.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PhysicalFirstEigenspace.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PhysicalGapEigenComparison.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PhysicalGapEven.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PhysicalGapFullDomain.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PhysicalGapIdentification.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PhysicalGapZero.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PhysicalGapZeroExact.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PhysicalHalfDensity.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PhysicalSphereFiniteProfile.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PhysicalSphereLatitudeProfileC3.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PhysicalWeightedFirst.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PhysicalWeightedGap.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PolarRoundMetric.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PositiveGroundOrthogonal.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PotentialMinimumDependence.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__PotentialRayleighStationarity.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__ProductGradientSlices.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__RadialEigenvalueLower.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__RoundAngularDeviationPoincare.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__RoundCirclePoincare.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__RoundCircleSharpGap.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__RoundPoincareEquality.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__RoundSphereActualTiltProfile.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__RoundSphereFiniteProfile.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__RoundSphereGroundAxisymmetry.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__RoundSphereGroundDomain.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__RoundSphereGroundSymmetry.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__RoundSphereLatitudeOperator.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__RoundSphereLatitudeProfile.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__RoundSphereLatitudeProfileC3.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__RoundSpherePositiveGround.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__SeparatedBochnerFubini.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__SeparatedGradient.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__SeparatedMeanEnergy.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__SeparatedMeasureFubini.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__SmoothAbsoluteH1.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__SmoothSchrodingerPositivity.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__SphereFirstModeRecovery.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__SphereGroundMoments.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__SphereIsometricCoordinates.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__SphereStrictMonotonicity.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__SphereWeightedSymmetry.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__TiltDriftClassification.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__TiltEvenness.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__TiltHellmannFeynman.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__TiltRateContinuity.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__TiltStrictConcavity.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__TransverseCommonGround.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__TransverseFirstMinimumUpper.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__TransverseModeDimension.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__TransverseSmoothGround.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__TransverseSphereMode.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__TransverseWeakH1.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__WarpedProductVolume.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__WeakFirstEigenspace.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__WeakHalfDensityEnergy.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__WeakPhysicalRepresentative.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__WeightedEigenNormalization.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__WeightedMinimumRegularity.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/continuation__WeightedWeakH1Gauge.lean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "environment.log",
+      "sha256": "872362f82bd4565db9b27d86e161135213eb63f811140737a52f7b43f0838975"
+    }
+  ]
+}

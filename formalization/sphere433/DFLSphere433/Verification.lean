@@ -1,0 +1,40 @@
+import DFLSphere433.H1ClosabilityAudit
+import DFLSphere433.RoundSphereSharpGap
+import DFLSphere433.WeakH1Completion
+import DFLSphere433.WeightedSpherePoincare
+import DFLSphere433.RoundSpherePotentialGround
+import DFLSphere433.RoundSphereFirstEigenspace
+
+/-! Kernel audit of the actual whole-sphere zero-field statements. -/
+
+#print axioms DFLSpectralUpstreamAudit.H1ComplToLp_injective
+#print axioms DFLSpectralCoordinates.dIncl_coordinate_gradient
+#print axioms DFLSpectralCoordinates.coordinate_hessian
+#print axioms DFLSpectralCoordinates.coordinate_laplacian
+#print axioms DFLSphere.h1_poincare_of_actual_spectral_lower
+#print axioms DFLSphere.roundSphere_h1_poincare
+#print axioms DFLSphere.roundCoordinate_energy_exact
+#print axioms DFLSphere.roundH1Gap_eq_dimension
+
+#check DFLSphere.roundSphere_h1_poincare
+#check DFLSphere.roundH1Gap_eq_dimension
+
+#print axioms DFLWeakH1Completion.H1ComplToLp_range_eq_weakH1
+#print axioms DFLWeakH1Completion.H1ComplToLp_weak_gradient_energy
+#print axioms DFLWeakH1Completion.weakH1_function_exists_completion_energy
+
+#print axioms DFLSphere.roundWeakH1_poincare
+#print axioms DFLSphere.vMFVolume_comparison
+#print axioms DFLSphere.vMF_memLp_iff
+#print axioms DFLSphere.vMFWeightedH1_poincare
+#check DFLSphere.vMFWeightedH1_poincare
+
+#print axioms DFLSphere.compact_potential_form_ground_exists
+#print axioms DFLSphere.round_potential_ground_exists
+#print axioms DFLSphere.round_potential_weakH1_ground_exists
+#print axioms DFLSphere.round_potential_weak_eigen_ground_exists
+#print axioms DFLSphere.round_tilt_minimum_attained
+#check DFLSphere.round_potential_weak_eigen_ground_exists
+
+#print axioms DFLFirstEigenspace.round_first_eigenfunction_iff_linear
+#check DFLFirstEigenspace.round_first_eigenfunction_iff_linear

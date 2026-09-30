@@ -1,0 +1,7 @@
+DFL.Geometry.area_sphereCapSucc_gamma (m : ℕ) (hm : 0 < m) (t : ℝ) (ht : 0 < t) (ht1 : t < 1) :
+  (DFL.Geometry.area (m + 1)) (DFL.Geometry.sphereCapSucc m t) =
+    (↑m + 1) * ∫⁻ (s : ℝ), DFL.Geometry.scalarCapKernel m t s
+'DFL.Geometry.area_sphereCapSucc_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.coordinateLaw_succ_Ioi_gamma (m : ℕ) (hm : 0 < m) (t : ℝ) (ht : 0 < t) (ht1 : t < 1) :
+  (DFL.Geometry.coordinateLaw (m + 1) ⋯) (Set.Ioi t) = (↑m + 1) * ∫⁻ (s : ℝ), DFL.Geometry.scalarCapKernel m t s
+'DFL.Geometry.coordinateLaw_succ_Ioi_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]

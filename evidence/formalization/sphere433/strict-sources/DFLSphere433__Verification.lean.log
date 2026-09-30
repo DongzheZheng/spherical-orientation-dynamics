@@ -1,0 +1,103 @@
+'DFLSpectralUpstreamAudit.H1ComplToLp_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSpectralCoordinates.dIncl_coordinate_gradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSpectralCoordinates.coordinate_hessian' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSpectralCoordinates.coordinate_laplacian' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSphere.h1_poincare_of_actual_spectral_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSphere.roundSphere_h1_poincare' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSphere.roundCoordinate_energy_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSphere.roundH1Gap_eq_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+DFLSphere.roundSphere_h1_poincare (k : ℕ)
+  (u : DifferentialGeometry.Analysis.Laplacian.H1Compl (DFLSphere.roundSphereMetric k))
+  (hmean :
+    ∫ (x : ↑(DFLSphere.RoundSphere k)),
+        ↑↑((DifferentialGeometry.Analysis.Laplacian.H1ComplToLp (DFLSphere.roundSphereMetric k)) u)
+          x ∂DifferentialGeometry.Integral.Measure.riemannianVolumeMeasure
+          (modelWithCornersSelf ℝ (EuclideanSpace ℝ (Fin (k + 2)))) (↑(DFLSphere.RoundSphere k))
+          (DFLSphere.roundSphereMetric k) =
+      0) :
+  (↑k + 2) * ‖(DifferentialGeometry.Analysis.Laplacian.H1ComplToLp (DFLSphere.roundSphereMetric k)) u‖ ^ 2 ≤
+    ‖u‖ ^ 2 - ‖(DifferentialGeometry.Analysis.Laplacian.H1ComplToLp (DFLSphere.roundSphereMetric k)) u‖ ^ 2
+`#`-commands, such as '#check', are not allowed in 'Mathlib' [linter.hashCommand]
+DFLSphere.roundH1Gap_eq_dimension (k : ℕ) : DFLSphere.roundH1Gap k = ↑k + 2
+`#`-commands, such as '#check', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLWeakH1Completion.H1ComplToLp_range_eq_weakH1' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLWeakH1Completion.H1ComplToLp_weak_gradient_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLWeakH1Completion.weakH1_function_exists_completion_energy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSphere.roundWeakH1_poincare' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSphere.vMFVolume_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSphere.vMF_memLp_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSphere.vMFWeightedH1_poincare' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+DFLSphere.vMFWeightedH1_poincare (k : ℕ) (r : ℝ) (f : ↑(DFLSphere.RoundSphere k) → ℝ)
+  (hf : MeasureTheory.MemLp f 2 (DFLSphere.vMFVolume k r))
+  (G : (x : ↑(DFLSphere.RoundSphere k)) → TangentSpace (modelWithCornersSelf ℝ (EuclideanSpace ℝ (Fin (k + 2)))) x)
+  (hG : DifferentialGeometry.Analysis.Sobolev.IntrinsicLp.HasWeakRiemannianGradLp (DFLSphere.roundSphereMetric k) f G)
+  (hGn :
+    MeasureTheory.MemLp (DFLWeakH1Completion.metricNorm (DFLSphere.roundSphereMetric k) G) 2 (DFLSphere.vMFVolume k r))
+  (hmean : ∫ (x : ↑(DFLSphere.RoundSphere k)), f x ∂DFLSphere.vMFVolume k r = 0) :
+  (↑k + 2) * Real.exp (-2 * |r|) * ∫ (x : ↑(DFLSphere.RoundSphere k)), f x ^ 2 ∂DFLSphere.vMFVolume k r ≤
+    ∫ (x : ↑(DFLSphere.RoundSphere k)), (((DFLSphere.roundSphereMetric k).inner x) (G x)) (G x) ∂DFLSphere.vMFVolume k r
+`#`-commands, such as '#check', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSphere.compact_potential_form_ground_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSphere.round_potential_ground_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSphere.round_potential_weakH1_ground_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSphere.round_potential_weak_eigen_ground_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLSphere.round_tilt_minimum_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+DFLSphere.round_potential_weak_eigen_ground_exists (k : ℕ) (V : ↑(DFLSphere.RoundSphere k) → ℝ) (hV : Continuous V) :
+  ∃ lam U G,
+    ‖(DifferentialGeometry.Analysis.Laplacian.H1ComplToLp (DFLSphere.roundSphereMetric k)) U‖ = 1 ∧
+      DifferentialGeometry.Analysis.Sobolev.IntrinsicLp.HasWeakRiemannianGradLp (DFLSphere.roundSphereMetric k)
+          (↑↑((DifferentialGeometry.Analysis.Laplacian.H1ComplToLp (DFLSphere.roundSphereMetric k)) U)) G ∧
+        MeasureTheory.MemLp (DFLWeakH1Completion.metricNorm (DFLSphere.roundSphereMetric k) G) 2
+            (DFLSphere.roundVolume k) ∧
+          DFLSphere.roundPotentialEnergy k V U = lam ∧
+            (∀ (W : DifferentialGeometry.Analysis.Laplacian.H1Compl (DFLSphere.roundSphereMetric k)),
+                lam * ‖(DifferentialGeometry.Analysis.Laplacian.H1ComplToLp (DFLSphere.roundSphereMetric k)) W‖ ^ 2 ≤
+                  DFLSphere.roundPotentialEnergy k V W) ∧
+              ∀ (φ : DifferentialGeometry.Analysis.Laplacian.SmoothScalar (DFLSphere.roundSphereMetric k)),
+                ∫ (x : ↑(DFLSphere.RoundSphere k)),
+                      (((DFLSphere.roundSphereMetric k).inner x) (G x))
+                        (DifferentialGeometry.Geometry.Operator.gradFun (DFLSphere.roundSphereMetric k) φ.toFun
+                          x) ∂DFLSphere.roundVolume k +
+                    ∫ (x : ↑(DFLSphere.RoundSphere k)),
+                      V x *
+                          ↑↑((DifferentialGeometry.Analysis.Laplacian.H1ComplToLp (DFLSphere.roundSphereMetric k)) U)
+                            x *
+                        φ.toFun x ∂DFLSphere.roundVolume k =
+                  lam *
+                    ∫ (x : ↑(DFLSphere.RoundSphere k)),
+                      ↑↑((DifferentialGeometry.Analysis.Laplacian.H1ComplToLp (DFLSphere.roundSphereMetric k)) U) x *
+                        φ.toFun x ∂DFLSphere.roundVolume k
+`#`-commands, such as '#check', are not allowed in 'Mathlib' [linter.hashCommand]
+'DFLFirstEigenspace.round_first_eigenfunction_iff_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+`#`-commands, such as '#print', are not allowed in 'Mathlib' [linter.hashCommand]
+DFLFirstEigenspace.round_first_eigenfunction_iff_linear.{u_1} {E : Type u_1} [NormedAddCommGroup E]
+  [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {n : ℕ} [Fact (Module.finrank ℝ E = n + 1)] [NeZero n]
+  (f :
+    ContMDiffMap (modelWithCornersSelf ℝ (EuclideanSpace ℝ (Fin n))) (modelWithCornersSelf ℝ ℝ) ↑(Metric.sphere 0 1) ℝ
+      ↑⊤) :
+  (∀ (x : ↑(Metric.sphere 0 1)),
+      DifferentialGeometry.Geometry.Operator.ΔG DifferentialGeometry.Geometry.roundMetric f x = -↑n * f x) ↔
+    ∃ a, ∀ (x : ↑(Metric.sphere 0 1)), f x = inner ℝ a ↑x
+`#`-commands, such as '#check', are not allowed in 'Mathlib' [linter.hashCommand]

@@ -1,0 +1,6 @@
+import DFL.Geometry.MomentBridgeThree
+
+#check DFL.Geometry.sphereMomentBridge_three_of_coordinateLaw
+#print axioms DFL.Geometry.sphereMomentBridge_three_of_coordinateLaw
+#check DFL.Geometry.sphere_isUnimodal_three_of_coordinateLaw
+#print axioms DFL.Geometry.sphere_isUnimodal_three_of_coordinateLaw

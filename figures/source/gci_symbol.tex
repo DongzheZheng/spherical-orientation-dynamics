@@ -1,0 +1,29 @@
+\documentclass[tikz,border=2mm]{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\definecolor{navy}{HTML}{184A68}
+\definecolor{teal}{HTML}{158477}
+\definecolor{orange}{HTML}{DA7441}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+ group style={group size=2 by 1,horizontal sep=12mm},
+ width=7.2cm,height=5.5cm,grid=major,grid style={black!10},
+ tick label style={font=\small},label style={font=\small},
+ legend style={draw=none,fill=white,fill opacity=.85,text opacity=1,font=\small}]
+\nextgroupplot[xlabel={$r$},ylabel={orientation response},xmin=0,xmax=8,ymin=0,ymax=.9,legend pos=south east]
+\addplot[navy,very thick] table[x=r,y=c2,col sep=comma]{../numerics/data/gci_pressure.csv};
+\addlegendentry{$c_2$}
+\addplot[teal,very thick,dashed] table[x=r,y=c4,col sep=comma]{../numerics/data/gci_pressure.csv};
+\addlegendentry{$c_4$}
+\addplot[orange,very thick,dashdotted] table[x=r,y=ctilde,col sep=comma]{../numerics/data/gci_pressure.csv};
+\addlegendentry{$\widetilde c_2$}
+\nextgroupplot[xlabel={$\theta$ (degrees)},ylabel={$\mathcal D(\theta)$ at $r=2$},xmin=0,xmax=90,ymin=-.4,ymax=1.6]
+\addplot[navy,very thick] table[x=theta_deg,y=discriminant,col sep=comma]{../numerics/data/angle.csv};
+\addplot[black!60,densely dotted] coordinates {(0,0) (90,0)};
+\addplot[orange,only marks,mark=*,mark size=2pt] coordinates {(66.929349839,0)};
+\node[anchor=north east,font=\small,fill=white,fill opacity=.8,text opacity=1] at (axis cs:88,1.48) {$\theta_{\rm crit}=66.93^\circ$};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

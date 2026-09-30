@@ -1,0 +1,19 @@
+{
+  "title": "Spectral Gap, Hysteresis, and Macroscopic Propagation of the Spherical Orientation Model",
+  "description": "Lean proofs and reproducible numerical experiments for spectral gaps, hysteresis and macroscopic propagation in sphere orientation models. Includes source hashes, compiler and kernel audits, twenty reference datasets, validation reports and twelve English figures.",
+  "snapshot_date": "2026-09-30",
+  "language": "en",
+  "resource_type": "Software and data",
+  "keywords": [
+    "Lean",
+    "formal verification",
+    "spectral gap",
+    "hysteresis",
+    "generalized collision invariant",
+    "von Mises-Fisher",
+    "orientation dynamics",
+    "self-organized hydrodynamics",
+    "hyperbolicity"
+  ],
+  "repository_name": "spherical-orientation-dynamics"
+}

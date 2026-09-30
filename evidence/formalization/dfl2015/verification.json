@@ -1,0 +1,15 @@
+{
+  "project": "dfl2015",
+  "build": "passed",
+  "strict": "passed",
+  "kernel_dependencies": "standard_only",
+  "lean": "4.29.0",
+  "mathlib_revision": "8a178386ffc0f5fef0b77738bb5449d50efeea95",
+  "module_source_count": 175,
+  "lean_source_count_including_entry_and_audits": 178,
+  "strict_module_log_count": 175,
+  "explicit_axiom_report_count": 140,
+  "kernel_audit_scope": "selected declarations in two audit modules",
+  "source_manifest_entry_count": 181,
+  "source_hashes": "all_matched"
+}

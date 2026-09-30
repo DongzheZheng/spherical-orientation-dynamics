@@ -1,0 +1,4 @@
+DFL.Geometry.coordinateLaw_three_eq_smul_volume :
+  DFL.Geometry.coordinateLaw 3 DFL.Geometry.three_pos✝ =
+    ENNReal.ofReal (2 * Real.pi) • MeasureTheory.volume.restrict (Set.Icc (-1) 1)
+'DFL.Geometry.coordinateLaw_three_eq_smul_volume' depends on axioms: [propext, Classical.choice, Quot.sound]

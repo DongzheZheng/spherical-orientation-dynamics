@@ -1,0 +1,76 @@
+DFL.Spectral.alignedMeasure_probability (d : ℕ) (r : ℝ) :
+  MeasureTheory.IsProbabilityMeasure (DFL.Spectral.alignedMeasure d r)
+DFL.Spectral.alignedMeasure_zero (d : ℕ) :
+  DFL.Spectral.alignedMeasure d 0 = ((DFL.Spectral.surfaceMeasure d) Set.univ)⁻¹ • DFL.Spectral.surfaceMeasure d
+DFL.Spectral.integrable_aligned_iff (d : ℕ) (r : ℝ) (g : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hg : MeasureTheory.AEStronglyMeasurable g (DFL.Spectral.surfaceMeasure d)) :
+  MeasureTheory.Integrable g (DFL.Spectral.alignedMeasure d r) ↔
+    MeasureTheory.Integrable g (DFL.Spectral.surfaceMeasure d)
+DFL.Spectral.square_integrable_aligned_iff (d : ℕ) (r : ℝ) (g : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hg : MeasureTheory.AEStronglyMeasurable g (DFL.Spectral.surfaceMeasure d)) :
+  MeasureTheory.Integrable (fun x => g x ^ 2) (DFL.Spectral.alignedMeasure d r) ↔
+    MeasureTheory.Integrable (fun x => g x ^ 2) (DFL.Spectral.surfaceMeasure d)
+DFL.Spectral.weighted_higher_angular_integral (d ℓ : ℕ) (hd : 2 ≤ d) (hℓ : 2 ≤ ℓ) (r : ℝ) (y : ℝ → ℝ)
+  (hleft :
+    IntervalIntegrable (fun t => DFL.Spectral.radialWeight d r t * ((↑ℓ - 1) * (↑ℓ + ↑d - 1) * y t ^ 2))
+      MeasureTheory.volume (-1) 1)
+  (hright :
+    IntervalIntegrable
+      (fun t =>
+        DFL.Spectral.radialWeight d r t *
+          ((DFL.Spectral.angularCoefficient d ℓ - DFL.Spectral.angularCoefficient d 1) / (1 - t ^ 2) * y t ^ 2))
+      MeasureTheory.volume (-1) 1) :
+  ∫ (t : ℝ) in -1..1, DFL.Spectral.radialWeight d r t * ((↑ℓ - 1) * (↑ℓ + ↑d - 1) * y t ^ 2) ≤
+    ∫ (t : ℝ) in -1..1,
+      DFL.Spectral.radialWeight d r t *
+        ((DFL.Spectral.angularCoefficient d ℓ - DFL.Spectral.angularCoefficient d 1) / (1 - t ^ 2) * y t ^ 2)
+DFL.Spectral.sphereVariance_pos_iff_not_ae_constant (d : ℕ) (r : ℝ) (f : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hf : MeasureTheory.MemLp f 2 (DFL.Spectral.alignedMeasure d r)) :
+  0 < DFL.Spectral.sphereVariance d r f ↔ ¬∃ c, f =ᵐ[DFL.Spectral.alignedMeasure d r] fun x => c
+DFL.Spectral.sphereVariance_pos_iff_not_surface_constant (d : ℕ) (r : ℝ) (f : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hf : MeasureTheory.MemLp f 2 (DFL.Spectral.alignedMeasure d r)) :
+  0 < DFL.Spectral.sphereVariance d r f ↔ ¬∃ c, f =ᵐ[DFL.Spectral.surfaceMeasure d] fun x => c
+DFL.Spectral.sphereVariance_eq_sInf_const_subtraction (d : ℕ) (r : ℝ) (f : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hf : MeasureTheory.MemLp f 2 (DFL.Spectral.alignedMeasure d r)) :
+  DFL.Spectral.sphereVariance d r f =
+    sInf (Set.range fun c => ∫ (x : ↑(DFL.Spectral.SpherePoint d)), (f x - c) ^ 2 ∂DFL.Spectral.alignedMeasure d r)
+DFL.Spectral.sphere_const_subtraction_eq_variance_iff (d : ℕ) (r : ℝ) (f : ↑(DFL.Spectral.SpherePoint d) → ℝ) (c : ℝ)
+  (hf : MeasureTheory.MemLp f 2 (DFL.Spectral.alignedMeasure d r)) :
+  ∫ (x : ↑(DFL.Spectral.SpherePoint d)), (f x - c) ^ 2 ∂DFL.Spectral.alignedMeasure d r =
+      DFL.Spectral.sphereVariance d r f ↔
+    c = ∫ (x : ↑(DFL.Spectral.SpherePoint d)), f x ∂DFL.Spectral.alignedMeasure d r
+DFL.Spectral.surfaceMeasure_isometry_preimage (d : ℕ) (U : DFL.Spectral.Ambient d ≃ₗᵢ[ℝ] DFL.Spectral.Ambient d)
+  (s : Set ↑(DFL.Spectral.SpherePoint d)) (hs : MeasurableSet s) :
+  (DFL.Spectral.surfaceMeasure d) (DFL.Spectral.sphereIsometry d U ⁻¹' s) = (DFL.Spectral.surfaceMeasure d) s
+DFL.Spectral.sphereCoordinate_square_mean_zero (d : ℕ) (i : Fin (d + 1)) :
+  ∫ (x : ↑(DFL.Spectral.SpherePoint d)), DFL.Spectral.sphereCoordinate d i x ^ 2 ∂DFL.Spectral.alignedMeasure d 0 =
+    1 / (↑d + 1)
+DFL.Spectral.sphereCoordinate_variance_zero (d : ℕ) (i : Fin (d + 1)) :
+  DFL.Spectral.sphereVariance d 0 (DFL.Spectral.sphereCoordinate d i) = 1 / (↑d + 1)
+DFL.Spectral.coordinateTangentGradient_pairing (d : ℕ) (i : Fin (d + 1)) (x : ↑(DFL.Spectral.SpherePoint d))
+  (v : DFL.Spectral.Ambient d) (hv : inner ℝ (↑x) v = 0) :
+  inner ℝ (DFL.Spectral.coordinateTangentGradient d i x) v = v.ofLp i
+DFL.Spectral.coordinateTangentGradient_norm_sq (d : ℕ) (i : Fin (d + 1)) (x : ↑(DFL.Spectral.SpherePoint d)) :
+  ‖DFL.Spectral.coordinateTangentGradient d i x‖ ^ 2 = 1 - DFL.Spectral.sphereCoordinate d i x ^ 2
+DFL.Spectral.sphereCoordinate_tangent_energy_zero (d : ℕ) (i : Fin (d + 1)) :
+  ∫ (x : ↑(DFL.Spectral.SpherePoint d)),
+      ‖DFL.Spectral.coordinateTangentGradient d i x‖ ^ 2 ∂DFL.Spectral.alignedMeasure d 0 =
+    ↑d / (↑d + 1)
+DFL.Spectral.transverseCoordinateTrialRatio_eq (d : ℕ) (hd : 0 < d) :
+  DFL.Spectral.sphereCoordinateTrialRatio d (DFL.Spectral.transverseIndex d hd) = ↑d
+'DFL.Spectral.alignedMeasure_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.alignedMeasure_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.integrable_aligned_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.square_integrable_aligned_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.weighted_higher_angular_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.sphereVariance_pos_iff_not_ae_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.sphereVariance_pos_iff_not_surface_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.sphereVariance_eq_sInf_const_subtraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.sphere_const_subtraction_eq_variance_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.surfaceMeasure_isometry_preimage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.sphereCoordinate_square_mean_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.sphereCoordinate_variance_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.coordinateTangentGradient_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.coordinateTangentGradient_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.sphereCoordinate_tangent_energy_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.transverseCoordinateTrialRatio_eq' depends on axioms: [propext, Classical.choice, Quot.sound]

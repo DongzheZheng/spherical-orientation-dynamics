@@ -1,0 +1,2333 @@
+{
+  "schema_version": 1,
+  "source_basis": "Verified SHA-256 digests for the included Lean sources, configurations and import-closure audit.",
+  "manifest_entry_count": 332,
+  "retained_byte_for_byte_count": 332,
+  "lean_source_count": 325,
+  "entries": [
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularBarrier2D.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularBarrier2D.lean",
+      "original_sha256": "11d5b8a3731b17557b354d34ec45e6a42942c22831d0a459d208d5481fd20d2d",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularCauchy2D.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularCauchy2D.lean",
+      "original_sha256": "50164f48b5b9840c2d2219d2341431be59631588777cf6f09a3513f328b2339c",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularEnergy.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularEnergy.lean",
+      "original_sha256": "4a5dce7a62f6b1e7d3b0744ef0ebd286071663718190a0d9871c02e236254958",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularEnergyCauchy.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularEnergyCauchy.lean",
+      "original_sha256": "3ed78cd56e039b65dd4fb402cf6e75b9d4cfb9080ffccd601638e135370a0297",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularMassCauchy3D.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularMassCauchy3D.lean",
+      "original_sha256": "2fca639606577516bbe8ac348c075f996f6fcab8ea109e0d78cd9e697eab99b3",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularMassCauchyAll.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularMassCauchyAll.lean",
+      "original_sha256": "c1acaa8964e7af5d0d2b5e589c738fa6a186960bd5ea9d1da4e08771fef0b598",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularMoment2D.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularMoment2D.lean",
+      "original_sha256": "02d6d39381652f3a09ac089219de6529be2e2c2784f08509c6bc0cd113ed2d08",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularMoment4D.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularMoment4D.lean",
+      "original_sha256": "48e5fb890a30e8288dfda0fdf2277bfc8a96dc2ad8c860882b86296cf9734cf5",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularMomentAll.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularMomentAll.lean",
+      "original_sha256": "88168739f0575f4a6eab4a9741283fcf1e442fdd0d9ab05d938d0430caba0b47",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularMomentAllAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularMomentAllAudit.lean",
+      "original_sha256": "ecd5216f1e6ffe26468c093c49f377ec46c486f98adf80924c5d09fa5c63f1bc",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularMomentGeneral.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularMomentGeneral.lean",
+      "original_sha256": "f2c1de98284562a12bb3541f7b122294958bbf8c279e3381900953d873557ebb",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularMomentGeneralAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularMomentGeneralAudit.lean",
+      "original_sha256": "b23237e8153b46d9909b86df76f864714fb1ba9546245718e5705c65a614d5c0",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularMomentThree.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularMomentThree.lean",
+      "original_sha256": "8b38703ebb9286d64e72e6e69e1b584660277bcb7055bd0d8ffbf1a48e8f00d7",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularMomentThreeBridge.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularMomentThreeBridge.lean",
+      "original_sha256": "5f6ae5be00cd09b6e0f36b96028e94e51f0b79d98cc0919c9ac0bf8de3be1f8a",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularPolarization.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularPolarization.lean",
+      "original_sha256": "6d428cd966209263d3204b2ef95f5672d6d0d382592e5fae62b2a0e54100b18d",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularShiftMoment.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularShiftMoment.lean",
+      "original_sha256": "887cf26e6a419e8ed5563e62d49984d7ce4b52cb38c383bc22b5f5c33d099c39",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularShiftMoment2D.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularShiftMoment2D.lean",
+      "original_sha256": "e24ac915ff4772e719e3144c5fd12189f8d9b75046523bcbfbc3dc3c4267cb02",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularSineEnergy.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularSineEnergy.lean",
+      "original_sha256": "f70c7b3eb6ef8a721abcbc0bef75a7c413cf8c6b166c382f3d932c70125fabc7",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularSineTest.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularSineTest.lean",
+      "original_sha256": "9fab955b42e1e84a2849741ba3bf491195c3a40d022ce66a254e5d44b35a78fa",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularSpectral2D.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularSpectral2D.lean",
+      "original_sha256": "c3b97c2c950ce354e15d704c3b5e76ae9cb4285d0a59ddfdd4e0943000ffe280",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularSpectralAll.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularSpectralAll.lean",
+      "original_sha256": "d7bb850322727db040d6030e70212e1e5576bef9b6a7aac4dae7baa65c8fd64e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularTest.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularTest.lean",
+      "original_sha256": "f937d3003e25078813d3cf640df24d6ba3f533cbfc76c4df5304198b69d341e0",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/AngularUpper2D.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/AngularUpper2D.lean",
+      "original_sha256": "e35cb5a43d64a38ffd8fe05521e61ec1e4ba71a3eb855c2da8059b77fd2073ce",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/Audit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/Audit.lean",
+      "original_sha256": "ed8fc0b5e74ba7366c0f258878e6bcc81fbe69bb3a0f9d8964aa0c2012f8c573",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/ClassicalComparisonAll.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/ClassicalComparisonAll.lean",
+      "original_sha256": "d9e6f135210b05066028fa59459463ef8e6399efe42b99da37487359f4f60e25",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/ClassicalEnergyDomainBridge.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/ClassicalEnergyDomainBridge.lean",
+      "original_sha256": "f4a65ba57a4fd3a1a03fb332986a43ea08474c42566d40ad35409a1fc9393c15",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/ClassicalH10Closure.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/ClassicalH10Closure.lean",
+      "original_sha256": "e491ebc0df824042322b6d849b878884d5fe1a077ef27b83b74403214677ace3",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/CoefficientUniquenessAll.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/CoefficientUniquenessAll.lean",
+      "original_sha256": "ae5caf9bebc50c0a636ec728372c3bf9e528b24cfaf1f2a7d3ca481cc0877dab",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/ComparisonAll.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/ComparisonAll.lean",
+      "original_sha256": "c225efadc2e0780d78f0e64486899ac5dcb9a912f8db8aaff2af15cc9ed16508",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/ComparisonFourUpper.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/ComparisonFourUpper.lean",
+      "original_sha256": "fb44eb12fd3fdf45ab4ba37835a73dc62a949408dd6554d0ff72ecc50265bcca",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/ComparisonGenericGeFour.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/ComparisonGenericGeFour.lean",
+      "original_sha256": "979852a0b802745e83330deca8899bdf0eb93fc2f009bc6c05a13336709dfc90",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/ComparisonGenericUpper.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/ComparisonGenericUpper.lean",
+      "original_sha256": "dcdb644d140130fd118b02a9fb4463aa66504be123548a92596d231cc5788713",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/ComparisonTwoD.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/ComparisonTwoD.lean",
+      "original_sha256": "6b9299617dab09f90977d293a2c13811e99ba9795d8b3ff4017ae473ef159f60",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/DerivativeEquation.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/DerivativeEquation.lean",
+      "original_sha256": "d15cabdd44abc78555210f1c029e6e38aeeaf05239d86ed9bb318bd3a3799cea",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/DirichletGraph.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/DirichletGraph.lean",
+      "original_sha256": "221d969d7673e1d2340722a27c77a1d30042504ba8fcef22fd2575fa4a2db7d2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/DirichletWeakDerivative.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/DirichletWeakDerivative.lean",
+      "original_sha256": "62dc26886ad05e35d53d95606c590fb4e4fa8c6989b5ca44db86f52d81505c68",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/EnergyDomainIntegrability.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/EnergyDomainIntegrability.lean",
+      "original_sha256": "8f10665af63676df0c54f53114f023b83daa0f95bf2bc1d763e2859039451b31",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/EnergyDomainLinear.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/EnergyDomainLinear.lean",
+      "original_sha256": "503e7706db14c84ccfc89bf32be787f60e5b1361d2af415cace3ab12f6dff97a",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/ExplicitSolution2D.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/ExplicitSolution2D.lean",
+      "original_sha256": "b9c33b45d2a3f9ea9294edcf68f2058a063b4b9711226d1a87a987a462e195a5",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/GraphDomainBridge.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/GraphDomainBridge.lean",
+      "original_sha256": "dd16e2b24cc90b42e89bc9ae556b916ab27e0220802e2e1f042f4ce9e5af76eb",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/GraphLaxMilgram.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/GraphLaxMilgram.lean",
+      "original_sha256": "7f4da80fc4fd15623651bcdc26a943202c8acf82ff5104a78d9f9d8c6a4f4e6c",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/GraphPhysicalForm.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/GraphPhysicalForm.lean",
+      "original_sha256": "f86f160277d1cee718dbf9b4c7248bb6c05857fc427286179e86732a896a5105",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/GroundState.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/GroundState.lean",
+      "original_sha256": "32e20f47e891c0d5050bac458d584cea6e31614f7259f90f453004f9c94c2c56",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/IntegralPrimitiveL2.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/IntegralPrimitiveL2.lean",
+      "original_sha256": "710196b3ff56ed8062b06aff6bd508dc2fe2e7b304fece0e4fdb2c3bff0fadef",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/InteriorSmoothDensity.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/InteriorSmoothDensity.lean",
+      "original_sha256": "fdbe172888d2dfdd34c0174b3aea76186cd41b270edbc3560acda470e9939f0d",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/OriginalExistenceAll.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/OriginalExistenceAll.lean",
+      "original_sha256": "eb9478a3e99948403e42294718828e3969d6ad47464b8b600a9ef31f33ada248",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/OriginalTarget.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/OriginalTarget.lean",
+      "original_sha256": "7f1ada6f92a5775ba23b2147bfe811a545b68a3feed59169d59de156e1fc3733",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/OriginalUniquenessAll.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/OriginalUniquenessAll.lean",
+      "original_sha256": "52a08b5652bd1d9e3aeea689c85d1aae5fd007afeecede0991127d21d5aa812f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/PhysicalComparisonTwoD.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/PhysicalComparisonTwoD.lean",
+      "original_sha256": "9a125e0c46e6e52a340323a93b2b9edd5b109d13ea791b860337724a6dafd232",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/PositiveThreeBridge.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/PositiveThreeBridge.lean",
+      "original_sha256": "8aed1839edf769f6be097c6443c9b780e8e6337aa991e19faaf2993664a50f7e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/PositiveTwoD.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/PositiveTwoD.lean",
+      "original_sha256": "ee55ad0ad0e61fc1a5492eb475150717534565d8abfc8bf8a8aaaa0686505060",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/SingularCotangentIBP.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/SingularCotangentIBP.lean",
+      "original_sha256": "8cbe7e0634fe8a910b226f27089faba06fb721da7d858085a347b2ba3ba828dc",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/SqrtSinFlux.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/SqrtSinFlux.lean",
+      "original_sha256": "02319dcc3dc93a93fbc5d83c78f1780abdd5d8e398bb5105ed356cbb8092aaf7",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/StrictShiftAll.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/StrictShiftAll.lean",
+      "original_sha256": "2494c1937ba3b7b2d0e8a6e599cf58620675a8d39a96150a1e1615d1148bbc92",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/StrictShiftTwoD.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/StrictShiftTwoD.lean",
+      "original_sha256": "26716ff17d3daa640bc3e2f2f298f78c9d409d69a9bf6c2af66e2121f753fe67",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/ThreeDGroundBarrier.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/ThreeDGroundBarrier.lean",
+      "original_sha256": "248838b0a7c5e54e1f4a1f740a5e3ba0b83d0e9c844729746b237ef6e7be83da",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/WeakDerivativeConstant.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/WeakDerivativeConstant.lean",
+      "original_sha256": "912b3b88c882ea1747f6b2ecf4ca5437eaa16cb6f5ecb1560c290116aca0f6da",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/WeakDerivativePrimitive.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/WeakDerivativePrimitive.lean",
+      "original_sha256": "3a3945af6c17dfbc4139986138eef5c84bf018af0c38d39254851f89a6069da3",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/GCI/ZeroMeanSmoothDensity.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/GCI/ZeroMeanSmoothDensity.lean",
+      "original_sha256": "3f8c99b03f431473c510ef5df42982bc22ec11452456bb10975e459d34a8bb44",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/Audit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/Audit.lean",
+      "original_sha256": "a2fd41713ea6a7b5e5261b8eb572f77a3d4c2fa0f46fb26387a3830bb4ae4fa2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/CapSymmetryThree.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/CapSymmetryThree.lean",
+      "original_sha256": "dc23d9ee6d2c97f851912ce5ea30c124b367f3bc5562f7820110cf1df2f84980",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/CapToLaw.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/CapToLaw.lean",
+      "original_sha256": "39a1bb23694738d6063d61f4a960c9a4acbe59321a55feddd44e59aef6fff21d",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/CircleCDFSource.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/CircleCDFSource.lean",
+      "original_sha256": "d0ecaa6ad8f78a7edddcf4b3b3bfda03564c50842267a30a6b8aacb6808fd459",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/CircleCapScalar.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/CircleCapScalar.lean",
+      "original_sha256": "85e7bf7303a082880d192705008d8817c89f0c9cfbd81ec8f4d5d897e4597e52",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/CircleCapVolume.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/CircleCapVolume.lean",
+      "original_sha256": "cb3ec9aa6e48914d96b83f3b5762f62bfeda4046496f363cf3bd8f3424469a59",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/CircleLawFull.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/CircleLawFull.lean",
+      "original_sha256": "9d0926eb98a2a8f44d6659e8b5fecd8bb840611666f7d96b0b5ade275a4e72a2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/CircleLawFullAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/CircleLawFullAudit.lean",
+      "original_sha256": "28e47e5d2fd7301ff8a782c4ce0a4908d0d6e20fbdaffa43949314b38642d4c5",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/CircleLawSource.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/CircleLawSource.lean",
+      "original_sha256": "931a37d4f7211153ecaa397d8c5bdb19cb67322cc06251b06eea1d713cd388c3",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/CircleMeasureTBasic.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/CircleMeasureTBasic.lean",
+      "original_sha256": "51571758ecb96fcd6ecd0aad65eaf7b1c5dbd7069700dcaca5d221aeeef4538b",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/CircleSqrtIntegral.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/CircleSqrtIntegral.lean",
+      "original_sha256": "46e8cb16e6bb17f66638899fe872a45be9794cf29bef7b20b759411f545f3b51",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/CircleTargetCDF.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/CircleTargetCDF.lean",
+      "original_sha256": "0bb8b21712b8d23fc876585bb2aa44ca431621dd3800c4432685cbf07d2ac0d2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/CircleTargetLower.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/CircleTargetLower.lean",
+      "original_sha256": "7534ca06a58e3359c803b21387880f383443b736dc4f1a44069bd298a17bca22",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/ConeCapScalar.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/ConeCapScalar.lean",
+      "original_sha256": "5589bda16a2188f1774544b4fe689d4478455ce6e734ed21f21e7a5eefdf6ed8",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/ConeCapThree.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/ConeCapThree.lean",
+      "original_sha256": "5ada93b297f23762d99413db1ad4b7382357adef8ae371f55a00cc0d2553c8d8",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/LawThree.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/LawThree.lean",
+      "original_sha256": "fbaa68eddd8fd38052546a362970edfb4273fbae396a378f62c5b248b4f63191",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/LawThreeBoundary.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/LawThreeBoundary.lean",
+      "original_sha256": "5465ff5ef5a1ef2fb19fd828ccefd6ad796dead1494c62494d41a3d4ecab97e3",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/LawThreeFull.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/LawThreeFull.lean",
+      "original_sha256": "ce51c9c2bbb090e7b93632bf62b5f2203dff5647a1c400d1db77936382f1b8eb",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/LawThreeFullAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/LawThreeFullAudit.lean",
+      "original_sha256": "7d3c0c66f22864a5068227a22a6bf43bca51f3f80a1ea0fae474002f0511afa8",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/LawThreeTarget.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/LawThreeTarget.lean",
+      "original_sha256": "23306c0f18205011c7083c416bc98c51a65b1b8c62aeeb8797694d496f3e7d94",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/MomentBridge.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/MomentBridge.lean",
+      "original_sha256": "c45f74a7776ddd08402a9b8c62edc3156276f836c658773c0be47ca98a13276f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/MomentBridgeSucc.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/MomentBridgeSucc.lean",
+      "original_sha256": "88a594a6adeb2f924268a8740dbe60ddf4d16e605eb6c612f05018620ac4e6f5",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/MomentBridgeSuccAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/MomentBridgeSuccAudit.lean",
+      "original_sha256": "fbcc107e421886f01cbe05864771a420e388abf47e2589ea83a1bb251a4c67e1",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/MomentBridgeThree.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/MomentBridgeThree.lean",
+      "original_sha256": "a0bbdc524f35b758e573ded6616bee567756ae73a3924bed5771af6b3f46035f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/MomentBridgeThreeAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/MomentBridgeThreeAudit.lean",
+      "original_sha256": "443f1744c4a80df941637f63be8803cf0b2e0b42a81fd5ad65793a47b22ce430",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/MomentBridgeTwo.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/MomentBridgeTwo.lean",
+      "original_sha256": "e6a66c6d87ac53731549ca444ff831d0faf5cb3796b043e20f5e345e30afc900",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/PhysicalSphereAll.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/PhysicalSphereAll.lean",
+      "original_sha256": "968078af8acd523227fc4208b1b35efb3a19cecd64e4a7bc2693976b52526f7f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/PhysicalSphereThree.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/PhysicalSphereThree.lean",
+      "original_sha256": "7598fa3b7d898af149a577f677aa147346ba70bebbd73eebf57561e157f00b59",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/PhysicalSphereThreeAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/PhysicalSphereThreeAudit.lean",
+      "original_sha256": "a41715d55b52f64e57a2b96236a3509ffc65838c36062824720cc291d55a37f2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/PhysicalSphereTwo.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/PhysicalSphereTwo.lean",
+      "original_sha256": "4bd359eabf68c28c127af2b0508ca8d56677531dd3dafdded9c4c8b655fabd82",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/PhysicalSphereTwoAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/PhysicalSphereTwoAudit.lean",
+      "original_sha256": "f52255ce701d170e7dc1f25967f006f815cfce8174243a46a2a47a1a3a9c2415",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SphereMeasure.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SphereMeasure.lean",
+      "original_sha256": "1962c2486f044358f9888ee13fe5a824bf7ac07e52be52d925de1d272f81cb7e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccBetaMeasure.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccBetaMeasure.lean",
+      "original_sha256": "9bf8524b9cbbfb15c446012620eb97ecaa311e437d26d78c39f8d49397611703",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccBetaSymmetry.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccBetaSymmetry.lean",
+      "original_sha256": "605a15d56b042920b7d3b9642082381e03c11c88bd0fda6380de347d8ad3702f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccCapAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccCapAudit.lean",
+      "original_sha256": "cc6bf4f891d16df97afebe862034c33814b3151a04f9a5e959d6de073c5e58dd",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccCapBeta.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccCapBeta.lean",
+      "original_sha256": "ca8f501c4ac88c4db99c3c3fb0dafa567c5f95484095271aac7f0a310c92726e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccCapBetaAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccCapBetaAudit.lean",
+      "original_sha256": "c692c88de3c99eecd1c569c3f605320a8772cc0ff1dd3ddafb16b3d22de61dca",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccCapFubini.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccCapFubini.lean",
+      "original_sha256": "e626093119e139210abc468f451d1ce446c0ae384bbcf19c769b3a3274375060",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccCapReal.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccCapReal.lean",
+      "original_sha256": "05f710ec16cc62975b2787baf3bd0f2598127c01428bbb4fb23fd7aff022734f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccCapSections.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccCapSections.lean",
+      "original_sha256": "8094b2393c49743b88e716d52d34dbab27c06cc7238834025a5367583f9cec84",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccCapSliceFormula.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccCapSliceFormula.lean",
+      "original_sha256": "a44d7b89a94db621a2ae420e83645e72647a03a34285e23325490a812d2c5f67",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccCapSymmetry.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccCapSymmetry.lean",
+      "original_sha256": "22e5c3bd91136e65e3ad391005d888f03f6fa3259dcbbcf4061923f7d3e8605c",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccEquatorNull.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccEquatorNull.lean",
+      "original_sha256": "58251c528a6171d62cdc23789aece7d74ac5c79da048833990ce8b00e9f95efd",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccEquatorNullAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccEquatorNullAudit.lean",
+      "original_sha256": "6ab336712d340867e1753095532b9c200f73d1866796a248e030a05d87e93a31",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccLawFull.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccLawFull.lean",
+      "original_sha256": "4d9591cc542e90b4393a9497c66629434044382ef27be37ea3fc5cf9beb99e83",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccLawFullAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccLawFullAudit.lean",
+      "original_sha256": "0cfc8562b1bedd971905be1fc16033e8afbb5989098c9fe4429307800bf20927",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccLawSymmetry.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccLawSymmetry.lean",
+      "original_sha256": "fd141e8827f53091823e9d7b55824f590559b9438dad4e300154fe7619ec6c4f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/SuccSplit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/SuccSplit.lean",
+      "original_sha256": "9666900b0d2344d8763d2c905970e830ee5aee58a8a5861a771e1ad0cb7aece5",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/ThreeFubini.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/ThreeFubini.lean",
+      "original_sha256": "427335b4dd95386cc8d1954660eabbe27767b8ba8929eefc7d1603e007e1df0e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/ThreeSections.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/ThreeSections.lean",
+      "original_sha256": "08e0825bc881186ce2a95e0b6ecad9cf161f653861ec899f8f6bf170e07a85f9",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/ThreeSplit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/ThreeSplit.lean",
+      "original_sha256": "a832d28363b0d7df792d7559a6cb7f0b73786fffc68ed2eb4c7fb6fb2283e8c6",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Geometry/ThreeVolume.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Geometry/ThreeVolume.lean",
+      "original_sha256": "102f0d7777ccadead46990ea82b9baf701536888547a2fdcde300cdf8e687407",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/Conjecture.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/Conjecture.lean",
+      "original_sha256": "b7cb5181910b326d6e66ee1c37cba2b08edd8d809c3b147d12fe5e447dff2d9f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/Crossing.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/Crossing.lean",
+      "original_sha256": "30f0c9a87759402f69928fc8765a52d1d414e5fbd9bf6b7298718f02fe712f33",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/DimensionShift.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/DimensionShift.lean",
+      "original_sha256": "7e45b5c5c9b882704fe62e7f78c53ce80547f425cd21bd557b21e0f318d9e398",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/Elasticity.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/Elasticity.lean",
+      "original_sha256": "e229f5c439948b9815251e31a24c7db0a4c0da98fa2e65db0f51b54600680866",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/ElasticityODE.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/ElasticityODE.lean",
+      "original_sha256": "fbc3419e7b62e93b49a473c320d31d268ba1d3e3cc1e8c9bbaa32ec9e0ee3b28",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/Feedback.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/Feedback.lean",
+      "original_sha256": "d18d927e92c097530a8efe7c4901661422658e8c1020042e76d86480d7af7ee9",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/FeedbackDerivative.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/FeedbackDerivative.lean",
+      "original_sha256": "a07be28d93ac707577013b9a399af9aa06982df333a1e6d9f3e570bcb3df1080",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/HighFieldWitness.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/HighFieldWitness.lean",
+      "original_sha256": "e6be4062f7941b806372a0b45bb1b9d8c270328ed9d86443b618308442d6d2d2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/Marginal.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/Marginal.lean",
+      "original_sha256": "eee290299edeca051d625b963bd370addd586b402d0607112650b976be0f06a7",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/MarginalDerivative.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/MarginalDerivative.lean",
+      "original_sha256": "72f073bc294127f158bcd6d420079223d7be7cdda266bed5d45c6d71e36ca8d9",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/MeanEndpoints.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/MeanEndpoints.lean",
+      "original_sha256": "d520763d8089123f2cb210afd4ad070694ed0654a44c83b0c1fce195c5dfbc36",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/MeanLinearBound.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/MeanLinearBound.lean",
+      "original_sha256": "1bcb59871eae1d869a593e9a427ce9836530371bc40b4edff3fe05c4ded1e747",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/MeanSmallField.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/MeanSmallField.lean",
+      "original_sha256": "3b87006eb8825419bd9295fce022ca896ca27b25bf82a967d4bb1d975e4ba6e9",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/MomentDerivative.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/MomentDerivative.lean",
+      "original_sha256": "60fe869d61e09e9ecfc94d5637b027ea4ac85b0126e2a6e50ea6bf67d8179a6e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/MomentRecurrence.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/MomentRecurrence.lean",
+      "original_sha256": "3ed67b0749e937a04dc613b42f63229883d3e78adb72b5f860d96dd90e8b7aa8",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/NondegenerateFold.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/NondegenerateFold.lean",
+      "original_sha256": "ed1628cc260bf92c15a5718478f834ba635f833550d92123fe913a49e5456408",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/OriginalCrossing.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/OriginalCrossing.lean",
+      "original_sha256": "3117f60f959e1abc094e8e6f26a9c55e574ab190ba07d0b44b149351e1b61d19",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/OriginalRiccati.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/OriginalRiccati.lean",
+      "original_sha256": "eb6ecdf92fe8a41f864dce6b913667c9993ebffc6aaa041b3940d07995453110",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/OriginalTrajectory.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/OriginalTrajectory.lean",
+      "original_sha256": "7780e96bb87c78b6b383e01371a21ac1a2e3a599e2e5678f10134d1161731e15",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/PositiveRoot.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/PositiveRoot.lean",
+      "original_sha256": "77923de9383a8723abba11e5fd4824c7fa7f525d4774e13c4a04b5c08a7fb537",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/SmallFieldSign.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/SmallFieldSign.lean",
+      "original_sha256": "5cb81192c66052f7823203bfead07f875537a31a28a1302a71359cbd96e18c79",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/TargetBridge.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/TargetBridge.lean",
+      "original_sha256": "c29dc6915b5bf877f99eca75abce4b24c377f17278cbaaae241382b70b73fcb7",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/UnimodalFromSigns.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/UnimodalFromSigns.lean",
+      "original_sha256": "9ebe9155dab888bb5368d007f5b94e1f2e4d81d9ba007accaed783232a0520cf",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/ZeroDirection.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/ZeroDirection.lean",
+      "original_sha256": "bc797f90cf8218bdc4ca97320ccb5f616e04c049e323e8df90f333e51016e08f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/ZeroDirectionBridge.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/ZeroDirectionBridge.lean",
+      "original_sha256": "8457acf511c89ab20f4e8327bce49e6c9d3f9f5934f8297302a79a08301f80ee",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/ZeroDirectionODE.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/ZeroDirectionODE.lean",
+      "original_sha256": "46478939e1399b85b0fb35fb8e8fe05453334d01310818e13244cac33f4502c7",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Hysteresis/ZeroDirectionOnTrajectory.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Hysteresis/ZeroDirectionOnTrajectory.lean",
+      "original_sha256": "4e5ed390f9f217cbdfdcc857eb213736bb9c01ef1cde963b2253198ac8b6b0b0",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Probability/EnergyResponse.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Probability/EnergyResponse.lean",
+      "original_sha256": "f2a8f72cddbddd89faf03c71a74b442cbe0bdf81277c3ee2368b40a64b4b69d9",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Probability/PiconeAC.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Probability/PiconeAC.lean",
+      "original_sha256": "0f885da49da3716b16f6268fed46bb5fbbb9871d54b335127f387cef4583d8b2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Probability/PiconeAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Probability/PiconeAudit.lean",
+      "original_sha256": "a23c58ff9ac47986e72dd8b2159c762ae5d96c546dadd83b1a3aa15b4b288a1e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Probability/PositiveTailAtZero.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Probability/PositiveTailAtZero.lean",
+      "original_sha256": "bab069e59341a85751e9283fe62f59740c68ace192e797b00a4c20efff840760",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Probability/ReverseCovariance.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Probability/ReverseCovariance.lean",
+      "original_sha256": "3adbefacb6d8129a1f47460fa11f1f8731f2ecdfa00ac04ad7f4e511cd1b02ec",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Probability/SymmetricTailUniqueness.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Probability/SymmetricTailUniqueness.lean",
+      "original_sha256": "9cd912d0173013c36a76d539ffe8f46647c4c5e22b1d7231156ffb1df8fbc70b",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Probability/SymmetricTailUniquenessAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Probability/SymmetricTailUniquenessAudit.lean",
+      "original_sha256": "7b6afa308dca8e3c56b398e18d2f39d9c9812e4eee63d017abf03242fb609f98",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/AngularComparison.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/AngularComparison.lean",
+      "original_sha256": "7823a7b7d6c8963aeccaf2fbb22216dc827c28d113ea117f2caf68f408e1cb2f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/Audit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/Audit.lean",
+      "original_sha256": "94c374639c6d7be1ff4fcd568dfbd1ca45a99f856cd04eccb192faf0b9480cf5",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/ClosedFormGap.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/ClosedFormGap.lean",
+      "original_sha256": "c830516f87bd347472d5bfab5adfa4efd92631a759ddb0d51fa084d58adfe9e9",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/ClosedFormGapAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/ClosedFormGapAudit.lean",
+      "original_sha256": "f1efe580aadb289568e714ba8568cf17afd10cf970929cc470513727ba3fedb4",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/ClosedFormGraph.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/ClosedFormGraph.lean",
+      "original_sha256": "6ba4a681bd0e54865ea32f0456d47e6d5edcaddbde688751fb5fb72ed5f35349",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/ClosedFormHilbertBridges.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/ClosedFormHilbertBridges.lean",
+      "original_sha256": "668b9c86ce2da03bfcddd60b91c4d18f1620090241ea7c9a44e8753e612c254a",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/ClosedFormLinear.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/ClosedFormLinear.lean",
+      "original_sha256": "231756c8036b42b211de37f96a73c6b3ff44c841e4d5c83f0185ebbcf3813df7",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/ContinuationAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/ContinuationAudit.lean",
+      "original_sha256": "b000d0955c5403e30fb444b7fdb7be1be3eee88e766e805a64b43932d517ac4a",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/CoordinateTrial.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/CoordinateTrial.lean",
+      "original_sha256": "ddd5717ce197e7a3a533a4b5bb96451e79e0e8c67762edf6d2cf7b825ae561ad",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/CoreCoordinate.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/CoreCoordinate.lean",
+      "original_sha256": "d534520f63e1fde9b8f714dc9916f057a160189bc63256983d8da1e19245aa67",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/EigenbranchParameter.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/EigenbranchParameter.lean",
+      "original_sha256": "09121f0c39bb59731991fa4900e62e33695b9a04514174d9bef993ee341edadc",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/GroundConcavity.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/GroundConcavity.lean",
+      "original_sha256": "6a6151cdd232a085d50b67691a16d0efaa1a0ed6ecff7cf75ea5f71010a06904",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/GroundFlux.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/GroundFlux.lean",
+      "original_sha256": "0466cafee4091f50fcfdd08a16a9a3d0571ed158f219f7418077fd03dd255699",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/GroundHF.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/GroundHF.lean",
+      "original_sha256": "0edde3bc0040b9754efa8b4adf9d6e36d3d9282365b6dde9b90a250461cf185b",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/GroundMoments.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/GroundMoments.lean",
+      "original_sha256": "0990523a98d702348db0530dbef15e551827d4c6bbddc0e5b104a0c1e0ea161e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/PhysicalLatitudeCore.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/PhysicalLatitudeCore.lean",
+      "original_sha256": "33219413c2523a5f91c9807aea0e973a52f75afe7462188148c20a6ad68c6e4f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/PhysicalModeDerivatives.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/PhysicalModeDerivatives.lean",
+      "original_sha256": "21ee5e30635fb4f5b9eae03e1e6c608a6f5460cbe6a423a05b94074c6d9b8c19",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/PhysicalTransverseCore.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/PhysicalTransverseCore.lean",
+      "original_sha256": "4231856f5a5e312375215c12df228695c1c2aab7b86b906c87293ab080bba06c",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/RadialPartner.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/RadialPartner.lean",
+      "original_sha256": "7c35af4a480989ba0c174d83b8fdf75d47eee56d98d56af3452ab75cc5e86649",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/RayleighDenominator.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/RayleighDenominator.lean",
+      "original_sha256": "d147066dacf4e85b92f18008c48ed3fac9deb5f2b708f81b85f3dba72357c2c3",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/SphereMeasure.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/SphereMeasure.lean",
+      "original_sha256": "d2534bed641e764507ca3e1736bf9e8d8ed9031c60fe4fc3a84ea1cf545e4589",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/SphereOrthogonal.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/SphereOrthogonal.lean",
+      "original_sha256": "314e5ca03db8191724329508523f94abb0062522cdb6e0398f9b868483c4471b",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/SphereSymmetry.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/SphereSymmetry.lean",
+      "original_sha256": "6fafa5edd3424a17e90e0e2f7296dced5d0aec8838833da1fc09dd08c8c515e4",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/WeightedMeasureComparison.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/WeightedMeasureComparison.lean",
+      "original_sha256": "02d5d1d3087e8c713e0da3d61f3d250e3ad801b6997afc83735e25c80b4942f2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/WeightedMeasureComparisonAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/WeightedMeasureComparisonAudit.lean",
+      "original_sha256": "46a7ab45d2562879f597b056249098e2511da445b68a306d020f42e1235f61ec",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/WholeSphereCore.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/WholeSphereCore.lean",
+      "original_sha256": "f35fc144f15f1b8ca836eacc8177a4efdbe612f4e976445c29f3af90c9e6ffeb",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/WholeSphereCoreAudit.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/WholeSphereCoreAudit.lean",
+      "original_sha256": "360d7b1d02aee33c6a2277315a42c51ea4699b162841be9684a1a9bbf3888ea8",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/WholeSphereGap.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/WholeSphereGap.lean",
+      "original_sha256": "732e03b8c9273edfa494f92a26ca1f8c62c252df2764e00b881ab3b9d32054d5",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Spectral/ZeroFieldMoments.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Spectral/ZeroFieldMoments.lean",
+      "original_sha256": "c4532676b02a6525f6dc3b573fd6b6ca02a5d775c81dcb1cf358094fdc8a3532",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL/Targets.lean",
+      "release_relative_path": "formalization/dfl2015/DFL/Targets.lean",
+      "original_sha256": "57a987551a9572e2f094ae9881759579f89587bd46d8ef5cb25e32d68d273097",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "DFL.lean",
+      "release_relative_path": "formalization/dfl2015/DFL.lean",
+      "original_sha256": "880f230f6e6d7e372d5dc39faea0027c953d78d551df2db6eef63ae84ffd9bde",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "lakefile.toml",
+      "release_relative_path": "formalization/dfl2015/lakefile.toml",
+      "original_sha256": "7c4aa95486a5c56319d9a7aca1c5ad13f3929bd5b41669f5f9d28f45f19b494f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "lake-manifest.json",
+      "release_relative_path": "formalization/dfl2015/lake-manifest.json",
+      "original_sha256": "c9aa2a07f2a88b8ab81adf42d11f02309487ff48bf4ebebae2edaf78683dca24",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "lean-toolchain",
+      "release_relative_path": "formalization/dfl2015/lean-toolchain",
+      "original_sha256": "651c8accb402b0c071cd336e9d3dc0a55516b1bfb434ddc4801f14936785b1d2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "verification/Audit.lean",
+      "release_relative_path": "formalization/dfl2015/verification/Audit.lean",
+      "original_sha256": "7c850433b641c58acda9fb1beed34e2ea6bf261367669351007cf88ea7d5be6f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "dfl2015",
+      "original_relative_path": "verification/AuditContinuation.lean",
+      "release_relative_path": "formalization/dfl2015/verification/AuditContinuation.lean",
+      "original_sha256": "485e415c1d83882c37e88fb23da6eb2f508a1470ed45a880866e88dfe743931e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/CompactFormGround.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/CompactFormGround.lean",
+      "original_sha256": "ef92a814e8836f50ee4a6222a1c444b01bfe50ef4cdab3843487fd8e46631663",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/ContinuationVerification.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/ContinuationVerification.lean",
+      "original_sha256": "b4bfae5f997d015b79164e2c192b91390430ce7d7d35cd0596c11ecb49d3dece",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/H1ClosabilityAudit.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/H1ClosabilityAudit.lean",
+      "original_sha256": "a7a3b5ec7536d9c697baa5fd5dcc52b1c54bacf2b74860b771631c2844d68fbf",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/H1SpectralPoincare.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/H1SpectralPoincare.lean",
+      "original_sha256": "100c2957d3d1a007c9f53ded484af583e6db380d935e9ff612c2e0f5108cb2ff",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/LatitudePiconeGround.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/LatitudePiconeGround.lean",
+      "original_sha256": "495ae485e7c4bb7cacf3f9247e9b20aeef1b2c7961aa6e6ef99401bb5069d10a",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/OriginalLatitude/AngularComparison.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/AngularComparison.lean",
+      "original_sha256": "f1dfa3bc00b0fd267e09c8848511655a91380909897a309252125bf944cdbcd9",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/OriginalLatitude/EigenbranchParameter.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/EigenbranchParameter.lean",
+      "original_sha256": "b0a1b04741bb81f53662ebb2011ab81f4fb8cb6cf6119bef6ca2af2977b3fd22",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/OriginalLatitude/GroundConcavity.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/GroundConcavity.lean",
+      "original_sha256": "97eb59bb699bc4ef7b86e36993773b0f97eb3f0031656af90ea769ed4d8450ca",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/OriginalLatitude/GroundFlux.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/GroundFlux.lean",
+      "original_sha256": "b494afe8686691d567bf7ae48611ab469656b20dcc8c18261a9e6ae623afa2cc",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/OriginalLatitude/GroundHF.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/GroundHF.lean",
+      "original_sha256": "5925894b2f03308a9ee6fec865e210ed5aaf03ce6564271c53565aef28bb1c3b",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/OriginalLatitude/GroundMoments.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/GroundMoments.lean",
+      "original_sha256": "a4ec8dceb3f86c9da75f8290de6a3965c1edf1fd065f5ecbb0f623aab849014a",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/OriginalLatitude/PhysicalModeDerivatives.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/PhysicalModeDerivatives.lean",
+      "original_sha256": "5d29dcada02b5953742ca41feb3b5c703a3edd2bd8d372b7564dd0ff3ffc6db7",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/OriginalLatitude/RadialPartner.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/RadialPartner.lean",
+      "original_sha256": "8960cfb90a164b6bc1b956aceba093cfbdb285aeb2a2a06f5076b1300c31b490",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/OriginalLatitude/SphereMeasure.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/SphereMeasure.lean",
+      "original_sha256": "b2517f563b1bcb4fbb86c8cf0bb3067a95d0215d10e605a6e35cb780df91fe0e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/RoundSphereCoordinates.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/RoundSphereCoordinates.lean",
+      "original_sha256": "92832da11ea4bde8b43f1bbd7f32f900ebc5be84650a569ba08f476b49de476a",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/RoundSphereFirstEigenspace.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/RoundSphereFirstEigenspace.lean",
+      "original_sha256": "b85258039ad6a5d420117b05d41710a92e642538cc8776548f7b629ac3d50a3f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/RoundSpherePoincare.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/RoundSpherePoincare.lean",
+      "original_sha256": "6cc232b86ea806b44c3d37824f505b635d98ecc31795bdffe40edaf4c640e607",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/RoundSpherePotentialGround.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/RoundSpherePotentialGround.lean",
+      "original_sha256": "304ccda4be9efb7da3c7ac0a4b619bf7283068f25ed60346c69e17e1d23286ee",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/RoundSphereSharpGap.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/RoundSphereSharpGap.lean",
+      "original_sha256": "daaee3355a1b926ce0f6156fe7344a831def791a0fe9d917822cafa6a1a75681",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/Verification.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/Verification.lean",
+      "original_sha256": "61aca33b300568c623b3b11026eab25cc4a0c0a56bc8f8bab12d7ab3f88b5d78",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/WeakH1Completion.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/WeakH1Completion.lean",
+      "original_sha256": "08bf20ea158e1f5b7915fb61a959ae44400e3435ab2b72c7de7d2563e868c688",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433/WeightedSpherePoincare.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433/WeightedSpherePoincare.lean",
+      "original_sha256": "60d277d4c09b0998133898741733d47e6d570ce275110da4abe64ef9dcd36564",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/DFLSphere433.lean",
+      "release_relative_path": "formalization/sphere433/DFLSphere433.lean",
+      "original_sha256": "70e12b4e8acbfd3c8619324626cd19222c08ccb9db91fcd3dba809c747fc461c",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/ActualDriftBaseline.lean",
+      "release_relative_path": "formalization/sphere433/continuation/ActualDriftBaseline.lean",
+      "original_sha256": "fc690c8cc537a4ef40f31047b6f804df5c80a1dc6f6acfd353e8fd0dd8603bfa",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/ActualRadialCandidate.lean",
+      "release_relative_path": "formalization/sphere433/continuation/ActualRadialCandidate.lean",
+      "original_sha256": "a3bedb685f650c9eaf15c253d0efb3bcfe6342f8c9bc59d74eee9d8bf97b98f5",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/ActualTiltProfileWitness.lean",
+      "release_relative_path": "formalization/sphere433/continuation/ActualTiltProfileWitness.lean",
+      "original_sha256": "be16eb06d54b231987647db8dbde42ac0f67f805f4e0b44229e225c4e3cb7364",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/AngularMeanProjection.lean",
+      "release_relative_path": "formalization/sphere433/continuation/AngularMeanProjection.lean",
+      "original_sha256": "1d02acf33a72eccc7b790898b52817ca0122916ac64a5e7fe78c95b4b8d48ce8",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/AuxiliaryRadialSmooth.lean",
+      "release_relative_path": "formalization/sphere433/continuation/AuxiliaryRadialSmooth.lean",
+      "original_sha256": "ccfe84d01895ca8792404eec649fea25d9262031fe15075a38613a3d32aaf65a",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CircleFirstDimension.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CircleFirstDimension.lean",
+      "original_sha256": "f3ee0ba63fdd12b6711b41498d9fbb1736b54cad8d1313e9ee6b02f48474e586",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CircleFirstEigenspace.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CircleFirstEigenspace.lean",
+      "original_sha256": "9c06e8a48d6b4c835c8a5bd8207a81257133080446916f24064660210bce2a9c",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CircleFirstSmoothBasis.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CircleFirstSmoothBasis.lean",
+      "original_sha256": "2dd623e644bff0c0594114ad055afee45c5c90e8d6996386d34283a23ccc2237",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CircleFourierFrequency.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CircleFourierFrequency.lean",
+      "original_sha256": "8881977f564f2c987590ee08d37c9ff88c376207710706068609c986fb430a46",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CircleGapEquality.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CircleGapEquality.lean",
+      "original_sha256": "40303a940524300c0f51d316e5a4c3c4914dbc1c465f92decba71a46f88334cb",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CircleOddEigenvalue.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CircleOddEigenvalue.lean",
+      "original_sha256": "bcda95c0ddfc6b09a9efa3d7212c9de46f654ece2ae11051367e0455ef437e09",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CircleOddGeometry.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CircleOddGeometry.lean",
+      "original_sha256": "f43588bc4ec4fa81385d31aa1819ebb44920b0faf938b351fb607c15729e3281",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CircleOddProfile.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CircleOddProfile.lean",
+      "original_sha256": "609169ab5a690b3ab9d6f4539e7f1ab85d86af18cfb788b7c3dda7deb431b99c",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CircleParity.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CircleParity.lean",
+      "original_sha256": "585438e641a6b62af87b2bea9f20cc1d5e0ca938a78c2c0b6c9420ef765644d4",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CircleRoundMetric.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CircleRoundMetric.lean",
+      "original_sha256": "ca739b6f8d624e864826eb1456e1b5c02a1365cf56eaa6ed74c8e58abc1cc1f2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CircleSpectralLower.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CircleSpectralLower.lean",
+      "original_sha256": "67dc26af6837faf30f5785b79298a8caf356eded4d5744329403dbb30c82e6db",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/ClassicalPotentialWeak.lean",
+      "release_relative_path": "formalization/sphere433/continuation/ClassicalPotentialWeak.lean",
+      "original_sha256": "7c1ce2442ec9662c92cfc0fcc703128e6e920d8f0f26a10fc10ba0e026e189d9",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CompactC2WeakH1.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CompactC2WeakH1.lean",
+      "original_sha256": "4317b4e67eb4246f00d7d2538f8b8d99c8a4a985b65c2f0ebe8c2ff89597fadc",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CompactFirstPositive.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CompactFirstPositive.lean",
+      "original_sha256": "174436f09d018a24e8039ff8fc6536dec546b67d7e769c2103fd92bf7d152db8",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CompactPotentialDomain.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CompactPotentialDomain.lean",
+      "original_sha256": "f190d8b71a1a86af957a6a0f9920deb341399a056476e87a4e041827457ded42",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CompactPotentialFirstPositive.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CompactPotentialFirstPositive.lean",
+      "original_sha256": "bb115d26b5505d2f7c069fa54e36f441fc579841bbfdba093a8be05e0b83793a",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CompactPotentialGround.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CompactPotentialGround.lean",
+      "original_sha256": "a4e60e6a7c9776f77abb1a345f56915af5caeaa431a5fade5157d3c9ceb3bd44",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotAngularCoercivity.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotAngularCoercivity.lean",
+      "original_sha256": "b501fb0875ea8b355730379be50af36b670453c561244e36d56729bb53f7be08",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotAngularDeviationCoercivity.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotAngularDeviationCoercivity.lean",
+      "original_sha256": "71eed21da32f7483dffe0f853edcd58436202c8645bac63a8c9acf524c9af115",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotAngularEquality.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotAngularEquality.lean",
+      "original_sha256": "73d20fb5fa16eaca1890c7cc9b8da07d5ff4ce7b91b7fc28cc45b04f510e84cc",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotAngularPoincare.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotAngularPoincare.lean",
+      "original_sha256": "eb7853c98fc13b4c6e5a6305af0478577ea29cfb093368f8a85f18e7618efa9a",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotAngularProjection.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotAngularProjection.lean",
+      "original_sha256": "ae0fdc32b6fb8c3359760f8afc52ae66b6900633a5f48d1a855ee4902a5f8730",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotScalarCutoff.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotScalarCutoff.lean",
+      "original_sha256": "e9c9208ca05987ad6c52be16b91b015249d2a15f63ee672c9ca3181109907077",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotScalarPicone.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotScalarPicone.lean",
+      "original_sha256": "abe4ad86ee85c2be1080f1427f887320b0c6e6cc09a836c731b01cca2271bc40",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotScalarPiconeEquality.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotScalarPiconeEquality.lean",
+      "original_sha256": "1e5bffcac4fe0f3d8cb3173dce727a21b86eb7d7f46ced111e469f57ffbf5de5",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotSphereBochnerEnergy.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotSphereBochnerEnergy.lean",
+      "original_sha256": "aa614d7e6f6e10010ac196bee33b14774f72b6402c0842c03582d251f8c46839",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotSphereDiffeomorph.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotSphereDiffeomorph.lean",
+      "original_sha256": "a6600611a5835076f6818446eeec4573536932ef583d7a36a63158bed0976bd5",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotSphereDifferential.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotSphereDifferential.lean",
+      "original_sha256": "14d79ea0d95a39352491d4e0e407fdd936b32d1b4395b95d26d729d8dae2da64",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotSphereEnergy.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotSphereEnergy.lean",
+      "original_sha256": "f4ae20e4f96644f1b75be542747182cc2fbd519519a1da331457eed010155e8c",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotSphereFullIntegral.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotSphereFullIntegral.lean",
+      "original_sha256": "7fb5054aadfa1347b323af45281148c5cb1fada603ab198353405974c8eea5f1",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotSphereMetric.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotSphereMetric.lean",
+      "original_sha256": "082a390b3a8a610f9de9042bfab3be0629de6e1ee89395395d243a520a3f28d8",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotSphereVolume.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotSphereVolume.lean",
+      "original_sha256": "93cb8ad48277d23bc2ac82983e4416ea6023d2694c716e1e7c802a99907a9cda",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotTransverseEquality.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotTransverseEquality.lean",
+      "original_sha256": "1095e7dbf898e4a32be8f2c6e2b548bd220764dc14423b314377ac6eaa2acdee",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/CotTransversePiconeLower.lean",
+      "release_relative_path": "formalization/sphere433/continuation/CotTransversePiconeLower.lean",
+      "original_sha256": "73c641e6d92dba102b9d543d8cf5017781039cc305b3f0476a2e4ecf253ed3ec",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/EvenSquareFiniteProfile.lean",
+      "release_relative_path": "formalization/sphere433/continuation/EvenSquareFiniteProfile.lean",
+      "original_sha256": "cd7e10256254e88c2f6648d36796d3c514c5ff17f28e9245debae42b4d69899e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/EvenSquareProfile.lean",
+      "release_relative_path": "formalization/sphere433/continuation/EvenSquareProfile.lean",
+      "original_sha256": "81e223f2c3336d4ad31a9df31fb32bb7b4e6d2f4fcac0829268dc8f31dd75d4d",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/FirstAngularIntegratedEquality.lean",
+      "release_relative_path": "formalization/sphere433/continuation/FirstAngularIntegratedEquality.lean",
+      "original_sha256": "1b55ed1b56186a80d20d9270d472573a2d7b0dccceadaec01ca360b73518cd4d",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/FullSphereFirstLower.lean",
+      "release_relative_path": "formalization/sphere433/continuation/FullSphereFirstLower.lean",
+      "original_sha256": "7c062bfc535256a60bd381754dfdf040351ff8a21bf49165da308a89833e0334",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/FullSphereFirstMeanZero.lean",
+      "release_relative_path": "formalization/sphere433/continuation/FullSphereFirstMeanZero.lean",
+      "original_sha256": "4b9cc16981b17d4b49a57d35208adf76a192dbe08caeb7b73f96ffa64fdfe715",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/GenericRoundPoincare.lean",
+      "release_relative_path": "formalization/sphere433/continuation/GenericRoundPoincare.lean",
+      "original_sha256": "fd886a2ae9cfdf5853bf3f0a5b911fbfb0a1440c77d64240e9baade6c2f1bc7e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/GroundStateContinuity.lean",
+      "release_relative_path": "formalization/sphere433/continuation/GroundStateContinuity.lean",
+      "original_sha256": "11fa80d99d31eaf5e7384d650b1878bceccfb435fc8ef42c23792bb07d5bf9ae",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/HalfDensityEnergy.lean",
+      "release_relative_path": "formalization/sphere433/continuation/HalfDensityEnergy.lean",
+      "original_sha256": "18783ffcb9d33ff19356742c4f225df77a1b3c6e15d51ada9ecaaa1b2f2f599c",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/LatMeasureBochner.lean",
+      "release_relative_path": "formalization/sphere433/continuation/LatMeasureBochner.lean",
+      "original_sha256": "f6d8a5a283a2883e7ed49b7deace044a6635513d863370f43cc88c647793a196",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/LatMeasureIdentity.lean",
+      "release_relative_path": "formalization/sphere433/continuation/LatMeasureIdentity.lean",
+      "original_sha256": "6d77d4287e247e0634a49f1da57530e8fa53272551e3c6a7ec007ae788f2c8bc",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/MeanSphereDomain.lean",
+      "release_relative_path": "formalization/sphere433/continuation/MeanSphereDomain.lean",
+      "original_sha256": "76b7f317146df6e0703458565fe7390b485fc3dc0b6591c1a4007c6f1754a6a0",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/MeanSphereEnergySplit.lean",
+      "release_relative_path": "formalization/sphere433/continuation/MeanSphereEnergySplit.lean",
+      "original_sha256": "e64d4a6f033396b9c95fd83c4314097226b997e3531a13fd37e80d34ce679590",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/MeanSphereNormSplit.lean",
+      "release_relative_path": "formalization/sphere433/continuation/MeanSphereNormSplit.lean",
+      "original_sha256": "c535d155b47325c02dda660718f175cce13681a762be7842d2c3cd08ef4dfbd2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/MeanSpherePoleFamily.lean",
+      "release_relative_path": "formalization/sphere433/continuation/MeanSpherePoleFamily.lean",
+      "original_sha256": "50d02670bbf22ca8a8968fdfb317e0c58437c6298bbb177db714761d561796e2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/NormalizedFirstModeClassification.lean",
+      "release_relative_path": "formalization/sphere433/continuation/NormalizedFirstModeClassification.lean",
+      "original_sha256": "576a1df69d5730a1f2e6e26d823d20473464de1c1919c6aa38b52e70476c7a49",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/NormalizedVMFWeakGap.lean",
+      "release_relative_path": "formalization/sphere433/continuation/NormalizedVMFWeakGap.lean",
+      "original_sha256": "3c06f041f75cb4815e61d1eb6eeb67f86109d32a1b9c0c400199add5a1ec851e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/OriginalTiltEigenspaceSimple.lean",
+      "release_relative_path": "formalization/sphere433/continuation/OriginalTiltEigenspaceSimple.lean",
+      "original_sha256": "6d72a7b1e405f950bc2438764d905297653738b344d9217ec10a4309397fc3cc",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/OriginalTiltGroundExists.lean",
+      "release_relative_path": "formalization/sphere433/continuation/OriginalTiltGroundExists.lean",
+      "original_sha256": "becb26f5d88dd8022a82066c719db0682473b2515498975c1960e328a1814c7b",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/OriginalWeakFirstEquality.lean",
+      "release_relative_path": "formalization/sphere433/continuation/OriginalWeakFirstEquality.lean",
+      "original_sha256": "815b42e631e99221f4944fc74e46b058a66b586a4c40b6703173d4d32637e676",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/OriginalWeightedGround.lean",
+      "release_relative_path": "formalization/sphere433/continuation/OriginalWeightedGround.lean",
+      "original_sha256": "0ebe78d03ea990ee17602094b887c353e5000e37c6c3ea6729b6c53a04b7ad18",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/OriginalWeightedWeakGap.lean",
+      "release_relative_path": "formalization/sphere433/continuation/OriginalWeightedWeakGap.lean",
+      "original_sha256": "6f56c90bd801d9993342eb65a7a61ee16dc69c4411584ac2d45631e87aaff933",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/OrthogonalStationarity.lean",
+      "release_relative_path": "formalization/sphere433/continuation/OrthogonalStationarity.lean",
+      "original_sha256": "6f6ca020ce8377dac768dd7fd96bd84aa38071446049c6a935976b3146e2bb53",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PhysicalDriftFirstPositive.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalDriftFirstPositive.lean",
+      "original_sha256": "f4d07d25533f873943c63d4141f516cf38350150e87c7553891ed474cc5072c8",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PhysicalFirstDimension.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalFirstDimension.lean",
+      "original_sha256": "db19555385826c821537fcb45866de6a9ba956a936a03de78ab2590bab9c3b64",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PhysicalFirstEigenspace.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalFirstEigenspace.lean",
+      "original_sha256": "c8c5417179d4a5d7cf3b94c505dbfc243f73d0e1ee985cdbacfef9f8c79d3bd3",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PhysicalGapEigenComparison.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalGapEigenComparison.lean",
+      "original_sha256": "23593ee9f080bda16c061aecd2afec2bede1f776dc1bfec52794133591c1ce40",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PhysicalGapEven.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalGapEven.lean",
+      "original_sha256": "a4ee647050d7aa23806ddb2b3cc52348b0ea5fd456228ca2cd865fd31598cacb",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PhysicalGapFullDomain.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalGapFullDomain.lean",
+      "original_sha256": "deb47b3ee53cccf04551030a1dda5d238c617d466333384308758c61b098969e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PhysicalGapIdentification.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalGapIdentification.lean",
+      "original_sha256": "adea9fb4d58b9b6df8ecaaac0d04da205cbb0804bf24b131118ffb2f7e4905ee",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PhysicalGapZero.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalGapZero.lean",
+      "original_sha256": "eba3e61226605fbad471fff8c061904495a656a50d31fd88df23f1a3bc87a85f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PhysicalGapZeroExact.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalGapZeroExact.lean",
+      "original_sha256": "feeeec968bd0980a8adf826476cb77c676efb29cb71ee479b3ac7347e96f34c6",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PhysicalHalfDensity.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalHalfDensity.lean",
+      "original_sha256": "263abca13af4511afe036f934ab1eb5221d48bf48062ad3170b30b1e95ce37b3",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PhysicalSphereFiniteProfile.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalSphereFiniteProfile.lean",
+      "original_sha256": "789a1439ebd8d38dbb5a4f6861cd41806b022327c2414c50664e7935613932d2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PhysicalSphereLatitudeProfileC3.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalSphereLatitudeProfileC3.lean",
+      "original_sha256": "9c2c7adf1181dd2aa2394c1fc67304a49498c431a5c4ae4cdd5e9d4494c59423",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PhysicalWeightedFirst.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalWeightedFirst.lean",
+      "original_sha256": "7417f43679c6f1e61e1a32235abe74332c71ad4dfdff70f72644cc19db36caf7",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PhysicalWeightedGap.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalWeightedGap.lean",
+      "original_sha256": "7b34345681a4aaf3915977ee1c66a6bf84a52bc4f6299dcb20b21756ca39ddbe",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PolarRoundMetric.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PolarRoundMetric.lean",
+      "original_sha256": "3a716d16e55013a59cacd06573c819f1f786f2c48255d6e4c97faa405cc2cc3f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PositiveGroundOrthogonal.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PositiveGroundOrthogonal.lean",
+      "original_sha256": "df7e7aa31f9b2151ad9f0ddca7983b72f4b8a0ad1dc8311a220ac7024b5c4151",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PotentialMinimumDependence.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PotentialMinimumDependence.lean",
+      "original_sha256": "fa4ee10b181c6d4407a531ebb93831e9a84c7fade051bff553dce02d6b22bb97",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/PotentialRayleighStationarity.lean",
+      "release_relative_path": "formalization/sphere433/continuation/PotentialRayleighStationarity.lean",
+      "original_sha256": "c2ce10b92e6257d8c9b1410c56a30372a7b5ff2d7061fb9d71ba50a867e639a2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/ProductGradientSlices.lean",
+      "release_relative_path": "formalization/sphere433/continuation/ProductGradientSlices.lean",
+      "original_sha256": "d05d46f85a6c5d42d212b4f3b4a49e4327240a8eee7c71b4e4d0befbc81a1b29",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/RadialEigenvalueLower.lean",
+      "release_relative_path": "formalization/sphere433/continuation/RadialEigenvalueLower.lean",
+      "original_sha256": "9ca4ae4711f7112a76cf2f646541fb8413a2dec1ae5fce5b88823a46bca688a6",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/RoundAngularDeviationPoincare.lean",
+      "release_relative_path": "formalization/sphere433/continuation/RoundAngularDeviationPoincare.lean",
+      "original_sha256": "385068d8cde04638852eeecf9981a1042c0c42c5c2d8c21f9e4f1a1ed2d9303e",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/RoundCirclePoincare.lean",
+      "release_relative_path": "formalization/sphere433/continuation/RoundCirclePoincare.lean",
+      "original_sha256": "241526eae0c852aabae82972f6cde041c0b3870c3ac93c7685915ebf74243dd0",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/RoundCircleSharpGap.lean",
+      "release_relative_path": "formalization/sphere433/continuation/RoundCircleSharpGap.lean",
+      "original_sha256": "1a08fb59cf8c819078dad6469615384b28ed204e862d1837a3a7ea29a889175a",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/RoundPoincareEquality.lean",
+      "release_relative_path": "formalization/sphere433/continuation/RoundPoincareEquality.lean",
+      "original_sha256": "14bc61fffa31c9d4038292167fcc611dcc96bffa5f89d42603f71e06d07cbb4a",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/RoundSphereActualTiltProfile.lean",
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereActualTiltProfile.lean",
+      "original_sha256": "d08679539183813bab97fcef6c39e9ebbc567f74a16bc8be074000b3f57ce6f9",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/RoundSphereFiniteProfile.lean",
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereFiniteProfile.lean",
+      "original_sha256": "47f20a6aabd7b8dbfc5f225d4f67d92a7d2b243054d633ca48fe17a45c862e8d",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/RoundSphereGroundAxisymmetry.lean",
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereGroundAxisymmetry.lean",
+      "original_sha256": "0ccf14b781b595e0538989d8724dd6a54d72458d93022bca6276fbfdb221b7e1",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/RoundSphereGroundDomain.lean",
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereGroundDomain.lean",
+      "original_sha256": "88002a88e921392ceababbf44d5c447b90dd2f64c27777f7678d360d7f2dbb36",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/RoundSphereGroundSymmetry.lean",
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereGroundSymmetry.lean",
+      "original_sha256": "fce6c589c207d7360e81ac8c8ff03eb43b076bdd350d5985a7d01ee511f62023",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/RoundSphereLatitudeOperator.lean",
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereLatitudeOperator.lean",
+      "original_sha256": "127e45cdb6b959c8b79487f3d999a491f1430d0fef7a69848c2d07f44b049576",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/RoundSphereLatitudeProfile.lean",
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereLatitudeProfile.lean",
+      "original_sha256": "c43b1a3008a0fa72e3f63f80e08616b88578c5f5073f5da5f3bc994e1dfb8962",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/RoundSphereLatitudeProfileC3.lean",
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereLatitudeProfileC3.lean",
+      "original_sha256": "5de88275463adc4edaad714e4c15b03878a371a5905674cecbf24aefb926345c",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/RoundSpherePositiveGround.lean",
+      "release_relative_path": "formalization/sphere433/continuation/RoundSpherePositiveGround.lean",
+      "original_sha256": "cb06f0e70efe9021925217fb92c356bc29a1863e8824893f9f654f6533a9600d",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/SeparatedBochnerFubini.lean",
+      "release_relative_path": "formalization/sphere433/continuation/SeparatedBochnerFubini.lean",
+      "original_sha256": "af5752e4c5207689529b4711c0d1e1294918ff27d714a5311fd22e68d9d276b1",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/SeparatedGradient.lean",
+      "release_relative_path": "formalization/sphere433/continuation/SeparatedGradient.lean",
+      "original_sha256": "8029b6ef12dfeb60c769d49e214bcd576ba5de9b022142205e34c904cf9e7efb",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/SeparatedMeanEnergy.lean",
+      "release_relative_path": "formalization/sphere433/continuation/SeparatedMeanEnergy.lean",
+      "original_sha256": "4e0dd0f6ab02fead7f0940fc66eb2d59954744c073010b3167943ff99a17c725",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/SeparatedMeasureFubini.lean",
+      "release_relative_path": "formalization/sphere433/continuation/SeparatedMeasureFubini.lean",
+      "original_sha256": "6de8c027f4e3e0bfbc8c6dd0bf2edaf4c29a3cd0a85684bcab7d47c0e4153d54",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/SmoothAbsoluteH1.lean",
+      "release_relative_path": "formalization/sphere433/continuation/SmoothAbsoluteH1.lean",
+      "original_sha256": "797f4246484c3f6f9d7f20f73a747d3b244c6704a009983f998e4e39b15ba7b1",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/SmoothSchrodingerPositivity.lean",
+      "release_relative_path": "formalization/sphere433/continuation/SmoothSchrodingerPositivity.lean",
+      "original_sha256": "59bf6866a4806f41909909c54596ee3d4bcdab4e4575ee170160159423e8f2f9",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/SphereFirstModeRecovery.lean",
+      "release_relative_path": "formalization/sphere433/continuation/SphereFirstModeRecovery.lean",
+      "original_sha256": "afc353ebcd7d054794592831b8367c1c6d4d4df2c53940231d1b4da4479b2864",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/SphereGroundMoments.lean",
+      "release_relative_path": "formalization/sphere433/continuation/SphereGroundMoments.lean",
+      "original_sha256": "46f1ec2a196557e5ad031919271096651c02b6f40c3d91950641db018d35ce23",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/SphereIsometricCoordinates.lean",
+      "release_relative_path": "formalization/sphere433/continuation/SphereIsometricCoordinates.lean",
+      "original_sha256": "b952d9906205083fa590309920a96290d9be72da1bd9399abd1b60cf9bc4df84",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/SphereStrictMonotonicity.lean",
+      "release_relative_path": "formalization/sphere433/continuation/SphereStrictMonotonicity.lean",
+      "original_sha256": "4ae1c53b376de92d644dbaade40b7a561cc232a4725e9fb17f0dc7ea30229b47",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/SphereWeightedSymmetry.lean",
+      "release_relative_path": "formalization/sphere433/continuation/SphereWeightedSymmetry.lean",
+      "original_sha256": "90703b852d9163c5d194ddb35125e34ed7129e75d1a9330242536b58af0c8f50",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/TiltDriftClassification.lean",
+      "release_relative_path": "formalization/sphere433/continuation/TiltDriftClassification.lean",
+      "original_sha256": "2e0ae231ef5e54b828120d8fec7d5ea3c1e392243df81a5a447eb995ec785809",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/TiltEvenness.lean",
+      "release_relative_path": "formalization/sphere433/continuation/TiltEvenness.lean",
+      "original_sha256": "2b5a9c08c317dfc8aa6063d96fe7216ee36cac2f7a99394ebdf1f903c7e48349",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/TiltHellmannFeynman.lean",
+      "release_relative_path": "formalization/sphere433/continuation/TiltHellmannFeynman.lean",
+      "original_sha256": "f3755357df1588f63f4c91a8d88cdc834ffa959153aec0bd452d391da3927ffe",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/TiltRateContinuity.lean",
+      "release_relative_path": "formalization/sphere433/continuation/TiltRateContinuity.lean",
+      "original_sha256": "1d834af641c30aab24e2fdee8d0c7bfe44726fcac1d37c05b8465f80020509dd",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/TiltStrictConcavity.lean",
+      "release_relative_path": "formalization/sphere433/continuation/TiltStrictConcavity.lean",
+      "original_sha256": "bbdc6ec357db2ec03f1b0e38fcd236a9f3c0145b3b9ea0bb2f41509e20dfd2aa",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/TransverseCommonGround.lean",
+      "release_relative_path": "formalization/sphere433/continuation/TransverseCommonGround.lean",
+      "original_sha256": "0e2acd648fe5f93e7e285477124fc01931a73dae1636b2b3a0a0b78533048246",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/TransverseFirstMinimumUpper.lean",
+      "release_relative_path": "formalization/sphere433/continuation/TransverseFirstMinimumUpper.lean",
+      "original_sha256": "6089cd41aaeadbd99d3953286c67e14d8948dc1e703fd3fdd92b36ab253d6768",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/TransverseModeDimension.lean",
+      "release_relative_path": "formalization/sphere433/continuation/TransverseModeDimension.lean",
+      "original_sha256": "0b022345b1bb813a53dcd6f1e50714bed7a415085fadcc696086cdb978141d73",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/TransverseSmoothGround.lean",
+      "release_relative_path": "formalization/sphere433/continuation/TransverseSmoothGround.lean",
+      "original_sha256": "8ba0fa5173a0e06fb071f61713b1b8a10dbb360ecf45a3a7bd3289bfb61228df",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/TransverseSphereMode.lean",
+      "release_relative_path": "formalization/sphere433/continuation/TransverseSphereMode.lean",
+      "original_sha256": "a5a69c52b37858f694f23f44dbc65b965f7058f30312a1fb62c15da47812b623",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/TransverseWeakH1.lean",
+      "release_relative_path": "formalization/sphere433/continuation/TransverseWeakH1.lean",
+      "original_sha256": "025efa9d7b72e0b55b7777b75a24f67c6403724cc8647771e676380d9d6797d9",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/WarpedProductVolume.lean",
+      "release_relative_path": "formalization/sphere433/continuation/WarpedProductVolume.lean",
+      "original_sha256": "b4c9020cd8954d987ebabefae9636ce66bd199255630b23c2852f6383d4ce8f2",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/WeakFirstEigenspace.lean",
+      "release_relative_path": "formalization/sphere433/continuation/WeakFirstEigenspace.lean",
+      "original_sha256": "01a5c1f21e02603270ab9737702cad8de4031e83482c7121a10220e0f5afbf5f",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/WeakHalfDensityEnergy.lean",
+      "release_relative_path": "formalization/sphere433/continuation/WeakHalfDensityEnergy.lean",
+      "original_sha256": "5e1b7724b3c39d1bf1b95ab76a18e08e12e9b792e04d7bb0a6f50417323208fc",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/WeakPhysicalRepresentative.lean",
+      "release_relative_path": "formalization/sphere433/continuation/WeakPhysicalRepresentative.lean",
+      "original_sha256": "9c83b6610c0e769ae7be9ad38fdec258e34b8bf71fbc5a457eb9551bdf856798",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/WeightedEigenNormalization.lean",
+      "release_relative_path": "formalization/sphere433/continuation/WeightedEigenNormalization.lean",
+      "original_sha256": "64434ce6d5e9b4d7cdfe326780b7977cd0822cacf77a17649a7344ccaa29e7f7",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/WeightedMinimumRegularity.lean",
+      "release_relative_path": "formalization/sphere433/continuation/WeightedMinimumRegularity.lean",
+      "original_sha256": "614ac23563c9dee10091f8a8024b688f92d7d263dfa17c129ff0dd275cc6555a",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation/WeightedWeakH1Gauge.lean",
+      "release_relative_path": "formalization/sphere433/continuation/WeightedWeakH1Gauge.lean",
+      "original_sha256": "55d66b5393c89cd308a82f8e7a394834c249e1ce2ae8770d7992deb3057ff277",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/continuation.lean",
+      "release_relative_path": "formalization/sphere433/continuation.lean",
+      "original_sha256": "54ce22e826b5e198df8ecf981605220d98a42f2dc9febce3493e4f7f36248ab5",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/lake-manifest.json",
+      "release_relative_path": "formalization/sphere433/lake-manifest.json",
+      "original_sha256": "f1d06becd2469ba78a56a832083f466619d970bb3cc0a841a1b9731fb09d4130",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/lakefile.toml",
+      "release_relative_path": "formalization/sphere433/lakefile.toml",
+      "original_sha256": "b9490758a53fff91d31ecf16434915819f7634d72d19734ce6144ac6f3bc9f59",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/lean-toolchain",
+      "release_relative_path": "formalization/sphere433/lean-toolchain",
+      "original_sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "status": "retained_byte_for_byte"
+    },
+    {
+      "project": "sphere433",
+      "original_relative_path": "sphere_lean433/scripts/audit_continuation_closure.py",
+      "release_relative_path": "formalization/sphere433/scripts/audit_continuation_closure.py",
+      "original_sha256": "48a539cfb17c396a04ebcdde4e1307d0a85f97ae653b11994e4b958a52ef7bc0",
+      "status": "retained_byte_for_byte"
+    }
+  ]
+}

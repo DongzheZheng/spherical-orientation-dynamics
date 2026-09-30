@@ -1,0 +1,28 @@
+DFL.GCI.threeD_singular_derivative_integrable :
+  IntervalIntegrable DFL.GCI.threeDSingularDerivative✝ MeasureTheory.volume 0 Real.pi
+DFL.GCI.momentFlux_three_AC (r : ℝ) : AbsolutelyContinuousOnInterval (DFL.GCI.momentFlux 3 r) 0 Real.pi
+DFL.GCI.threeD_remainder_integrable (r : ℝ) (s : DFL.GCI.AngularState) (hs : DFL.GCI.OriginalWeakGCISolution 3 r s) :
+  IntervalIntegrable (fun θ => DFL.GCI.momentRemainderWeight 3 r θ * DFL.GCI.momentPrimitive s θ) MeasureTheory.volume 0
+    Real.pi
+DFL.GCI.threeD_ibp_term_integrable (r : ℝ) (s : DFL.GCI.AngularState) (hs : DFL.GCI.OriginalWeakGCISolution 3 r s) :
+  IntervalIntegrable (fun θ => DFL.GCI.momentIBPWeight 3 r θ * DFL.GCI.momentPrimitive s θ) MeasureTheory.volume 0
+    Real.pi
+DFL.GCI.weak_solution_moment_identity_three (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 3 r s) :
+  DFL.GCI.originalForcingNorm 3 r = 2 * DFL.GCI.originalGCIDenominator 3 r s + r * DFL.GCI.originalGCINumerator 3 r s
+DFL.GCI.weak_solution_moment_identity_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) :
+  DFL.GCI.originalForcingNorm n r =
+    (↑n - 1) * DFL.GCI.originalGCIDenominator n r s + r * DFL.GCI.originalGCINumerator n r s
+DFL.GCI.original_GCI_shift_upper_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : DFL.GCI.originalGCICoefficient n r s ≤ DFL.orientationMean (n + 2) r
+DFL.GCI.original_GCI_strict_upper_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : DFL.GCI.originalGCICoefficient n r s < DFL.orientationMean n r
+'DFL.GCI.threeD_singular_derivative_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.momentFlux_three_AC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.threeD_remainder_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.threeD_ibp_term_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_moment_identity_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_moment_identity_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.original_GCI_shift_upper_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.original_GCI_strict_upper_all' depends on axioms: [propext, Classical.choice, Quot.sound]

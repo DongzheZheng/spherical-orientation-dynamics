@@ -1,0 +1,10 @@
+DFL.Spectral.closedFormSpace_complete (d : ℕ) (r : ℝ) : CompleteSpace (DFL.Spectral.ClosedFormSpace d r)
+'DFL.Spectral.closedFormSpace_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coreGraph_value_norm_sq (d : ℕ) (r : ℝ) (f : DFL.Spectral.SphereC1Core d) :
+  ‖(DFL.Spectral.coreGraph d r f).1‖ ^ 2 = DFL.Spectral.sphereVariance d r (DFL.Spectral.coreValue d f)
+'DFL.Spectral.coreGraph_value_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coreGraph_gradient_norm_sq (d : ℕ) (r : ℝ) (f : DFL.Spectral.SphereC1Core d) :
+  ‖(DFL.Spectral.coreGraph d r f).2‖ ^ 2 = DFL.Spectral.coreEnergy d r f
+'DFL.Spectral.coreGraph_gradient_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.closedFormGap_eq_coreGap (d : ℕ) (r : ℝ) : DFL.Spectral.closedFormGap d r = DFL.Spectral.coreGap d r
+'DFL.Spectral.closedFormGap_eq_coreGap' depends on axioms: [propext, Classical.choice, Quot.sound]

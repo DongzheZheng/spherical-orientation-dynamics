@@ -1,0 +1,123 @@
+DFL.GCI.DFL2015GCIComparison : Prop
+DFL.GCI.OriginalWeakGCISolution (n : ℕ) (r : ℝ) (s : DFL.GCI.AngularState) : Prop
+DFL.GCI.weak_solution_denominator_nonneg (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : 0 ≤ DFL.GCI.originalGCIDenominator n r s
+DFL.GCI.amplitudeOperator_groundFactor (n : ℕ) (r t : ℝ) :
+  DFL.GCI.amplitudeOperatorValue n r t (DFL.GCI.groundFactor n r t) (deriv (DFL.GCI.groundFactor n r) t)
+      (deriv (deriv (DFL.GCI.groundFactor n r)) t) =
+    DFL.GCI.groundFactor n r t * (↑n - 1 + ↑n / (↑n + 1) ^ 2 * r ^ 2 * (1 - t ^ 2))
+DFL.GCI.derivative_equation_of_poisson (n : ℕ) (r t : ℝ) (h0 h1 h2 h3 : ℝ → ℝ) (hd0 : HasDerivAt h0 (h1 t) t)
+  (hd1 : HasDerivAt h1 (h2 t) t) (hd2 : HasDerivAt h2 (h3 t) t)
+  (hpoisson : ∀ (s : ℝ), DFL.GCI.amplitudeOperatorValue n r s (h0 s) (h1 s) (h2 s) = 1) :
+  DFL.GCI.derivativeOperatorValue n r t (h1 t) (h2 t) (h3 t) = -r * h0 t
+DFL.GCI.derivativeOperator_groundFactor (n : ℕ) (r t : ℝ) :
+  DFL.GCI.derivativeOperatorValue n r t (DFL.GCI.derivativeGroundFactor n r t)
+      (deriv (DFL.GCI.derivativeGroundFactor n r) t) (deriv (deriv (DFL.GCI.derivativeGroundFactor n r)) t) =
+    DFL.GCI.derivativeGroundFactor n r t * (2 * ↑n + 3 * ↑n / (↑n + 3) ^ 2 * r ^ 2 * (1 - t ^ 2))
+DFL.GCI.derivativeGround_operator_quotient_pos (n : ℕ) (hn : 2 ≤ n) (r t : ℝ) (ht : t ∈ Set.Icc (-1) 1) :
+  0 < DFL.GCI.derivativeOperatorValue n r t 1 (-(3 * r / (↑n + 3))) ((3 * r / (↑n + 3)) ^ 2)
+DFL.GCI.positiveTestState_mem_energy (n : ℕ) (hn : 2 ≤ n) : DFL.GCI.AngularEnergyDomain n (DFL.GCI.positiveTestState n)
+DFL.GCI.positiveTest_self_energy_integrable (n : ℕ) (hn : 2 ≤ n) (r : ℝ) :
+  IntervalIntegrable
+    (fun θ =>
+      DFL.GCI.angularWeight n r θ *
+        (DFL.GCI.angularDerivative n (DFL.GCI.positiveTestState n) θ *
+            DFL.GCI.angularDerivative n (DFL.GCI.positiveTestState n) θ +
+          DFL.GCI.angularPotential n θ * (DFL.GCI.positiveTestState n).g θ * (DFL.GCI.positiveTestState n).g θ))
+    MeasureTheory.volume 0 Real.pi
+DFL.GCI.weak_solution_denominator_pos (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : 0 < DFL.GCI.originalGCIDenominator n r s
+DFL.GCI.sineTestState_mem_energy (n : ℕ) (hn : 2 ≤ n) : DFL.GCI.AngularEnergyDomain n (DFL.GCI.sineTestState n)
+DFL.GCI.weak_solution_moment_identity_twoD (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) :
+  DFL.GCI.originalForcingNorm 2 r = DFL.GCI.originalGCIDenominator 2 r s + r * DFL.GCI.originalGCINumerator 2 r s
+DFL.GCI.weak_solution_mass_lt_denominator_twoD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) : DFL.GCI.twoDMass r s < DFL.GCI.originalGCIDenominator 2 r s
+DFL.GCI.weak_solution_numerator_pos_twoD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) : 0 < DFL.GCI.originalGCINumerator 2 r s
+DFL.GCI.weak_solution_coefficient_pos_twoD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) : 0 < DFL.GCI.originalGCICoefficient 2 r s
+DFL.GCI.twoDSineEnergy_eq_forcingNorm_add_shiftMoment (r : ℝ) :
+  DFL.GCI.twoDSineEnergy r = DFL.GCI.originalForcingNorm 2 r + r * DFL.GCI.twoDShiftMoment r
+DFL.GCI.weak_solution_energy_cauchy_twoD (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) :
+  DFL.GCI.originalForcingNorm 2 r ^ 2 ≤ DFL.GCI.originalGCIDenominator 2 r s * DFL.GCI.twoDSineEnergy r
+DFL.GCI.weak_solution_coefficient_le_shift_moment_twoD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) :
+  DFL.GCI.originalGCICoefficient 2 r s ≤ DFL.GCI.twoDShiftMoment r / DFL.GCI.originalForcingNorm 2 r
+DFL.GCI.explicit_original_weak_solution_twoD (r : ℝ) (hr : 0 < r) :
+  DFL.GCI.OriginalWeakGCISolution 2 r (DFL.GCI.explicitState r)
+DFL.GCI.weak_solution_g_unique_twoD (r : ℝ) (hr : 0 < r) (s t : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) (ht : DFL.GCI.OriginalWeakGCISolution 2 r t) (θ : ℝ)
+  (hθ : θ ∈ Set.Icc 0 Real.pi) : s.g θ = t.g θ
+DFL.GCI.original_GCI_twoD_exists_unique_positive (r : ℝ) (hr : 0 < r) :
+  ∃ s,
+    DFL.GCI.OriginalWeakGCISolution 2 r s ∧
+      (∀ (v : DFL.GCI.AngularState),
+          DFL.GCI.OriginalWeakGCISolution 2 r v →
+            DFL.GCI.originalGCICoefficient 2 r v = DFL.GCI.originalGCICoefficient 2 r s) ∧
+        0 < DFL.GCI.originalGCIDenominator 2 r s ∧ 0 < DFL.GCI.originalGCICoefficient 2 r s
+DFL.GCI.weak_solution_GCI_comparison_twoD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) :
+  0 < DFL.GCI.originalGCICoefficient 2 r s ∧ DFL.GCI.originalGCICoefficient 2 r s < DFL.orientationMean 2 r
+DFL.GCI.original_GCI_twoD_full_comparison (r : ℝ) (hr : 0 < r) :
+  ∃ s,
+    DFL.GCI.OriginalWeakGCISolution 2 r s ∧
+      (∀ (v : DFL.GCI.AngularState),
+          DFL.GCI.OriginalWeakGCISolution 2 r v →
+            DFL.GCI.originalGCICoefficient 2 r v = DFL.GCI.originalGCICoefficient 2 r s) ∧
+        0 < DFL.GCI.originalGCIDenominator 2 r s ∧
+          0 < DFL.GCI.originalGCICoefficient 2 r s ∧ DFL.GCI.originalGCICoefficient 2 r s < DFL.orientationMean 2 r
+DFL.GCI.weak_solution_energy_cauchy (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (s v : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) (hv : DFL.GCI.AngularEnergyDomain n v)
+  (hvint : IntervalIntegrable (DFL.GCI.formIntegrand n r v v) MeasureTheory.volume 0 Real.pi) :
+  DFL.GCI.originalSourcePairing n r v ^ 2 ≤ DFL.GCI.originalGCIDenominator n r s * DFL.GCI.originalWeakForm n r v v
+DFL.GCI.weak_solution_forcing_energy_cauchy (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) :
+  DFL.GCI.originalForcingNorm n r ^ 2 ≤
+    DFL.GCI.originalGCIDenominator n r s *
+      DFL.GCI.originalWeakForm n r (DFL.GCI.sineTestState n) (DFL.GCI.sineTestState n)
+DFL.GCI.sineTest_self_energy_eq_forcing_add_shift (n : ℕ) (hn : 2 ≤ n) (r : ℝ) :
+  DFL.GCI.originalWeakForm n r (DFL.GCI.sineTestState n) (DFL.GCI.sineTestState n) =
+    (↑n - 1) * DFL.GCI.originalForcingNorm n r + r * DFL.GCI.originalShiftMoment n r
+DFL.GCI.orientationMean_shift_eq_angular_shift_ratio (n : ℕ) (hn : 2 ≤ n) (r : ℝ) :
+  DFL.orientationMean (n + 2) r = DFL.GCI.originalShiftMoment n r / DFL.GCI.originalForcingNorm n r
+DFL.GCI.weak_solution_moment_identity_fourD (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 4 r s) :
+  DFL.GCI.originalForcingNorm 4 r = 3 * DFL.GCI.originalGCIDenominator 4 r s + r * DFL.GCI.originalGCINumerator 4 r s
+DFL.GCI.weak_solution_coefficient_lt_orientation_fourD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 4 r s) : DFL.GCI.originalGCICoefficient 4 r s < DFL.orientationMean 4 r
+DFL.GCI.weak_solution_coefficient_lt_orientation_of_moment (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r)
+  (s : DFL.GCI.AngularState) (hs : DFL.GCI.OriginalWeakGCISolution n r s)
+  (hmoment :
+    DFL.GCI.originalForcingNorm n r =
+      (↑n - 1) * DFL.GCI.originalGCIDenominator n r s + r * DFL.GCI.originalGCINumerator n r s) :
+  DFL.GCI.originalGCICoefficient n r s < DFL.orientationMean n r
+'DFL.GCI.weak_solution_denominator_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.amplitudeOperator_groundFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.derivative_equation_of_poisson' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.derivativeOperator_groundFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.derivativeGround_operator_quotient_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.positiveTestState_mem_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.positiveTest_self_energy_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_denominator_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.sineTestState_mem_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_moment_identity_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_mass_lt_denominator_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_numerator_pos_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_coefficient_pos_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.twoDSineEnergy_eq_forcingNorm_add_shiftMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_energy_cauchy_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_coefficient_le_shift_moment_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.explicit_original_weak_solution_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_g_unique_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.original_GCI_twoD_exists_unique_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_GCI_comparison_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.original_GCI_twoD_full_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_energy_cauchy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_forcing_energy_cauchy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.sineTest_self_energy_eq_forcing_add_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.orientationMean_shift_eq_angular_shift_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_moment_identity_fourD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_coefficient_lt_orientation_fourD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.weak_solution_coefficient_lt_orientation_of_moment' depends on axioms: [propext, Classical.choice, Quot.sound]

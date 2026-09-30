@@ -1,0 +1,3 @@
+import DFL.Probability.SymmetricTailUniqueness
+
+#print axioms DFL.Probability.eq_of_symmetric_nonnegative_tails

@@ -1,0 +1,12 @@
+DFL.Geometry.sphereMomentBridge_three_of_coordinateLaw
+  (hLaw :
+    DFL.Geometry.coordinateLaw 3 DFL.Geometry.three_pos✝ =
+      ENNReal.ofReal (2 * Real.pi) • MeasureTheory.volume.restrict (Set.Icc (-1) 1)) :
+  DFL.Geometry.SphereMomentBridge 3 DFL.Geometry.three_pos✝¹
+'DFL.Geometry.sphereMomentBridge_three_of_coordinateLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphere_isUnimodal_three_of_coordinateLaw
+  (hLaw :
+    DFL.Geometry.coordinateLaw 3 DFL.Geometry.three_pos✝ =
+      ENNReal.ofReal (2 * Real.pi) • MeasureTheory.volume.restrict (Set.Icc (-1) 1)) :
+  DFL.Geometry.SphereIsUnimodal 3 DFL.Geometry.three_pos✝¹
+'DFL.Geometry.sphere_isUnimodal_three_of_coordinateLaw' depends on axioms: [propext, Classical.choice, Quot.sound]

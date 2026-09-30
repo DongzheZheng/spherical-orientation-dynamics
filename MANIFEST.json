@@ -1,0 +1,3859 @@
+{
+  "schema_version": 1,
+  "title": "Spectral Gap, Hysteresis, and Macroscopic Propagation of the Spherical Orientation Model",
+  "repository_name": "spherical-orientation-dynamics",
+  "snapshot_date": "2026-09-30",
+  "file_count": 769,
+  "total_bytes": 7662541,
+  "excluded_from_self_hashing": [
+    "MANIFEST.json",
+    "SHA256SUMS"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 95,
+      "sha256": "380692052f2a361ed933b426e0e814dfd63c49814d462b61e97f36e4d36fa2d4"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 132,
+      "sha256": "ea2e63b88411b59d64f7479d3934322a7a847605707e0fe131352c6ea49f375f"
+    },
+    {
+      "path": "CITATION.md",
+      "bytes": 310,
+      "sha256": "2d0616e1b73eef43470314ec99881cff708db273257d7ce8485ab665175fd6ce"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3645,
+      "sha256": "547a58d47a11b0e9f00a9c1c708c7f453af797c294db546efa45cee4b2961d6d"
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "bytes": 3114,
+      "sha256": "8ba239f0ba5eba6c095e2d7d15a958ad7c7e650371671ef4c3b54327a65c061d"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 206,
+      "sha256": "60771407a3b973882757a60ced66794831b056be4051b6f9689b2938bd17374f"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 1484,
+      "sha256": "aefaedaca2a7c455cc7ef97685816b0271babc342bb74810530c0fc9150883fe"
+    },
+    {
+      "path": "docs/SCIENCE.md",
+      "bytes": 3955,
+      "sha256": "14ec031835a58b3e601ac61b71585e77a5ee2f315f8135b84c8a220243daa84f"
+    },
+    {
+      "path": "docs/record_metadata.json",
+      "bytes": 784,
+      "sha256": "4c69e35c9320f7e70b61b22610d9560d20d8c4d3f6bdd386470d9ddf49727f83"
+    },
+    {
+      "path": "evidence/formalization/README.md",
+      "bytes": 2840,
+      "sha256": "2b5a6fcc9b60d0f96baba9f3b575346640c043f6f73b2bddba72c39be5d28602"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/SHA256SUMS",
+      "bytes": 21970,
+      "sha256": "a8fdb01743ccbbf3e9c543dcb558edd5be097782d650018a3d8170a5d3046eb2"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/continuation-audit.log",
+      "bytes": 17033,
+      "sha256": "ffdebad873b8b3307b20a7956dc93050fdfc3585cfa02da85075212c37908a36"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/declaration-audit.log",
+      "bytes": 35522,
+      "sha256": "ce7e71140b0ce0abc5c281d52cd12a26c80fc0c0d1d859826158f0e3dd42462d"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/kernel_audit_summary.json",
+      "bytes": 30772,
+      "sha256": "25618c4b36bfaf262ea3ea51b50fd692e0be36da3477bf35bff087257ee6418b"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/lake-build.log",
+      "bytes": 47215,
+      "sha256": "7c5f7a9a9f7091947cb26b4d48f52d009bee6e4092c4a8704688a8f5a64ec7f3"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/lean-version.log",
+      "bytes": 106,
+      "sha256": "ac621a3ad32f6ec6565dfbd280c238851658a370c170ad3a695571907d1a90f4"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/log_provenance.json",
+      "bytes": 29128,
+      "sha256": "c88e8e2c1e83d27e1cd848576b989d2b29f37a8221bff856dbbac8bb0aca9423"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/mathlib-revision.log",
+      "bytes": 49,
+      "sha256": "c68c6ea16ceb73d8414bdc4f0963effb2062349960620c8030708ac70d821193"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/source_correspondence.json",
+      "bytes": 37466,
+      "sha256": "3ba01e531ba8826a45108307b51c749acd9a87ac3fcc5dccf1cf6dde562bdf96"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-source-build.log",
+      "bytes": 45113,
+      "sha256": "f3f0d4acb528fcdd8d72c4fd25ceff3daa8dc3cb05b2576c49ba9145861b9298"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularBarrier2D.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularCauchy2D.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularEnergy.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularEnergyCauchy.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularMassCauchy3D.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularMassCauchyAll.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularMoment2D.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularMoment4D.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularMomentAll.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularMomentAllAudit.log",
+      "bytes": 2530,
+      "sha256": "6db67c7f77bb6b35ebc1d00992c0eb30ff07404c01f190b5fd4dea246f7d2710"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularMomentGeneral.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularMomentGeneralAudit.log",
+      "bytes": 1065,
+      "sha256": "27df2d66661631d1d517c5a470e815ce83e1dcf8463f7fe3a44b804be04b5a52"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularMomentThree.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularMomentThreeBridge.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularPolarization.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularShiftMoment.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularShiftMoment2D.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularSineEnergy.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularSineTest.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularSpectral2D.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularSpectralAll.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularTest.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/AngularUpper2D.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/Audit.log",
+      "bytes": 10385,
+      "sha256": "0b61be88a479f094fc77f53a3ae018f899185102ac9f65c804eeccf58cd3ef58"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/ClassicalComparisonAll.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/ClassicalEnergyDomainBridge.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/ClassicalH10Closure.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/CoefficientUniquenessAll.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/ComparisonAll.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/ComparisonFourUpper.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/ComparisonGenericGeFour.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/ComparisonGenericUpper.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/ComparisonTwoD.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/DerivativeEquation.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/DirichletGraph.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/DirichletWeakDerivative.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/EnergyDomainIntegrability.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/EnergyDomainLinear.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/ExplicitSolution2D.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/GraphDomainBridge.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/GraphLaxMilgram.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/GraphPhysicalForm.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/GroundState.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/IntegralPrimitiveL2.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/InteriorSmoothDensity.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/OriginalExistenceAll.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/OriginalTarget.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/OriginalUniquenessAll.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/PhysicalComparisonTwoD.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/PositiveThreeBridge.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/PositiveTwoD.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/SingularCotangentIBP.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/SqrtSinFlux.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/StrictShiftAll.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/StrictShiftTwoD.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/ThreeDGroundBarrier.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/WeakDerivativeConstant.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/WeakDerivativePrimitive.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/GCI/ZeroMeanSmoothDensity.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/Audit.log",
+      "bytes": 2067,
+      "sha256": "0fa4891ea98eb6514486372fce719148ff2ccd97e354d3f94db907e7af3057ff"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/CapSymmetryThree.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/CapToLaw.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/CircleCDFSource.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/CircleCapScalar.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/CircleCapVolume.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/CircleLawFull.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/CircleLawFullAudit.log",
+      "bytes": 113,
+      "sha256": "49f9bb3bcf920a00693bb97cee473d05bba5bbfe6062e304276b368f16adf012"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/CircleLawSource.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/CircleMeasureTBasic.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/CircleSqrtIntegral.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/CircleTargetCDF.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/CircleTargetLower.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/ConeCapScalar.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/ConeCapThree.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/LawThree.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/LawThreeBoundary.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/LawThreeFull.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/LawThreeFullAudit.log",
+      "bytes": 302,
+      "sha256": "9cf75a26167eb575b6a6d3359c08ce194d252f79532c12907d1e39378125df48"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/LawThreeTarget.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/MomentBridge.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/MomentBridgeSucc.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/MomentBridgeSuccAudit.log",
+      "bytes": 220,
+      "sha256": "7cda329a6f523c933f35971cdf274b564c1a657e895d6e3882b3d37372d5023d"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/MomentBridgeThree.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/MomentBridgeThreeAudit.log",
+      "bytes": 786,
+      "sha256": "a410c779bc49dc0b5da1a30a5f6dff65b479c9ee2b009602733825d396d089e7"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/MomentBridgeTwo.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/PhysicalSphereAll.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/PhysicalSphereThree.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/PhysicalSphereThreeAudit.log",
+      "bytes": 1340,
+      "sha256": "99d5b2618a69dd36d603d097ccea12775e6d5d009d8d4f21419d74ed5860a1d7"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/PhysicalSphereTwo.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/PhysicalSphereTwoAudit.log",
+      "bytes": 296,
+      "sha256": "e306941ec60275a614e13d0fb46ffa6e4b1680410358d94d1cb0b7dc997d89e6"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SphereMeasure.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccBetaMeasure.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccBetaSymmetry.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccCapAudit.log",
+      "bytes": 664,
+      "sha256": "f5e48bbcb2d04fb19e547e108b2860e7a895231ef500df817e3e611bc3f3d06a"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccCapBeta.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccCapBetaAudit.log",
+      "bytes": 201,
+      "sha256": "1c727605239745e65ff51638c162fc74d2206e2224969b7c29c6e25ff53a1295"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccCapFubini.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccCapReal.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccCapSections.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccCapSliceFormula.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccCapSymmetry.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccEquatorNull.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccEquatorNullAudit.log",
+      "bytes": 677,
+      "sha256": "1294bc62abe125c862be7652fab54eefdf12a4b74f1a0e220f294ec6b2fafcc6"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccLawFull.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccLawFullAudit.log",
+      "bytes": 106,
+      "sha256": "2ca871af9c7a959a38313b645b1f62e0690915bc7e89833086d2c016f75ffd93"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccLawSymmetry.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/SuccSplit.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/ThreeFubini.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/ThreeSections.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/ThreeSplit.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Geometry/ThreeVolume.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/Conjecture.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/Crossing.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/DimensionShift.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/Elasticity.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/ElasticityODE.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/Feedback.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/FeedbackDerivative.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/HighFieldWitness.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/Marginal.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/MarginalDerivative.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/MeanEndpoints.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/MeanLinearBound.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/MeanSmallField.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/MomentDerivative.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/MomentRecurrence.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/NondegenerateFold.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/OriginalCrossing.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/OriginalRiccati.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/OriginalTrajectory.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/PositiveRoot.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/SmallFieldSign.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/TargetBridge.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/UnimodalFromSigns.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/ZeroDirection.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/ZeroDirectionBridge.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/ZeroDirectionODE.log",
+      "bytes": 299,
+      "sha256": "e345f8a3612ed06a1c3c49ade2cfb8ecbe9f17dc58767324d4c98e499bf6d164"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Hysteresis/ZeroDirectionOnTrajectory.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Probability/EnergyResponse.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Probability/PiconeAC.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Probability/PiconeAudit.log",
+      "bytes": 2142,
+      "sha256": "a853c7ef1318112514a50c06d6acf3370bc6b725fd73e6912cbc5e8cf4e5bc08"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Probability/PositiveTailAtZero.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Probability/ReverseCovariance.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Probability/SymmetricTailUniqueness.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Probability/SymmetricTailUniquenessAudit.log",
+      "bytes": 111,
+      "sha256": "40a0e58d1a477ee1a1b184aeb3888c51aec7da83861c67bc5180e61a8714d89d"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/AngularComparison.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/Audit.log",
+      "bytes": 6416,
+      "sha256": "e360b88bd9076390708e4638c544ab4704a1e09b6f75c2673678a5eb2c89ea0a"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/ClosedFormGap.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/ClosedFormGapAudit.log",
+      "bytes": 998,
+      "sha256": "1c71f4a0ae29f900bef88801af4870ccc8d0b43e84c23fee8272ee57f675feb4"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/ClosedFormGraph.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/ClosedFormHilbertBridges.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/ClosedFormLinear.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/ContinuationAudit.log",
+      "bytes": 1677,
+      "sha256": "749dbf962e18a69e4694628df0cbe315747a92f8370f03888e115dab5b09f910"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/CoordinateTrial.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/CoreCoordinate.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/EigenbranchParameter.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/GroundConcavity.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/GroundFlux.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/GroundHF.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/GroundMoments.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/PhysicalLatitudeCore.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/PhysicalModeDerivatives.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/PhysicalTransverseCore.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/RadialPartner.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/RayleighDenominator.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/SphereMeasure.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/SphereOrthogonal.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/SphereSymmetry.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/WeightedMeasureComparison.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/WeightedMeasureComparisonAudit.log",
+      "bytes": 380,
+      "sha256": "e010d92339e5db3e8476a3b6f4ea2f015c47dc7e2bb60ae29ef98414023dc988"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/WholeSphereCore.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/WholeSphereCoreAudit.log",
+      "bytes": 4059,
+      "sha256": "1135ab1485648ca03d4b972975cd6531a0a6729a6dfb7f474c27326baeab3db9"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/WholeSphereGap.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Spectral/ZeroFieldMoments.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/strict-sources/DFL/Targets.log",
+      "bytes": 79,
+      "sha256": "a04a3873c34125549ad6aebb935d29e225424bd2b9c007b3d95b961155478629"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/verification-complete.log",
+      "bytes": 198,
+      "sha256": "46cc5ea1ddbcd4e75e852618c77f2910d977889518ffcba1033da6081336bea8"
+    },
+    {
+      "path": "evidence/formalization/dfl2015/verification.json",
+      "bytes": 497,
+      "sha256": "2b9440ef3b3c038320fbd6983f272739905cecc24d7deb94e9c2ff6cb21fc998"
+    },
+    {
+      "path": "evidence/formalization/sphere433/SHA256SUMS",
+      "bytes": 19642,
+      "sha256": "c7bd1b1c5c32d005fdb17f82251c5e003db0d789ca5d694b40be64a8cb28634f"
+    },
+    {
+      "path": "evidence/formalization/sphere433/build.log",
+      "bytes": 360930,
+      "sha256": "7cca1829b196c22b61b92d99efce4a7a93b693a01e2330a7d5c864c2c1b9381e"
+    },
+    {
+      "path": "evidence/formalization/sphere433/environment.log",
+      "bytes": 265,
+      "sha256": "872362f82bd4565db9b27d86e161135213eb63f811140737a52f7b43f0838975"
+    },
+    {
+      "path": "evidence/formalization/sphere433/kernel_audit_summary.json",
+      "bytes": 218,
+      "sha256": "ffff27b354c8f115e2e6d20ec4f2a62f258f0443dcfdc5060e903cfe8c4974a1"
+    },
+    {
+      "path": "evidence/formalization/sphere433/log_provenance.json",
+      "bytes": 26627,
+      "sha256": "b60f400258d7ef678d7c46a9d1c75b9e221025ff5459de68edc3f925398e4dd6"
+    },
+    {
+      "path": "evidence/formalization/sphere433/public-kernel-dependencies.log",
+      "bytes": 234428,
+      "sha256": "15981d2d14ad2ae132c4c8493b87fa0ff73c5b3b404373d6d11dbfeaf15bf903"
+    },
+    {
+      "path": "evidence/formalization/sphere433/source-closure-summary.log",
+      "bytes": 7299,
+      "sha256": "5f8b6ada0aef1b7c825d7d9216e1e7cac4aeafc17560a753ce00afc2db89dc2a"
+    },
+    {
+      "path": "evidence/formalization/sphere433/source-closure.json",
+      "bytes": 199284,
+      "sha256": "883e81c1e5cf0a66e9e1dd2e8bb06f234c28178e47e1f3c6c53ab886c80d94b1"
+    },
+    {
+      "path": "evidence/formalization/sphere433/source_correspondence.json",
+      "bytes": 32590,
+      "sha256": "8cc4e019a9c0f2236ac4dacd6043d857394ab2845efb0fdc5057e99e6d8b9a36"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__CompactFormGround.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__ContinuationVerification.lean.log",
+      "bytes": 234428,
+      "sha256": "15981d2d14ad2ae132c4c8493b87fa0ff73c5b3b404373d6d11dbfeaf15bf903"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__H1ClosabilityAudit.lean.log",
+      "bytes": 190,
+      "sha256": "d975e8d938a77433308dc8d039a60a2549cc06584eea49107726cba109adc96d"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__H1SpectralPoincare.lean.log",
+      "bytes": 190,
+      "sha256": "f5d13611a7234d5fa30bb096f39dd36830f76f4388c9fa8ef6af750e9a938c51"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__LatitudePiconeGround.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__OriginalLatitude__AngularComparison.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__OriginalLatitude__EigenbranchParameter.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__OriginalLatitude__GroundConcavity.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__OriginalLatitude__GroundFlux.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__OriginalLatitude__GroundHF.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__OriginalLatitude__GroundMoments.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__OriginalLatitude__PhysicalModeDerivatives.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__OriginalLatitude__RadialPartner.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__OriginalLatitude__SphereMeasure.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__RoundSphereCoordinates.lean.log",
+      "bytes": 564,
+      "sha256": "8242e1c224fbd77cf263ffe3f11d986b8a42f52bbcc481ee04d9cec8f7692c88"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__RoundSphereFirstEigenspace.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__RoundSpherePoincare.lean.log",
+      "bytes": 177,
+      "sha256": "6c47aa73694bab15984c231b03703e383b20f069afc1025ba984ee8250adb477"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__RoundSpherePotentialGround.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__RoundSphereSharpGap.lean.log",
+      "bytes": 534,
+      "sha256": "149f4931ed26231bccf90e47d3660f49f1008a3ba57bf2b9a82d34119fead982"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__Verification.lean.log",
+      "bytes": 8536,
+      "sha256": "fc5889dd2ec8737b5b1dabea9f8b08d3eab37a90db75617ce4200ef32210d459"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__WeakH1Completion.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433__WeightedSpherePoincare.lean.log",
+      "bytes": 1042,
+      "sha256": "79d541fb92483c0300dbc66f28b7ab75f1f3b3b268c21761094a0dd697487956"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__ActualDriftBaseline.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__ActualRadialCandidate.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__ActualTiltProfileWitness.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__AngularMeanProjection.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__AuxiliaryRadialSmooth.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CircleFirstDimension.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CircleFirstEigenspace.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CircleFirstSmoothBasis.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CircleFourierFrequency.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CircleGapEquality.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CircleOddEigenvalue.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CircleOddGeometry.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CircleOddProfile.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CircleParity.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CircleRoundMetric.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CircleSpectralLower.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__ClassicalPotentialWeak.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CompactC2WeakH1.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CompactFirstPositive.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CompactPotentialDomain.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CompactPotentialFirstPositive.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CompactPotentialGround.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotAngularCoercivity.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotAngularDeviationCoercivity.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotAngularEquality.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotAngularPoincare.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotAngularProjection.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotScalarCutoff.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotScalarPicone.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotScalarPiconeEquality.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotSphereBochnerEnergy.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotSphereDiffeomorph.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotSphereDifferential.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotSphereEnergy.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotSphereFullIntegral.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotSphereMetric.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotSphereVolume.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotTransverseEquality.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__CotTransversePiconeLower.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__EvenSquareFiniteProfile.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__EvenSquareProfile.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__FirstAngularIntegratedEquality.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__FullSphereFirstLower.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__FullSphereFirstMeanZero.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__GenericRoundPoincare.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__GroundStateContinuity.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__HalfDensityEnergy.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__LatMeasureBochner.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__LatMeasureIdentity.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__MeanSphereDomain.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__MeanSphereEnergySplit.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__MeanSphereNormSplit.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__MeanSpherePoleFamily.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__NormalizedFirstModeClassification.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__NormalizedVMFWeakGap.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__OriginalTiltEigenspaceSimple.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__OriginalTiltGroundExists.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__OriginalWeakFirstEquality.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__OriginalWeightedGround.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__OriginalWeightedWeakGap.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__OrthogonalStationarity.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PhysicalDriftFirstPositive.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PhysicalFirstDimension.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PhysicalFirstEigenspace.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PhysicalGapEigenComparison.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PhysicalGapEven.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PhysicalGapFullDomain.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PhysicalGapIdentification.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PhysicalGapZero.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PhysicalGapZeroExact.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PhysicalHalfDensity.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PhysicalSphereFiniteProfile.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PhysicalSphereLatitudeProfileC3.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PhysicalWeightedFirst.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PhysicalWeightedGap.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PolarRoundMetric.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PositiveGroundOrthogonal.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PotentialMinimumDependence.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__PotentialRayleighStationarity.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__ProductGradientSlices.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__RadialEigenvalueLower.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__RoundAngularDeviationPoincare.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__RoundCirclePoincare.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__RoundCircleSharpGap.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__RoundPoincareEquality.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__RoundSphereActualTiltProfile.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__RoundSphereFiniteProfile.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__RoundSphereGroundAxisymmetry.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__RoundSphereGroundDomain.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__RoundSphereGroundSymmetry.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__RoundSphereLatitudeOperator.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__RoundSphereLatitudeProfile.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__RoundSphereLatitudeProfileC3.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__RoundSpherePositiveGround.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__SeparatedBochnerFubini.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__SeparatedGradient.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__SeparatedMeanEnergy.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__SeparatedMeasureFubini.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__SmoothAbsoluteH1.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__SmoothSchrodingerPositivity.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__SphereFirstModeRecovery.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__SphereGroundMoments.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__SphereIsometricCoordinates.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__SphereStrictMonotonicity.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__SphereWeightedSymmetry.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__TiltDriftClassification.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__TiltEvenness.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__TiltHellmannFeynman.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__TiltRateContinuity.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__TiltStrictConcavity.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__TransverseCommonGround.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__TransverseFirstMinimumUpper.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__TransverseModeDimension.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__TransverseSmoothGround.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__TransverseSphereMode.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__TransverseWeakH1.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__WarpedProductVolume.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__WeakFirstEigenspace.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__WeakHalfDensityEnergy.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__WeakPhysicalRepresentative.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__WeightedEigenNormalization.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__WeightedMinimumRegularity.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources/continuation__WeightedWeakH1Gauge.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict-sources.txt",
+      "bytes": 5966,
+      "sha256": "9d6b3c9560a5a72706ac9dc064430fa67e849388e018b23754c8e351f308f05f"
+    },
+    {
+      "path": "evidence/formalization/sphere433/strict.log",
+      "bytes": 252656,
+      "sha256": "5fcba79d314b359fdb70ed5f626857027fc666766ce14a6436f66a55044ac2a8"
+    },
+    {
+      "path": "evidence/formalization/sphere433/upstream-tracked-diff.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/formalization/sphere433/verification.json",
+      "bytes": 643,
+      "sha256": "b0d9920afb8f42d6dd07fd0152029b0415fe11a8512c27c985162f526c6c9a48"
+    },
+    {
+      "path": "evidence/formalization/verification.json",
+      "bytes": 1498,
+      "sha256": "1b9d399ed410b9f033c13f4957e12316178c35de3ef21988759b63af07a074de"
+    },
+    {
+      "path": "evidence/numerics/README.md",
+      "bytes": 934,
+      "sha256": "b403f5166691959376a4d7e761a6a5212c6f4d0d7caa767ab1ecb7b1dd6fc915"
+    },
+    {
+      "path": "evidence/numerics/figure_validation.json",
+      "bytes": 1549,
+      "sha256": "f5f4b7446704e5d83f936e23ca9a91e2d84d317c5c2eb944de2d3d76311cd6d8"
+    },
+    {
+      "path": "evidence/numerics/reference_comparison.json",
+      "bytes": 3558,
+      "sha256": "a5b53cccb6a52871d051fec3d67364b7cfa2926c47bb11526cef25aa0aa9e0cb"
+    },
+    {
+      "path": "evidence/numerics/runner_reference_comparison.json",
+      "bytes": 3558,
+      "sha256": "a5b53cccb6a52871d051fec3d67364b7cfa2926c47bb11526cef25aa0aa9e0cb"
+    },
+    {
+      "path": "evidence/numerics/runner_validation.json",
+      "bytes": 639,
+      "sha256": "863b80ee0e1464debc1050c6a0982a902cebbe91a71543a65a88b74c7c753387"
+    },
+    {
+      "path": "evidence/numerics/suite_validation_portable.json",
+      "bytes": 956,
+      "sha256": "ea1ed42445909e8f9100399220f2602c11ad4533023b7e294ee311efd7e2a8d0"
+    },
+    {
+      "path": "evidence/release_checks.json",
+      "bytes": 181,
+      "sha256": "bd71b8f1502700ea4aea51172e1bde67496a7b774db51427b57eaf1634b81fd3"
+    },
+    {
+      "path": "figures/README.md",
+      "bytes": 2020,
+      "sha256": "ad6b41762169c759969cf74eabeabedb034a21ead8186be85da0d4fa42d9ca29"
+    },
+    {
+      "path": "figures/preview/energy_landscape_3d.png",
+      "bytes": 288873,
+      "sha256": "a0a57acd254439f64fa7703844bed8d88eecf4fd020cfafc2f2f3d940b4be958"
+    },
+    {
+      "path": "figures/preview/physical_mechanism.png",
+      "bytes": 162106,
+      "sha256": "07ac431dfaa4acb98677397ad1825990ac33e3d40e254dcdd7a8cac966e80ee4"
+    },
+    {
+      "path": "figures/reference/energy_landscape_3d.pdf",
+      "bytes": 1125028,
+      "sha256": "7676f8ce25e9b02cedb912a55ef322905b03a5179a8c1cff725b822200349c09"
+    },
+    {
+      "path": "figures/reference/fold.pdf",
+      "bytes": 71788,
+      "sha256": "b38d52e36706b79b93792fe172eae15fb2912526f5a17c29931ce6e3329e47b8"
+    },
+    {
+      "path": "figures/reference/fold_angle_wedge.pdf",
+      "bytes": 71780,
+      "sha256": "df38a2bfa7fc37e78a4da70e1a9e920e6c4c35c76a597ffeb303e7625bef1021"
+    },
+    {
+      "path": "figures/reference/gci_symbol.pdf",
+      "bytes": 64665,
+      "sha256": "ee7e363822015ea2e6992b17392b0c19ddc727857ce6c3f3da9a58baed640311"
+    },
+    {
+      "path": "figures/reference/noise_phase_map.pdf",
+      "bytes": 78383,
+      "sha256": "96c3aeb2073f2b5cf8aea739eba23f60f7ba47711a44252e2e14c0fa5c473d50"
+    },
+    {
+      "path": "figures/reference/orientation_sphere.pdf",
+      "bytes": 655585,
+      "sha256": "23a73b306a6cc517a9ca43bd282c8cb13b265198f9ce8bd777afeb1a81f41af0"
+    },
+    {
+      "path": "figures/reference/phase_landscape.pdf",
+      "bytes": 105851,
+      "sha256": "84c7df7386164a1bb9e32bb2cc089143861543073be439e1172f60562bb41c4b"
+    },
+    {
+      "path": "figures/reference/physical_mechanism.pdf",
+      "bytes": 116156,
+      "sha256": "7042131c0902dc1e677de6b723add4d311dea5c80d15ba916ef1e525b767fc4b"
+    },
+    {
+      "path": "figures/reference/quench_dynamics.pdf",
+      "bytes": 116621,
+      "sha256": "43bed4ca2c29c3c4e4786ed222743536d284360d325a90c9d1d35dc3841dc0a3"
+    },
+    {
+      "path": "figures/reference/slow_rate.pdf",
+      "bytes": 52719,
+      "sha256": "edae4bf5866731b173e8189b7cc79565eeaf9de5f044db1085620d83a3f73baa"
+    },
+    {
+      "path": "figures/reference/spectrum.pdf",
+      "bytes": 45885,
+      "sha256": "ef7cf419cc19e8713f5e5ca7aaafe9e3710f1d954bec8bffbb5c90bd540a5312"
+    },
+    {
+      "path": "figures/reference/transport_atlas.pdf",
+      "bytes": 105687,
+      "sha256": "106f392212ae3daea1db0d296ddcea7fdd59825ef2d20d3b009c385abd9caf3f"
+    },
+    {
+      "path": "figures/source/fold.tex",
+      "bytes": 1552,
+      "sha256": "93b1e053715262e2261e1cdf07c733d5b2db6f0ed11dbabe92c446214f8f868c"
+    },
+    {
+      "path": "figures/source/fold_angle_wedge.tex",
+      "bytes": 1557,
+      "sha256": "38707c82632c7cb1e1654b28bf61949ccf2584b98bc6a9837fd5430e5b8f04e5"
+    },
+    {
+      "path": "figures/source/gci_symbol.tex",
+      "bytes": 1572,
+      "sha256": "a69afec2fd0e658abd7f804a2fffabc47f2fe1c29b6000901c045d40aa001851"
+    },
+    {
+      "path": "figures/source/noise_phase_map.tex",
+      "bytes": 2206,
+      "sha256": "7963556d67eac9c36c45f1ace9b621a7cd293884be854ee2d9543827bb4b20b5"
+    },
+    {
+      "path": "figures/source/phase_landscape.tex",
+      "bytes": 3565,
+      "sha256": "9b6c3ec06355c0cb9e3ae32e0c01f6f9f261a9c687c8a74b77e8ae74b4f871ea"
+    },
+    {
+      "path": "figures/source/physical_mechanism.tex",
+      "bytes": 6559,
+      "sha256": "5e181a9510e4b58c66948237c3af1549419f5a1c4f2ab9bc4cfdaf52db374e0f"
+    },
+    {
+      "path": "figures/source/quench_dynamics.tex",
+      "bytes": 3352,
+      "sha256": "3975aae6e8d6186ec09d5c70cbcd73be0a4afefd6f829723a644177bfa286462"
+    },
+    {
+      "path": "figures/source/slow_rate.tex",
+      "bytes": 1377,
+      "sha256": "f9ed3bf3caabb247f3fbadcae9d753edf04d6012d0b8225d7faf0721cae9a3d3"
+    },
+    {
+      "path": "figures/source/spectrum.tex",
+      "bytes": 1172,
+      "sha256": "151080ee51500a4854e4c2b973fee1bd15c7858b4607de351dbcc5585a4dc017"
+    },
+    {
+      "path": "figures/source/transport_atlas.tex",
+      "bytes": 2519,
+      "sha256": "10fa4e79824b7fd9d45e41b8b3df8ab7fb47c839e682156f6db7e72eb3cf1617"
+    },
+    {
+      "path": "formalization/README.md",
+      "bytes": 2850,
+      "sha256": "27617a5caf9e6d4fc04d7c78ac5c38076b739bbf8db39bcb5949e2ce09cca134"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularBarrier2D.lean",
+      "bytes": 10688,
+      "sha256": "11d5b8a3731b17557b354d34ec45e6a42942c22831d0a459d208d5481fd20d2d"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularCauchy2D.lean",
+      "bytes": 4927,
+      "sha256": "50164f48b5b9840c2d2219d2341431be59631588777cf6f09a3513f328b2339c"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularEnergy.lean",
+      "bytes": 4225,
+      "sha256": "4a5dce7a62f6b1e7d3b0744ef0ebd286071663718190a0d9871c02e236254958"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularEnergyCauchy.lean",
+      "bytes": 5938,
+      "sha256": "3ed78cd56e039b65dd4fb402cf6e75b9d4cfb9080ffccd601638e135370a0297"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularMassCauchy3D.lean",
+      "bytes": 6598,
+      "sha256": "2fca639606577516bbe8ac348c075f996f6fcab8ea109e0d78cd9e697eab99b3"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularMassCauchyAll.lean",
+      "bytes": 8236,
+      "sha256": "c1acaa8964e7af5d0d2b5e589c738fa6a186960bd5ea9d1da4e08771fef0b598"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularMoment2D.lean",
+      "bytes": 9772,
+      "sha256": "02d6d39381652f3a09ac089219de6529be2e2c2784f08509c6bc0cd113ed2d08"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularMoment4D.lean",
+      "bytes": 13550,
+      "sha256": "48e5fb890a30e8288dfda0fdf2277bfc8a96dc2ad8c860882b86296cf9734cf5"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularMomentAll.lean",
+      "bytes": 2652,
+      "sha256": "88168739f0575f4a6eab4a9741283fcf1e442fdd0d9ab05d938d0430caba0b47"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularMomentAllAudit.lean",
+      "bytes": 814,
+      "sha256": "ecd5216f1e6ffe26468c093c49f377ec46c486f98adf80924c5d09fa5c63f1bc"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularMomentGeneral.lean",
+      "bytes": 19283,
+      "sha256": "f2c1de98284562a12bb3541f7b122294958bbf8c279e3381900953d873557ebb"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularMomentGeneralAudit.lean",
+      "bytes": 362,
+      "sha256": "b23237e8153b46d9909b86df76f864714fb1ba9546245718e5705c65a614d5c0"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularMomentThree.lean",
+      "bytes": 2953,
+      "sha256": "8b38703ebb9286d64e72e6e69e1b584660277bcb7055bd0d8ffbf1a48e8f00d7"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularMomentThreeBridge.lean",
+      "bytes": 9913,
+      "sha256": "5f6ae5be00cd09b6e0f36b96028e94e51f0b79d98cc0919c9ac0bf8de3be1f8a"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularPolarization.lean",
+      "bytes": 7815,
+      "sha256": "6d428cd966209263d3204b2ef95f5672d6d0d382592e5fae62b2a0e54100b18d"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularShiftMoment.lean",
+      "bytes": 7023,
+      "sha256": "887cf26e6a419e8ed5563e62d49984d7ce4b52cb38c383bc22b5f5c33d099c39"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularShiftMoment2D.lean",
+      "bytes": 5256,
+      "sha256": "e24ac915ff4772e719e3144c5fd12189f8d9b75046523bcbfbc3dc3c4267cb02"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularSineEnergy.lean",
+      "bytes": 8220,
+      "sha256": "f70c7b3eb6ef8a721abcbc0bef75a7c413cf8c6b166c382f3d932c70125fabc7"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularSineTest.lean",
+      "bytes": 8777,
+      "sha256": "9fab955b42e1e84a2849741ba3bf491195c3a40d022ce66a254e5d44b35a78fa"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularSpectral2D.lean",
+      "bytes": 19384,
+      "sha256": "c3b97c2c950ce354e15d704c3b5e76ae9cb4285d0a59ddfdd4e0943000ffe280"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularSpectralAll.lean",
+      "bytes": 13081,
+      "sha256": "d7bb850322727db040d6030e70212e1e5576bef9b6a7aac4dae7baa65c8fd64e"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularTest.lean",
+      "bytes": 16359,
+      "sha256": "f937d3003e25078813d3cf640df24d6ba3f533cbfc76c4df5304198b69d341e0"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/AngularUpper2D.lean",
+      "bytes": 10703,
+      "sha256": "e35cb5a43d64a38ffd8fe05521e61ec1e4ba71a3eb855c2da8059b77fd2073ce"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/Audit.lean",
+      "bytes": 3385,
+      "sha256": "ed8fc0b5e74ba7366c0f258878e6bcc81fbe69bb3a0f9d8964aa0c2012f8c573"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/ClassicalComparisonAll.lean",
+      "bytes": 1348,
+      "sha256": "d9e6f135210b05066028fa59459463ef8e6399efe42b99da37487359f4f60e25"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/ClassicalEnergyDomainBridge.lean",
+      "bytes": 7641,
+      "sha256": "f4a65ba57a4fd3a1a03fb332986a43ea08474c42566d40ad35409a1fc9393c15"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/ClassicalH10Closure.lean",
+      "bytes": 9472,
+      "sha256": "e491ebc0df824042322b6d849b878884d5fe1a077ef27b83b74403214677ace3"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/CoefficientUniquenessAll.lean",
+      "bytes": 2827,
+      "sha256": "ae5caf9bebc50c0a636ec728372c3bf9e528b24cfaf1f2a7d3ca481cc0877dab"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/ComparisonAll.lean",
+      "bytes": 4702,
+      "sha256": "c225efadc2e0780d78f0e64486899ac5dcb9a912f8db8aaff2af15cc9ed16508"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/ComparisonFourUpper.lean",
+      "bytes": 2213,
+      "sha256": "fb44eb12fd3fdf45ab4ba37835a73dc62a949408dd6554d0ff72ecc50265bcca"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/ComparisonGenericGeFour.lean",
+      "bytes": 1266,
+      "sha256": "979852a0b802745e83330deca8899bdf0eb93fc2f009bc6c05a13336709dfc90"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/ComparisonGenericUpper.lean",
+      "bytes": 3258,
+      "sha256": "dcdb644d140130fd118b02a9fb4463aa66504be123548a92596d231cc5788713"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/ComparisonTwoD.lean",
+      "bytes": 2198,
+      "sha256": "6b9299617dab09f90977d293a2c13811e99ba9795d8b3ff4017ae473ef159f60"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/DerivativeEquation.lean",
+      "bytes": 6810,
+      "sha256": "d15cabdd44abc78555210f1c029e6e38aeeaf05239d86ed9bb318bd3a3799cea"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/DirichletGraph.lean",
+      "bytes": 6327,
+      "sha256": "221d969d7673e1d2340722a27c77a1d30042504ba8fcef22fd2575fa4a2db7d2"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/DirichletWeakDerivative.lean",
+      "bytes": 4322,
+      "sha256": "62dc26886ad05e35d53d95606c590fb4e4fa8c6989b5ca44db86f52d81505c68"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/EnergyDomainIntegrability.lean",
+      "bytes": 10034,
+      "sha256": "8f10665af63676df0c54f53114f023b83daa0f95bf2bc1d763e2859039451b31"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/EnergyDomainLinear.lean",
+      "bytes": 5498,
+      "sha256": "503e7706db14c84ccfc89bf32be787f60e5b1361d2af415cace3ab12f6dff97a"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/ExplicitSolution2D.lean",
+      "bytes": 16786,
+      "sha256": "b9c33b45d2a3f9ea9294edcf68f2058a063b4b9711226d1a87a987a462e195a5"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/GraphDomainBridge.lean",
+      "bytes": 10081,
+      "sha256": "dd16e2b24cc90b42e89bc9ae556b916ab27e0220802e2e1f042f4ce9e5af76eb"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/GraphLaxMilgram.lean",
+      "bytes": 6823,
+      "sha256": "7f4da80fc4fd15623651bcdc26a943202c8acf82ff5104a78d9f9d8c6a4f4e6c"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/GraphPhysicalForm.lean",
+      "bytes": 7518,
+      "sha256": "f86f160277d1cee718dbf9b4c7248bb6c05857fc427286179e86732a896a5105"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/GroundState.lean",
+      "bytes": 4615,
+      "sha256": "32e20f47e891c0d5050bac458d584cea6e31614f7259f90f453004f9c94c2c56"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/IntegralPrimitiveL2.lean",
+      "bytes": 5642,
+      "sha256": "710196b3ff56ed8062b06aff6bd508dc2fe2e7b304fece0e4fdb2c3bff0fadef"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/InteriorSmoothDensity.lean",
+      "bytes": 6628,
+      "sha256": "fdbe172888d2dfdd34c0174b3aea76186cd41b270edbc3560acda470e9939f0d"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/OriginalExistenceAll.lean",
+      "bytes": 3857,
+      "sha256": "eb9478a3e99948403e42294718828e3969d6ad47464b8b600a9ef31f33ada248"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/OriginalTarget.lean",
+      "bytes": 5837,
+      "sha256": "7f1ada6f92a5775ba23b2147bfe811a545b68a3feed59169d59de156e1fc3733"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/OriginalUniquenessAll.lean",
+      "bytes": 7506,
+      "sha256": "52a08b5652bd1d9e3aeea689c85d1aae5fd007afeecede0991127d21d5aa812f"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/PhysicalComparisonTwoD.lean",
+      "bytes": 1735,
+      "sha256": "9a125e0c46e6e52a340323a93b2b9edd5b109d13ea791b860337724a6dafd232"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/PositiveThreeBridge.lean",
+      "bytes": 2027,
+      "sha256": "8aed1839edf769f6be097c6443c9b780e8e6337aa991e19faaf2993664a50f7e"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/PositiveTwoD.lean",
+      "bytes": 1412,
+      "sha256": "ee55ad0ad0e61fc1a5492eb475150717534565d8abfc8bf8a8aaaa0686505060"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/SingularCotangentIBP.lean",
+      "bytes": 17501,
+      "sha256": "8cbe7e0634fe8a910b226f27089faba06fb721da7d858085a347b2ba3ba828dc"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/SqrtSinFlux.lean",
+      "bytes": 4603,
+      "sha256": "02319dcc3dc93a93fbc5d83c78f1780abdd5d8e398bb5105ed356cbb8092aaf7"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/StrictShiftAll.lean",
+      "bytes": 23093,
+      "sha256": "2494c1937ba3b7b2d0e8a6e599cf58620675a8d39a96150a1e1615d1148bbc92"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/StrictShiftTwoD.lean",
+      "bytes": 9287,
+      "sha256": "26716ff17d3daa640bc3e2f2f298f78c9d409d69a9bf6c2af66e2121f753fe67"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/ThreeDGroundBarrier.lean",
+      "bytes": 4392,
+      "sha256": "248838b0a7c5e54e1f4a1f740a5e3ba0b83d0e9c844729746b237ef6e7be83da"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/WeakDerivativeConstant.lean",
+      "bytes": 5898,
+      "sha256": "912b3b88c882ea1747f6b2ecf4ca5437eaa16cb6f5ecb1560c290116aca0f6da"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/WeakDerivativePrimitive.lean",
+      "bytes": 7236,
+      "sha256": "3a3945af6c17dfbc4139986138eef5c84bf018af0c38d39254851f89a6069da3"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/GCI/ZeroMeanSmoothDensity.lean",
+      "bytes": 6596,
+      "sha256": "3f8c99b03f431473c510ef5df42982bc22ec11452456bb10975e459d34a8bb44"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/Audit.lean",
+      "bytes": 844,
+      "sha256": "a2fd41713ea6a7b5e5261b8eb572f77a3d4c2fa0f46fb26387a3830bb4ae4fa2"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/CapSymmetryThree.lean",
+      "bytes": 3497,
+      "sha256": "dc23d9ee6d2c97f851912ce5ea30c124b367f3bc5562f7820110cf1df2f84980"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/CapToLaw.lean",
+      "bytes": 3214,
+      "sha256": "39a1bb23694738d6063d61f4a960c9a4acbe59321a55feddd44e59aef6fff21d"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/CircleCDFSource.lean",
+      "bytes": 6661,
+      "sha256": "d0ecaa6ad8f78a7edddcf4b3b3bfda03564c50842267a30a6b8aacb6808fd459"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/CircleCapScalar.lean",
+      "bytes": 2048,
+      "sha256": "85e7bf7303a082880d192705008d8817c89f0c9cfbd81ec8f4d5d897e4597e52"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/CircleCapVolume.lean",
+      "bytes": 4891,
+      "sha256": "cb3ec9aa6e48914d96b83f3b5762f62bfeda4046496f363cf3bd8f3424469a59"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/CircleLawFull.lean",
+      "bytes": 2383,
+      "sha256": "9d0926eb98a2a8f44d6659e8b5fecd8bb840611666f7d96b0b5ade275a4e72a2"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/CircleLawFullAudit.lean",
+      "bytes": 101,
+      "sha256": "28e47e5d2fd7301ff8a782c4ce0a4908d0d6e20fbdaffa43949314b38642d4c5"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/CircleLawSource.lean",
+      "bytes": 2442,
+      "sha256": "931a37d4f7211153ecaa397d8c5bdb19cb67322cc06251b06eea1d713cd388c3"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/CircleMeasureTBasic.lean",
+      "bytes": 2591,
+      "sha256": "51571758ecb96fcd6ecd0aad65eaf7b1c5dbd7069700dcaca5d221aeeef4538b"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/CircleSqrtIntegral.lean",
+      "bytes": 1732,
+      "sha256": "46e8cb16e6bb17f66638899fe872a45be9794cf29bef7b20b759411f545f3b51"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/CircleTargetCDF.lean",
+      "bytes": 2942,
+      "sha256": "0bb8b21712b8d23fc876585bb2aa44ca431621dd3800c4432685cbf07d2ac0d2"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/CircleTargetLower.lean",
+      "bytes": 1622,
+      "sha256": "7534ca06a58e3359c803b21387880f383443b736dc4f1a44069bd298a17bca22"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/ConeCapScalar.lean",
+      "bytes": 1803,
+      "sha256": "5589bda16a2188f1774544b4fe689d4478455ce6e734ed21f21e7a5eefdf6ed8"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/ConeCapThree.lean",
+      "bytes": 3130,
+      "sha256": "5ada93b297f23762d99413db1ad4b7382357adef8ae371f55a00cc0d2553c8d8"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/LawThree.lean",
+      "bytes": 5944,
+      "sha256": "fbaa68eddd8fd38052546a362970edfb4273fbae396a378f62c5b248b4f63191"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/LawThreeBoundary.lean",
+      "bytes": 4086,
+      "sha256": "5465ff5ef5a1ef2fb19fd828ccefd6ad796dead1494c62494d41a3d4ecab97e3"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/LawThreeFull.lean",
+      "bytes": 2842,
+      "sha256": "ce51c9c2bbb090e7b93632bf62b5f2203dff5647a1c400d1db77936382f1b8eb"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/LawThreeFullAudit.lean",
+      "bytes": 227,
+      "sha256": "7d3c0c66f22864a5068227a22a6bf43bca51f3f80a1ea0fae474002f0511afa8"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/LawThreeTarget.lean",
+      "bytes": 2431,
+      "sha256": "23306c0f18205011c7083c416bc98c51a65b1b8c62aeeb8797694d496f3e7d94"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/MomentBridge.lean",
+      "bytes": 3540,
+      "sha256": "c45f74a7776ddd08402a9b8c62edc3156276f836c658773c0be47ca98a13276f"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/MomentBridgeSucc.lean",
+      "bytes": 3650,
+      "sha256": "88a594a6adeb2f924268a8740dbe60ddf4d16e605eb6c612f05018620ac4e6f5"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/MomentBridgeSuccAudit.lean",
+      "bytes": 164,
+      "sha256": "fbcc107e421886f01cbe05864771a420e388abf47e2589ea83a1bb251a4c67e1"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/MomentBridgeThree.lean",
+      "bytes": 2757,
+      "sha256": "a0bbdc524f35b758e573ded6616bee567756ae73a3924bed5771af6b3f46035f"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/MomentBridgeThreeAudit.lean",
+      "bytes": 299,
+      "sha256": "443f1744c4a80df941637f63be8803cf0b2e0b42a81fd5ad65793a47b22ce430"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/MomentBridgeTwo.lean",
+      "bytes": 2811,
+      "sha256": "e6a66c6d87ac53731549ca444ff831d0faf5cb3796b043e20f5e345e30afc900"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/PhysicalSphereAll.lean",
+      "bytes": 2715,
+      "sha256": "968078af8acd523227fc4208b1b35efb3a19cecd64e4a7bc2693976b52526f7f"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/PhysicalSphereThree.lean",
+      "bytes": 1819,
+      "sha256": "7598fa3b7d898af149a577f677aa147346ba70bebbd73eebf57561e157f00b59"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/PhysicalSphereThreeAudit.lean",
+      "bytes": 459,
+      "sha256": "a41715d55b52f64e57a2b96236a3509ffc65838c36062824720cc291d55a37f2"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/PhysicalSphereTwo.lean",
+      "bytes": 1932,
+      "sha256": "4bd359eabf68c28c127af2b0508ca8d56677531dd3dafdded9c4c8b655fabd82"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/PhysicalSphereTwoAudit.lean",
+      "bytes": 194,
+      "sha256": "f52255ce701d170e7dc1f25967f006f815cfce8174243a46a2a47a1a3a9c2415"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SphereMeasure.lean",
+      "bytes": 5984,
+      "sha256": "1962c2486f044358f9888ee13fe5a824bf7ac07e52be52d925de1d272f81cb7e"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccBetaMeasure.lean",
+      "bytes": 3104,
+      "sha256": "9bf8524b9cbbfb15c446012620eb97ecaa311e437d26d78c39f8d49397611703"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccBetaSymmetry.lean",
+      "bytes": 2152,
+      "sha256": "605a15d56b042920b7d3b9642082381e03c11c88bd0fda6380de347d8ad3702f"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccCapAudit.lean",
+      "bytes": 313,
+      "sha256": "cc6bf4f891d16df97afebe862034c33814b3151a04f9a5e959d6de073c5e58dd"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccCapBeta.lean",
+      "bytes": 5070,
+      "sha256": "ca8f501c4ac88c4db99c3c3fb0dafa567c5f95484095271aac7f0a310c92726e"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccCapBetaAudit.lean",
+      "bytes": 140,
+      "sha256": "c692c88de3c99eecd1c569c3f605320a8772cc0ff1dd3ddafb16b3d22de61dca"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccCapFubini.lean",
+      "bytes": 4923,
+      "sha256": "e626093119e139210abc468f451d1ce446c0ae384bbcf19c769b3a3274375060"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccCapReal.lean",
+      "bytes": 6507,
+      "sha256": "05f710ec16cc62975b2787baf3bd0f2598127c01428bbb4fb23fd7aff022734f"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccCapSections.lean",
+      "bytes": 4911,
+      "sha256": "8094b2393c49743b88e716d52d34dbab27c06cc7238834025a5367583f9cec84"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccCapSliceFormula.lean",
+      "bytes": 4232,
+      "sha256": "a44d7b89a94db621a2ae420e83645e72647a03a34285e23325490a812d2c5f67"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccCapSymmetry.lean",
+      "bytes": 3817,
+      "sha256": "22e5c3bd91136e65e3ad391005d888f03f6fa3259dcbbcf4061923f7d3e8605c"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccEquatorNull.lean",
+      "bytes": 4087,
+      "sha256": "58251c528a6171d62cdc23789aece7d74ac5c79da048833990ce8b00e9f95efd"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccEquatorNullAudit.lean",
+      "bytes": 370,
+      "sha256": "6ab336712d340867e1753095532b9c200f73d1866796a248e030a05d87e93a31"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccLawFull.lean",
+      "bytes": 4889,
+      "sha256": "4d9591cc542e90b4393a9497c66629434044382ef27be37ea3fc5cf9beb99e83"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccLawFullAudit.lean",
+      "bytes": 92,
+      "sha256": "0cfc8562b1bedd971905be1fc16033e8afbb5989098c9fe4429307800bf20927"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccLawSymmetry.lean",
+      "bytes": 2732,
+      "sha256": "fd141e8827f53091823e9d7b55824f590559b9438dad4e300154fe7619ec6c4f"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/SuccSplit.lean",
+      "bytes": 1745,
+      "sha256": "9666900b0d2344d8763d2c905970e830ee5aee58a8a5861a771e1ad0cb7aece5"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/ThreeFubini.lean",
+      "bytes": 1855,
+      "sha256": "427335b4dd95386cc8d1954660eabbe27767b8ba8929eefc7d1603e007e1df0e"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/ThreeSections.lean",
+      "bytes": 4708,
+      "sha256": "08e0825bc881186ce2a95e0b6ecad9cf161f653861ec899f8f6bf170e07a85f9"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/ThreeSplit.lean",
+      "bytes": 1559,
+      "sha256": "a832d28363b0d7df792d7559a6cb7f0b73786fffc68ed2eb4c7fb6fb2283e8c6"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Geometry/ThreeVolume.lean",
+      "bytes": 7001,
+      "sha256": "102f0d7777ccadead46990ea82b9baf701536888547a2fdcde300cdf8e687407"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/Conjecture.lean",
+      "bytes": 1241,
+      "sha256": "b7cb5181910b326d6e66ee1c37cba2b08edd8d809c3b147d12fe5e447dff2d9f"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/Crossing.lean",
+      "bytes": 4031,
+      "sha256": "30f0c9a87759402f69928fc8765a52d1d414e5fbd9bf6b7298718f02fe712f33"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/DimensionShift.lean",
+      "bytes": 6622,
+      "sha256": "7e45b5c5c9b882704fe62e7f78c53ce80547f425cd21bd557b21e0f318d9e398"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/Elasticity.lean",
+      "bytes": 2266,
+      "sha256": "e229f5c439948b9815251e31a24c7db0a4c0da98fa2e65db0f51b54600680866"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/ElasticityODE.lean",
+      "bytes": 3640,
+      "sha256": "fbc3419e7b62e93b49a473c320d31d268ba1d3e3cc1e8c9bbaa32ec9e0ee3b28"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/Feedback.lean",
+      "bytes": 1815,
+      "sha256": "d18d927e92c097530a8efe7c4901661422658e8c1020042e76d86480d7af7ee9"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/FeedbackDerivative.lean",
+      "bytes": 2046,
+      "sha256": "a07be28d93ac707577013b9a399af9aa06982df333a1e6d9f3e570bcb3df1080"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/HighFieldWitness.lean",
+      "bytes": 2306,
+      "sha256": "e6be4062f7941b806372a0b45bb1b9d8c270328ed9d86443b618308442d6d2d2"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/Marginal.lean",
+      "bytes": 18851,
+      "sha256": "eee290299edeca051d625b963bd370addd586b402d0607112650b976be0f06a7"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/MarginalDerivative.lean",
+      "bytes": 4899,
+      "sha256": "72f073bc294127f158bcd6d420079223d7be7cdda266bed5d45c6d71e36ca8d9"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/MeanEndpoints.lean",
+      "bytes": 15203,
+      "sha256": "d520763d8089123f2cb210afd4ad070694ed0654a44c83b0c1fce195c5dfbc36"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/MeanLinearBound.lean",
+      "bytes": 3893,
+      "sha256": "1bcb59871eae1d869a593e9a427ce9836530371bc40b4edff3fe05c4ded1e747"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/MeanSmallField.lean",
+      "bytes": 7595,
+      "sha256": "3b87006eb8825419bd9295fce022ca896ca27b25bf82a967d4bb1d975e4ba6e9"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/MomentDerivative.lean",
+      "bytes": 1713,
+      "sha256": "60fe869d61e09e9ecfc94d5637b027ea4ac85b0126e2a6e50ea6bf67d8179a6e"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/MomentRecurrence.lean",
+      "bytes": 5594,
+      "sha256": "3ed67b0749e937a04dc613b42f63229883d3e78adb72b5f860d96dd90e8b7aa8"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/NondegenerateFold.lean",
+      "bytes": 3817,
+      "sha256": "ed1628cc260bf92c15a5718478f834ba635f833550d92123fe913a49e5456408"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/OriginalCrossing.lean",
+      "bytes": 14108,
+      "sha256": "3117f60f959e1abc094e8e6f26a9c55e574ab190ba07d0b44b149351e1b61d19"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/OriginalRiccati.lean",
+      "bytes": 1891,
+      "sha256": "eb6ecdf92fe8a41f864dce6b913667c9993ebffc6aaa041b3940d07995453110"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/OriginalTrajectory.lean",
+      "bytes": 7088,
+      "sha256": "7780e96bb87c78b6b383e01371a21ac1a2e3a599e2e5678f10134d1161731e15"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/PositiveRoot.lean",
+      "bytes": 2262,
+      "sha256": "77923de9383a8723abba11e5fd4824c7fa7f525d4774e13c4a04b5c08a7fb537"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/SmallFieldSign.lean",
+      "bytes": 2943,
+      "sha256": "5cb81192c66052f7823203bfead07f875537a31a28a1302a71359cbd96e18c79"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/TargetBridge.lean",
+      "bytes": 2641,
+      "sha256": "c29dc6915b5bf877f99eca75abce4b24c377f17278cbaaae241382b70b73fcb7"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/UnimodalFromSigns.lean",
+      "bytes": 3974,
+      "sha256": "9ebe9155dab888bb5368d007f5b94e1f2e4d81d9ba007accaed783232a0520cf"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/ZeroDirection.lean",
+      "bytes": 8745,
+      "sha256": "bc797f90cf8218bdc4ca97320ccb5f616e04c049e323e8df90f333e51016e08f"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/ZeroDirectionBridge.lean",
+      "bytes": 1018,
+      "sha256": "8457acf511c89ab20f4e8327bce49e6c9d3f9f5934f8297302a79a08301f80ee"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/ZeroDirectionODE.lean",
+      "bytes": 13604,
+      "sha256": "46478939e1399b85b0fb35fb8e8fe05453334d01310818e13244cac33f4502c7"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Hysteresis/ZeroDirectionOnTrajectory.lean",
+      "bytes": 1402,
+      "sha256": "4e5ed390f9f217cbdfdcc857eb213736bb9c01ef1cde963b2253198ac8b6b0b0"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Probability/EnergyResponse.lean",
+      "bytes": 2046,
+      "sha256": "f2a8f72cddbddd89faf03c71a74b442cbe0bdf81277c3ee2368b40a64b4b69d9"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Probability/PiconeAC.lean",
+      "bytes": 5710,
+      "sha256": "0f885da49da3716b16f6268fed46bb5fbbb9871d54b335127f387cef4583d8b2"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Probability/PiconeAudit.lean",
+      "bytes": 243,
+      "sha256": "a23c58ff9ac47986e72dd8b2159c762ae5d96c546dadd83b1a3aa15b4b288a1e"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Probability/PositiveTailAtZero.lean",
+      "bytes": 2364,
+      "sha256": "bab069e59341a85751e9283fe62f59740c68ace192e797b00a4c20efff840760"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Probability/ReverseCovariance.lean",
+      "bytes": 4381,
+      "sha256": "3adbefacb6d8129a1f47460fa11f1f8731f2ecdfa00ac04ad7f4e511cd1b02ec"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Probability/SymmetricTailUniqueness.lean",
+      "bytes": 4465,
+      "sha256": "9cd912d0173013c36a76d539ffe8f46647c4c5e22b1d7231156ffb1df8fbc70b"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Probability/SymmetricTailUniquenessAudit.lean",
+      "bytes": 112,
+      "sha256": "7b6afa308dca8e3c56b398e18d2f39d9c9812e4eee63d017abf03242fb609f98"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/AngularComparison.lean",
+      "bytes": 4744,
+      "sha256": "7823a7b7d6c8963aeccaf2fbb22216dc827c28d113ea117f2caf68f408e1cb2f"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/Audit.lean",
+      "bytes": 1969,
+      "sha256": "94c374639c6d7be1ff4fcd568dfbd1ca45a99f856cd04eccb192faf0b9480cf5"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/ClosedFormGap.lean",
+      "bytes": 5439,
+      "sha256": "c830516f87bd347472d5bfab5adfa4efd92631a759ddb0d51fa084d58adfe9e9"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/ClosedFormGapAudit.lean",
+      "bytes": 425,
+      "sha256": "f1efe580aadb289568e714ba8568cf17afd10cf970929cc470513727ba3fedb4"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/ClosedFormGraph.lean",
+      "bytes": 4224,
+      "sha256": "6ba4a681bd0e54865ea32f0456d47e6d5edcaddbde688751fb5fb72ed5f35349"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/ClosedFormHilbertBridges.lean",
+      "bytes": 5211,
+      "sha256": "668b9c86ce2da03bfcddd60b91c4d18f1620090241ea7c9a44e8753e612c254a"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/ClosedFormLinear.lean",
+      "bytes": 8225,
+      "sha256": "231756c8036b42b211de37f96a73c6b3ff44c841e4d5c83f0185ebbcf3813df7"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/ContinuationAudit.lean",
+      "bytes": 1128,
+      "sha256": "b000d0955c5403e30fb444b7fdb7be1be3eee88e766e805a64b43932d517ac4a"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/CoordinateTrial.lean",
+      "bytes": 4820,
+      "sha256": "ddd5717ce197e7a3a533a4b5bb96451e79e0e8c67762edf6d2cf7b825ae561ad"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/CoreCoordinate.lean",
+      "bytes": 2087,
+      "sha256": "d534520f63e1fde9b8f714dc9916f057a160189bc63256983d8da1e19245aa67"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/EigenbranchParameter.lean",
+      "bytes": 3845,
+      "sha256": "09121f0c39bb59731991fa4900e62e33695b9a04514174d9bef993ee341edadc"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/GroundConcavity.lean",
+      "bytes": 19994,
+      "sha256": "6a6151cdd232a085d50b67691a16d0efaa1a0ed6ecff7cf75ea5f71010a06904"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/GroundFlux.lean",
+      "bytes": 7547,
+      "sha256": "0466cafee4091f50fcfdd08a16a9a3d0571ed158f219f7418077fd03dd255699"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/GroundHF.lean",
+      "bytes": 13500,
+      "sha256": "0edde3bc0040b9754efa8b4adf9d6e36d3d9282365b6dde9b90a250461cf185b"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/GroundMoments.lean",
+      "bytes": 8676,
+      "sha256": "0990523a98d702348db0530dbef15e551827d4c6bbddc0e5b104a0c1e0ea161e"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/PhysicalLatitudeCore.lean",
+      "bytes": 7112,
+      "sha256": "33219413c2523a5f91c9807aea0e973a52f75afe7462188148c20a6ad68c6e4f"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/PhysicalModeDerivatives.lean",
+      "bytes": 4031,
+      "sha256": "21ee5e30635fb4f5b9eae03e1e6c608a6f5460cbe6a423a05b94074c6d9b8c19"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/PhysicalTransverseCore.lean",
+      "bytes": 17960,
+      "sha256": "4231856f5a5e312375215c12df228695c1c2aab7b86b906c87293ab080bba06c"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/RadialPartner.lean",
+      "bytes": 10858,
+      "sha256": "7c35af4a480989ba0c174d83b8fdf75d47eee56d98d56af3452ab75cc5e86649"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/RayleighDenominator.lean",
+      "bytes": 7293,
+      "sha256": "d147066dacf4e85b92f18008c48ed3fac9deb5f2b708f81b85f3dba72357c2c3"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/SphereMeasure.lean",
+      "bytes": 7865,
+      "sha256": "d2534bed641e764507ca3e1736bf9e8d8ed9031c60fe4fc3a84ea1cf545e4589"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/SphereOrthogonal.lean",
+      "bytes": 4267,
+      "sha256": "314e5ca03db8191724329508523f94abb0062522cdb6e0398f9b868483c4471b"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/SphereSymmetry.lean",
+      "bytes": 4715,
+      "sha256": "6fafa5edd3424a17e90e0e2f7296dced5d0aec8838833da1fc09dd08c8c515e4"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/WeightedMeasureComparison.lean",
+      "bytes": 8722,
+      "sha256": "02d5d1d3087e8c713e0da3d61f3d250e3ad801b6997afc83735e25c80b4942f2"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/WeightedMeasureComparisonAudit.lean",
+      "bytes": 138,
+      "sha256": "46a7ab45d2562879f597b056249098e2511da445b68a306d020f42e1235f61ec"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/WholeSphereCore.lean",
+      "bytes": 6105,
+      "sha256": "f35fc144f15f1b8ca836eacc8177a4efdbe612f4e976445c29f3af90c9e6ffeb"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/WholeSphereCoreAudit.lean",
+      "bytes": 1059,
+      "sha256": "360d7b1d02aee33c6a2277315a42c51ea4699b162841be9684a1a9bbf3888ea8"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/WholeSphereGap.lean",
+      "bytes": 6574,
+      "sha256": "732e03b8c9273edfa494f92a26ca1f8c62c252df2764e00b881ab3b9d32054d5"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Spectral/ZeroFieldMoments.lean",
+      "bytes": 7875,
+      "sha256": "c4532676b02a6525f6dc3b573fd6b6ca02a5d775c81dcb1cf358094fdc8a3532"
+    },
+    {
+      "path": "formalization/dfl2015/DFL/Targets.lean",
+      "bytes": 4300,
+      "sha256": "57a987551a9572e2f094ae9881759579f89587bd46d8ef5cb25e32d68d273097"
+    },
+    {
+      "path": "formalization/dfl2015/DFL.lean",
+      "bytes": 2316,
+      "sha256": "880f230f6e6d7e372d5dc39faea0027c953d78d551df2db6eef63ae84ffd9bde"
+    },
+    {
+      "path": "formalization/dfl2015/README.md",
+      "bytes": 3245,
+      "sha256": "9eb5f9525ad7028cdfe7764c99c869fb0b1aefb42027844440375a3100adcbe8"
+    },
+    {
+      "path": "formalization/dfl2015/lake-manifest.json",
+      "bytes": 3524,
+      "sha256": "c9aa2a07f2a88b8ab81adf42d11f02309487ff48bf4ebebae2edaf78683dca24"
+    },
+    {
+      "path": "formalization/dfl2015/lakefile.toml",
+      "bytes": 234,
+      "sha256": "7c4aa95486a5c56319d9a7aca1c5ad13f3929bd5b41669f5f9d28f45f19b494f"
+    },
+    {
+      "path": "formalization/dfl2015/lean-toolchain",
+      "bytes": 25,
+      "sha256": "651c8accb402b0c071cd336e9d3dc0a55516b1bfb434ddc4801f14936785b1d2"
+    },
+    {
+      "path": "formalization/dfl2015/verification/Audit.lean",
+      "bytes": 11138,
+      "sha256": "7c850433b641c58acda9fb1beed34e2ea6bf261367669351007cf88ea7d5be6f"
+    },
+    {
+      "path": "formalization/dfl2015/verification/AuditContinuation.lean",
+      "bytes": 4856,
+      "sha256": "485e415c1d83882c37e88fb23da6eb2f508a1470ed45a880866e88dfe743931e"
+    },
+    {
+      "path": "formalization/source_mapping.json",
+      "bytes": 115630,
+      "sha256": "203f8fa32b37582ff2c5700017415a3ef4a3b5bef12b9a43183c3caa9bd94be0"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/CompactFormGround.lean",
+      "bytes": 10599,
+      "sha256": "ef92a814e8836f50ee4a6222a1c444b01bfe50ef4cdab3843487fd8e46631663"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/ContinuationVerification.lean",
+      "bytes": 3427,
+      "sha256": "b4bfae5f997d015b79164e2c192b91390430ce7d7d35cd0596c11ecb49d3dece"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/H1ClosabilityAudit.lean",
+      "bytes": 1988,
+      "sha256": "a7a3b5ec7536d9c697baa5fd5dcc52b1c54bacf2b74860b771631c2844d68fbf"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/H1SpectralPoincare.lean",
+      "bytes": 5866,
+      "sha256": "100c2957d3d1a007c9f53ded484af583e6db380d935e9ff612c2e0f5108cb2ff"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/LatitudePiconeGround.lean",
+      "bytes": 8006,
+      "sha256": "495ae485e7c4bb7cacf3f9247e9b20aeef1b2c7961aa6e6ef99401bb5069d10a"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/OriginalLatitude/AngularComparison.lean",
+      "bytes": 4761,
+      "sha256": "f1dfa3bc00b0fd267e09c8848511655a91380909897a309252125bf944cdbcd9"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/OriginalLatitude/EigenbranchParameter.lean",
+      "bytes": 3904,
+      "sha256": "b0a1b04741bb81f53662ebb2011ab81f4fb8cb6cf6119bef6ca2af2977b3fd22"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/OriginalLatitude/GroundConcavity.lean",
+      "bytes": 20157,
+      "sha256": "97eb59bb699bc4ef7b86e36993773b0f97eb3f0031656af90ea769ed4d8450ca"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/OriginalLatitude/GroundFlux.lean",
+      "bytes": 7628,
+      "sha256": "b494afe8686691d567bf7ae48611ab469656b20dcc8c18261a9e6ae623afa2cc"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/OriginalLatitude/GroundHF.lean",
+      "bytes": 13675,
+      "sha256": "5925894b2f03308a9ee6fec865e210ed5aaf03ce6564271c53565aef28bb1c3b"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/OriginalLatitude/GroundMoments.lean",
+      "bytes": 8715,
+      "sha256": "a4ec8dceb3f86c9da75f8290de6a3965c1edf1fd065f5ecbb0f623aab849014a"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/OriginalLatitude/PhysicalModeDerivatives.lean",
+      "bytes": 4048,
+      "sha256": "5d29dcada02b5953742ca41feb3b5c703a3edd2bd8d372b7564dd0ff3ffc6db7"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/OriginalLatitude/RadialPartner.lean",
+      "bytes": 11069,
+      "sha256": "8960cfb90a164b6bc1b956aceba093cfbdb285aeb2a2a06f5076b1300c31b490"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/OriginalLatitude/SphereMeasure.lean",
+      "bytes": 7865,
+      "sha256": "b2517f563b1bcb4fbb86c8cf0bb3067a95d0215d10e605a6e35cb780df91fe0e"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/RoundSphereCoordinates.lean",
+      "bytes": 7280,
+      "sha256": "92832da11ea4bde8b43f1bbd7f32f900ebc5be84650a569ba08f476b49de476a"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/RoundSphereFirstEigenspace.lean",
+      "bytes": 19189,
+      "sha256": "b85258039ad6a5d420117b05d41710a92e642538cc8776548f7b629ac3d50a3f"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/RoundSpherePoincare.lean",
+      "bytes": 6703,
+      "sha256": "6cc232b86ea806b44c3d37824f505b635d98ecc31795bdffe40edaf4c640e607"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/RoundSpherePotentialGround.lean",
+      "bytes": 13480,
+      "sha256": "304ccda4be9efb7da3c7ac0a4b619bf7283068f25ed60346c69e17e1d23286ee"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/RoundSphereSharpGap.lean",
+      "bytes": 7199,
+      "sha256": "daaee3355a1b926ce0f6156fe7344a831def791a0fe9d917822cafa6a1a75681"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/Verification.lean",
+      "bytes": 1763,
+      "sha256": "61aca33b300568c623b3b11026eab25cc4a0c0a56bc8f8bab12d7ab3f88b5d78"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/WeakH1Completion.lean",
+      "bytes": 22870,
+      "sha256": "08bf20ea158e1f5b7915fb61a959ae44400e3435ab2b72c7de7d2563e868c688"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433/WeightedSpherePoincare.lean",
+      "bytes": 16285,
+      "sha256": "60d277d4c09b0998133898741733d47e6d570ce275110da4abe64ef9dcd36564"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433.lean",
+      "bytes": 78,
+      "sha256": "70e12b4e8acbfd3c8619324626cd19222c08ccb9db91fcd3dba809c747fc461c"
+    },
+    {
+      "path": "formalization/sphere433/README.md",
+      "bytes": 5850,
+      "sha256": "e58c82956b0d4390ebd1227b951ee385b85ed1d9914a9336ba8e89f13ca35952"
+    },
+    {
+      "path": "formalization/sphere433/continuation/ActualDriftBaseline.lean",
+      "bytes": 7858,
+      "sha256": "fc690c8cc537a4ef40f31047b6f804df5c80a1dc6f6acfd353e8fd0dd8603bfa"
+    },
+    {
+      "path": "formalization/sphere433/continuation/ActualRadialCandidate.lean",
+      "bytes": 7032,
+      "sha256": "a3bedb685f650c9eaf15c253d0efb3bcfe6342f8c9bc59d74eee9d8bf97b98f5"
+    },
+    {
+      "path": "formalization/sphere433/continuation/ActualTiltProfileWitness.lean",
+      "bytes": 4971,
+      "sha256": "be16eb06d54b231987647db8dbde42ac0f67f805f4e0b44229e225c4e3cb7364"
+    },
+    {
+      "path": "formalization/sphere433/continuation/AngularMeanProjection.lean",
+      "bytes": 8300,
+      "sha256": "1d02acf33a72eccc7b790898b52817ca0122916ac64a5e7fe78c95b4b8d48ce8"
+    },
+    {
+      "path": "formalization/sphere433/continuation/AuxiliaryRadialSmooth.lean",
+      "bytes": 6229,
+      "sha256": "ccfe84d01895ca8792404eec649fea25d9262031fe15075a38613a3d32aaf65a"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CircleFirstDimension.lean",
+      "bytes": 4673,
+      "sha256": "f3ee0ba63fdd12b6711b41498d9fbb1736b54cad8d1313e9ee6b02f48474e586"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CircleFirstEigenspace.lean",
+      "bytes": 8972,
+      "sha256": "9c06e8a48d6b4c835c8a5bd8207a81257133080446916f24064660210bce2a9c"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CircleFirstSmoothBasis.lean",
+      "bytes": 7651,
+      "sha256": "2dd623e644bff0c0594114ad055afee45c5c90e8d6996386d34283a23ccc2237"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CircleFourierFrequency.lean",
+      "bytes": 6220,
+      "sha256": "8881977f564f2c987590ee08d37c9ff88c376207710706068609c986fb430a46"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CircleGapEquality.lean",
+      "bytes": 3503,
+      "sha256": "40303a940524300c0f51d316e5a4c3c4914dbc1c465f92decba71a46f88334cb"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CircleOddEigenvalue.lean",
+      "bytes": 6550,
+      "sha256": "bcda95c0ddfc6b09a9efa3d7212c9de46f654ece2ae11051367e0455ef437e09"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CircleOddGeometry.lean",
+      "bytes": 7845,
+      "sha256": "f43588bc4ec4fa81385d31aa1819ebb44920b0faf938b351fb607c15729e3281"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CircleOddProfile.lean",
+      "bytes": 10913,
+      "sha256": "609169ab5a690b3ab9d6f4539e7f1ab85d86af18cfb788b7c3dda7deb431b99c"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CircleParity.lean",
+      "bytes": 7261,
+      "sha256": "585438e641a6b62af87b2bea9f20cc1d5e0ca938a78c2c0b6c9420ef765644d4"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CircleRoundMetric.lean",
+      "bytes": 6794,
+      "sha256": "ca739b6f8d624e864826eb1456e1b5c02a1365cf56eaa6ed74c8e58abc1cc1f2"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CircleSpectralLower.lean",
+      "bytes": 3800,
+      "sha256": "67dc26af6837faf30f5785b79298a8caf356eded4d5744329403dbb30c82e6db"
+    },
+    {
+      "path": "formalization/sphere433/continuation/ClassicalPotentialWeak.lean",
+      "bytes": 3005,
+      "sha256": "7c1ce2442ec9662c92cfc0fcc703128e6e920d8f0f26a10fc10ba0e026e189d9"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CompactC2WeakH1.lean",
+      "bytes": 5998,
+      "sha256": "4317b4e67eb4246f00d7d2538f8b8d99c8a4a985b65c2f0ebe8c2ff89597fadc"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CompactFirstPositive.lean",
+      "bytes": 4314,
+      "sha256": "174436f09d018a24e8039ff8fc6536dec546b67d7e769c2103fd92bf7d152db8"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CompactPotentialDomain.lean",
+      "bytes": 11179,
+      "sha256": "f190d8b71a1a86af957a6a0f9920deb341399a056476e87a4e041827457ded42"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CompactPotentialFirstPositive.lean",
+      "bytes": 6430,
+      "sha256": "bb115d26b5505d2f7c069fa54e36f441fc579841bbfdba093a8be05e0b83793a"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CompactPotentialGround.lean",
+      "bytes": 9566,
+      "sha256": "a4e60e6a7c9776f77abb1a345f56915af5caeaa431a5fade5157d3c9ceb3bd44"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotAngularCoercivity.lean",
+      "bytes": 11302,
+      "sha256": "b501fb0875ea8b355730379be50af36b670453c561244e36d56729bb53f7be08"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotAngularDeviationCoercivity.lean",
+      "bytes": 23150,
+      "sha256": "71eed21da32f7483dffe0f853edcd58436202c8645bac63a8c9acf524c9af115"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotAngularEquality.lean",
+      "bytes": 11145,
+      "sha256": "73d20fb5fa16eaca1890c7cc9b8da07d5ff4ce7b91b7fc28cc45b04f510e84cc"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotAngularPoincare.lean",
+      "bytes": 4726,
+      "sha256": "eb7853c98fc13b4c6e5a6305af0478577ea29cfb093368f8a85f18e7618efa9a"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotAngularProjection.lean",
+      "bytes": 7389,
+      "sha256": "ae0fdc32b6fb8c3359760f8afc52ae66b6900633a5f48d1a855ee4902a5f8730"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotScalarCutoff.lean",
+      "bytes": 15830,
+      "sha256": "e9c9208ca05987ad6c52be16b91b015249d2a15f63ee672c9ca3181109907077"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotScalarPicone.lean",
+      "bytes": 14793,
+      "sha256": "abe4ad86ee85c2be1080f1427f887320b0c6e6cc09a836c731b01cca2271bc40"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotScalarPiconeEquality.lean",
+      "bytes": 10604,
+      "sha256": "1e5bffcac4fe0f3d8cb3173dce727a21b86eb7d7f46ced111e469f57ffbf5de5"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotSphereBochnerEnergy.lean",
+      "bytes": 6582,
+      "sha256": "aa614d7e6f6e10010ac196bee33b14774f72b6402c0842c03582d251f8c46839"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotSphereDiffeomorph.lean",
+      "bytes": 8617,
+      "sha256": "a6600611a5835076f6818446eeec4573536932ef583d7a36a63158bed0976bd5"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotSphereDifferential.lean",
+      "bytes": 5018,
+      "sha256": "14d79ea0d95a39352491d4e0e407fdd936b32d1b4395b95d26d729d8dae2da64"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotSphereEnergy.lean",
+      "bytes": 3437,
+      "sha256": "f4ae20e4f96644f1b75be542747182cc2fbd519519a1da331457eed010155e8c"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotSphereFullIntegral.lean",
+      "bytes": 9636,
+      "sha256": "7fb5054aadfa1347b323af45281148c5cb1fada603ab198353405974c8eea5f1"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotSphereMetric.lean",
+      "bytes": 4028,
+      "sha256": "082a390b3a8a610f9de9042bfab3be0629de6e1ee89395395d243a520a3f28d8"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotSphereVolume.lean",
+      "bytes": 7025,
+      "sha256": "93cb8ad48277d23bc2ac82983e4416ea6023d2694c716e1e7c802a99907a9cda"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotTransverseEquality.lean",
+      "bytes": 8104,
+      "sha256": "1095e7dbf898e4a32be8f2c6e2b548bd220764dc14423b314377ac6eaa2acdee"
+    },
+    {
+      "path": "formalization/sphere433/continuation/CotTransversePiconeLower.lean",
+      "bytes": 17790,
+      "sha256": "73c641e6d92dba102b9d543d8cf5017781039cc305b3f0476a2e4ecf253ed3ec"
+    },
+    {
+      "path": "formalization/sphere433/continuation/EvenSquareFiniteProfile.lean",
+      "bytes": 5062,
+      "sha256": "cd7e10256254e88c2f6648d36796d3c514c5ff17f28e9245debae42b4d69899e"
+    },
+    {
+      "path": "formalization/sphere433/continuation/EvenSquareProfile.lean",
+      "bytes": 11065,
+      "sha256": "81e223f2c3336d4ad31a9df31fb32bb7b4e6d2f4fcac0829268dc8f31dd75d4d"
+    },
+    {
+      "path": "formalization/sphere433/continuation/FirstAngularIntegratedEquality.lean",
+      "bytes": 6676,
+      "sha256": "1b55ed1b56186a80d20d9270d472573a2d7b0dccceadaec01ca360b73518cd4d"
+    },
+    {
+      "path": "formalization/sphere433/continuation/FullSphereFirstLower.lean",
+      "bytes": 11195,
+      "sha256": "7c062bfc535256a60bd381754dfdf040351ff8a21bf49165da308a89833e0334"
+    },
+    {
+      "path": "formalization/sphere433/continuation/FullSphereFirstMeanZero.lean",
+      "bytes": 10219,
+      "sha256": "4b9cc16981b17d4b49a57d35208adf76a192dbe08caeb7b73f96ffa64fdfe715"
+    },
+    {
+      "path": "formalization/sphere433/continuation/GenericRoundPoincare.lean",
+      "bytes": 5481,
+      "sha256": "fd886a2ae9cfdf5853bf3f0a5b911fbfb0a1440c77d64240e9baade6c2f1bc7e"
+    },
+    {
+      "path": "formalization/sphere433/continuation/GroundStateContinuity.lean",
+      "bytes": 14762,
+      "sha256": "11fa80d99d31eaf5e7384d650b1878bceccfb435fc8ef42c23792bb07d5bf9ae"
+    },
+    {
+      "path": "formalization/sphere433/continuation/HalfDensityEnergy.lean",
+      "bytes": 14730,
+      "sha256": "18783ffcb9d33ff19356742c4f225df77a1b3c6e15d51ada9ecaaa1b2f2f599c"
+    },
+    {
+      "path": "formalization/sphere433/continuation/LatMeasureBochner.lean",
+      "bytes": 5482,
+      "sha256": "f6d8a5a283a2883e7ed49b7deace044a6635513d863370f43cc88c647793a196"
+    },
+    {
+      "path": "formalization/sphere433/continuation/LatMeasureIdentity.lean",
+      "bytes": 8931,
+      "sha256": "6d77d4287e247e0634a49f1da57530e8fa53272551e3c6a7ec007ae788f2c8bc"
+    },
+    {
+      "path": "formalization/sphere433/continuation/MeanSphereDomain.lean",
+      "bytes": 12587,
+      "sha256": "76b7f317146df6e0703458565fe7390b485fc3dc0b6591c1a4007c6f1754a6a0"
+    },
+    {
+      "path": "formalization/sphere433/continuation/MeanSphereEnergySplit.lean",
+      "bytes": 15614,
+      "sha256": "e64d4a6f033396b9c95fd83c4314097226b997e3531a13fd37e80d34ce679590"
+    },
+    {
+      "path": "formalization/sphere433/continuation/MeanSphereNormSplit.lean",
+      "bytes": 8362,
+      "sha256": "c535d155b47325c02dda660718f175cce13681a762be7842d2c3cd08ef4dfbd2"
+    },
+    {
+      "path": "formalization/sphere433/continuation/MeanSpherePoleFamily.lean",
+      "bytes": 10283,
+      "sha256": "50d02670bbf22ca8a8968fdfb317e0c58437c6298bbb177db714761d561796e2"
+    },
+    {
+      "path": "formalization/sphere433/continuation/NormalizedFirstModeClassification.lean",
+      "bytes": 4983,
+      "sha256": "576a1df69d5730a1f2e6e26d823d20473464de1c1919c6aa38b52e70476c7a49"
+    },
+    {
+      "path": "formalization/sphere433/continuation/NormalizedVMFWeakGap.lean",
+      "bytes": 13033,
+      "sha256": "3c06f041f75cb4815e61d1eb6eeb67f86109d32a1b9c0c400199add5a1ec851e"
+    },
+    {
+      "path": "formalization/sphere433/continuation/OriginalTiltEigenspaceSimple.lean",
+      "bytes": 8050,
+      "sha256": "6d72a7b1e405f950bc2438764d905297653738b344d9217ec10a4309397fc3cc"
+    },
+    {
+      "path": "formalization/sphere433/continuation/OriginalTiltGroundExists.lean",
+      "bytes": 5968,
+      "sha256": "becb26f5d88dd8022a82066c719db0682473b2515498975c1960e328a1814c7b"
+    },
+    {
+      "path": "formalization/sphere433/continuation/OriginalWeakFirstEquality.lean",
+      "bytes": 10014,
+      "sha256": "815b42e631e99221f4944fc74e46b058a66b586a4c40b6703173d4d32637e676"
+    },
+    {
+      "path": "formalization/sphere433/continuation/OriginalWeightedGround.lean",
+      "bytes": 10246,
+      "sha256": "0ebe78d03ea990ee17602094b887c353e5000e37c6c3ea6729b6c53a04b7ad18"
+    },
+    {
+      "path": "formalization/sphere433/continuation/OriginalWeightedWeakGap.lean",
+      "bytes": 4296,
+      "sha256": "6f56c90bd801d9993342eb65a7a61ee16dc69c4411584ac2d45631e87aaff933"
+    },
+    {
+      "path": "formalization/sphere433/continuation/OrthogonalStationarity.lean",
+      "bytes": 2687,
+      "sha256": "6f6ca020ce8377dac768dd7fd96bd84aa38071446049c6a935976b3146e2bb53"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PhysicalDriftFirstPositive.lean",
+      "bytes": 3747,
+      "sha256": "f4d07d25533f873943c63d4141f516cf38350150e87c7553891ed474cc5072c8"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PhysicalFirstDimension.lean",
+      "bytes": 4663,
+      "sha256": "db19555385826c821537fcb45866de6a9ba956a936a03de78ab2590bab9c3b64"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PhysicalFirstEigenspace.lean",
+      "bytes": 4843,
+      "sha256": "c8c5417179d4a5d7cf3b94c505dbfc243f73d0e1ee985cdbacfef9f8c79d3bd3"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PhysicalGapEigenComparison.lean",
+      "bytes": 1921,
+      "sha256": "23593ee9f080bda16c061aecd2afec2bede1f776dc1bfec52794133591c1ce40"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PhysicalGapEven.lean",
+      "bytes": 3481,
+      "sha256": "a4ee647050d7aa23806ddb2b3cc52348b0ea5fd456228ca2cd865fd31598cacb"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PhysicalGapFullDomain.lean",
+      "bytes": 5670,
+      "sha256": "deb47b3ee53cccf04551030a1dda5d238c617d466333384308758c61b098969e"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PhysicalGapIdentification.lean",
+      "bytes": 5055,
+      "sha256": "adea9fb4d58b9b6df8ecaaac0d04da205cbb0804bf24b131118ffb2f7e4905ee"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PhysicalGapZero.lean",
+      "bytes": 1633,
+      "sha256": "eba3e61226605fbad471fff8c061904495a656a50d31fd88df23f1a3bc87a85f"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PhysicalGapZeroExact.lean",
+      "bytes": 1079,
+      "sha256": "feeeec968bd0980a8adf826476cb77c676efb29cb71ee479b3ac7347e96f34c6"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PhysicalHalfDensity.lean",
+      "bytes": 6475,
+      "sha256": "263abca13af4511afe036f934ab1eb5221d48bf48062ad3170b30b1e95ce37b3"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PhysicalSphereFiniteProfile.lean",
+      "bytes": 9431,
+      "sha256": "789a1439ebd8d38dbb5a4f6861cd41806b022327c2414c50664e7935613932d2"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PhysicalSphereLatitudeProfileC3.lean",
+      "bytes": 13945,
+      "sha256": "9c2c7adf1181dd2aa2394c1fc67304a49498c431a5c4ae4cdd5e9d4494c59423"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PhysicalWeightedFirst.lean",
+      "bytes": 7743,
+      "sha256": "7417f43679c6f1e61e1a32235abe74332c71ad4dfdff70f72644cc19db36caf7"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PhysicalWeightedGap.lean",
+      "bytes": 5068,
+      "sha256": "7b34345681a4aaf3915977ee1c66a6bf84a52bc4f6299dcb20b21756ca39ddbe"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PolarRoundMetric.lean",
+      "bytes": 14063,
+      "sha256": "3a716d16e55013a59cacd06573c819f1f786f2c48255d6e4c97faa405cc2cc3f"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PositiveGroundOrthogonal.lean",
+      "bytes": 6795,
+      "sha256": "df7e7aa31f9b2151ad9f0ddca7983b72f4b8a0ad1dc8311a220ac7024b5c4151"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PotentialMinimumDependence.lean",
+      "bytes": 12667,
+      "sha256": "fa4ee10b181c6d4407a531ebb93831e9a84c7fade051bff553dce02d6b22bb97"
+    },
+    {
+      "path": "formalization/sphere433/continuation/PotentialRayleighStationarity.lean",
+      "bytes": 2879,
+      "sha256": "c2ce10b92e6257d8c9b1410c56a30372a7b5ff2d7061fb9d71ba50a867e639a2"
+    },
+    {
+      "path": "formalization/sphere433/continuation/ProductGradientSlices.lean",
+      "bytes": 2695,
+      "sha256": "d05d46f85a6c5d42d212b4f3b4a49e4327240a8eee7c71b4e4d0befbc81a1b29"
+    },
+    {
+      "path": "formalization/sphere433/continuation/RadialEigenvalueLower.lean",
+      "bytes": 5372,
+      "sha256": "9ca4ae4711f7112a76cf2f646541fb8413a2dec1ae5fce5b88823a46bca688a6"
+    },
+    {
+      "path": "formalization/sphere433/continuation/RoundAngularDeviationPoincare.lean",
+      "bytes": 3300,
+      "sha256": "385068d8cde04638852eeecf9981a1042c0c42c5c2d8c21f9e4f1a1ed2d9303e"
+    },
+    {
+      "path": "formalization/sphere433/continuation/RoundCirclePoincare.lean",
+      "bytes": 6242,
+      "sha256": "241526eae0c852aabae82972f6cde041c0b3870c3ac93c7685915ebf74243dd0"
+    },
+    {
+      "path": "formalization/sphere433/continuation/RoundCircleSharpGap.lean",
+      "bytes": 6827,
+      "sha256": "1a08fb59cf8c819078dad6469615384b28ed204e862d1837a3a7ea29a889175a"
+    },
+    {
+      "path": "formalization/sphere433/continuation/RoundPoincareEquality.lean",
+      "bytes": 8002,
+      "sha256": "14bc61fffa31c9d4038292167fcc611dcc96bffa5f89d42603f71e06d07cbb4a"
+    },
+    {
+      "path": "formalization/sphere433/continuation/RoundSphereActualTiltProfile.lean",
+      "bytes": 3433,
+      "sha256": "d08679539183813bab97fcef6c39e9ebbc567f74a16bc8be074000b3f57ce6f9"
+    },
+    {
+      "path": "formalization/sphere433/continuation/RoundSphereFiniteProfile.lean",
+      "bytes": 3711,
+      "sha256": "47f20a6aabd7b8dbfc5f225d4f67d92a7d2b243054d633ca48fe17a45c862e8d"
+    },
+    {
+      "path": "formalization/sphere433/continuation/RoundSphereGroundAxisymmetry.lean",
+      "bytes": 4014,
+      "sha256": "0ccf14b781b595e0538989d8724dd6a54d72458d93022bca6276fbfdb221b7e1"
+    },
+    {
+      "path": "formalization/sphere433/continuation/RoundSphereGroundDomain.lean",
+      "bytes": 15951,
+      "sha256": "88002a88e921392ceababbf44d5c447b90dd2f64c27777f7678d360d7f2dbb36"
+    },
+    {
+      "path": "formalization/sphere433/continuation/RoundSphereGroundSymmetry.lean",
+      "bytes": 4414,
+      "sha256": "fce6c589c207d7360e81ac8c8ff03eb43b076bdd350d5985a7d01ee511f62023"
+    },
+    {
+      "path": "formalization/sphere433/continuation/RoundSphereLatitudeOperator.lean",
+      "bytes": 5267,
+      "sha256": "127e45cdb6b959c8b79487f3d999a491f1430d0fef7a69848c2d07f44b049576"
+    },
+    {
+      "path": "formalization/sphere433/continuation/RoundSphereLatitudeProfile.lean",
+      "bytes": 12966,
+      "sha256": "c43b1a3008a0fa72e3f63f80e08616b88578c5f5073f5da5f3bc994e1dfb8962"
+    },
+    {
+      "path": "formalization/sphere433/continuation/RoundSphereLatitudeProfileC3.lean",
+      "bytes": 9437,
+      "sha256": "5de88275463adc4edaad714e4c15b03878a371a5905674cecbf24aefb926345c"
+    },
+    {
+      "path": "formalization/sphere433/continuation/RoundSpherePositiveGround.lean",
+      "bytes": 11566,
+      "sha256": "cb06f0e70efe9021925217fb92c356bc29a1863e8824893f9f654f6533a9600d"
+    },
+    {
+      "path": "formalization/sphere433/continuation/SeparatedBochnerFubini.lean",
+      "bytes": 5145,
+      "sha256": "af5752e4c5207689529b4711c0d1e1294918ff27d714a5311fd22e68d9d276b1"
+    },
+    {
+      "path": "formalization/sphere433/continuation/SeparatedGradient.lean",
+      "bytes": 3671,
+      "sha256": "8029b6ef12dfeb60c769d49e214bcd576ba5de9b022142205e34c904cf9e7efb"
+    },
+    {
+      "path": "formalization/sphere433/continuation/SeparatedMeanEnergy.lean",
+      "bytes": 3724,
+      "sha256": "4e0dd0f6ab02fead7f0940fc66eb2d59954744c073010b3167943ff99a17c725"
+    },
+    {
+      "path": "formalization/sphere433/continuation/SeparatedMeasureFubini.lean",
+      "bytes": 3036,
+      "sha256": "6de8c027f4e3e0bfbc8c6dd0bf2edaf4c29a3cd0a85684bcab7d47c0e4153d54"
+    },
+    {
+      "path": "formalization/sphere433/continuation/SmoothAbsoluteH1.lean",
+      "bytes": 10808,
+      "sha256": "797f4246484c3f6f9d7f20f73a747d3b244c6704a009983f998e4e39b15ba7b1"
+    },
+    {
+      "path": "formalization/sphere433/continuation/SmoothSchrodingerPositivity.lean",
+      "bytes": 5944,
+      "sha256": "59bf6866a4806f41909909c54596ee3d4bcdab4e4575ee170160159423e8f2f9"
+    },
+    {
+      "path": "formalization/sphere433/continuation/SphereFirstModeRecovery.lean",
+      "bytes": 5900,
+      "sha256": "afc353ebcd7d054794592831b8367c1c6d4d4df2c53940231d1b4da4479b2864"
+    },
+    {
+      "path": "formalization/sphere433/continuation/SphereGroundMoments.lean",
+      "bytes": 15308,
+      "sha256": "46f1ec2a196557e5ad031919271096651c02b6f40c3d91950641db018d35ce23"
+    },
+    {
+      "path": "formalization/sphere433/continuation/SphereIsometricCoordinates.lean",
+      "bytes": 4480,
+      "sha256": "b952d9906205083fa590309920a96290d9be72da1bd9399abd1b60cf9bc4df84"
+    },
+    {
+      "path": "formalization/sphere433/continuation/SphereStrictMonotonicity.lean",
+      "bytes": 4084,
+      "sha256": "4ae1c53b376de92d644dbaade40b7a561cc232a4725e9fb17f0dc7ea30229b47"
+    },
+    {
+      "path": "formalization/sphere433/continuation/SphereWeightedSymmetry.lean",
+      "bytes": 7113,
+      "sha256": "90703b852d9163c5d194ddb35125e34ed7129e75d1a9330242536b58af0c8f50"
+    },
+    {
+      "path": "formalization/sphere433/continuation/TiltDriftClassification.lean",
+      "bytes": 7415,
+      "sha256": "2e0ae231ef5e54b828120d8fec7d5ea3c1e392243df81a5a447eb995ec785809"
+    },
+    {
+      "path": "formalization/sphere433/continuation/TiltEvenness.lean",
+      "bytes": 9639,
+      "sha256": "2b5a9c08c317dfc8aa6063d96fe7216ee36cac2f7a99394ebdf1f903c7e48349"
+    },
+    {
+      "path": "formalization/sphere433/continuation/TiltHellmannFeynman.lean",
+      "bytes": 12275,
+      "sha256": "f3755357df1588f63f4c91a8d88cdc834ffa959153aec0bd452d391da3927ffe"
+    },
+    {
+      "path": "formalization/sphere433/continuation/TiltRateContinuity.lean",
+      "bytes": 4312,
+      "sha256": "1d834af641c30aab24e2fdee8d0c7bfe44726fcac1d37c05b8465f80020509dd"
+    },
+    {
+      "path": "formalization/sphere433/continuation/TiltStrictConcavity.lean",
+      "bytes": 12091,
+      "sha256": "bbdc6ec357db2ec03f1b0e38fcd236a9f3c0145b3b9ea0bb2f41509e20dfd2aa"
+    },
+    {
+      "path": "formalization/sphere433/continuation/TransverseCommonGround.lean",
+      "bytes": 2479,
+      "sha256": "0e2acd648fe5f93e7e285477124fc01931a73dae1636b2b3a0a0b78533048246"
+    },
+    {
+      "path": "formalization/sphere433/continuation/TransverseFirstMinimumUpper.lean",
+      "bytes": 15070,
+      "sha256": "6089cd41aaeadbd99d3953286c67e14d8948dc1e703fd3fdd92b36ab253d6768"
+    },
+    {
+      "path": "formalization/sphere433/continuation/TransverseModeDimension.lean",
+      "bytes": 4810,
+      "sha256": "0b022345b1bb813a53dcd6f1e50714bed7a415085fadcc696086cdb978141d73"
+    },
+    {
+      "path": "formalization/sphere433/continuation/TransverseSmoothGround.lean",
+      "bytes": 2679,
+      "sha256": "8ba0fa5173a0e06fb071f61713b1b8a10dbb360ecf45a3a7bd3289bfb61228df"
+    },
+    {
+      "path": "formalization/sphere433/continuation/TransverseSphereMode.lean",
+      "bytes": 12071,
+      "sha256": "a5a69c52b37858f694f23f44dbc65b965f7058f30312a1fb62c15da47812b623"
+    },
+    {
+      "path": "formalization/sphere433/continuation/TransverseWeakH1.lean",
+      "bytes": 4795,
+      "sha256": "025efa9d7b72e0b55b7777b75a24f67c6403724cc8647771e676380d9d6797d9"
+    },
+    {
+      "path": "formalization/sphere433/continuation/WarpedProductVolume.lean",
+      "bytes": 8486,
+      "sha256": "b4c9020cd8954d987ebabefae9636ce66bd199255630b23c2852f6383d4ce8f2"
+    },
+    {
+      "path": "formalization/sphere433/continuation/WeakFirstEigenspace.lean",
+      "bytes": 13355,
+      "sha256": "01a5c1f21e02603270ab9737702cad8de4031e83482c7121a10220e0f5afbf5f"
+    },
+    {
+      "path": "formalization/sphere433/continuation/WeakHalfDensityEnergy.lean",
+      "bytes": 18693,
+      "sha256": "5e1b7724b3c39d1bf1b95ab76a18e08e12e9b792e04d7bb0a6f50417323208fc"
+    },
+    {
+      "path": "formalization/sphere433/continuation/WeakPhysicalRepresentative.lean",
+      "bytes": 7796,
+      "sha256": "9c83b6610c0e769ae7be9ad38fdec258e34b8bf71fbc5a457eb9551bdf856798"
+    },
+    {
+      "path": "formalization/sphere433/continuation/WeightedEigenNormalization.lean",
+      "bytes": 6696,
+      "sha256": "64434ce6d5e9b4d7cdfe326780b7977cd0822cacf77a17649a7344ccaa29e7f7"
+    },
+    {
+      "path": "formalization/sphere433/continuation/WeightedMinimumRegularity.lean",
+      "bytes": 5200,
+      "sha256": "614ac23563c9dee10091f8a8024b688f92d7d263dfa17c129ff0dd275cc6555a"
+    },
+    {
+      "path": "formalization/sphere433/continuation/WeightedWeakH1Gauge.lean",
+      "bytes": 17741,
+      "sha256": "55d66b5393c89cd308a82f8e7a394834c249e1ce2ae8770d7992deb3057ff277"
+    },
+    {
+      "path": "formalization/sphere433/continuation.lean",
+      "bytes": 2193,
+      "sha256": "54ce22e826b5e198df8ecf981605220d98a42f2dc9febce3493e4f7f36248ab5"
+    },
+    {
+      "path": "formalization/sphere433/lake-manifest.json",
+      "bytes": 3933,
+      "sha256": "f1d06becd2469ba78a56a832083f466619d970bb3cc0a841a1b9731fb09d4130"
+    },
+    {
+      "path": "formalization/sphere433/lakefile.toml",
+      "bytes": 542,
+      "sha256": "b9490758a53fff91d31ecf16434915819f7634d72d19734ce6144ac6f3bc9f59"
+    },
+    {
+      "path": "formalization/sphere433/lean-toolchain",
+      "bytes": 25,
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "formalization/sphere433/scripts/audit_continuation_closure.py",
+      "bytes": 3638,
+      "sha256": "48a539cfb17c396a04ebcdde4e1307d0a85f97ae653b11994e4b958a52ef7bc0"
+    },
+    {
+      "path": "numerics/DATA.md",
+      "bytes": 3608,
+      "sha256": "48660733a1c12d42d4b98dc490951edf9fe9d19b84592d24a9b98e2abdc76b10"
+    },
+    {
+      "path": "numerics/PROVENANCE.md",
+      "bytes": 3262,
+      "sha256": "362eef1b07559526a9b274a26cd60024567f729d152efb316451a06c48820554"
+    },
+    {
+      "path": "numerics/README.md",
+      "bytes": 9344,
+      "sha256": "4ea8a4757eb5e3b97a67f87ff448aaafe2ec622f8c0539613544cad2b2506f3b"
+    },
+    {
+      "path": "numerics/compare_reference.py",
+      "bytes": 5406,
+      "sha256": "2f8127300fd7b9cc9fdc8ad4e8af0db3cc1d97718389b98bca20e835f402661b"
+    },
+    {
+      "path": "numerics/data/angle.csv",
+      "bytes": 3977,
+      "sha256": "fec36d2f03d3199dd82a7ee8dfb24ec7056b747621a230c1752f9c583d47e0df"
+    },
+    {
+      "path": "numerics/data/fold.csv",
+      "bytes": 21035,
+      "sha256": "c99cdd8b5fb30a7c0cb550913fe33688ef9df98b612f7d14dcce37917aee031c"
+    },
+    {
+      "path": "numerics/data/fold_angle_wedge.csv",
+      "bytes": 19915,
+      "sha256": "968f81415e90e910220acf0d6341d54039acd76818d54aef0191535b2ab601eb"
+    },
+    {
+      "path": "numerics/data/fold_pressure.csv",
+      "bytes": 6298,
+      "sha256": "9b048f134b68f09285420dfea3d2749d085561ff7dfd2cbc3d97d45602f85a65"
+    },
+    {
+      "path": "numerics/data/gci_pressure.csv",
+      "bytes": 5882,
+      "sha256": "65abd042d8bbde248af06af953083735a770574da713ee5d5e177b7a0dc20b98"
+    },
+    {
+      "path": "numerics/data/noise_boundary.csv",
+      "bytes": 14061,
+      "sha256": "79b223a8065224a94e7939732902374d1d9d8d3097b60ff8c38462da4cc5be39"
+    },
+    {
+      "path": "numerics/data/noise_pressure.csv",
+      "bytes": 11390,
+      "sha256": "09cb205be33697f22d2c67e293dcde7528d18a2414b30970ff0972b9db0ffb46"
+    },
+    {
+      "path": "numerics/data/phase_branches.csv",
+      "bytes": 47410,
+      "sha256": "bc203e5ed1075667f06580800989af38716dff12ca3039007b164d434720f610"
+    },
+    {
+      "path": "numerics/data/phase_landscape.csv",
+      "bytes": 51103,
+      "sha256": "22a92a51298c1b3514b317a952c3c29b9c43c7af6ce3444c47d0cfe5abec3b8e"
+    },
+    {
+      "path": "numerics/data/quench_critical_large.csv",
+      "bytes": 25261,
+      "sha256": "16971ee586d339119aec7ba8f0c109cc0ff2be4a98908c7fc5ad2fd20bdcede5"
+    },
+    {
+      "path": "numerics/data/quench_critical_small.csv",
+      "bytes": 25482,
+      "sha256": "3c294b8f6657f09b11bd4aeedb9ad9db6a704aa254143b7d0c603aaaee40008b"
+    },
+    {
+      "path": "numerics/data/quench_dynamics.csv",
+      "bytes": 115685,
+      "sha256": "a42387589636f7787f33ee5888d5ee4a3b0623a79fe3da7e0ccf0f157254c0ca"
+    },
+    {
+      "path": "numerics/data/quench_ordered_basin.csv",
+      "bytes": 16947,
+      "sha256": "caddfa369e0f5e6ceeb6fd6aab0fe204e87babeb672ab5f5eff2d5e1dfd2d91d"
+    },
+    {
+      "path": "numerics/data/quench_profiles.csv",
+      "bytes": 12791,
+      "sha256": "7e2b67424def1197e7b2893587eb54c329140894925118e71eeb25ffa19ea747"
+    },
+    {
+      "path": "numerics/data/quench_uniform_basin.csv",
+      "bytes": 18774,
+      "sha256": "36a87f0542a5f380e223e7edac37fc905e30db65eb1106a42cdac23b0002b806"
+    },
+    {
+      "path": "numerics/data/slow_rate.csv",
+      "bytes": 18564,
+      "sha256": "110933d58756c129d8ae58fbccaf567c583fdacaf29a70049b1ebe550b3dcaa0"
+    },
+    {
+      "path": "numerics/data/spectrum.csv",
+      "bytes": 4271,
+      "sha256": "8c28b3c114a611bca870a3cb147b2dc30d50efc03a2bdd36b7e3cf59927f576b"
+    },
+    {
+      "path": "numerics/data/transport_hysteresis.csv",
+      "bytes": 11141,
+      "sha256": "40bad860e60566b501c17d42b510b8a38792590a3cabfe9b9b33042e90a25775"
+    },
+    {
+      "path": "numerics/data/transport_linear.csv",
+      "bytes": 11723,
+      "sha256": "111e37791cc0945e44ae9200aab41d8fd1c8b7f3653f9a8c6b97c6d0aa2a4fa7"
+    },
+    {
+      "path": "numerics/data/transport_regularized.csv",
+      "bytes": 11135,
+      "sha256": "ffcc9364a52a22d791a80db7ec3ecaca1e5bafd9b72511a356d2f01eae4bb3d1"
+    },
+    {
+      "path": "numerics/energy_landscape_3d.py",
+      "bytes": 10752,
+      "sha256": "a3a130ab6c95227565e7e60a492c75d7b08dfbd1fa8d3370f7a9197ada90eb12"
+    },
+    {
+      "path": "numerics/generate.py",
+      "bytes": 10397,
+      "sha256": "1fff73ad2f03a160d1aaf74440b328c6db030cc79156cb1013dbb8b25f9daddf"
+    },
+    {
+      "path": "numerics/orientation_sphere.py",
+      "bytes": 10813,
+      "sha256": "2bfe33f5452518581ab62bfa2c301a9722415a7d14e2156324fc5616b09a7028"
+    },
+    {
+      "path": "numerics/output_paths.py",
+      "bytes": 1257,
+      "sha256": "6fc151335b68afd8675d72ad9f582a3cbe702dff8639c7119ceea1930f778b18"
+    },
+    {
+      "path": "numerics/phase_dynamics.py",
+      "bytes": 12525,
+      "sha256": "a3a0b715b5157fe7bca12cbd06abb0b25bd1e6d882320bad9b6ec68f24d83e52"
+    },
+    {
+      "path": "numerics/reference_checks/convergence.json",
+      "bytes": 3041,
+      "sha256": "93afd0948776fd215e0ec49f6362335cdb586bab8135753297c3283c8ab5775a"
+    },
+    {
+      "path": "numerics/reference_checks/energy_landscape_3d_check.json",
+      "bytes": 1377,
+      "sha256": "87434fcece87f8abeff8e8c3d15bccb35007fbec35ad0a08e509eddd129cdcd3"
+    },
+    {
+      "path": "numerics/reference_checks/orientation_sphere_check.json",
+      "bytes": 550,
+      "sha256": "21ecd97dc10fdb7b9a1354123a2a3c4e4003fc12fecb4a09d7cfc4e02d760a36"
+    },
+    {
+      "path": "numerics/reference_checks/phase_dynamics_check.json",
+      "bytes": 3100,
+      "sha256": "0ca2feec50c884a7b7b8166e781ee3aa56683a4162326f55b3a7875aacfde61d"
+    },
+    {
+      "path": "numerics/reference_checks/transport_atlas_validation.json",
+      "bytes": 6015,
+      "sha256": "58ddc5991922af08cf7fdd4921d03369f00dc6596536a92168d842664505f3e9"
+    },
+    {
+      "path": "numerics/source_correspondence.json",
+      "bytes": 14416,
+      "sha256": "580f9f48e8998fcc80df921f5abec5078f394772640ddf8b28571a630b59a039"
+    },
+    {
+      "path": "numerics/transport_atlas.py",
+      "bytes": 25247,
+      "sha256": "7b31a8c759d0bab5e183e25a1cd8eb6d28ab154717309407fbb3b5a92c5348b8"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 132,
+      "sha256": "f703f0a4273045fdd1a6d01b1ce641663d42999c39157588ae9fc043dc92d329"
+    },
+    {
+      "path": "scripts/build_figures.py",
+      "bytes": 2098,
+      "sha256": "0c0f574eb5fa6d54ffcc76329b3228eebe665f61ecee68039fc98ed5cddcc62b"
+    },
+    {
+      "path": "scripts/check_integrity.py",
+      "bytes": 1390,
+      "sha256": "b631a0109baa750e352b435c88759ae642d44a794bc0c39855c8c48703758f69"
+    },
+    {
+      "path": "scripts/check_numerics.py",
+      "bytes": 260,
+      "sha256": "bf40fb45d3dd5c434a17294ce6903170d54960846dd92c408c0a265e104a8c84"
+    },
+    {
+      "path": "scripts/pdf_metadata.py",
+      "bytes": 586,
+      "sha256": "c5929145ec8614fe164cb8aee2735482890d7677a5b3b79ee99ffe5bc35ef7d4"
+    },
+    {
+      "path": "scripts/reproduce.py",
+      "bytes": 2698,
+      "sha256": "c1605048a691b090f67352a9e4517e32d484abdd100e64812000bdfca3e38eb6"
+    },
+    {
+      "path": "scripts/verify_formalization.sh",
+      "bytes": 13422,
+      "sha256": "9a5a203e17e2ffd395d5a7fe1acb676df202ee5eb817a584fc20939976742462"
+    }
+  ]
+}

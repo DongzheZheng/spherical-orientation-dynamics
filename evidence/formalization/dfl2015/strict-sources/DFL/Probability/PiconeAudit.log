@@ -1,0 +1,26 @@
+DFL.Probability.picone_integral_identity_ac {a b : ℝ} (u p A : ℝ → ℝ) (hu : AbsolutelyContinuousOnInterval u a b)
+  (hf : AbsolutelyContinuousOnInterval (fun x => p x * A x) a b) (hua : u a = 0) (hub : u b = 0)
+  (hE : IntervalIntegrable (fun x => p x * deriv u x ^ 2) MeasureTheory.volume a b)
+  (hQ : IntervalIntegrable (fun x => p x * (deriv u x - A x * u x) ^ 2) MeasureTheory.volume a b)
+  (hV :
+    IntervalIntegrable (fun x => (-deriv (fun y => p y * A y) x - p x * A x ^ 2) * u x ^ 2) MeasureTheory.volume a b) :
+  ∫ (x : ℝ) in a..b, p x * deriv u x ^ 2 =
+    (∫ (x : ℝ) in a..b, p x * (deriv u x - A x * u x) ^ 2) +
+      ∫ (x : ℝ) in a..b, (-deriv (fun y => p y * A y) x - p x * A x ^ 2) * u x ^ 2
+'DFL.Probability.picone_integral_identity_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Probability.picone_strict_energy_ac {a b : ℝ} (u p A : ℝ → ℝ) (hab : a < b)
+  (hu : AbsolutelyContinuousOnInterval u a b) (hf : AbsolutelyContinuousOnInterval (fun x => p x * A x) a b)
+  (hua : u a = 0) (hub : u b = 0) (hp : ∀ x ∈ Set.Icc a b, 0 ≤ p x)
+  (hE : IntervalIntegrable (fun x => p x * deriv u x ^ 2) MeasureTheory.volume a b)
+  (hQ : IntervalIntegrable (fun x => p x * (deriv u x - A x * u x) ^ 2) MeasureTheory.volume a b)
+  (hV :
+    IntervalIntegrable (fun x => (-deriv (fun y => p y * A y) x - p x * A x ^ 2) * u x ^ 2) MeasureTheory.volume a b)
+  (hL2 : IntervalIntegrable (fun x => p x * u x ^ 2) MeasureTheory.volume a b)
+  (hR :
+    IntervalIntegrable (fun x => (-deriv (fun y => p y * A y) x - p x * A x ^ 2 - p x) * u x ^ 2) MeasureTheory.volume a
+      b)
+  (hRcont : ContinuousOn (fun x => (-deriv (fun y => p y * A y) x - p x * A x ^ 2 - p x) * u x ^ 2) (Set.Icc a b))
+  (hRnonneg : ∀ x ∈ Set.Ioc a b, 0 ≤ (-deriv (fun y => p y * A y) x - p x * A x ^ 2 - p x) * u x ^ 2)
+  (hRpos : ∃ x ∈ Set.Icc a b, 0 < (-deriv (fun y => p y * A y) x - p x * A x ^ 2 - p x) * u x ^ 2) :
+  ∫ (x : ℝ) in a..b, p x * u x ^ 2 < ∫ (x : ℝ) in a..b, p x * deriv u x ^ 2
+'DFL.Probability.picone_strict_energy_ac' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,22 @@
+DFL.Geometry.area (n : ℕ) : MeasureTheory.Measure ↑(DFL.Geometry.UnitSphere n)
+DFL.Geometry.coordinateLaw (n : ℕ) (hn : 0 < n) : MeasureTheory.Measure ℝ
+DFL.Geometry.coordinate_abs_le_one (n : ℕ) (hn : 0 < n) (ω : ↑(DFL.Geometry.UnitSphere n)) :
+  |DFL.Geometry.coordinate n hn ω| ≤ 1
+DFL.Geometry.coordinateLaw_outside_Icc (n : ℕ) (hn : 0 < n) : (DFL.Geometry.coordinateLaw n hn) (Set.Icc (-1) 1)ᶜ = 0
+DFL.Geometry.spherePartition_integrable (n : ℕ) (hn : 0 < n) (r : ℝ) :
+  MeasureTheory.Integrable (fun ω => Real.exp (r * DFL.Geometry.coordinate n hn ω)) (DFL.Geometry.area n)
+DFL.Geometry.sphereFirstMoment_integrable (n : ℕ) (hn : 0 < n) (r : ℝ) :
+  MeasureTheory.Integrable (fun ω => DFL.Geometry.coordinate n hn ω * Real.exp (r * DFL.Geometry.coordinate n hn ω))
+    (DFL.Geometry.area n)
+DFL.Geometry.spherePartition_pos (n : ℕ) (hn : 0 < n) (r : ℝ) : 0 < DFL.Geometry.spherePartition n hn r
+DFL.Geometry.spherePartition_eq_coordinateLaw_integral (n : ℕ) (hn : 0 < n) (r : ℝ) :
+  DFL.Geometry.spherePartition n hn r = ∫ (t : ℝ), Real.exp (r * t) ∂DFL.Geometry.coordinateLaw n hn
+DFL.Geometry.sphereFirstMoment_eq_coordinateLaw_integral (n : ℕ) (hn : 0 < n) (r : ℝ) :
+  DFL.Geometry.sphereFirstMoment n hn r = ∫ (t : ℝ), t * Real.exp (r * t) ∂DFL.Geometry.coordinateLaw n hn
+'DFL.Geometry.coordinate_abs_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Geometry.coordinateLaw_outside_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Geometry.spherePartition_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Geometry.sphereFirstMoment_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Geometry.spherePartition_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Geometry.spherePartition_eq_coordinateLaw_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Geometry.sphereFirstMoment_eq_coordinateLaw_integral' depends on axioms: [propext, Classical.choice, Quot.sound]

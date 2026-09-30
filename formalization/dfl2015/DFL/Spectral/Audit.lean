@@ -1,0 +1,39 @@
+import DFL.Spectral.AngularComparison
+import DFL.Spectral.RayleighDenominator
+import DFL.Spectral.CoordinateTrial
+
+set_option autoImplicit false
+
+#check DFL.Spectral.alignedMeasure_probability
+#check DFL.Spectral.alignedMeasure_zero
+#check DFL.Spectral.integrable_aligned_iff
+#check DFL.Spectral.square_integrable_aligned_iff
+#check DFL.Spectral.weighted_higher_angular_integral
+#check DFL.Spectral.sphereVariance_pos_iff_not_ae_constant
+#check DFL.Spectral.sphereVariance_pos_iff_not_surface_constant
+#check DFL.Spectral.sphereVariance_eq_sInf_const_subtraction
+#check DFL.Spectral.sphere_const_subtraction_eq_variance_iff
+#check DFL.Spectral.surfaceMeasure_isometry_preimage
+#check DFL.Spectral.sphereCoordinate_square_mean_zero
+#check DFL.Spectral.sphereCoordinate_variance_zero
+#check DFL.Spectral.coordinateTangentGradient_pairing
+#check DFL.Spectral.coordinateTangentGradient_norm_sq
+#check DFL.Spectral.sphereCoordinate_tangent_energy_zero
+#check DFL.Spectral.transverseCoordinateTrialRatio_eq
+
+#print axioms DFL.Spectral.alignedMeasure_probability
+#print axioms DFL.Spectral.alignedMeasure_zero
+#print axioms DFL.Spectral.integrable_aligned_iff
+#print axioms DFL.Spectral.square_integrable_aligned_iff
+#print axioms DFL.Spectral.weighted_higher_angular_integral
+#print axioms DFL.Spectral.sphereVariance_pos_iff_not_ae_constant
+#print axioms DFL.Spectral.sphereVariance_pos_iff_not_surface_constant
+#print axioms DFL.Spectral.sphereVariance_eq_sInf_const_subtraction
+#print axioms DFL.Spectral.sphere_const_subtraction_eq_variance_iff
+#print axioms DFL.Spectral.surfaceMeasure_isometry_preimage
+#print axioms DFL.Spectral.sphereCoordinate_square_mean_zero
+#print axioms DFL.Spectral.sphereCoordinate_variance_zero
+#print axioms DFL.Spectral.coordinateTangentGradient_pairing
+#print axioms DFL.Spectral.coordinateTangentGradient_norm_sq
+#print axioms DFL.Spectral.sphereCoordinate_tangent_energy_zero
+#print axioms DFL.Spectral.transverseCoordinateTrialRatio_eq

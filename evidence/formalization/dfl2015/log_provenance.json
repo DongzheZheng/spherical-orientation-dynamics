@@ -1,0 +1,732 @@
+{
+  "verification_log_digests": [
+    {
+      "file": "lake-build.log",
+      "sha256": "7c5f7a9a9f7091947cb26b4d48f52d009bee6e4092c4a8704688a8f5a64ec7f3"
+    },
+    {
+      "file": "strict-source-build.log",
+      "sha256": "f3f0d4acb528fcdd8d72c4fd25ceff3daa8dc3cb05b2576c49ba9145861b9298"
+    },
+    {
+      "file": "declaration-audit.log",
+      "sha256": "ce7e71140b0ce0abc5c281d52cd12a26c80fc0c0d1d859826158f0e3dd42462d"
+    },
+    {
+      "file": "continuation-audit.log",
+      "sha256": "ffdebad873b8b3307b20a7956dc93050fdfc3585cfa02da85075212c37908a36"
+    },
+    {
+      "file": "lean-version.log",
+      "sha256": "ac621a3ad32f6ec6565dfbd280c238851658a370c170ad3a695571907d1a90f4"
+    },
+    {
+      "file": "mathlib-revision.log",
+      "sha256": "c68c6ea16ceb73d8414bdc4f0963effb2062349960620c8030708ac70d821193"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularBarrier2D.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularCauchy2D.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularEnergy.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularEnergyCauchy.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularMassCauchy3D.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularMassCauchyAll.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularMoment2D.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularMoment4D.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularMomentAll.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularMomentAllAudit.log",
+      "sha256": "6db67c7f77bb6b35ebc1d00992c0eb30ff07404c01f190b5fd4dea246f7d2710"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularMomentGeneral.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularMomentGeneralAudit.log",
+      "sha256": "27df2d66661631d1d517c5a470e815ce83e1dcf8463f7fe3a44b804be04b5a52"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularMomentThree.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularMomentThreeBridge.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularPolarization.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularShiftMoment.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularShiftMoment2D.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularSineEnergy.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularSineTest.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularSpectral2D.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularSpectralAll.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularTest.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/AngularUpper2D.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/Audit.log",
+      "sha256": "0b61be88a479f094fc77f53a3ae018f899185102ac9f65c804eeccf58cd3ef58"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/ClassicalComparisonAll.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/ClassicalEnergyDomainBridge.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/ClassicalH10Closure.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/CoefficientUniquenessAll.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/ComparisonAll.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/ComparisonFourUpper.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/ComparisonGenericGeFour.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/ComparisonGenericUpper.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/ComparisonTwoD.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/DerivativeEquation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/DirichletGraph.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/DirichletWeakDerivative.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/EnergyDomainIntegrability.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/EnergyDomainLinear.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/ExplicitSolution2D.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/GraphDomainBridge.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/GraphLaxMilgram.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/GraphPhysicalForm.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/GroundState.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/IntegralPrimitiveL2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/InteriorSmoothDensity.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/OriginalExistenceAll.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/OriginalTarget.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/OriginalUniquenessAll.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/PhysicalComparisonTwoD.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/PositiveThreeBridge.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/PositiveTwoD.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/SingularCotangentIBP.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/SqrtSinFlux.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/StrictShiftAll.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/StrictShiftTwoD.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/ThreeDGroundBarrier.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/WeakDerivativeConstant.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/WeakDerivativePrimitive.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/GCI/ZeroMeanSmoothDensity.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/Audit.log",
+      "sha256": "0fa4891ea98eb6514486372fce719148ff2ccd97e354d3f94db907e7af3057ff"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/CapSymmetryThree.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/CapToLaw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/CircleCDFSource.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/CircleCapScalar.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/CircleCapVolume.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/CircleLawFull.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/CircleLawFullAudit.log",
+      "sha256": "49f9bb3bcf920a00693bb97cee473d05bba5bbfe6062e304276b368f16adf012"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/CircleLawSource.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/CircleMeasureTBasic.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/CircleSqrtIntegral.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/CircleTargetCDF.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/CircleTargetLower.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/ConeCapScalar.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/ConeCapThree.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/LawThree.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/LawThreeBoundary.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/LawThreeFull.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/LawThreeFullAudit.log",
+      "sha256": "9cf75a26167eb575b6a6d3359c08ce194d252f79532c12907d1e39378125df48"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/LawThreeTarget.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/MomentBridge.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/MomentBridgeSucc.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/MomentBridgeSuccAudit.log",
+      "sha256": "7cda329a6f523c933f35971cdf274b564c1a657e895d6e3882b3d37372d5023d"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/MomentBridgeThree.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/MomentBridgeThreeAudit.log",
+      "sha256": "a410c779bc49dc0b5da1a30a5f6dff65b479c9ee2b009602733825d396d089e7"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/MomentBridgeTwo.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/PhysicalSphereAll.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/PhysicalSphereThree.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/PhysicalSphereThreeAudit.log",
+      "sha256": "99d5b2618a69dd36d603d097ccea12775e6d5d009d8d4f21419d74ed5860a1d7"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/PhysicalSphereTwo.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/PhysicalSphereTwoAudit.log",
+      "sha256": "e306941ec60275a614e13d0fb46ffa6e4b1680410358d94d1cb0b7dc997d89e6"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SphereMeasure.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccBetaMeasure.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccBetaSymmetry.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccCapAudit.log",
+      "sha256": "f5e48bbcb2d04fb19e547e108b2860e7a895231ef500df817e3e611bc3f3d06a"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccCapBeta.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccCapBetaAudit.log",
+      "sha256": "1c727605239745e65ff51638c162fc74d2206e2224969b7c29c6e25ff53a1295"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccCapFubini.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccCapReal.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccCapSections.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccCapSliceFormula.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccCapSymmetry.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccEquatorNull.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccEquatorNullAudit.log",
+      "sha256": "1294bc62abe125c862be7652fab54eefdf12a4b74f1a0e220f294ec6b2fafcc6"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccLawFull.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccLawFullAudit.log",
+      "sha256": "2ca871af9c7a959a38313b645b1f62e0690915bc7e89833086d2c016f75ffd93"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccLawSymmetry.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/SuccSplit.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/ThreeFubini.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/ThreeSections.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/ThreeSplit.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Geometry/ThreeVolume.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/Conjecture.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/Crossing.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/DimensionShift.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/Elasticity.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/ElasticityODE.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/Feedback.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/FeedbackDerivative.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/HighFieldWitness.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/Marginal.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/MarginalDerivative.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/MeanEndpoints.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/MeanLinearBound.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/MeanSmallField.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/MomentDerivative.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/MomentRecurrence.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/NondegenerateFold.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/OriginalCrossing.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/OriginalRiccati.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/OriginalTrajectory.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/PositiveRoot.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/SmallFieldSign.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/TargetBridge.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/UnimodalFromSigns.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/ZeroDirection.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/ZeroDirectionBridge.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/ZeroDirectionODE.log",
+      "sha256": "e345f8a3612ed06a1c3c49ade2cfb8ecbe9f17dc58767324d4c98e499bf6d164"
+    },
+    {
+      "file": "strict-sources/DFL/Hysteresis/ZeroDirectionOnTrajectory.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Probability/EnergyResponse.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Probability/PiconeAC.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Probability/PiconeAudit.log",
+      "sha256": "a853c7ef1318112514a50c06d6acf3370bc6b725fd73e6912cbc5e8cf4e5bc08"
+    },
+    {
+      "file": "strict-sources/DFL/Probability/PositiveTailAtZero.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Probability/ReverseCovariance.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Probability/SymmetricTailUniqueness.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Probability/SymmetricTailUniquenessAudit.log",
+      "sha256": "40a0e58d1a477ee1a1b184aeb3888c51aec7da83861c67bc5180e61a8714d89d"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/AngularComparison.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/Audit.log",
+      "sha256": "e360b88bd9076390708e4638c544ab4704a1e09b6f75c2673678a5eb2c89ea0a"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/ClosedFormGap.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/ClosedFormGapAudit.log",
+      "sha256": "1c71f4a0ae29f900bef88801af4870ccc8d0b43e84c23fee8272ee57f675feb4"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/ClosedFormGraph.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/ClosedFormHilbertBridges.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/ClosedFormLinear.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/ContinuationAudit.log",
+      "sha256": "749dbf962e18a69e4694628df0cbe315747a92f8370f03888e115dab5b09f910"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/CoordinateTrial.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/CoreCoordinate.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/EigenbranchParameter.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/GroundConcavity.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/GroundFlux.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/GroundHF.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/GroundMoments.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/PhysicalLatitudeCore.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/PhysicalModeDerivatives.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/PhysicalTransverseCore.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/RadialPartner.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/RayleighDenominator.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/SphereMeasure.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/SphereOrthogonal.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/SphereSymmetry.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/WeightedMeasureComparison.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/WeightedMeasureComparisonAudit.log",
+      "sha256": "e010d92339e5db3e8476a3b6f4ea2f015c47dc7e2bb60ae29ef98414023dc988"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/WholeSphereCore.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/WholeSphereCoreAudit.log",
+      "sha256": "1135ab1485648ca03d4b972975cd6531a0a6729a6dfb7f474c27326baeab3db9"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/WholeSphereGap.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Spectral/ZeroFieldMoments.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "strict-sources/DFL/Targets.log",
+      "sha256": "a04a3873c34125549ad6aebb935d29e225424bd2b9c007b3d95b961155478629"
+    },
+    {
+      "file": "verification-complete.log",
+      "sha256": "46cc5ea1ddbcd4e75e852618c77f2910d977889518ffcba1033da6081336bea8"
+    }
+  ]
+}

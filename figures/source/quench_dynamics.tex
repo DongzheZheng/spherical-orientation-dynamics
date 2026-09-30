@@ -1,0 +1,57 @@
+\documentclass[tikz,border=2mm]{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\definecolor{navy}{HTML}{184A68}
+\definecolor{teal}{HTML}{158477}
+\definecolor{orange}{HTML}{DA7441}
+\definecolor{purple}{HTML}{8A5A9F}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+ group style={group size=2 by 2,horizontal sep=17mm,vertical sep=17mm},
+ width=7.25cm,height=5.1cm,grid=major,grid style={black!10},
+ tick label style={font=\small},label style={font=\small},
+ legend style={draw=none,fill=white,fill opacity=.85,text opacity=1,font=\scriptsize}]
+\nextgroupplot[xlabel={original time $\tau$},ylabel={$m(\tau)=|J|/\rho$},
+ title={$\rho=1.90$: two basins},title style={font=\small},
+ xmin=0,xmax=35,ymin=0,ymax=.69,legend pos=south east]
+\addplot[black!50,densely dotted,forget plot] coordinates {(0,.39759157) (35,.39759157)};
+\addplot[teal,very thick] table[x=tau,y=m,col sep=comma]{../numerics/data/quench_uniform_basin.csv};
+\addlegendentry{$r_0=1.0$; uniform}
+\addplot[orange,very thick] table[x=tau,y=m,col sep=comma]{../numerics/data/quench_ordered_basin.csv};
+\addlegendentry{$r_0=1.8$; ordered}
+\node[font=\scriptsize,anchor=south east,fill=white,fill opacity=.8,text opacity=1]
+ at (axis cs:34,.3976) {separating saddle $m_-$};
+\nextgroupplot[xlabel={original time $\tau$},ylabel={$\mathcal F(f(\tau))-\mathcal F(\rho)$},
+ title={dissipation and metastability},title style={font=\small},
+ xmin=0,xmax=35,ymin=-.004,ymax=.051,legend pos=south east]
+\addplot[black!50,densely dotted,forget plot] coordinates {(0,0) (35,0)};
+\addplot[black!50,densely dashed,forget plot] coordinates {(0,.045284779) (35,.045284779)};
+\addplot[teal,very thick] table[x=tau,y=deltaF,col sep=comma]{../numerics/data/quench_uniform_basin.csv};
+\addlegendentry{$r_0=1.0$}
+\addplot[orange,very thick] table[x=tau,y=deltaF,col sep=comma]{../numerics/data/quench_ordered_basin.csv};
+\addlegendentry{$r_0=1.8$}
+\node[font=\scriptsize,anchor=south east,fill=white,fill opacity=.8,text opacity=1]
+ at (axis cs:34,.04528) {barrier energy};
+\nextgroupplot[xlabel={$t=\omega\cdot\Omega$},ylabel={$f(t,\tau)/\rho$},
+ title={orientation profile, ordered basin},title style={font=\small},
+ xmin=-1,xmax=1,ymin=0,ymax=5.5,legend pos=north west]
+\addplot[black!55,thick] table[x=t,y expr=\thisrow{initial}/1.9,col sep=comma]{../numerics/data/quench_profiles.csv};
+\addlegendentry{$\tau=0$}
+\addplot[orange,thick,dashed] table[x=t,y expr=\thisrow{tau2}/1.9,col sep=comma]{../numerics/data/quench_profiles.csv};
+\addlegendentry{$\tau=2$}
+\addplot[purple,thick,dashdotted] table[x=t,y expr=\thisrow{tau10}/1.9,col sep=comma]{../numerics/data/quench_profiles.csv};
+\addlegendentry{$\tau=10$}
+\addplot[navy,very thick] table[x=t,y expr=\thisrow{final}/1.9,col sep=comma]{../numerics/data/quench_profiles.csv};
+\addlegendentry{$\tau=80$}
+\nextgroupplot[xlabel={original time $\tau$},ylabel={$m(\tau)$},
+ title={$\rho=n=3$: nonlinear escape},title style={font=\small},
+ xmin=0,xmax=30,ymin=0,ymax=.96,legend pos=south east]
+\addplot[navy,very thick] table[x=tau,y=m,col sep=comma]{../numerics/data/quench_critical_small.csv};
+\addlegendentry{$r_0=0.03$}
+\addplot[orange,very thick,dashed] table[x=tau,y=m,col sep=comma]{../numerics/data/quench_critical_large.csv};
+\addlegendentry{$r_0=0.06$}
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

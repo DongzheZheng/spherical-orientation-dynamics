@@ -1,0 +1,7 @@
+DFL.Geometry.succ_coordinate_hyperplane_volume_zero (m : ℕ) : MeasureTheory.volume {x | x.ofLp ⟨0, ⋯⟩ = 0} = 0
+DFL.Geometry.area_succ_equator_zero (m : ℕ) :
+  (DFL.Geometry.area (m + 1)) {ω | DFL.Geometry.coordinate (m + 1) ⋯ ω = 0} = 0
+DFL.Geometry.coordinateLaw_succ_singleton_zero (m : ℕ) : (DFL.Geometry.coordinateLaw (m + 1) ⋯) {0} = 0
+'DFL.Geometry.succ_coordinate_hyperplane_volume_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Geometry.area_succ_equator_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Geometry.coordinateLaw_succ_singleton_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

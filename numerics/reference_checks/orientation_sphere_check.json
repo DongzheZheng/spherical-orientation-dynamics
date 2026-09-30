@@ -1,0 +1,14 @@
+{
+  "measure_convention": "dOmega_solid = dphi dmu = 4*pi*d_sigma_2",
+  "density_convention": "p_r = M_r/(4*pi), where integral M_r d_sigma_2 = integral p_r dOmega_solid = 1",
+  "quadrature_checks": {
+    "r0_mass_error": 0.0,
+    "r0_mean_z_error": 1.0644129937770484e-17,
+    "r3_mass_error": 2.886579864025407e-15,
+    "r3_mean_z_error": 3.552713678800501e-15,
+    "tilt_signed_mass_error": 6.871426185772415e-17,
+    "tilt_mean_x_error": 7.771561172376096e-16,
+    "tilt_mean_y_error": 7.163353489794786e-18,
+    "c2_r3": 0.671636489980356
+  }
+}

@@ -1,0 +1,762 @@
+{
+  "project": "sphere433",
+  "items": [
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/CompactFormGround.lean",
+      "sha256": "ef92a814e8836f50ee4a6222a1c444b01bfe50ef4cdab3843487fd8e46631663",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/ContinuationVerification.lean",
+      "sha256": "b4bfae5f997d015b79164e2c192b91390430ce7d7d35cd0596c11ecb49d3dece",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/H1ClosabilityAudit.lean",
+      "sha256": "a7a3b5ec7536d9c697baa5fd5dcc52b1c54bacf2b74860b771631c2844d68fbf",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/H1SpectralPoincare.lean",
+      "sha256": "100c2957d3d1a007c9f53ded484af583e6db380d935e9ff612c2e0f5108cb2ff",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/LatitudePiconeGround.lean",
+      "sha256": "495ae485e7c4bb7cacf3f9247e9b20aeef1b2c7961aa6e6ef99401bb5069d10a",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/AngularComparison.lean",
+      "sha256": "f1dfa3bc00b0fd267e09c8848511655a91380909897a309252125bf944cdbcd9",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/EigenbranchParameter.lean",
+      "sha256": "b0a1b04741bb81f53662ebb2011ab81f4fb8cb6cf6119bef6ca2af2977b3fd22",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/GroundConcavity.lean",
+      "sha256": "97eb59bb699bc4ef7b86e36993773b0f97eb3f0031656af90ea769ed4d8450ca",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/GroundFlux.lean",
+      "sha256": "b494afe8686691d567bf7ae48611ab469656b20dcc8c18261a9e6ae623afa2cc",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/GroundHF.lean",
+      "sha256": "5925894b2f03308a9ee6fec865e210ed5aaf03ce6564271c53565aef28bb1c3b",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/GroundMoments.lean",
+      "sha256": "a4ec8dceb3f86c9da75f8290de6a3965c1edf1fd065f5ecbb0f623aab849014a",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/PhysicalModeDerivatives.lean",
+      "sha256": "5d29dcada02b5953742ca41feb3b5c703a3edd2bd8d372b7564dd0ff3ffc6db7",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/RadialPartner.lean",
+      "sha256": "8960cfb90a164b6bc1b956aceba093cfbdb285aeb2a2a06f5076b1300c31b490",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/OriginalLatitude/SphereMeasure.lean",
+      "sha256": "b2517f563b1bcb4fbb86c8cf0bb3067a95d0215d10e605a6e35cb780df91fe0e",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/RoundSphereCoordinates.lean",
+      "sha256": "92832da11ea4bde8b43f1bbd7f32f900ebc5be84650a569ba08f476b49de476a",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/RoundSphereFirstEigenspace.lean",
+      "sha256": "b85258039ad6a5d420117b05d41710a92e642538cc8776548f7b629ac3d50a3f",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/RoundSpherePoincare.lean",
+      "sha256": "6cc232b86ea806b44c3d37824f505b635d98ecc31795bdffe40edaf4c640e607",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/RoundSpherePotentialGround.lean",
+      "sha256": "304ccda4be9efb7da3c7ac0a4b619bf7283068f25ed60346c69e17e1d23286ee",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/RoundSphereSharpGap.lean",
+      "sha256": "daaee3355a1b926ce0f6156fe7344a831def791a0fe9d917822cafa6a1a75681",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/Verification.lean",
+      "sha256": "61aca33b300568c623b3b11026eab25cc4a0c0a56bc8f8bab12d7ab3f88b5d78",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/WeakH1Completion.lean",
+      "sha256": "08bf20ea158e1f5b7915fb61a959ae44400e3435ab2b72c7de7d2563e868c688",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433/WeightedSpherePoincare.lean",
+      "sha256": "60d277d4c09b0998133898741733d47e6d570ce275110da4abe64ef9dcd36564",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/DFLSphere433.lean",
+      "sha256": "70e12b4e8acbfd3c8619324626cd19222c08ccb9db91fcd3dba809c747fc461c",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/ActualDriftBaseline.lean",
+      "sha256": "fc690c8cc537a4ef40f31047b6f804df5c80a1dc6f6acfd353e8fd0dd8603bfa",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/ActualRadialCandidate.lean",
+      "sha256": "a3bedb685f650c9eaf15c253d0efb3bcfe6342f8c9bc59d74eee9d8bf97b98f5",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/ActualTiltProfileWitness.lean",
+      "sha256": "be16eb06d54b231987647db8dbde42ac0f67f805f4e0b44229e225c4e3cb7364",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/AngularMeanProjection.lean",
+      "sha256": "1d02acf33a72eccc7b790898b52817ca0122916ac64a5e7fe78c95b4b8d48ce8",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/AuxiliaryRadialSmooth.lean",
+      "sha256": "ccfe84d01895ca8792404eec649fea25d9262031fe15075a38613a3d32aaf65a",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CircleFirstDimension.lean",
+      "sha256": "f3ee0ba63fdd12b6711b41498d9fbb1736b54cad8d1313e9ee6b02f48474e586",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CircleFirstEigenspace.lean",
+      "sha256": "9c06e8a48d6b4c835c8a5bd8207a81257133080446916f24064660210bce2a9c",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CircleFirstSmoothBasis.lean",
+      "sha256": "2dd623e644bff0c0594114ad055afee45c5c90e8d6996386d34283a23ccc2237",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CircleFourierFrequency.lean",
+      "sha256": "8881977f564f2c987590ee08d37c9ff88c376207710706068609c986fb430a46",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CircleGapEquality.lean",
+      "sha256": "40303a940524300c0f51d316e5a4c3c4914dbc1c465f92decba71a46f88334cb",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CircleOddEigenvalue.lean",
+      "sha256": "bcda95c0ddfc6b09a9efa3d7212c9de46f654ece2ae11051367e0455ef437e09",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CircleOddGeometry.lean",
+      "sha256": "f43588bc4ec4fa81385d31aa1819ebb44920b0faf938b351fb607c15729e3281",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CircleOddProfile.lean",
+      "sha256": "609169ab5a690b3ab9d6f4539e7f1ab85d86af18cfb788b7c3dda7deb431b99c",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CircleParity.lean",
+      "sha256": "585438e641a6b62af87b2bea9f20cc1d5e0ca938a78c2c0b6c9420ef765644d4",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CircleRoundMetric.lean",
+      "sha256": "ca739b6f8d624e864826eb1456e1b5c02a1365cf56eaa6ed74c8e58abc1cc1f2",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CircleSpectralLower.lean",
+      "sha256": "67dc26af6837faf30f5785b79298a8caf356eded4d5744329403dbb30c82e6db",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/ClassicalPotentialWeak.lean",
+      "sha256": "7c1ce2442ec9662c92cfc0fcc703128e6e920d8f0f26a10fc10ba0e026e189d9",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CompactC2WeakH1.lean",
+      "sha256": "4317b4e67eb4246f00d7d2538f8b8d99c8a4a985b65c2f0ebe8c2ff89597fadc",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CompactFirstPositive.lean",
+      "sha256": "174436f09d018a24e8039ff8fc6536dec546b67d7e769c2103fd92bf7d152db8",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CompactPotentialDomain.lean",
+      "sha256": "f190d8b71a1a86af957a6a0f9920deb341399a056476e87a4e041827457ded42",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CompactPotentialFirstPositive.lean",
+      "sha256": "bb115d26b5505d2f7c069fa54e36f441fc579841bbfdba093a8be05e0b83793a",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CompactPotentialGround.lean",
+      "sha256": "a4e60e6a7c9776f77abb1a345f56915af5caeaa431a5fade5157d3c9ceb3bd44",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotAngularCoercivity.lean",
+      "sha256": "b501fb0875ea8b355730379be50af36b670453c561244e36d56729bb53f7be08",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotAngularDeviationCoercivity.lean",
+      "sha256": "71eed21da32f7483dffe0f853edcd58436202c8645bac63a8c9acf524c9af115",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotAngularEquality.lean",
+      "sha256": "73d20fb5fa16eaca1890c7cc9b8da07d5ff4ce7b91b7fc28cc45b04f510e84cc",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotAngularPoincare.lean",
+      "sha256": "eb7853c98fc13b4c6e5a6305af0478577ea29cfb093368f8a85f18e7618efa9a",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotAngularProjection.lean",
+      "sha256": "ae0fdc32b6fb8c3359760f8afc52ae66b6900633a5f48d1a855ee4902a5f8730",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotScalarCutoff.lean",
+      "sha256": "e9c9208ca05987ad6c52be16b91b015249d2a15f63ee672c9ca3181109907077",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotScalarPicone.lean",
+      "sha256": "abe4ad86ee85c2be1080f1427f887320b0c6e6cc09a836c731b01cca2271bc40",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotScalarPiconeEquality.lean",
+      "sha256": "1e5bffcac4fe0f3d8cb3173dce727a21b86eb7d7f46ced111e469f57ffbf5de5",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotSphereBochnerEnergy.lean",
+      "sha256": "aa614d7e6f6e10010ac196bee33b14774f72b6402c0842c03582d251f8c46839",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotSphereDiffeomorph.lean",
+      "sha256": "a6600611a5835076f6818446eeec4573536932ef583d7a36a63158bed0976bd5",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotSphereDifferential.lean",
+      "sha256": "14d79ea0d95a39352491d4e0e407fdd936b32d1b4395b95d26d729d8dae2da64",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotSphereEnergy.lean",
+      "sha256": "f4ae20e4f96644f1b75be542747182cc2fbd519519a1da331457eed010155e8c",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotSphereFullIntegral.lean",
+      "sha256": "7fb5054aadfa1347b323af45281148c5cb1fada603ab198353405974c8eea5f1",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotSphereMetric.lean",
+      "sha256": "082a390b3a8a610f9de9042bfab3be0629de6e1ee89395395d243a520a3f28d8",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotSphereVolume.lean",
+      "sha256": "93cb8ad48277d23bc2ac82983e4416ea6023d2694c716e1e7c802a99907a9cda",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotTransverseEquality.lean",
+      "sha256": "1095e7dbf898e4a32be8f2c6e2b548bd220764dc14423b314377ac6eaa2acdee",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/CotTransversePiconeLower.lean",
+      "sha256": "73c641e6d92dba102b9d543d8cf5017781039cc305b3f0476a2e4ecf253ed3ec",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/EvenSquareFiniteProfile.lean",
+      "sha256": "cd7e10256254e88c2f6648d36796d3c514c5ff17f28e9245debae42b4d69899e",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/EvenSquareProfile.lean",
+      "sha256": "81e223f2c3336d4ad31a9df31fb32bb7b4e6d2f4fcac0829268dc8f31dd75d4d",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/FirstAngularIntegratedEquality.lean",
+      "sha256": "1b55ed1b56186a80d20d9270d472573a2d7b0dccceadaec01ca360b73518cd4d",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/FullSphereFirstLower.lean",
+      "sha256": "7c062bfc535256a60bd381754dfdf040351ff8a21bf49165da308a89833e0334",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/FullSphereFirstMeanZero.lean",
+      "sha256": "4b9cc16981b17d4b49a57d35208adf76a192dbe08caeb7b73f96ffa64fdfe715",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/GenericRoundPoincare.lean",
+      "sha256": "fd886a2ae9cfdf5853bf3f0a5b911fbfb0a1440c77d64240e9baade6c2f1bc7e",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/GroundStateContinuity.lean",
+      "sha256": "11fa80d99d31eaf5e7384d650b1878bceccfb435fc8ef42c23792bb07d5bf9ae",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/HalfDensityEnergy.lean",
+      "sha256": "18783ffcb9d33ff19356742c4f225df77a1b3c6e15d51ada9ecaaa1b2f2f599c",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/LatMeasureBochner.lean",
+      "sha256": "f6d8a5a283a2883e7ed49b7deace044a6635513d863370f43cc88c647793a196",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/LatMeasureIdentity.lean",
+      "sha256": "6d77d4287e247e0634a49f1da57530e8fa53272551e3c6a7ec007ae788f2c8bc",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/MeanSphereDomain.lean",
+      "sha256": "76b7f317146df6e0703458565fe7390b485fc3dc0b6591c1a4007c6f1754a6a0",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/MeanSphereEnergySplit.lean",
+      "sha256": "e64d4a6f033396b9c95fd83c4314097226b997e3531a13fd37e80d34ce679590",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/MeanSphereNormSplit.lean",
+      "sha256": "c535d155b47325c02dda660718f175cce13681a762be7842d2c3cd08ef4dfbd2",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/MeanSpherePoleFamily.lean",
+      "sha256": "50d02670bbf22ca8a8968fdfb317e0c58437c6298bbb177db714761d561796e2",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/NormalizedFirstModeClassification.lean",
+      "sha256": "576a1df69d5730a1f2e6e26d823d20473464de1c1919c6aa38b52e70476c7a49",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/NormalizedVMFWeakGap.lean",
+      "sha256": "3c06f041f75cb4815e61d1eb6eeb67f86109d32a1b9c0c400199add5a1ec851e",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/OriginalTiltEigenspaceSimple.lean",
+      "sha256": "6d72a7b1e405f950bc2438764d905297653738b344d9217ec10a4309397fc3cc",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/OriginalTiltGroundExists.lean",
+      "sha256": "becb26f5d88dd8022a82066c719db0682473b2515498975c1960e328a1814c7b",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/OriginalWeakFirstEquality.lean",
+      "sha256": "815b42e631e99221f4944fc74e46b058a66b586a4c40b6703173d4d32637e676",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/OriginalWeightedGround.lean",
+      "sha256": "0ebe78d03ea990ee17602094b887c353e5000e37c6c3ea6729b6c53a04b7ad18",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/OriginalWeightedWeakGap.lean",
+      "sha256": "6f56c90bd801d9993342eb65a7a61ee16dc69c4411584ac2d45631e87aaff933",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/OrthogonalStationarity.lean",
+      "sha256": "6f6ca020ce8377dac768dd7fd96bd84aa38071446049c6a935976b3146e2bb53",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalDriftFirstPositive.lean",
+      "sha256": "f4d07d25533f873943c63d4141f516cf38350150e87c7553891ed474cc5072c8",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalFirstDimension.lean",
+      "sha256": "db19555385826c821537fcb45866de6a9ba956a936a03de78ab2590bab9c3b64",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalFirstEigenspace.lean",
+      "sha256": "c8c5417179d4a5d7cf3b94c505dbfc243f73d0e1ee985cdbacfef9f8c79d3bd3",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalGapEigenComparison.lean",
+      "sha256": "23593ee9f080bda16c061aecd2afec2bede1f776dc1bfec52794133591c1ce40",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalGapEven.lean",
+      "sha256": "a4ee647050d7aa23806ddb2b3cc52348b0ea5fd456228ca2cd865fd31598cacb",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalGapFullDomain.lean",
+      "sha256": "deb47b3ee53cccf04551030a1dda5d238c617d466333384308758c61b098969e",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalGapIdentification.lean",
+      "sha256": "adea9fb4d58b9b6df8ecaaac0d04da205cbb0804bf24b131118ffb2f7e4905ee",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalGapZero.lean",
+      "sha256": "eba3e61226605fbad471fff8c061904495a656a50d31fd88df23f1a3bc87a85f",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalGapZeroExact.lean",
+      "sha256": "feeeec968bd0980a8adf826476cb77c676efb29cb71ee479b3ac7347e96f34c6",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalHalfDensity.lean",
+      "sha256": "263abca13af4511afe036f934ab1eb5221d48bf48062ad3170b30b1e95ce37b3",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalSphereFiniteProfile.lean",
+      "sha256": "789a1439ebd8d38dbb5a4f6861cd41806b022327c2414c50664e7935613932d2",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalSphereLatitudeProfileC3.lean",
+      "sha256": "9c2c7adf1181dd2aa2394c1fc67304a49498c431a5c4ae4cdd5e9d4494c59423",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalWeightedFirst.lean",
+      "sha256": "7417f43679c6f1e61e1a32235abe74332c71ad4dfdff70f72644cc19db36caf7",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PhysicalWeightedGap.lean",
+      "sha256": "7b34345681a4aaf3915977ee1c66a6bf84a52bc4f6299dcb20b21756ca39ddbe",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PolarRoundMetric.lean",
+      "sha256": "3a716d16e55013a59cacd06573c819f1f786f2c48255d6e4c97faa405cc2cc3f",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PositiveGroundOrthogonal.lean",
+      "sha256": "df7e7aa31f9b2151ad9f0ddca7983b72f4b8a0ad1dc8311a220ac7024b5c4151",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PotentialMinimumDependence.lean",
+      "sha256": "fa4ee10b181c6d4407a531ebb93831e9a84c7fade051bff553dce02d6b22bb97",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/PotentialRayleighStationarity.lean",
+      "sha256": "c2ce10b92e6257d8c9b1410c56a30372a7b5ff2d7061fb9d71ba50a867e639a2",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/ProductGradientSlices.lean",
+      "sha256": "d05d46f85a6c5d42d212b4f3b4a49e4327240a8eee7c71b4e4d0befbc81a1b29",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/RadialEigenvalueLower.lean",
+      "sha256": "9ca4ae4711f7112a76cf2f646541fb8413a2dec1ae5fce5b88823a46bca688a6",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/RoundAngularDeviationPoincare.lean",
+      "sha256": "385068d8cde04638852eeecf9981a1042c0c42c5c2d8c21f9e4f1a1ed2d9303e",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/RoundCirclePoincare.lean",
+      "sha256": "241526eae0c852aabae82972f6cde041c0b3870c3ac93c7685915ebf74243dd0",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/RoundCircleSharpGap.lean",
+      "sha256": "1a08fb59cf8c819078dad6469615384b28ed204e862d1837a3a7ea29a889175a",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/RoundPoincareEquality.lean",
+      "sha256": "14bc61fffa31c9d4038292167fcc611dcc96bffa5f89d42603f71e06d07cbb4a",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereActualTiltProfile.lean",
+      "sha256": "d08679539183813bab97fcef6c39e9ebbc567f74a16bc8be074000b3f57ce6f9",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereFiniteProfile.lean",
+      "sha256": "47f20a6aabd7b8dbfc5f225d4f67d92a7d2b243054d633ca48fe17a45c862e8d",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereGroundAxisymmetry.lean",
+      "sha256": "0ccf14b781b595e0538989d8724dd6a54d72458d93022bca6276fbfdb221b7e1",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereGroundDomain.lean",
+      "sha256": "88002a88e921392ceababbf44d5c447b90dd2f64c27777f7678d360d7f2dbb36",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereGroundSymmetry.lean",
+      "sha256": "fce6c589c207d7360e81ac8c8ff03eb43b076bdd350d5985a7d01ee511f62023",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereLatitudeOperator.lean",
+      "sha256": "127e45cdb6b959c8b79487f3d999a491f1430d0fef7a69848c2d07f44b049576",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereLatitudeProfile.lean",
+      "sha256": "c43b1a3008a0fa72e3f63f80e08616b88578c5f5073f5da5f3bc994e1dfb8962",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/RoundSphereLatitudeProfileC3.lean",
+      "sha256": "5de88275463adc4edaad714e4c15b03878a371a5905674cecbf24aefb926345c",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/RoundSpherePositiveGround.lean",
+      "sha256": "cb06f0e70efe9021925217fb92c356bc29a1863e8824893f9f654f6533a9600d",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/SeparatedBochnerFubini.lean",
+      "sha256": "af5752e4c5207689529b4711c0d1e1294918ff27d714a5311fd22e68d9d276b1",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/SeparatedGradient.lean",
+      "sha256": "8029b6ef12dfeb60c769d49e214bcd576ba5de9b022142205e34c904cf9e7efb",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/SeparatedMeanEnergy.lean",
+      "sha256": "4e0dd0f6ab02fead7f0940fc66eb2d59954744c073010b3167943ff99a17c725",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/SeparatedMeasureFubini.lean",
+      "sha256": "6de8c027f4e3e0bfbc8c6dd0bf2edaf4c29a3cd0a85684bcab7d47c0e4153d54",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/SmoothAbsoluteH1.lean",
+      "sha256": "797f4246484c3f6f9d7f20f73a747d3b244c6704a009983f998e4e39b15ba7b1",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/SmoothSchrodingerPositivity.lean",
+      "sha256": "59bf6866a4806f41909909c54596ee3d4bcdab4e4575ee170160159423e8f2f9",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/SphereFirstModeRecovery.lean",
+      "sha256": "afc353ebcd7d054794592831b8367c1c6d4d4df2c53940231d1b4da4479b2864",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/SphereGroundMoments.lean",
+      "sha256": "46f1ec2a196557e5ad031919271096651c02b6f40c3d91950641db018d35ce23",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/SphereIsometricCoordinates.lean",
+      "sha256": "b952d9906205083fa590309920a96290d9be72da1bd9399abd1b60cf9bc4df84",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/SphereStrictMonotonicity.lean",
+      "sha256": "4ae1c53b376de92d644dbaade40b7a561cc232a4725e9fb17f0dc7ea30229b47",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/SphereWeightedSymmetry.lean",
+      "sha256": "90703b852d9163c5d194ddb35125e34ed7129e75d1a9330242536b58af0c8f50",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/TiltDriftClassification.lean",
+      "sha256": "2e0ae231ef5e54b828120d8fec7d5ea3c1e392243df81a5a447eb995ec785809",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/TiltEvenness.lean",
+      "sha256": "2b5a9c08c317dfc8aa6063d96fe7216ee36cac2f7a99394ebdf1f903c7e48349",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/TiltHellmannFeynman.lean",
+      "sha256": "f3755357df1588f63f4c91a8d88cdc834ffa959153aec0bd452d391da3927ffe",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/TiltRateContinuity.lean",
+      "sha256": "1d834af641c30aab24e2fdee8d0c7bfe44726fcac1d37c05b8465f80020509dd",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/TiltStrictConcavity.lean",
+      "sha256": "bbdc6ec357db2ec03f1b0e38fcd236a9f3c0145b3b9ea0bb2f41509e20dfd2aa",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/TransverseCommonGround.lean",
+      "sha256": "0e2acd648fe5f93e7e285477124fc01931a73dae1636b2b3a0a0b78533048246",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/TransverseFirstMinimumUpper.lean",
+      "sha256": "6089cd41aaeadbd99d3953286c67e14d8948dc1e703fd3fdd92b36ab253d6768",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/TransverseModeDimension.lean",
+      "sha256": "0b022345b1bb813a53dcd6f1e50714bed7a415085fadcc696086cdb978141d73",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/TransverseSmoothGround.lean",
+      "sha256": "8ba0fa5173a0e06fb071f61713b1b8a10dbb360ecf45a3a7bd3289bfb61228df",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/TransverseSphereMode.lean",
+      "sha256": "a5a69c52b37858f694f23f44dbc65b965f7058f30312a1fb62c15da47812b623",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/TransverseWeakH1.lean",
+      "sha256": "025efa9d7b72e0b55b7777b75a24f67c6403724cc8647771e676380d9d6797d9",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/WarpedProductVolume.lean",
+      "sha256": "b4c9020cd8954d987ebabefae9636ce66bd199255630b23c2852f6383d4ce8f2",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/WeakFirstEigenspace.lean",
+      "sha256": "01a5c1f21e02603270ab9737702cad8de4031e83482c7121a10220e0f5afbf5f",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/WeakHalfDensityEnergy.lean",
+      "sha256": "5e1b7724b3c39d1bf1b95ab76a18e08e12e9b792e04d7bb0a6f50417323208fc",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/WeakPhysicalRepresentative.lean",
+      "sha256": "9c83b6610c0e769ae7be9ad38fdec258e34b8bf71fbc5a457eb9551bdf856798",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/WeightedEigenNormalization.lean",
+      "sha256": "64434ce6d5e9b4d7cdfe326780b7977cd0822cacf77a17649a7344ccaa29e7f7",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/WeightedMinimumRegularity.lean",
+      "sha256": "614ac23563c9dee10091f8a8024b688f92d7d263dfa17c129ff0dd275cc6555a",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation/WeightedWeakH1Gauge.lean",
+      "sha256": "55d66b5393c89cd308a82f8e7a394834c249e1ce2ae8770d7992deb3057ff277",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/continuation.lean",
+      "sha256": "54ce22e826b5e198df8ecf981605220d98a42f2dc9febce3493e4f7f36248ab5",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/lake-manifest.json",
+      "sha256": "f1d06becd2469ba78a56a832083f466619d970bb3cc0a841a1b9731fb09d4130",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/lakefile.toml",
+      "sha256": "b9490758a53fff91d31ecf16434915819f7634d72d19734ce6144ac6f3bc9f59",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "match": true
+    },
+    {
+      "release_relative_path": "formalization/sphere433/scripts/audit_continuation_closure.py",
+      "sha256": "48a539cfb17c396a04ebcdde4e1307d0a85f97ae653b11994e4b958a52ef7bc0",
+      "match": true
+    }
+  ],
+  "source_manifest_entry_count": 151,
+  "all_sources_match": true
+}

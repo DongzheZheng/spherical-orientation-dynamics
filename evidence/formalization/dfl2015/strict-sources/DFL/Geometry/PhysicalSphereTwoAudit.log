@@ -1,0 +1,3 @@
+'DFL.Geometry.sphereMomentBridge_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Geometry.sphere_isUnimodal_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Geometry.sphere_nondegenerateFold_two' depends on axioms: [propext, Classical.choice, Quot.sound]

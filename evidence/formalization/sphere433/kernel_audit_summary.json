@@ -1,0 +1,10 @@
+{
+  "allowed_standard_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "checked_declaration_count": 2108,
+  "all_dependencies_standard": true,
+  "audit_log": "public-kernel-dependencies.log"
+}

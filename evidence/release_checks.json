@@ -1,0 +1,8 @@
+{
+  "source_and_data_static_checks": "passed",
+  "json_and_python_syntax": "passed",
+  "pdf_count": 12,
+  "lean_count": 325,
+  "csv_count": 20,
+  "pdf_document_metadata": "empty"
+}

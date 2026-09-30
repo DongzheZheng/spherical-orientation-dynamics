@@ -1,0 +1,26 @@
+\documentclass[tikz,border=2mm]{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\definecolor{navy}{HTML}{174A68}
+\definecolor{orange}{HTML}{C76336}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+ group style={group size=2 by 1,horizontal sep=12mm},
+ width=7.3cm,height=5.5cm,grid=major,grid style={black!9},
+ tick label style={font=\small},label style={font=\small},
+ legend style={font=\small,draw=none,fill=white,fill opacity=.86,text opacity=1}]
+\nextgroupplot[xlabel={field $r$},ylabel={inverse time},xmin=0,xmax=8,ymin=0,ymax=9,legend pos=north west]
+\addplot[navy,very thick] table[x=r,y=fixed_gap,col sep=comma]{../numerics/data/slow_rate.csv};
+\addlegendentry{fixed-field $\lambda_2(r)$}
+\addplot[orange,very thick,dashed] table[x=r,y=guaranteed_rate,col sep=comma]{../numerics/data/slow_rate.csv};
+\addlegendentry{feedback guarantee $q_2\lambda_2$}
+\nextgroupplot[xlabel={$\rho-3$},ylabel={inverse time},xmin=0,xmax=1,ymin=0,ymax=1.8,legend pos=north west]
+\addplot[orange,very thick] table[x=rho_minus_3,y=guaranteed_rate,col sep=comma]{../numerics/data/slow_rate.csv};
+\addlegendentry{$q_2\lambda_2$}
+\addplot[navy,densely dotted,very thick] table[x=rho_minus_3,y=onset_asymptotic,col sep=comma]{../numerics/data/slow_rate.csv};
+\addlegendentry{$\frac43(\rho-3)$}
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

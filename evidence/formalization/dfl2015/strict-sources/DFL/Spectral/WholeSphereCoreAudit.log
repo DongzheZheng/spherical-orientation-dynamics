@@ -1,0 +1,44 @@
+DFL.Spectral.alignedMeasure_bounds (d : ℕ) (r : ℝ) :
+  ENNReal.ofReal (Real.exp (-2 * |r|)) • DFL.Spectral.alignedMeasure d 0 ≤ DFL.Spectral.alignedMeasure d r ∧
+    DFL.Spectral.alignedMeasure d r ≤ ENNReal.ofReal (Real.exp (2 * |r|)) • DFL.Spectral.alignedMeasure d 0
+'DFL.Spectral.alignedMeasure_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.aligned_integral_bounds (d : ℕ) (r : ℝ) (g : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hg0 : MeasureTheory.Integrable g (DFL.Spectral.alignedMeasure d 0))
+  (hgr : MeasureTheory.Integrable g (DFL.Spectral.alignedMeasure d r))
+  (hgpos : ∀ (x : ↑(DFL.Spectral.SpherePoint d)), 0 ≤ g x) :
+  Real.exp (-2 * |r|) * ∫ (x : ↑(DFL.Spectral.SpherePoint d)), g x ∂DFL.Spectral.alignedMeasure d 0 ≤
+      ∫ (x : ↑(DFL.Spectral.SpherePoint d)), g x ∂DFL.Spectral.alignedMeasure d r ∧
+    ∫ (x : ↑(DFL.Spectral.SpherePoint d)), g x ∂DFL.Spectral.alignedMeasure d r ≤
+      Real.exp (2 * |r|) * ∫ (x : ↑(DFL.Spectral.SpherePoint d)), g x ∂DFL.Spectral.alignedMeasure d 0
+'DFL.Spectral.aligned_integral_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.sphereVariance_bounds (d : ℕ) (r : ℝ) (f : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hf0 : MeasureTheory.MemLp f 2 (DFL.Spectral.alignedMeasure d 0)) :
+  Real.exp (-2 * |r|) * DFL.Spectral.sphereVariance d 0 f ≤ DFL.Spectral.sphereVariance d r f ∧
+    DFL.Spectral.sphereVariance d r f ≤ Real.exp (2 * |r|) * DFL.Spectral.sphereVariance d 0 f
+'DFL.Spectral.sphereVariance_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coreTangentGradient_pairing (d : ℕ) (f : DFL.Spectral.SphereC1Core d) (x : ↑(DFL.Spectral.SpherePoint d))
+  (v : DFL.Spectral.Ambient d) (hv : inner ℝ (↑x) v = 0) :
+  inner ℝ (DFL.Spectral.coreTangentGradient d f x) v = (fderiv ℝ f.toFun ↑x) v
+'DFL.Spectral.coreTangentGradient_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coreEnergy_bounds (d : ℕ) (r : ℝ) (f : DFL.Spectral.SphereC1Core d) :
+  Real.exp (-2 * |r|) * DFL.Spectral.coreEnergy d 0 f ≤ DFL.Spectral.coreEnergy d r f ∧
+    DFL.Spectral.coreEnergy d r f ≤ Real.exp (2 * |r|) * DFL.Spectral.coreEnergy d 0 f
+'DFL.Spectral.coreEnergy_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coreFormNormSq_bounds (d : ℕ) (r : ℝ) (f : DFL.Spectral.SphereC1Core d) :
+  Real.exp (-2 * |r|) * DFL.Spectral.coreFormNormSq d 0 f ≤ DFL.Spectral.coreFormNormSq d r f ∧
+    DFL.Spectral.coreFormNormSq d r f ≤ Real.exp (2 * |r|) * DFL.Spectral.coreFormNormSq d 0 f
+'DFL.Spectral.coreFormNormSq_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coordinateCore_tangentGradient (d : ℕ) (i : Fin (d + 1)) (x : ↑(DFL.Spectral.SpherePoint d)) :
+  DFL.Spectral.coreTangentGradient d (DFL.Spectral.coordinateCore d i) x = DFL.Spectral.coordinateTangentGradient d i x
+'DFL.Spectral.coordinateCore_tangentGradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coreGap_nonneg (d : ℕ) (r : ℝ) : 0 ≤ DFL.Spectral.coreGap d r
+'DFL.Spectral.coreGap_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coreGap_zero_le_dimension (d : ℕ) : DFL.Spectral.coreGap d 0 ≤ ↑d
+'DFL.Spectral.coreGap_zero_le_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coreRayleigh_field_lower (d : ℕ) (r : ℝ) (f : DFL.Spectral.SphereC1Core d)
+  (hv0 : 0 < DFL.Spectral.sphereVariance d 0 (DFL.Spectral.coreValue d f)) :
+  Real.exp (-2 * |r|) ^ 2 * DFL.Spectral.coreRayleigh d 0 f ≤ DFL.Spectral.coreRayleigh d r f
+'DFL.Spectral.coreRayleigh_field_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coreGap_field_lower (d : ℕ) (r : ℝ) :
+  Real.exp (-2 * |r|) ^ 2 * DFL.Spectral.coreGap d 0 ≤ DFL.Spectral.coreGap d r
+'DFL.Spectral.coreGap_field_lower' depends on axioms: [propext, Classical.choice, Quot.sound]

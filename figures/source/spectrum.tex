@@ -1,0 +1,25 @@
+\documentclass[tikz,border=2mm]{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\definecolor{navy}{HTML}{184A68}
+\definecolor{orange}{HTML}{DA7441}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+ group style={group size=2 by 1,horizontal sep=12mm},
+ width=7.2cm,height=5.5cm,grid=major,grid style={black!10},
+ tick label style={font=\small},label style={font=\small},
+ legend style={draw=none,fill=white,fill opacity=.85,text opacity=1,font=\small},
+ xlabel={$r$},xmin=0,xmax=8]
+\nextgroupplot[ylabel={eigenvalue},ymin=1.7,ymax=13.7,legend pos=north west]
+\addplot[navy,very thick] table[x=r,y=gap,col sep=comma]{../numerics/data/spectrum.csv};
+\addlegendentry{$\lambda_2(r)$: transverse first mode}
+\addplot[orange,very thick,dashed] table[x=r,y=radial,col sep=comma]{../numerics/data/spectrum.csv};
+\addlegendentry{first radial mode}
+\nextgroupplot[ylabel={$\lambda_{\mathrm{rad}}-\lambda_2$},ymin=0,ymax=5.5]
+\addplot[orange,very thick] table[x=r,y=splitting,col sep=comma]{../numerics/data/spectrum.csv};
+\addplot[black!50,densely dotted] coordinates {(0,0) (8,0)};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

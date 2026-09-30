@@ -1,0 +1,700 @@
+{
+  "description": "SHA-256 digests and source line locations for numerical function/class definitions. Abstract-syntax comparisons concern top-level definitions; main functions include output routing and figure labels.",
+  "files": [
+    {
+      "file": "generate.py",
+      "original_sha256": "ed7718eedf9ad230a06097a29bd17dc72bb978ae206c6eeaa8d2aa504cb02f19",
+      "release_sha256": "1fff73ad2f03a160d1aaf74440b328c6db030cc79156cb1013dbb8b25f9daddf",
+      "definitions": [
+        {
+          "name": "save_csv",
+          "original_lines": [
+            24,
+            28
+          ],
+          "release_lines": [
+            26,
+            30
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "Quadrature",
+          "original_lines": [
+            31,
+            43
+          ],
+          "release_lines": [
+            33,
+            45
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "inverse_feedback",
+          "original_lines": [
+            46,
+            48
+          ],
+          "release_lines": [
+            48,
+            50
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "branch",
+          "original_lines": [
+            51,
+            57
+          ],
+          "release_lines": [
+            53,
+            59
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "fold",
+          "original_lines": [
+            60,
+            72
+          ],
+          "release_lines": [
+            62,
+            74
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "Galerkin",
+          "original_lines": [
+            75,
+            121
+          ],
+          "release_lines": [
+            77,
+            123
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "main",
+          "original_lines": [
+            124,
+            239
+          ],
+          "release_lines": [
+            126,
+            244
+          ],
+          "ast_unchanged": false
+        }
+      ]
+    },
+    {
+      "file": "phase_dynamics.py",
+      "original_sha256": "d51b23c819234eb09ef4e6947788f842e332146f127515ec4e3121f4c0a3367f",
+      "release_sha256": "a3a0b715b5157fe7bca12cbd06abb0b25bd1e6d882320bad9b6ec68f24d83e52",
+      "definitions": [
+        {
+          "name": "write_csv",
+          "original_lines": [
+            28,
+            32
+          ],
+          "release_lines": [
+            30,
+            34
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "c3",
+          "original_lines": [
+            35,
+            44
+          ],
+          "release_lines": [
+            37,
+            46
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "c3_prime",
+          "original_lines": [
+            47,
+            50
+          ],
+          "release_lines": [
+            49,
+            52
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "log_z3",
+          "original_lines": [
+            53,
+            61
+          ],
+          "release_lines": [
+            55,
+            63
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "j_of_r",
+          "original_lines": [
+            64,
+            65
+          ],
+          "release_lines": [
+            66,
+            67
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "R",
+          "original_lines": [
+            68,
+            69
+          ],
+          "release_lines": [
+            70,
+            71
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "R_prime",
+          "original_lines": [
+            72,
+            76
+          ],
+          "release_lines": [
+            74,
+            78
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "phi",
+          "original_lines": [
+            79,
+            80
+          ],
+          "release_lines": [
+            81,
+            82
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "delta_energy",
+          "original_lines": [
+            83,
+            86
+          ],
+          "release_lines": [
+            85,
+            88
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "bisect",
+          "original_lines": [
+            89,
+            100
+          ],
+          "release_lines": [
+            91,
+            102
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "ordered_roots",
+          "original_lines": [
+            103,
+            106
+          ],
+          "release_lines": [
+            105,
+            108
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "bernoulli",
+          "original_lines": [
+            109,
+            112
+          ],
+          "release_lines": [
+            111,
+            114
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "tridiagonal",
+          "original_lines": [
+            115,
+            129
+          ],
+          "release_lines": [
+            117,
+            131
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "metrics",
+          "original_lines": [
+            132,
+            136
+          ],
+          "release_lines": [
+            134,
+            138
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "run_pde",
+          "original_lines": [
+            139,
+            199
+          ],
+          "release_lines": [
+            141,
+            201
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "make_landscape",
+          "original_lines": [
+            202,
+            244
+          ],
+          "release_lines": [
+            204,
+            246
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "make_dynamics",
+          "original_lines": [
+            247,
+            311
+          ],
+          "release_lines": [
+            249,
+            313
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "main",
+          "original_lines": [
+            314,
+            320
+          ],
+          "release_lines": [
+            316,
+            325
+          ],
+          "ast_unchanged": false
+        }
+      ]
+    },
+    {
+      "file": "transport_atlas.py",
+      "original_sha256": "91860c4ac432a4b9c7973a86cff68d413030558534c8e03558d8951181a1f1ac",
+      "release_sha256": "7b31a8c759d0bab5e183e25a1cd8eb6d28ab154717309407fbb3b5a92c5348b8",
+      "definitions": [
+        {
+          "name": "save_csv",
+          "original_lines": [
+            38,
+            42
+          ],
+          "release_lines": [
+            39,
+            43
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "spherical_c",
+          "original_lines": [
+            45,
+            49
+          ],
+          "release_lines": [
+            46,
+            50
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "spherical_cp",
+          "original_lines": [
+            52,
+            55
+          ],
+          "release_lines": [
+            53,
+            56
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "geometry",
+          "original_lines": [
+            58,
+            73
+          ],
+          "release_lines": [
+            59,
+            74
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "model_at_r",
+          "original_lines": [
+            76,
+            102
+          ],
+          "release_lines": [
+            77,
+            103
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "critical_angle",
+          "original_lines": [
+            105,
+            109
+          ],
+          "release_lines": [
+            106,
+            110
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "wave_speeds",
+          "original_lines": [
+            112,
+            121
+          ],
+          "release_lines": [
+            113,
+            122
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "regularized_density_ratio",
+          "original_lines": [
+            124,
+            127
+          ],
+          "release_lines": [
+            125,
+            128
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "r_at_density_ratio",
+          "original_lines": [
+            130,
+            139
+          ],
+          "release_lines": [
+            131,
+            140
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "boundary_tau",
+          "original_lines": [
+            142,
+            144
+          ],
+          "release_lines": [
+            143,
+            145
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "boundary_r_at_ratio",
+          "original_lines": [
+            147,
+            156
+          ],
+          "release_lines": [
+            148,
+            157
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "make_transport",
+          "original_lines": [
+            159,
+            168
+          ],
+          "release_lines": [
+            160,
+            169
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "make_phase_map",
+          "original_lines": [
+            171,
+            213
+          ],
+          "release_lines": [
+            172,
+            214
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "make_slow_rate",
+          "original_lines": [
+            216,
+            230
+          ],
+          "release_lines": [
+            217,
+            231
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "make_fold_wedge",
+          "original_lines": [
+            233,
+            292
+          ],
+          "release_lines": [
+            234,
+            293
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "compile_tex",
+          "original_lines": [
+            440,
+            447
+          ],
+          "release_lines": [
+            441,
+            448
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "validate",
+          "original_lines": [
+            450,
+            504
+          ],
+          "release_lines": [
+            451,
+            505
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "main",
+          "original_lines": [
+            507,
+            533
+          ],
+          "release_lines": [
+            508,
+            538
+          ],
+          "ast_unchanged": false
+        }
+      ]
+    },
+    {
+      "file": "orientation_sphere.py",
+      "original_sha256": "94cb345896a86b9d52c628578d1a44cb24dd6c84ec14ad4a59bc005990beb6ed",
+      "release_sha256": "2bfe33f5452518581ab62bfa2c301a9722415a7d14e2156324fc5616b09a7028",
+      "definitions": [
+        {
+          "name": "c2",
+          "original_lines": [
+            38,
+            42
+          ],
+          "release_lines": [
+            41,
+            45
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "density",
+          "original_lines": [
+            45,
+            49
+          ],
+          "release_lines": [
+            48,
+            52
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "verify",
+          "original_lines": [
+            52,
+            85
+          ],
+          "release_lines": [
+            55,
+            88
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "lighten_colors",
+          "original_lines": [
+            88,
+            95
+          ],
+          "release_lines": [
+            91,
+            98
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "sphere_panel",
+          "original_lines": [
+            98,
+            158
+          ],
+          "release_lines": [
+            101,
+            161
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "make_figure",
+          "original_lines": [
+            161,
+            226
+          ],
+          "release_lines": [
+            164,
+            229
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "main",
+          "original_lines": [
+            229,
+            238
+          ],
+          "release_lines": [
+            232,
+            246
+          ],
+          "ast_unchanged": false
+        }
+      ]
+    },
+    {
+      "file": "energy_landscape_3d.py",
+      "original_sha256": "32c9b35e908e14691298934668bce89c5cc0117b234c8a7efdcb0949c9284dc4",
+      "release_sha256": "a3a130ab6c95227565e7e60a492c75d7b08dfbd1fa8d3370f7a9197ada90eb12",
+      "definitions": [
+        {
+          "name": "inverse_c3",
+          "original_lines": [
+            38,
+            43
+          ],
+          "release_lines": [
+            40,
+            45
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "landscape",
+          "original_lines": [
+            46,
+            48
+          ],
+          "release_lines": [
+            48,
+            50
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "stationary_data",
+          "original_lines": [
+            51,
+            64
+          ],
+          "release_lines": [
+            53,
+            66
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "add_stationary_ring",
+          "original_lines": [
+            67,
+            74
+          ],
+          "release_lines": [
+            69,
+            76
+          ],
+          "ast_unchanged": true
+        },
+        {
+          "name": "main",
+          "original_lines": [
+            77,
+            255
+          ],
+          "release_lines": [
+            79,
+            248
+          ],
+          "ast_unchanged": false
+        }
+      ]
+    }
+  ]
+}

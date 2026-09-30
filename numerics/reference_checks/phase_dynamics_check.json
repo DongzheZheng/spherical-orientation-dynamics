@@ -1,0 +1,87 @@
+{
+  "landscape": {
+    "r_star": 1.9013643877257538,
+    "rho_star": 1.860214757027201,
+    "m_star": 0.5196996770258036,
+    "r_Maxwell": 2.8821941749420485,
+    "rho_Maxwell": 1.9258764317838966,
+    "m_Maxwell": 0.6593364881581925,
+    "rho_1p9_lower_r": 1.3260893787493457,
+    "rho_1p9_upper_r": 2.6359191026369677,
+    "rho_1p9_lower_m": 0.3975915703474946,
+    "rho_1p9_upper_m": 0.6309470063444931,
+    "rho_1p9_saddle_height": 0.04528477898366445,
+    "rho_1p9_ordered_depth": 0.027159421428678332,
+    "fold_height": 0.059413510244244794,
+    "Maxwell_equal_depth_residual": 1.3322676295501878e-15,
+    "comparison_previous_r_star": 5.329070518200751e-15,
+    "comparison_previous_rho_star": 5.995204332975845e-15
+  },
+  "dynamics": {
+    "scheme": "axisymmetric original PDE; Scharfetter-Gummel finite volume; lagged-J implicit Euler",
+    "reference_grid": {
+      "cells": 160,
+      "dt": 0.04
+    },
+    "cases": {
+      "uniform_basin": {
+        "rho": 1.9,
+        "r_initial": 1.0,
+        "end": 80.0,
+        "max_mass_error": 1.1586287484988134e-12,
+        "max_energy_step_increase": 1.5987211554602254e-14,
+        "minimum_density": 0.5984998737126217,
+        "terminal_polarization": 1.1283371897637777e-14,
+        "terminal_energy_relative_uniform": 1.9022561303927432e-12
+      },
+      "ordered_basin": {
+        "rho": 1.9,
+        "r_initial": 1.8,
+        "end": 80.0,
+        "max_mass_error": 6.94999613415348e-14,
+        "max_energy_step_increase": 3.1086244689504383e-15,
+        "minimum_density": 0.052645186429027865,
+        "terminal_polarization": 0.6307793980838686,
+        "terminal_energy_relative_uniform": 0.027245331556626118
+      },
+      "critical_small": {
+        "rho": 3.0,
+        "r_initial": 0.03,
+        "end": 120.0,
+        "max_mass_error": 1.0746958878371515e-13,
+        "max_energy_step_increase": 1.5987211554602254e-14,
+        "minimum_density": 1.3564664726648987e-07,
+        "terminal_polarization": 0.8997150974182772,
+        "terminal_energy_relative_uniform": -4.216857594677387
+      },
+      "critical_large": {
+        "rho": 3.0,
+        "r_initial": 0.06,
+        "end": 120.0,
+        "max_mass_error": 1.816324868286756e-13,
+        "max_energy_step_increase": 2.1316282072803006e-14,
+        "minimum_density": 1.356466472669254e-07,
+        "terminal_polarization": 0.899715097418186,
+        "terminal_energy_relative_uniform": -4.21685759467619
+      }
+    },
+    "space_time_refinement": {
+      "uniform_basin": {
+        "tau": 40.0,
+        "m_N80_dt008": 7.32787018199513e-11,
+        "m_N160_dt004": 1.5333951944453507e-11,
+        "m_N320_dt002": 6.4896399657630056e-12,
+        "coarse_fine_difference": 5.794474987549779e-11,
+        "fine_finer_difference": 8.844311978690502e-12
+      },
+      "ordered_basin": {
+        "tau": 40.0,
+        "m_N80_dt008": 0.6302731215110795,
+        "m_N160_dt004": 0.6307780501905923,
+        "m_N320_dt002": 0.6309041855788563,
+        "coarse_fine_difference": 0.000504928679512795,
+        "fine_finer_difference": 0.00012613538826400372
+      }
+    }
+  }
+}

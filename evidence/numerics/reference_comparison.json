@@ -1,0 +1,155 @@
+{
+  "passed": true,
+  "absolute_tolerance": 1e-09,
+  "relative_tolerance": 1e-08,
+  "csv_files": [
+    {
+      "file": "angle.csv",
+      "data_rows": 181,
+      "numeric_values": 362,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "fold.csv",
+      "data_rows": 320,
+      "numeric_values": 1280,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "fold_angle_wedge.csv",
+      "data_rows": 160,
+      "numeric_values": 1120,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "fold_pressure.csv",
+      "data_rows": 120,
+      "numeric_values": 360,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "gci_pressure.csv",
+      "data_rows": 79,
+      "numeric_values": 395,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "noise_boundary.csv",
+      "data_rows": 260,
+      "numeric_values": 780,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "noise_pressure.csv",
+      "data_rows": 141,
+      "numeric_values": 705,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "phase_branches.csv",
+      "data_rows": 602,
+      "numeric_values": 3612,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "phase_landscape.csv",
+      "data_rows": 450,
+      "numeric_values": 2700,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "quench_critical_large.csv",
+      "data_rows": 601,
+      "numeric_values": 1803,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "quench_critical_small.csv",
+      "data_rows": 601,
+      "numeric_values": 1803,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "quench_dynamics.csv",
+      "data_rows": 2004,
+      "numeric_values": 6012,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "quench_ordered_basin.csv",
+      "data_rows": 401,
+      "numeric_values": 1203,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "quench_profiles.csv",
+      "data_rows": 160,
+      "numeric_values": 800,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "quench_uniform_basin.csv",
+      "data_rows": 401,
+      "numeric_values": 1203,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "slow_rate.csv",
+      "data_rows": 201,
+      "numeric_values": 1206,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "spectrum.csv",
+      "data_rows": 81,
+      "numeric_values": 324,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "transport_hysteresis.csv",
+      "data_rows": 181,
+      "numeric_values": 905,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "transport_linear.csv",
+      "data_rows": 181,
+      "numeric_values": 905,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "transport_regularized.csv",
+      "data_rows": 181,
+      "numeric_values": 905,
+      "max_absolute_difference": 0.0
+    }
+  ],
+  "check_reports": [
+    {
+      "file": "convergence.json",
+      "numeric_values": 62,
+      "max_absolute_difference": 0
+    },
+    {
+      "file": "energy_landscape_3d_check.json",
+      "numeric_values": 26,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "orientation_sphere_check.json",
+      "numeric_values": 8,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "phase_dynamics_check.json",
+      "numeric_values": 62,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "transport_atlas_validation.json",
+      "numeric_values": 106,
+      "max_absolute_difference": 0.0
+    }
+  ],
+  "failures": []
+}

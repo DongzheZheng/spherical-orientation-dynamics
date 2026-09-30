@@ -1,0 +1,33 @@
+{
+  "runs": [
+    {
+      "script": "generate.py",
+      "seconds": 0.1695,
+      "exit_code": 0
+    },
+    {
+      "script": "phase_dynamics.py",
+      "seconds": 1.9918,
+      "exit_code": 0
+    },
+    {
+      "script": "transport_atlas.py",
+      "seconds": 0.3479,
+      "exit_code": 0
+    },
+    {
+      "script": "orientation_sphere.py",
+      "seconds": 1.6461,
+      "exit_code": 0
+    },
+    {
+      "script": "energy_landscape_3d.py",
+      "seconds": 1.5441,
+      "exit_code": 0
+    }
+  ],
+  "passed": true,
+  "reference_comparison": "runner_reference_comparison.json",
+  "tex_figures": false,
+  "pdf_metadata_cleared": true
+}

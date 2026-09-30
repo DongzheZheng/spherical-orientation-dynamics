@@ -1,0 +1,426 @@
+DFL.DFL2015UnimodalityConjecture : Prop
+def DFL.IsUnimodal : ℕ → Prop :=
+fun n =>
+  ∃ rStar,
+    0 < rStar ∧
+      StrictAntiOn (DFL.equilibriumDensity n) (Set.Ioc 0 rStar) ∧
+        StrictMonoOn (DFL.equilibriumDensity n) (Set.Ici rStar) ∧
+          deriv (DFL.equilibriumDensity n) rStar = 0 ∧
+            ∀ (r : ℝ), 0 < r → deriv (DFL.equilibriumDensity n) r = 0 → r = rStar
+def DFL.DFL2015UnimodalityConjecture : Prop :=
+∀ (n : ℕ), 2 ≤ n → DFL.IsUnimodal n
+DFL.Probability.strict_reverse_covariance (μ : MeasureTheory.Measure ℝ) [MeasureTheory.IsProbabilityMeasure μ]
+  [MeasureTheory.NoAtoms μ] (h : ℝ → ℝ) (hx : MeasureTheory.Integrable (fun x => x) μ)
+  (hh : MeasureTheory.Integrable h μ) (hxh : MeasureTheory.Integrable (fun x => x * h x) μ)
+  (hreversal : ∀ᵐ (x : ℝ) ∂μ, x ≠ ∫ (y : ℝ), y ∂μ → 0 < (∫ (y : ℝ), y ∂μ - x) * (h x - h (∫ (y : ℝ), y ∂μ))) :
+  ∫ (x : ℝ), x * h x ∂μ < (∫ (x : ℝ), x ∂μ) * ∫ (x : ℝ), h x ∂μ
+'DFL.Probability.strict_reverse_covariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Probability.strict_reverse_covariance_of_strictAntiOn (μ : MeasureTheory.Measure ℝ)
+  [MeasureTheory.IsProbabilityMeasure μ] [MeasureTheory.NoAtoms μ] (h : ℝ → ℝ) (S : Set ℝ)
+  (hx : MeasureTheory.Integrable (fun x => x) μ) (hh : MeasureTheory.Integrable h μ)
+  (hxh : MeasureTheory.Integrable (fun x => x * h x) μ) (hS : ∀ᵐ (x : ℝ) ∂μ, x ∈ S) (hm : ∫ (x : ℝ), x ∂μ ∈ S)
+  (hanti : StrictAntiOn h S) : ∫ (x : ℝ), x * h x ∂μ < (∫ (x : ℝ), x ∂μ) * ∫ (x : ℝ), h x ∂μ
+'DFL.Probability.strict_reverse_covariance_of_strictAntiOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Probability.energy_response_pos_of_positive_test.{u_1} {V : Type u_1} (energy : ℝ) (forcing testEnergy : V → ℝ)
+  (henergy : 0 ≤ energy) (htestEnergy : ∀ (v : V), 0 ≤ testEnergy v)
+  (hperturb : ∀ (v : V) (t : ℝ), 0 ≤ energy + 2 * t * forcing v + t ^ 2 * testEnergy v) (hsource : ∃ v, 0 < forcing v) :
+  0 < energy
+'DFL.Probability.energy_response_pos_of_positive_test' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Probability.picone_integral_identity_ac {a b : ℝ} (u p A : ℝ → ℝ) (hu : AbsolutelyContinuousOnInterval u a b)
+  (hf : AbsolutelyContinuousOnInterval (fun x => p x * A x) a b) (hua : u a = 0) (hub : u b = 0)
+  (hE : IntervalIntegrable (fun x => p x * deriv u x ^ 2) MeasureTheory.volume a b)
+  (hQ : IntervalIntegrable (fun x => p x * (deriv u x - A x * u x) ^ 2) MeasureTheory.volume a b)
+  (hV :
+    IntervalIntegrable (fun x => (-deriv (fun y => p y * A y) x - p x * A x ^ 2) * u x ^ 2) MeasureTheory.volume a b) :
+  ∫ (x : ℝ) in a..b, p x * deriv u x ^ 2 =
+    (∫ (x : ℝ) in a..b, p x * (deriv u x - A x * u x) ^ 2) +
+      ∫ (x : ℝ) in a..b, (-deriv (fun y => p y * A y) x - p x * A x ^ 2) * u x ^ 2
+'DFL.Probability.picone_integral_identity_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Probability.Ioi_zero_eq_of_positive_tails (μ ν : MeasureTheory.Measure ℝ)
+  (htail : ∀ (t : ℝ), 0 < t → t < 1 → μ (Set.Ioi t) = ν (Set.Ioi t)) : μ (Set.Ioi 0) = ν (Set.Ioi 0)
+'DFL.Probability.Ioi_zero_eq_of_positive_tails' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.inverseFeedback_spec {r : ℝ} (hr : 0 ≤ r) :
+  DFL.Hysteresis.feedback (DFL.Hysteresis.inverseFeedback r) = r
+'DFL.Hysteresis.inverseFeedback_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.inverseFeedback_pos {r : ℝ} (hr : 0 < r) : 0 < DFL.Hysteresis.inverseFeedback r
+'DFL.Hysteresis.inverseFeedback_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.inverseFeedback_elasticity {r : ℝ} (hr : 0 < r) :
+  r * deriv DFL.Hysteresis.inverseFeedback r / DFL.Hysteresis.inverseFeedback r = 1 / 2 + 1 / (2 * √(1 + 4 * r))
+'DFL.Hysteresis.inverseFeedback_elasticity' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.densityCurve_sign (j c : ℝ → ℝ) (r : ℝ) (hj : DifferentiableAt ℝ j r) (hc : DifferentiableAt ℝ c r)
+  (hjpos : 0 < j r) (hcpos : 0 < c r) (hr : 0 < r) :
+  0 < deriv (DFL.Hysteresis.densityCurve j c) r ↔ r * deriv c r / c r < r * deriv j r / j r
+'DFL.Hysteresis.densityCurve_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.original_curve_log_deriv (n : ℕ) (r : ℝ) (hj : DifferentiableAt ℝ DFL.inverseAlignment r)
+  (hc : DifferentiableAt ℝ (DFL.orientationMean n) r) (hj0 : DFL.inverseAlignment r ≠ 0)
+  (hc0 : DFL.orientationMean n r ≠ 0) :
+  deriv (DFL.equilibriumDensity n) r / DFL.equilibriumDensity n r =
+    deriv DFL.inverseAlignment r / DFL.inverseAlignment r - deriv (DFL.orientationMean n) r / DFL.orientationMean n r
+'DFL.Hysteresis.original_curve_log_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.equilibriumDensity_pos (n : ℕ) (hn : 2 ≤ n) {r : ℝ} (hr : 0 < r) : 0 < DFL.equilibriumDensity n r
+'DFL.Hysteresis.equilibriumDensity_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.original_curve_positive_slope_iff (n : ℕ) (r : ℝ) (hj : DifferentiableAt ℝ DFL.inverseAlignment r)
+  (hc : DifferentiableAt ℝ (DFL.orientationMean n) r) (hjpos : 0 < DFL.inverseAlignment r)
+  (hcpos : 0 < DFL.orientationMean n r) (hr : 0 < r) :
+  0 < deriv (DFL.equilibriumDensity n) r ↔
+    r * deriv (DFL.orientationMean n) r / DFL.orientationMean n r <
+      r * deriv DFL.inverseAlignment r / DFL.inverseAlignment r
+'DFL.Hysteresis.original_curve_positive_slope_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.marginalWeight_intervalIntegrable (n : ℕ) (hn : 2 ≤ n) (r : ℝ) :
+  IntervalIntegrable (DFL.marginalWeight n r) MeasureTheory.volume (-1) 1
+'DFL.marginalWeight_intervalIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.firstMoment_intervalIntegrable (n : ℕ) (hn : 2 ≤ n) (r : ℝ) :
+  IntervalIntegrable (fun t => t * DFL.marginalWeight n r t) MeasureTheory.volume (-1) 1
+'DFL.firstMoment_intervalIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.partition_pos (n : ℕ) (hn : 2 ≤ n) (r : ℝ) : 0 < DFL.partition n r
+'DFL.partition_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.firstMoment_pos (n : ℕ) (hn : 2 ≤ n) {r : ℝ} (hr : 0 < r) : 0 < DFL.firstMoment n r
+'DFL.firstMoment_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.partition_hasDerivAt_firstMoment (n : ℕ) (hn : 2 ≤ n) (r : ℝ) : HasDerivAt (DFL.partition n) (DFL.firstMoment n r) r
+'DFL.partition_hasDerivAt_firstMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.firstMoment_hasDerivAt_secondMoment (n : ℕ) (hn : 2 ≤ n) (r : ℝ) :
+  HasDerivAt (DFL.firstMoment n) (DFL.secondMoment n r) r
+'DFL.firstMoment_hasDerivAt_secondMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.marginalWellDefined (n : ℕ) (hn : 2 ≤ n) : DFL.MarginalWellDefined n
+'DFL.marginalWellDefined' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.secondMoment_intervalIntegrable (n : ℕ) (hn : 2 ≤ n) (r : ℝ) :
+  IntervalIntegrable (fun t => t ^ 2 * DFL.marginalWeight n r t) MeasureTheory.volume (-1) 1
+'DFL.secondMoment_intervalIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.moment_recurrence (n : ℕ) (hn : 2 ≤ n) (r : ℝ) :
+  r * (DFL.partition n r - DFL.secondMoment n r) = (↑n - 1) * DFL.firstMoment n r
+'DFL.moment_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.orientationMean_riccati (n : ℕ) (hn : 2 ≤ n) {r : ℝ} (hr : 0 < r) :
+  DFL.Hysteresis.ElasticityODE.RiccatiAt n (DFL.orientationMean n) r
+'DFL.orientationMean_riccati' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.orientationMean_elasticity_ode (n : ℕ) (hn : 2 ≤ n) {r : ℝ} (hr : 0 < r) :
+  r * deriv (DFL.Hysteresis.ElasticityODE.elasticity (DFL.orientationMean n)) r =
+    (↑n - 1 + DFL.Hysteresis.ElasticityODE.elasticity (DFL.orientationMean n) r) *
+        (1 - DFL.Hysteresis.ElasticityODE.elasticity (DFL.orientationMean n) r) -
+      2 * DFL.Hysteresis.ElasticityODE.elasticity (DFL.orientationMean n) r *
+        DFL.Hysteresis.ElasticityODE.scaledMean (DFL.orientationMean n) r
+'DFL.orientationMean_elasticity_ode' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.firstMoment_zero (n : ℕ) (hn : 2 ≤ n) : DFL.firstMoment n 0 = 0
+'DFL.firstMoment_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.orientationMean_lt_one (n : ℕ) (hn : 2 ≤ n) (r : ℝ) : DFL.orientationMean n r < 1
+'DFL.orientationMean_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.orientationMean_tendsto_one_atTop (n : ℕ) (hn : 2 ≤ n) :
+  Filter.Tendsto (DFL.orientationMean n) Filter.atTop (nhds 1)
+'DFL.orientationMean_tendsto_one_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.equilibriumDensity_tendsto_atTop (n : ℕ) (hn : 2 ≤ n) :
+  Filter.Tendsto (DFL.equilibriumDensity n) Filter.atTop Filter.atTop
+'DFL.equilibriumDensity_tendsto_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.zero_field_second_moment (n : ℕ) (hn : 2 ≤ n) : ↑n * DFL.secondMoment n 0 = DFL.partition n 0
+'DFL.zero_field_second_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.orientationMean_div_tendsto_zero_right (n : ℕ) (hn : 2 ≤ n) :
+  Filter.Tendsto (fun r => DFL.orientationMean n r / r) (nhdsWithin 0 (Set.Ioi 0)) (nhds (1 / ↑n))
+'DFL.orientationMean_div_tendsto_zero_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.DimensionShift.orientationMean_dimension_shift (n : ℕ) (hn : 2 ≤ n) {r : ℝ} (hr : 0 < r) :
+  DFL.orientationMean (n + 2) r < DFL.orientationMean n r
+'DFL.Hysteresis.DimensionShift.orientationMean_dimension_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+DFL.endpointAtZero (n : ℕ) (hn : 2 ≤ n) : DFL.EndpointAtZero n
+'DFL.endpointAtZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.orientationMean_deriv_of_moment_derivs (n : ℕ) (r : ℝ) (hZ : HasDerivAt (DFL.partition n) (DFL.firstMoment n r) r)
+  (hM : HasDerivAt (DFL.firstMoment n) (DFL.secondMoment n r) r) (hZ0 : DFL.partition n r ≠ 0) :
+  deriv (DFL.orientationMean n) r = DFL.secondMoment n r / DFL.partition n r - DFL.orientationMean n r ^ 2
+'DFL.orientationMean_deriv_of_moment_derivs' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.ElasticityODE.elasticity_ode (n : ℕ) (c : ℝ → ℝ) {r : ℝ} (hr : 0 < r)
+  (hregion : ∀ (x : ℝ), 0 < x → 0 < c x ∧ DifferentiableAt ℝ c x ∧ DFL.Hysteresis.ElasticityODE.RiccatiAt n c x) :
+  r * deriv (DFL.Hysteresis.ElasticityODE.elasticity c) r =
+    (↑n - 1 + DFL.Hysteresis.ElasticityODE.elasticity c r) * (1 - DFL.Hysteresis.ElasticityODE.elasticity c r) -
+      2 * DFL.Hysteresis.ElasticityODE.elasticity c r * DFL.Hysteresis.ElasticityODE.scaledMean c r
+'DFL.Hysteresis.ElasticityODE.elasticity_ode' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.PositiveRoot.root_gt_test {r y z m : ℝ} (hy : 0 < y) (hz : 0 < z) (hm : 0 < m)
+  (hroot : y * (y + m) = r ^ 2) : z < y ↔ 1 < DFL.Hysteresis.PositiveRoot.thresholdRatio r z m
+'DFL.Hysteresis.PositiveRoot.root_gt_test' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.ZeroDirection.existsUnique_q_eq_one (n : ℕ) (hn : 2 ≤ n) :
+  ∃! χ, 1 < χ ∧ DFL.Hysteresis.ZeroDirection.q n χ = 1
+'DFL.Hysteresis.ZeroDirection.existsUnique_q_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.ZeroDirectionBridge.thresholdRatio_scaled (n : ℕ) (hn : 2 ≤ n) (χ r : ℝ) (hχ : 1 < χ) (hr : 0 < r) :
+  DFL.Hysteresis.PositiveRoot.thresholdRatio r (r * DFL.Hysteresis.ZeroDirection.u n χ)
+      (r * DFL.Hysteresis.ZeroDirection.v n χ) =
+    1 / DFL.Hysteresis.ZeroDirection.q n χ
+'DFL.Hysteresis.ZeroDirectionBridge.thresholdRatio_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.ZeroDirectionODE.r_mul_F_zero (n : ℕ) {r : ℝ} (hr : 0 < r) :
+  r * DFL.Hysteresis.ZeroDirectionODE.F n r 0 =
+    2 * DFL.Hysteresis.ZeroDirectionODE.a r *
+      (DFL.Hysteresis.ZeroDirectionODE.Y n r (DFL.Hysteresis.ZeroDirectionODE.a r) -
+        DFL.Hysteresis.ZeroDirectionODE.z n r)
+'DFL.Hysteresis.ZeroDirectionODE.r_mul_F_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.ZeroDirectionODE.existsUnique_zero_direction (n : ℕ) (hn : 2 ≤ n) :
+  ∃! r₀,
+    0 < r₀ ∧
+      DFL.Hysteresis.ZeroDirectionODE.F n r₀ 0 = 0 ∧
+        (∀ (r : ℝ), 0 < r → r < r₀ → DFL.Hysteresis.ZeroDirectionODE.F n r 0 < 0) ∧
+          ∀ (r : ℝ), r₀ < r → 0 < DFL.Hysteresis.ZeroDirectionODE.F n r 0
+'DFL.Hysteresis.ZeroDirectionODE.existsUnique_zero_direction' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.OriginalTrajectory.original_scaledMean_eq_Y (n : ℕ) (hn : 2 ≤ n) {r : ℝ} (hr : 0 < r) :
+  DFL.Hysteresis.ElasticityODE.scaledMean (DFL.orientationMean n) r =
+    DFL.Hysteresis.ZeroDirectionODE.Y n r (DFL.Hysteresis.ElasticityODE.elasticity (DFL.orientationMean n) r)
+'DFL.Hysteresis.OriginalTrajectory.original_scaledMean_eq_Y' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.OriginalTrajectory.original_H_ode (n : ℕ) (hn : 2 ≤ n) {r : ℝ} (hr : 0 < r) :
+  deriv (DFL.Hysteresis.OriginalTrajectory.H n) r =
+    DFL.Hysteresis.ZeroDirectionODE.F n r (DFL.Hysteresis.OriginalTrajectory.H n r)
+'DFL.Hysteresis.OriginalTrajectory.original_H_ode' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.OriginalTrajectory.original_density_slope (n : ℕ) (hn : 2 ≤ n) {r : ℝ} (hr : 0 < r) :
+  r * deriv (DFL.equilibriumDensity n) r = DFL.equilibriumDensity n r * DFL.Hysteresis.OriginalTrajectory.H n r
+'DFL.Hysteresis.OriginalTrajectory.original_density_slope' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.original_H_positive_arbitrarily_late (n : ℕ) (hn : 2 ≤ n) {r₀ : ℝ} (hr₀ : 0 < r₀) :
+  ∃ r, r₀ < r ∧ 0 < DFL.Hysteresis.OriginalTrajectory.H n r
+'DFL.Hysteresis.original_H_positive_arbitrarily_late' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.ZeroDirectionOnTrajectory.exists_original_H_zero_direction (n : ℕ) (hn : 2 ≤ n) :
+  ∃ r₀,
+    0 < r₀ ∧
+      (∀ (r : ℝ),
+          0 < r →
+            r < r₀ →
+              DFL.Hysteresis.OriginalTrajectory.H n r = 0 → deriv (DFL.Hysteresis.OriginalTrajectory.H n) r < 0) ∧
+        ∀ (r : ℝ),
+          r₀ < r → DFL.Hysteresis.OriginalTrajectory.H n r = 0 → 0 < deriv (DFL.Hysteresis.OriginalTrajectory.H n) r
+'DFL.Hysteresis.ZeroDirectionOnTrajectory.exists_original_H_zero_direction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+DFL.Hysteresis.isUnimodal_of_original_H_signs (n : ℕ) (hn : 2 ≤ n) {rStar : ℝ} (hrStar : 0 < rStar)
+  (hzero : DFL.Hysteresis.OriginalTrajectory.H n rStar = 0)
+  (hneg : ∀ (r : ℝ), 0 < r → r < rStar → DFL.Hysteresis.OriginalTrajectory.H n r < 0)
+  (hpos : ∀ (r : ℝ), rStar < r → 0 < DFL.Hysteresis.OriginalTrajectory.H n r) : DFL.IsUnimodal n
+'DFL.Hysteresis.isUnimodal_of_original_H_signs' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.MeanLinearBound.orientationMean_lt_linear (n : ℕ) (hn : 2 ≤ n) {r : ℝ} (hr : 0 < r) :
+  DFL.orientationMean n r < r / ↑n
+'DFL.Hysteresis.MeanLinearBound.orientationMean_lt_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.SmallFieldSign.original_H_neg_small (n : ℕ) (hn : 2 ≤ n) {r : ℝ} (hr : 0 < r) (hrsmall : r < 1 / 4) :
+  DFL.Hysteresis.OriginalTrajectory.H n r < 0
+'DFL.Hysteresis.SmallFieldSign.original_H_neg_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.OriginalCrossing.crossing_of_small_negative (n : ℕ) (hn : 2 ≤ n)
+  (hsmall : ∃ δ, 0 < δ ∧ ∀ (r : ℝ), 0 < r → r ≤ δ → DFL.Hysteresis.OriginalTrajectory.H n r < 0) :
+  ∃ rstar,
+    0 < rstar ∧
+      DFL.Hysteresis.OriginalTrajectory.H n rstar = 0 ∧
+        (∀ (r : ℝ), 0 < r → r < rstar → DFL.Hysteresis.OriginalTrajectory.H n r < 0) ∧
+          (∀ (r : ℝ), rstar < r → 0 < DFL.Hysteresis.OriginalTrajectory.H n r) ∧
+            0 < deriv (DFL.Hysteresis.OriginalTrajectory.H n) rstar ∧
+              ∀ (r : ℝ), 0 < r → DFL.Hysteresis.OriginalTrajectory.H n r = 0 → r = rstar
+'DFL.Hysteresis.OriginalCrossing.crossing_of_small_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.dfl2015_unimodality_formula : DFL.DFL2015UnimodalityConjecture
+'DFL.dfl2015_unimodality_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.original_nondegenerateFold (n : ℕ) (hn : 2 ≤ n) : DFL.NondegenerateFold n
+'DFL.Hysteresis.original_nondegenerateFold' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Hysteresis.Crossing.crossing_from_derivative_signs {K : ℝ → ℝ} {δ r₀ L : ℝ} (hδr₀ : δ < r₀) (hr₀L : r₀ < L)
+  (hcont : Continuous K) (hneg : ∀ (x : ℝ), δ < x → x < r₀ → deriv K x < 0) (hpos : ∀ (x : ℝ), r₀ < x → 0 < deriv K x)
+  (hKδ : K δ < 0) (hKL : 0 < K L) :
+  ∃ r,
+    r₀ < r ∧
+      r < L ∧
+        K r = 0 ∧
+          (∀ (x : ℝ), δ ≤ x → x < r → K x < 0) ∧
+            (∀ (x : ℝ), r < x → 0 < K x) ∧ 0 < deriv K r ∧ ∀ (x : ℝ), δ ≤ x → K x = 0 → x = r
+'DFL.Hysteresis.Crossing.crossing_from_derivative_signs' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.spherePartition_pos (n : ℕ) (hn : 0 < n) (r : ℝ) : 0 < DFL.Geometry.spherePartition n hn r
+'DFL.Geometry.spherePartition_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphereOrientationMean_eq_of_moment_bridge (n : ℕ) (hn : 2 ≤ n)
+  (hbridge : DFL.Geometry.SphereMomentBridge n ⋯) (r : ℝ) :
+  DFL.Geometry.sphereOrientationMean n ⋯ r = DFL.orientationMean n r
+'DFL.Geometry.sphereOrientationMean_eq_of_moment_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphere_isUnimodal_of_moment_bridge (n : ℕ) (hn : 2 ≤ n) (hbridge : DFL.Geometry.SphereMomentBridge n ⋯) :
+  DFL.Geometry.SphereIsUnimodal n ⋯
+'DFL.Geometry.sphere_isUnimodal_of_moment_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.coordinateLaw_three_eq_smul_volume :
+  DFL.Geometry.coordinateLaw 3 DFL.Geometry.three_pos✝ =
+    ENNReal.ofReal (2 * Real.pi) • MeasureTheory.volume.restrict (Set.Icc (-1) 1)
+'DFL.Geometry.coordinateLaw_three_eq_smul_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphereMomentBridge_three : DFL.Geometry.SphereMomentBridge 3 DFL.Geometry.three_pos✝
+'DFL.Geometry.sphereMomentBridge_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphere_isUnimodal_three : DFL.Geometry.SphereIsUnimodal 3 DFL.Geometry.three_pos✝
+'DFL.Geometry.sphere_isUnimodal_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphere_nondegenerateFold_three :
+  ∃ rStar,
+    0 < rStar ∧
+      (∀ (r : ℝ), 0 < r → r < rStar → deriv (DFL.Geometry.sphereEquilibriumDensity 3 DFL.Geometry.three_pos✝) r < 0) ∧
+        deriv (DFL.Geometry.sphereEquilibriumDensity 3 DFL.Geometry.three_pos✝¹) rStar = 0 ∧
+          (∀ (r : ℝ), rStar < r → 0 < deriv (DFL.Geometry.sphereEquilibriumDensity 3 DFL.Geometry.three_pos✝²) r) ∧
+            0 < deriv (deriv (DFL.Geometry.sphereEquilibriumDensity 3 DFL.Geometry.three_pos✝³)) rStar
+'DFL.Geometry.sphere_nondegenerateFold_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.coordinateLaw_two_eq_two_smul_measureT :
+  DFL.Geometry.coordinateLaw 2 DFL.Geometry.two_pos✝ = 2 • Polynomial.Chebyshev.measureT
+'DFL.Geometry.coordinateLaw_two_eq_two_smul_measureT' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphereMomentBridge_two : DFL.Geometry.SphereMomentBridge 2 DFL.Geometry.two_pos✝
+'DFL.Geometry.sphereMomentBridge_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphere_isUnimodal_two : DFL.Geometry.SphereIsUnimodal 2 DFL.Geometry.two_pos✝
+'DFL.Geometry.sphere_isUnimodal_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphere_nondegenerateFold_two :
+  ∃ rStar,
+    0 < rStar ∧
+      (∀ (r : ℝ), 0 < r → r < rStar → deriv (DFL.Geometry.sphereEquilibriumDensity 2 DFL.Geometry.two_pos✝) r < 0) ∧
+        deriv (DFL.Geometry.sphereEquilibriumDensity 2 DFL.Geometry.two_pos✝¹) rStar = 0 ∧
+          (∀ (r : ℝ), rStar < r → 0 < deriv (DFL.Geometry.sphereEquilibriumDensity 2 DFL.Geometry.two_pos✝²) r) ∧
+            0 < deriv (deriv (DFL.Geometry.sphereEquilibriumDensity 2 DFL.Geometry.two_pos✝³)) rStar
+'DFL.Geometry.sphere_nondegenerateFold_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.coordinateLaw_succ_eq_smul_beta (k : ℕ) :
+  DFL.Geometry.coordinateLaw (k + 3) ⋯ =
+    ENNReal.ofReal (DFL.Geometry.sphereBetaConst k) • DFL.Geometry.betaCoordinateMeasure k
+'DFL.Geometry.coordinateLaw_succ_eq_smul_beta' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphereMomentBridge_all (n : ℕ) (hn : 2 ≤ n) : DFL.Geometry.SphereMomentBridge n ⋯
+'DFL.Geometry.sphereMomentBridge_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphere_isUnimodal_all (n : ℕ) (hn : 2 ≤ n) : DFL.Geometry.SphereIsUnimodal n ⋯
+'DFL.Geometry.sphere_isUnimodal_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphere_nondegenerateFold_all (n : ℕ) (hn : 2 ≤ n) :
+  ∃ rStar,
+    0 < rStar ∧
+      (∀ (r : ℝ), 0 < r → r < rStar → deriv (DFL.Geometry.sphereEquilibriumDensity n ⋯) r < 0) ∧
+        deriv (DFL.Geometry.sphereEquilibriumDensity n ⋯) rStar = 0 ∧
+          (∀ (r : ℝ), rStar < r → 0 < deriv (DFL.Geometry.sphereEquilibriumDensity n ⋯) r) ∧
+            0 < deriv (deriv (DFL.Geometry.sphereEquilibriumDensity n ⋯)) rStar
+'DFL.Geometry.sphere_nondegenerateFold_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_denominator_pos (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : 0 < DFL.GCI.originalGCIDenominator n r s
+'DFL.GCI.weak_solution_denominator_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_moment_identity_twoD (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) :
+  DFL.GCI.originalForcingNorm 2 r = DFL.GCI.originalGCIDenominator 2 r s + r * DFL.GCI.originalGCINumerator 2 r s
+'DFL.GCI.weak_solution_moment_identity_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.explicit_original_weak_solution_twoD (r : ℝ) (hr : 0 < r) :
+  DFL.GCI.OriginalWeakGCISolution 2 r (DFL.GCI.explicitState r)
+'DFL.GCI.explicit_original_weak_solution_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_coefficient_unique_twoD (r : ℝ) (hr : 0 < r) (s t : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) (ht : DFL.GCI.OriginalWeakGCISolution 2 r t) :
+  DFL.GCI.originalGCICoefficient 2 r s = DFL.GCI.originalGCICoefficient 2 r t
+'DFL.GCI.weak_solution_coefficient_unique_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_coefficient_pos_twoD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) : 0 < DFL.GCI.originalGCICoefficient 2 r s
+'DFL.GCI.weak_solution_coefficient_pos_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.orientationMean_four_eq_twoD_shift_ratio (r : ℝ) :
+  DFL.orientationMean 4 r = DFL.GCI.twoDShiftMoment r / DFL.GCI.originalForcingNorm 2 r
+'DFL.GCI.orientationMean_four_eq_twoD_shift_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.original_GCI_twoD_full_comparison (r : ℝ) (hr : 0 < r) :
+  ∃ s,
+    DFL.GCI.OriginalWeakGCISolution 2 r s ∧
+      (∀ (v : DFL.GCI.AngularState),
+          DFL.GCI.OriginalWeakGCISolution 2 r v →
+            DFL.GCI.originalGCICoefficient 2 r v = DFL.GCI.originalGCICoefficient 2 r s) ∧
+        0 < DFL.GCI.originalGCIDenominator 2 r s ∧
+          0 < DFL.GCI.originalGCICoefficient 2 r s ∧ DFL.GCI.originalGCICoefficient 2 r s < DFL.orientationMean 2 r
+'DFL.GCI.original_GCI_twoD_full_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.original_GCI_twoD_physical_circle_comparison (r : ℝ) (hr : 0 < r) :
+  ∃ s,
+    DFL.GCI.OriginalWeakGCISolution 2 r s ∧
+      (∀ (v : DFL.GCI.AngularState),
+          DFL.GCI.OriginalWeakGCISolution 2 r v →
+            DFL.GCI.originalGCICoefficient 2 r v = DFL.GCI.originalGCICoefficient 2 r s) ∧
+        0 < DFL.GCI.originalGCIDenominator 2 r s ∧
+          0 < DFL.GCI.originalGCICoefficient 2 r s ∧
+            DFL.GCI.originalGCICoefficient 2 r s < DFL.Geometry.sphereOrientationMean 2 DFL.GCI.two_pos✝ r
+'DFL.GCI.original_GCI_twoD_physical_circle_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_coefficient_lt_shift_mean_twoD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) : DFL.GCI.originalGCICoefficient 2 r s < DFL.orientationMean 4 r
+'DFL.GCI.weak_solution_coefficient_lt_shift_mean_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.original_GCI_twoD_strict_shift_chain (r : ℝ) (hr : 0 < r) :
+  ∃ s,
+    DFL.GCI.OriginalWeakGCISolution 2 r s ∧
+      (∀ (v : DFL.GCI.AngularState),
+          DFL.GCI.OriginalWeakGCISolution 2 r v →
+            DFL.GCI.originalGCICoefficient 2 r v = DFL.GCI.originalGCICoefficient 2 r s) ∧
+        0 < DFL.GCI.originalGCIDenominator 2 r s ∧
+          0 < DFL.GCI.originalGCICoefficient 2 r s ∧
+            DFL.GCI.originalGCICoefficient 2 r s < DFL.orientationMean 4 r ∧
+              DFL.orientationMean 4 r < DFL.orientationMean 2 r
+'DFL.GCI.original_GCI_twoD_strict_shift_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.originalForcingNorm_eq_shifted_partition (n : ℕ) (hn : 2 ≤ n) (r : ℝ) :
+  DFL.GCI.originalForcingNorm n r = DFL.partition (n + 2) r
+'DFL.GCI.originalForcingNorm_eq_shifted_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.originalShiftMoment_eq_shifted_firstMoment (n : ℕ) (hn : 2 ≤ n) (r : ℝ) :
+  DFL.GCI.originalShiftMoment n r = DFL.firstMoment (n + 2) r
+'DFL.GCI.originalShiftMoment_eq_shifted_firstMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_forcing_energy_cauchy (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) :
+  DFL.GCI.originalForcingNorm n r ^ 2 ≤
+    DFL.GCI.originalGCIDenominator n r s *
+      DFL.GCI.originalWeakForm n r (DFL.GCI.sineTestState n) (DFL.GCI.sineTestState n)
+'DFL.GCI.weak_solution_forcing_energy_cauchy' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_moment_identity_fourD (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 4 r s) :
+  DFL.GCI.originalForcingNorm 4 r = 3 * DFL.GCI.originalGCIDenominator 4 r s + r * DFL.GCI.originalGCINumerator 4 r s
+'DFL.GCI.weak_solution_moment_identity_fourD' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_coefficient_lt_orientation_fourD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 4 r s) : DFL.GCI.originalGCICoefficient 4 r s < DFL.orientationMean 4 r
+'DFL.GCI.weak_solution_coefficient_lt_orientation_fourD' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_coefficient_lt_orientation_of_moment (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r)
+  (s : DFL.GCI.AngularState) (hs : DFL.GCI.OriginalWeakGCISolution n r s)
+  (hmoment :
+    DFL.GCI.originalForcingNorm n r =
+      (↑n - 1) * DFL.GCI.originalGCIDenominator n r s + r * DFL.GCI.originalGCINumerator n r s) :
+  DFL.GCI.originalGCICoefficient n r s < DFL.orientationMean n r
+'DFL.GCI.weak_solution_coefficient_lt_orientation_of_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_moment_identity_ge_four (n : ℕ) (hn : 4 ≤ n) (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) :
+  DFL.GCI.originalForcingNorm n r =
+    (↑n - 1) * DFL.GCI.originalGCIDenominator n r s + r * DFL.GCI.originalGCINumerator n r s
+'DFL.GCI.weak_solution_moment_identity_ge_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.original_GCI_strict_upper_ge_four (n : ℕ) (hn : 4 ≤ n) (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : DFL.GCI.originalGCICoefficient n r s < DFL.orientationMean n r
+'DFL.GCI.original_GCI_strict_upper_ge_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_moment_identity_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) :
+  DFL.GCI.originalForcingNorm n r =
+    (↑n - 1) * DFL.GCI.originalGCIDenominator n r s + r * DFL.GCI.originalGCINumerator n r s
+'DFL.GCI.weak_solution_moment_identity_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.original_GCI_shift_upper_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : DFL.GCI.originalGCICoefficient n r s ≤ DFL.orientationMean (n + 2) r
+'DFL.GCI.original_GCI_shift_upper_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.original_GCI_strict_upper_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : DFL.GCI.originalGCICoefficient n r s < DFL.orientationMean n r
+'DFL.GCI.original_GCI_strict_upper_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_denominator_unique_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (s t : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) (ht : DFL.GCI.OriginalWeakGCISolution n r t) :
+  DFL.GCI.originalGCIDenominator n r s = DFL.GCI.originalGCIDenominator n r t
+'DFL.GCI.weak_solution_denominator_unique_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_numerator_unique_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : r ≠ 0) (s t : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) (ht : DFL.GCI.OriginalWeakGCISolution n r t) :
+  DFL.GCI.originalGCINumerator n r s = DFL.GCI.originalGCINumerator n r t
+'DFL.GCI.weak_solution_numerator_unique_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_coefficient_unique_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r) (s t : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) (ht : DFL.GCI.OriginalWeakGCISolution n r t) :
+  DFL.GCI.originalGCICoefficient n r s = DFL.GCI.originalGCICoefficient n r t
+'DFL.GCI.weak_solution_coefficient_unique_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_weighted_mass_cauchy_threeD (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 3 r s) :
+  DFL.GCI.originalGCIDenominator 3 r s ^ 2 ≤ DFL.GCI.originalForcingNorm 3 r * DFL.GCI.threeDWeightedMass r s
+'DFL.GCI.weak_solution_weighted_mass_cauchy_threeD' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_numerator_pos_three_of_spectral_gap (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 3 r s)
+  (hgap : 2 * DFL.GCI.threeDWeightedMass r s < DFL.GCI.originalWeakForm 3 r s s) :
+  0 < DFL.GCI.originalGCINumerator 3 r s
+'DFL.GCI.weak_solution_numerator_pos_three_of_spectral_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.alignedMeasure_probability (d : ℕ) (r : ℝ) :
+  MeasureTheory.IsProbabilityMeasure (DFL.Spectral.alignedMeasure d r)
+'DFL.Spectral.alignedMeasure_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.sphereVariance_pos_iff_not_ae_constant (d : ℕ) (r : ℝ) (f : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hf : MeasureTheory.MemLp f 2 (DFL.Spectral.alignedMeasure d r)) :
+  0 < DFL.Spectral.sphereVariance d r f ↔ ¬∃ c, f =ᵐ[DFL.Spectral.alignedMeasure d r] fun x => c
+'DFL.Spectral.sphereVariance_pos_iff_not_ae_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.transverseCoordinateTrialRatio_eq (d : ℕ) (hd : 0 < d) :
+  DFL.Spectral.sphereCoordinateTrialRatio d (DFL.Spectral.transverseIndex d hd) = ↑d
+'DFL.Spectral.transverseCoordinateTrialRatio_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.alignedMeasure_bounds (d : ℕ) (r : ℝ) :
+  ENNReal.ofReal (Real.exp (-2 * |r|)) • DFL.Spectral.alignedMeasure d 0 ≤ DFL.Spectral.alignedMeasure d r ∧
+    DFL.Spectral.alignedMeasure d r ≤ ENNReal.ofReal (Real.exp (2 * |r|)) • DFL.Spectral.alignedMeasure d 0
+'DFL.Spectral.alignedMeasure_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coreFormNormSq_bounds (d : ℕ) (r : ℝ) (f : DFL.Spectral.SphereC1Core d) :
+  Real.exp (-2 * |r|) * DFL.Spectral.coreFormNormSq d 0 f ≤ DFL.Spectral.coreFormNormSq d r f ∧
+    DFL.Spectral.coreFormNormSq d r f ≤ Real.exp (2 * |r|) * DFL.Spectral.coreFormNormSq d 0 f
+'DFL.Spectral.coreFormNormSq_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coreGap_zero_le_dimension (d : ℕ) : DFL.Spectral.coreGap d 0 ≤ ↑d
+'DFL.Spectral.coreGap_zero_le_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coreGap_field_lower (d : ℕ) (r : ℝ) :
+  Real.exp (-2 * |r|) ^ 2 * DFL.Spectral.coreGap d 0 ≤ DFL.Spectral.coreGap d r
+'DFL.Spectral.coreGap_field_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.closedFormSpace_complete (d : ℕ) (r : ℝ) : CompleteSpace (DFL.Spectral.ClosedFormSpace d r)
+'DFL.Spectral.closedFormSpace_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coreGraph_value_norm_sq (d : ℕ) (r : ℝ) (f : DFL.Spectral.SphereC1Core d) :
+  ‖(DFL.Spectral.coreGraph d r f).1‖ ^ 2 = DFL.Spectral.sphereVariance d r (DFL.Spectral.coreValue d f)
+'DFL.Spectral.coreGraph_value_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.coreGraph_gradient_norm_sq (d : ℕ) (r : ℝ) (f : DFL.Spectral.SphereC1Core d) :
+  ‖(DFL.Spectral.coreGraph d r f).2‖ ^ 2 = DFL.Spectral.coreEnergy d r f
+'DFL.Spectral.coreGraph_gradient_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.closedFormGap_eq_coreGap (d : ℕ) (r : ℝ) : DFL.Spectral.closedFormGap d r = DFL.Spectral.coreGap d r
+'DFL.Spectral.closedFormGap_eq_coreGap' depends on axioms: [propext, Classical.choice, Quot.sound]

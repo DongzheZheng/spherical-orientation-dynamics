@@ -1,0 +1,40 @@
+\documentclass[tikz,border=2mm]{standalone}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\definecolor{navy}{HTML}{174A68}
+\definecolor{teal}{HTML}{178878}
+\definecolor{orange}{HTML}{C76336}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+ group style={group size=3 by 2,horizontal sep=9mm,vertical sep=9mm},
+ width=5.0cm,height=4.0cm,grid=major,grid style={black!9},
+ xmin=0,xmax=90,xtick={0,30,60,90},
+ tick label style={font=\scriptsize},label style={font=\small},
+ title style={font=\small},legend style={font=\scriptsize,draw=none,fill=white,fill opacity=.8,text opacity=1}]
+\nextgroupplot[title={linear $k(J)=J$},ylabel={$\operatorname{Re}v_\pm$},ymin=-.1,ymax=1.8]
+\addplot[navy,very thick] table[x=angle_deg,y=real_plus,col sep=comma]{../numerics/data/transport_linear.csv};
+\addlegendentry{$v_+$}
+\addplot[teal,very thick,dashed] table[x=angle_deg,y=real_minus,col sep=comma]{../numerics/data/transport_linear.csv};
+\addlegendentry{$v_-$}
+\draw[orange,densely dotted] (axis cs:66.92935,-.1) -- (axis cs:66.92935,1.8);
+\nextgroupplot[title={fold $k(J)=J+J^2$},ymin=-.2,ymax=20]
+\addplot[navy,very thick] table[x=angle_deg,y=real_plus,col sep=comma]{../numerics/data/transport_hysteresis.csv};
+\addplot[teal,very thick,dashed] table[x=angle_deg,y=real_minus,col sep=comma]{../numerics/data/transport_hysteresis.csv};
+\draw[orange,densely dotted] (axis cs:75.23592,-.2) -- (axis cs:75.23592,20);
+\nextgroupplot[title={saturated $\tau_0=0.3$},ymin=-.6,ymax=.9]
+\addplot[navy,very thick] table[x=angle_deg,y=real_plus,col sep=comma]{../numerics/data/transport_regularized.csv};
+\addplot[teal,very thick,dashed] table[x=angle_deg,y=real_minus,col sep=comma]{../numerics/data/transport_regularized.csv};
+\nextgroupplot[xlabel={$\theta$ (deg)},ylabel={$|\operatorname{Im}v_+|$},ymin=0,ymax=.32]
+\addplot[orange,very thick] table[x=angle_deg,y=imag_abs,col sep=comma]{../numerics/data/transport_linear.csv};
+\draw[orange,densely dotted] (axis cs:66.92935,0) -- (axis cs:66.92935,.32);
+\nextgroupplot[xlabel={$\theta$ (deg)},ymin=0,ymax=2.6]
+\addplot[orange,very thick] table[x=angle_deg,y=imag_abs,col sep=comma]{../numerics/data/transport_hysteresis.csv};
+\draw[orange,densely dotted] (axis cs:75.23592,0) -- (axis cs:75.23592,2.6);
+\nextgroupplot[xlabel={$\theta$ (deg)},ymin=0,ymax=.32]
+\addplot[orange,very thick] table[x=angle_deg,y=imag_abs,col sep=comma]{../numerics/data/transport_regularized.csv};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,4 @@
+# Preserve source and reference-data bytes across platforms.
+* -text
+*.pdf binary
+*.png binary

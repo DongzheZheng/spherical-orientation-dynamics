@@ -1,0 +1,16 @@
+DFL.Geometry.coordinateLaw_three_eq_smul_volume :
+  DFL.Geometry.coordinateLaw 3 DFL.Geometry.three_pos✝ =
+    ENNReal.ofReal (2 * Real.pi) • MeasureTheory.volume.restrict (Set.Icc (-1) 1)
+'DFL.Geometry.coordinateLaw_three_eq_smul_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphereMomentBridge_three : DFL.Geometry.SphereMomentBridge 3 DFL.Geometry.three_pos✝
+'DFL.Geometry.sphereMomentBridge_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphere_isUnimodal_three : DFL.Geometry.SphereIsUnimodal 3 DFL.Geometry.three_pos✝
+'DFL.Geometry.sphere_isUnimodal_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Geometry.sphere_nondegenerateFold_three :
+  ∃ rStar,
+    0 < rStar ∧
+      (∀ (r : ℝ), 0 < r → r < rStar → deriv (DFL.Geometry.sphereEquilibriumDensity 3 DFL.Geometry.three_pos✝) r < 0) ∧
+        deriv (DFL.Geometry.sphereEquilibriumDensity 3 DFL.Geometry.three_pos✝¹) rStar = 0 ∧
+          (∀ (r : ℝ), rStar < r → 0 < deriv (DFL.Geometry.sphereEquilibriumDensity 3 DFL.Geometry.three_pos✝²) r) ∧
+            0 < deriv (deriv (DFL.Geometry.sphereEquilibriumDensity 3 DFL.Geometry.three_pos✝³)) rStar
+'DFL.Geometry.sphere_nondegenerateFold_three' depends on axioms: [propext, Classical.choice, Quot.sound]

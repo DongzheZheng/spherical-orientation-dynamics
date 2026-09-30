@@ -1,0 +1,197 @@
+DFL.GCI.graphState_mem_energy (n : ℕ) (hn : 3 ≤ n) (p : ↥DFL.GCI.dirichletGraph) :
+  DFL.GCI.AngularEnergyDomain n (DFL.GCI.graphState n p)
+'DFL.GCI.graphState_mem_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.stateGraphAmbient_mem (n : ℕ) (hn : 3 ≤ n) (s : DFL.GCI.AngularState) (hs : DFL.GCI.AngularEnergyDomain n s) :
+  DFL.GCI.stateGraphAmbient n hn s hs ∈ DFL.GCI.dirichletGraph
+'DFL.GCI.stateGraphAmbient_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.original_weak_GCI_exists_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r) :
+  ∃ s, DFL.GCI.OriginalWeakGCISolution n r s
+'DFL.GCI.original_weak_GCI_exists_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_g_unique_ge_three (n : ℕ) (hn : 3 ≤ n) (r : ℝ) (s v : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) (hv : DFL.GCI.OriginalWeakGCISolution n r v) (θ : ℝ) :
+  θ ∈ Set.Ioo 0 Real.pi → s.g θ = v.g θ
+'DFL.GCI.weak_solution_g_unique_ge_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_g_unique_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r) (s t : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) (ht : DFL.GCI.OriginalWeakGCISolution n r t) (θ : ℝ)
+  (hθ : θ ∈ Set.Ioo 0 Real.pi) : s.g θ = t.g θ
+'DFL.GCI.weak_solution_g_unique_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_scaledDerivative_unique_ge_three (n : ℕ) (hn : 3 ≤ n) (r : ℝ) (s v : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) (hv : DFL.GCI.OriginalWeakGCISolution n r v) :
+  s.scaledDerivative =ᵐ[DFL.GCI.angularIntervalMeasure] v.scaledDerivative
+'DFL.GCI.weak_solution_scaledDerivative_unique_ge_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.weak_solution_strict_spectral_gap_ge_three (n : ℕ) (hn : 3 ≤ n) (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) :
+  (↑n - 1) * DFL.GCI.originalWeightedMass r s < DFL.GCI.originalWeakForm n r s s
+'DFL.GCI.weak_solution_strict_spectral_gap_ge_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.original_GCI_positive_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : 0 < DFL.GCI.originalGCICoefficient n r s
+'DFL.GCI.original_GCI_positive_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.dfl2015_gci_comparison : DFL.GCI.DFL2015GCIComparison
+'DFL.GCI.dfl2015_gci_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.original_GCI_all_strict_shift_chain (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r) :
+  ∃ s,
+    DFL.GCI.OriginalWeakGCISolution n r s ∧
+      (∀ (v : DFL.GCI.AngularState),
+          DFL.GCI.OriginalWeakGCISolution n r v →
+            DFL.GCI.originalGCICoefficient n r v = DFL.GCI.originalGCICoefficient n r s) ∧
+        0 < DFL.GCI.originalGCIDenominator n r s ∧
+          0 < DFL.GCI.originalGCICoefficient n r s ∧
+            DFL.GCI.originalGCICoefficient n r s < DFL.orientationMean (n + 2) r ∧
+              DFL.orientationMean (n + 2) r < DFL.orientationMean n r
+'DFL.GCI.original_GCI_all_strict_shift_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.ae_eq_constant_add_primitive_of_weak_derivative (f q : ℝ → ℝ)
+  (hf : MeasureTheory.LocallyIntegrable f MeasureTheory.volume)
+  (hq : MeasureTheory.LocallyIntegrable q MeasureTheory.volume)
+  (hweak :
+    ∀ (φ : ℝ → ℝ), ContDiff ℝ (↑⊤) φ → HasCompactSupport φ → ∫ (x : ℝ), deriv φ x * f x = -∫ (x : ℝ), φ x * q x) :
+  ∃ c, f =ᵐ[MeasureTheory.volume] fun x => c + DFL.GCI.localPrimitive q x
+'DFL.GCI.ae_eq_constant_add_primitive_of_weak_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.classicalH10Graph_eq_primitiveGraph : DFL.GCI.classicalH10Graph = ↑DFL.GCI.h10PrimitiveGraph
+'DFL.GCI.classicalH10Graph_eq_primitiveGraph' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.angularEnergyDomain_iff_classicalH10_potential (n : ℕ) (s : DFL.GCI.AngularState) :
+  DFL.GCI.AngularEnergyDomain n s ↔
+    DFL.GCI.ClassicalDirichletRepresentative n s ∧
+      MeasureTheory.MemLp (DFL.GCI.angularPotentialRepresentative n s) 2 DFL.GCI.angularLebesgue
+'DFL.GCI.angularEnergyDomain_iff_classicalH10_potential' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.angularEnergyDomain_iff_classicalH10_singular (n : ℕ) (hn : 3 ≤ n) (s : DFL.GCI.AngularState) :
+  DFL.GCI.AngularEnergyDomain n s ↔
+    DFL.GCI.ClassicalDirichletRepresentative n s ∧
+      MeasureTheory.MemLp (DFL.GCI.scaledSingularRepresentative n s) 2 DFL.GCI.angularLebesgue
+'DFL.GCI.angularEnergyDomain_iff_classicalH10_singular' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.original_GCI_all_classicalH10_strict_shift_chain (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r) :
+  ∃ s,
+    DFL.GCI.OriginalWeakGCISolution n r s ∧
+      DFL.GCI.ClassicalDirichletRepresentative n s ∧
+        MeasureTheory.MemLp (DFL.GCI.angularPotentialRepresentative n s) 2 DFL.GCI.angularLebesgue ∧
+          (∀ (v : DFL.GCI.AngularState),
+              DFL.GCI.OriginalWeakGCISolution n r v →
+                DFL.GCI.originalGCICoefficient n r v = DFL.GCI.originalGCICoefficient n r s) ∧
+            0 < DFL.GCI.originalGCIDenominator n r s ∧
+              0 < DFL.GCI.originalGCICoefficient n r s ∧
+                DFL.GCI.originalGCICoefficient n r s < DFL.orientationMean (n + 2) r ∧
+                  DFL.orientationMean (n + 2) r < DFL.orientationMean n r
+'DFL.GCI.original_GCI_all_classicalH10_strict_shift_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.GCI.original_GCI_all_physical_sphere_comparison (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r) :
+  ∃ s,
+    DFL.GCI.OriginalWeakGCISolution n r s ∧
+      (∀ (v : DFL.GCI.AngularState),
+          DFL.GCI.OriginalWeakGCISolution n r v →
+            DFL.GCI.originalGCICoefficient n r v = DFL.GCI.originalGCICoefficient n r s) ∧
+        0 < DFL.GCI.originalGCIDenominator n r s ∧
+          0 < DFL.GCI.originalGCICoefficient n r s ∧
+            DFL.GCI.originalGCICoefficient n r s < DFL.Geometry.sphereOrientationMean n ⋯ r
+'DFL.GCI.original_GCI_all_physical_sphere_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.hilbertFormGap_eq_coreGap (d : ℕ) (r : ℝ) : DFL.Spectral.hilbertFormGap d r = DFL.Spectral.coreGap d r
+'DFL.Spectral.hilbertFormGap_eq_coreGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.formValue_orthogonal_constants (d : ℕ) (r : ℝ) (p : ↥(DFL.Spectral.HilbertFormSpace d r)) :
+  inner ℝ (DFL.Spectral.constantOne✝ d r) ((DFL.Spectral.formValue d r) p) = 0
+'DFL.Spectral.formValue_orthogonal_constants' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.positive_latitude_eigenfunction_deriv_neg (M : ℕ) (hM : 0 < M) (b lam0 r lam : ℝ) (hbr : 0 < b * r)
+  (v : ℝ → ℝ) (hv : ContDiff ℝ 2 v) (hpos : ∀ t ∈ Set.Ioo (-1) 1, 0 < v t)
+  (heq : DFL.Spectral.LatitudeEigenEquation M b lam0 r lam v) {t : ℝ} (ht : t ∈ Set.Ioo (-1) 1) : deriv v t < 0
+'DFL.Spectral.positive_latitude_eigenfunction_deriv_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.latitude_weight_flux_identity (M : ℕ) (hM : 2 ≤ M) (r : ℝ) (v : ℝ → ℝ) (hv : ContDiff ℝ 2 v)
+  (hden : DFL.Spectral.latitudeNorm M r v ≠ 0) :
+  r * DFL.Spectral.latitudeW M r v - ↑M * DFL.Spectral.latitudeMean M r v - 2 * DFL.Spectral.latitudeK M r v = 0
+'DFL.Spectral.latitude_weight_flux_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.latitude_HF_equality (M : ℕ) (hM : 2 ≤ M) (b lam0 r lam lamPrime : ℝ) (v g : ℝ → ℝ) (hv : ContDiff ℝ 2 v)
+  (hg : ContDiff ℝ 2 g) (heq : DFL.Spectral.LatitudeEigenEquation M b lam0 r lam v)
+  (hden : DFL.Spectral.latitudeNorm M r v ≠ 0)
+  (hparameter :
+    ∀ t ∈ Set.Ioo (-1) 1,
+      DFL.Spectral.halfDensityApply M b lam0 r g t +
+          DFL.Spectral.halfDensityPotentialPrime M b r t * DFL.Spectral.halfDensityLift r v t =
+        lamPrime * DFL.Spectral.halfDensityLift r v t + lam * g t) :
+  lamPrime = r / 2 * DFL.Spectral.latitudeW M r v + (b - ↑M / 2) * DFL.Spectral.latitudeMean M r v
+'DFL.Spectral.latitude_HF_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.latitude_eigenpair_parameter_derivative_pos (M : ℕ) (hM : 2 ≤ M) (b lam0 r lam lamPrime : ℝ) (hb : 0 < b)
+  (hbhalf : 2 * b ≤ ↑M) (hr : 0 < r) (v g : ℝ → ℝ) (hv : ContDiff ℝ 2 v) (hg : ContDiff ℝ 2 g)
+  (hpos : ∀ t ∈ Set.Ioo (-1) 1, 0 < v t) (heq : DFL.Spectral.LatitudeEigenEquation M b lam0 r lam v)
+  (hparameter :
+    ∀ t ∈ Set.Ioo (-1) 1,
+      DFL.Spectral.halfDensityApply M b lam0 r g t +
+          DFL.Spectral.halfDensityPotentialPrime M b r t * DFL.Spectral.halfDensityLift r v t =
+        lamPrime * DFL.Spectral.halfDensityLift r v t + lam * g t) :
+  0 < lamPrime
+'DFL.Spectral.latitude_eigenpair_parameter_derivative_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.halfDensity_parameter_equation_of_eigenbranch (M : ℕ) (b lam0 r lamPrime t : ℝ) (lam : ℝ → ℝ)
+  (u : ℝ → ℝ → ℝ) (g : ℝ → ℝ) (hlam : HasDerivAt lam lamPrime r) (hu : HasDerivAt (fun ρ => u ρ t) (g t) r)
+  (hut : HasDerivAt (fun ρ => deriv (u ρ) t) (deriv g t) r)
+  (hutt : HasDerivAt (fun ρ => deriv (deriv (u ρ)) t) (deriv (deriv g) t) r)
+  (heq : ∀ (ρ : ℝ), DFL.Spectral.halfDensityApply M b lam0 ρ (u ρ) t = lam ρ * u ρ t) :
+  DFL.Spectral.halfDensityApply M b lam0 r g t + DFL.Spectral.halfDensityPotentialPrime M b r t * u r t =
+    lamPrime * u r t + lam r * g t
+'DFL.Spectral.halfDensity_parameter_equation_of_eigenbranch' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.actual_eigenbranch_derivative_pos (M : ℕ) (hM : 2 ≤ M) (b lam0 r : ℝ) (hb : 0 < b) (hbhalf : 2 * b ≤ ↑M)
+  (hr : 0 < r) (lam : ℝ → ℝ) (u : ℝ → ℝ → ℝ) (v g : ℝ → ℝ) (hlam : DifferentiableAt ℝ lam r) (hv : ContDiff ℝ 2 v)
+  (hg : ContDiff ℝ 2 g) (hpos : ∀ t ∈ Set.Ioo (-1) 1, 0 < v t)
+  (heqv : DFL.Spectral.LatitudeEigenEquation M b lam0 r (lam r) v) (hslice : u r = DFL.Spectral.halfDensityLift r v)
+  (hu : ∀ t ∈ Set.Ioo (-1) 1, HasDerivAt (fun ρ => u ρ t) (g t) r)
+  (hut : ∀ t ∈ Set.Ioo (-1) 1, HasDerivAt (fun ρ => deriv (u ρ) t) (deriv g t) r)
+  (hutt : ∀ t ∈ Set.Ioo (-1) 1, HasDerivAt (fun ρ => deriv (deriv (u ρ)) t) (deriv (deriv g) t) r)
+  (heq : ∀ (ρ t : ℝ), t ∈ Set.Ioo (-1) 1 → DFL.Spectral.halfDensityApply M b lam0 ρ (u ρ) t = lam ρ * u ρ t) :
+  0 < deriv lam r
+'DFL.Spectral.actual_eigenbranch_derivative_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.aligned_latitude_integral (k : ℕ) (r : ℝ) (f : ℝ → ℝ) (hf : Continuous f) :
+  ∫ (x : ↑(DFL.Spectral.SpherePoint (k + 2))),
+      f (DFL.Spectral.fieldCoordinate (k + 2) x) ∂DFL.Spectral.alignedMeasure (k + 2) r =
+    (∫ (t : ℝ) in -1..1, DFL.Spectral.radialWeight (k + 2) r t * f t) /
+      ∫ (t : ℝ) in -1..1, DFL.Spectral.radialWeight (k + 2) r t
+'DFL.Spectral.aligned_latitude_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.latitudeCore_energy_integral (k : ℕ) (r : ℝ) (v : ℝ → ℝ) (hv : ContDiff ℝ 2 v) :
+  DFL.Spectral.coreEnergy (k + 2) r (DFL.Spectral.latitudeCore (k + 2) v ⋯) =
+    (∫ (t : ℝ) in -1..1, DFL.Spectral.radialWeight (k + 2) r t * ((1 - t ^ 2) * deriv v t ^ 2)) /
+      ∫ (t : ℝ) in -1..1, DFL.Spectral.radialWeight (k + 2) r t
+'DFL.Spectral.latitudeCore_energy_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.tilt_rayleigh_equality_stationary (M : ℕ) (hM : 2 ≤ M) (lam0 r a lam : ℝ) (u : ℝ → ℝ) (hu : ContDiff ℝ 2 u)
+  (hmin : ∀ (v : ℝ → ℝ), ContDiff ℝ 2 v → lam * DFL.Spectral.latitudeNorm M 0 v ≤ DFL.Spectral.tiltPair M lam0 r a v v)
+  (heq : DFL.Spectral.tiltPair M lam0 r a u u = lam * DFL.Spectral.latitudeNorm M 0 u) (v : ℝ → ℝ) :
+  ContDiff ℝ 2 v → DFL.Spectral.tiltDefect M lam0 r a lam v u = 0
+'DFL.Spectral.tilt_rayleigh_equality_stationary' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.tilt_ground_energy_strict_concave (M : ℕ) (hM : 2 ≤ M) (lam0 r : ℝ) (hr : 0 < r) (E : ℝ → ℝ)
+  (hground : ∀ (a : ℝ), ∃ u, DFL.Spectral.IsTiltGroundProfile M lam0 r a (E a) u) (a b s : ℝ) (hab : a ≠ b) (hs : 0 < s)
+  (hs1 : s < 1) : s * E a + (1 - s) * E b < E (s * a + (1 - s) * b)
+'DFL.Spectral.tilt_ground_energy_strict_concave' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.tilt_ground_energy_even (M : ℕ) (lam0 r : ℝ) (E : ℝ → ℝ)
+  (hground : ∀ (a : ℝ), ∃ u, DFL.Spectral.IsTiltGroundProfile M lam0 r a (E a) u) (a : ℝ) : E (-a) = E a
+'DFL.Spectral.tilt_ground_energy_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.original_radial_transverse_ground_ordering (d : ℕ) (hd : 2 ≤ d) (r : ℝ) (hr : 0 < r) (E : ℝ → ℝ)
+  (hground : ∀ (a : ℝ), ∃ u, DFL.Spectral.IsTiltGroundProfile (d + 2) (↑d) r a (E a) u) : E (↑d / 2) < E ((↑d - 2) / 2)
+'DFL.Spectral.original_radial_transverse_ground_ordering' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.radial_derivative_adjoint (d : ℕ) (r : ℝ) (v : ℝ → ℝ) (hv : ContDiff ℝ 2 v) :
+  deriv (DFL.Spectral.radialAdjoint d r v) = DFL.Spectral.radialPartnerApply d r v
+'DFL.Spectral.radial_derivative_adjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.radial_eigenfunction_derivative_partner (d : ℕ) (r lam : ℝ) (f : ℝ → ℝ) (hf : ContDiff ℝ 3 f)
+  (heq : DFL.Spectral.RadialEigenEquation d r lam f) : DFL.Spectral.LatitudeEigenEquation (d + 2) 2 (↑d) r lam (deriv f)
+'DFL.Spectral.radial_eigenfunction_derivative_partner' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.partner_eigenfunction_recovers_radial (d : ℕ) (r lam : ℝ) (hlam : lam ≠ 0) (v : ℝ → ℝ)
+  (hv : ContDiff ℝ 2 v) (heq : DFL.Spectral.LatitudeEigenEquation (d + 2) 2 (↑d) r lam v) :
+  DFL.Spectral.RadialEigenEquation d r lam (DFL.Spectral.radialRecover d r lam v)
+'DFL.Spectral.partner_eigenfunction_recovers_radial' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.radial_recover_derivative_eigenfunction (d : ℕ) (r lam : ℝ) (hlam : lam ≠ 0) (f : ℝ → ℝ)
+  (heq : DFL.Spectral.RadialEigenEquation d r lam f) {t : ℝ} (ht : t ∈ Set.Ioo (-1) 1) :
+  DFL.Spectral.radialRecover d r lam (deriv f) t = f t
+'DFL.Spectral.radial_recover_derivative_eigenfunction' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.radial_adjoint_green_identity (d : ℕ) (hd : 2 ≤ d) (r : ℝ) (f v : ℝ → ℝ) (hf : ContDiff ℝ 2 f)
+  (hv : ContDiff ℝ 2 v) :
+  ∫ (t : ℝ) in -1..1, DFL.Spectral.radialWeight d r t * f t * DFL.Spectral.radialAdjoint d r v t =
+    ∫ (t : ℝ) in -1..1, DFL.Spectral.radialWeight (d + 2) r t * deriv f t * v t
+'DFL.Spectral.radial_adjoint_green_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.radial_recover_weighted_mean_zero (d : ℕ) (hd : 2 ≤ d) (r lam : ℝ) (v : ℝ → ℝ) (hv : ContDiff ℝ 2 v) :
+  ∫ (t : ℝ) in -1..1, DFL.Spectral.radialWeight d r t * DFL.Spectral.radialRecover d r lam v t = 0
+'DFL.Spectral.radial_recover_weighted_mean_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.transverseCore_energy_integral (k : ℕ) (r : ℝ) (i : Fin (k + 2 + 1)) (hi : i ≠ 0) (v : ℝ → ℝ)
+  (hv : ContDiff ℝ 2 v) :
+  DFL.Spectral.coreEnergy (k + 2) r (DFL.Spectral.transverseCore (k + 2) i v ⋯) =
+    (∫ (t : ℝ) in -1..1,
+        DFL.Spectral.radialWeight (k + 2 + 2) r t * ((1 - t ^ 2) * deriv v t ^ 2 + (↑k + 2 + r * t) * v t ^ 2)) /
+      ((↑k + 2) * ∫ (t : ℝ) in -1..1, DFL.Spectral.radialWeight (k + 2) r t)
+'DFL.Spectral.transverseCore_energy_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+DFL.Spectral.transverseCore_norm_amplitude_integral (k : ℕ) (r : ℝ) (i : Fin (k + 2 + 1)) (hi : i ≠ 0) (v : ℝ → ℝ)
+  (hv : ContDiff ℝ 1 v) :
+  ∫ (x : ↑(DFL.Spectral.SpherePoint (k + 2))),
+      DFL.Spectral.coreValue (k + 2) (DFL.Spectral.transverseCore (k + 2) i v hv) x ^
+        2 ∂DFL.Spectral.alignedMeasure (k + 2) r =
+    (∫ (t : ℝ) in -1..1, DFL.Spectral.radialWeight (k + 2 + 2) r t * v t ^ 2) /
+      ((↑k + 2) * ∫ (t : ℝ) in -1..1, DFL.Spectral.radialWeight (k + 2) r t)
+'DFL.Spectral.transverseCore_norm_amplitude_integral' depends on axioms: [propext, Classical.choice, Quot.sound]

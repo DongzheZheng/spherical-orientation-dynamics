@@ -1,0 +1,59 @@
+\documentclass[tikz,border=2mm]{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\definecolor{navy}{HTML}{184A68}
+\definecolor{teal}{HTML}{158477}
+\definecolor{orange}{HTML}{DA7441}
+\definecolor{purple}{HTML}{8A5A9F}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+ group style={group size=2 by 1,horizontal sep=16mm},
+ width=7.3cm,height=5.7cm,grid=major,grid style={black!10},
+ tick label style={font=\small},label style={font=\small},
+ legend style={draw=none,fill=white,fill opacity=.85,text opacity=1,font=\scriptsize}]
+\nextgroupplot[xlabel={$m=|J|/\rho$},ylabel={$\mathcal F(\rho M_r)-\mathcal F(\rho)$},
+ xmin=0,xmax=.73,ymin=-.115,ymax=.155,legend pos=north west]
+\addplot[black!50,densely dotted,thick,forget plot] coordinates {(0,0) (.73,0)};
+\addplot[black!55,thick] table[x=m,y=rho180,col sep=comma]{../numerics/data/phase_landscape.csv};
+\addlegendentry{$\rho=1.80<\rho_*$}
+\addplot[orange,very thick] table[x=m,y=rho190,col sep=comma]{../numerics/data/phase_landscape.csv};
+\addlegendentry{$\rho=1.90$ (bistable)}
+\addplot[purple,thick,dashed] table[x=m,y=rhomaxwell,col sep=comma]{../numerics/data/phase_landscape.csv};
+\addlegendentry{$\rho=\rho_{\rm M}$ (equal depth)}
+\addplot[navy,thick,dashdotted] table[x=m,y=rho200,col sep=comma]{../numerics/data/phase_landscape.csv};
+\addlegendentry{$\rho=2.00>\rho_{\rm M}$}
+\addplot[orange,only marks,mark=*,mark size=2pt] coordinates {(.3975915703,.0452847790)};
+\addplot[teal,only marks,mark=*,mark size=2pt] coordinates {(.6309470063,.0271594214)};
+\node[font=\scriptsize,anchor=south west,fill=white,fill opacity=.8,text opacity=1]
+  at (axis cs:.400,.0453) {barrier};
+\node[font=\scriptsize,anchor=south,fill=white,fill opacity=.8,text opacity=1]
+  at (axis cs:.631,.0272) {metastable};
+\nextgroupplot[xlabel={mass $\rho$},ylabel={polarization $m$},
+ xmin=1.72,xmax=3.33,ymin=-.025,ymax=.94,
+ legend style={at={(.98,.57)},anchor=east}]
+\fill[teal!6] (axis cs:1.860214757,0) rectangle (axis cs:3,.94);
+\addplot[black!45,densely dotted,forget plot] coordinates {(1.860214757,0) (1.860214757,.94)};
+\addplot[purple!70,densely dashed,forget plot] coordinates {(1.925876432,0) (1.925876432,.94)};
+\addplot[black!50,densely dotted,forget plot] coordinates {(3,0) (3,.94)};
+\addplot[navy,very thick] coordinates {(1.72,0) (1.925876432,0)};
+\addlegendentry{lower free energy}
+\addplot[teal,very thick,dashed] coordinates {(1.925876432,0) (3,0)};
+\addlegendentry{local minimum}
+\addplot[orange,thick,densely dotted] coordinates {(3,0) (3.33,0)};
+\addlegendentry{unstable}
+\addplot[orange,thick,densely dotted] table[x=rho,y=saddle_m,col sep=comma,unbounded coords=jump]{../numerics/data/phase_branches.csv};
+\addplot[teal,very thick,dashed] table[x=rho,y=metastable_m,col sep=comma,unbounded coords=jump]{../numerics/data/phase_branches.csv};
+\addplot[navy,very thick] table[x=rho,y=global_m,col sep=comma,unbounded coords=jump]{../numerics/data/phase_branches.csv};
+\addplot[orange,only marks,mark=*,mark size=2pt] coordinates {(1.860214757,.519699677)};
+\addplot[purple,only marks,mark=*,mark size=2pt] coordinates {(1.925876432,.659336488)};
+\node[font=\scriptsize,anchor=north west,fill=white,fill opacity=.8,text opacity=1]
+  at (axis cs:1.865,.92) {$\rho_*$};
+\node[font=\scriptsize,anchor=north west,fill=white,fill opacity=.8,text opacity=1]
+  at (axis cs:1.96,.79) {$\rho_{\rm M}$};
+\node[font=\scriptsize,anchor=north east,fill=white,fill opacity=.8,text opacity=1]
+  at (axis cs:2.98,.35) {$n=3$};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

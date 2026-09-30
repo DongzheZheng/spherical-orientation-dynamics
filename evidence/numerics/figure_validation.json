@@ -1,0 +1,78 @@
+{
+  "tex_figure_count": 10,
+  "python_figure_count": 2,
+  "pdf_checks": [
+    {
+      "file": "energy_landscape_3d.pdf",
+      "pages": 1,
+      "metadata": "empty",
+      "english_labels": true
+    },
+    {
+      "file": "fold.pdf",
+      "pages": 1,
+      "metadata": "empty",
+      "english_labels": true
+    },
+    {
+      "file": "fold_angle_wedge.pdf",
+      "pages": 1,
+      "metadata": "empty",
+      "english_labels": true
+    },
+    {
+      "file": "gci_symbol.pdf",
+      "pages": 1,
+      "metadata": "empty",
+      "english_labels": true
+    },
+    {
+      "file": "noise_phase_map.pdf",
+      "pages": 1,
+      "metadata": "empty",
+      "english_labels": true
+    },
+    {
+      "file": "orientation_sphere.pdf",
+      "pages": 1,
+      "metadata": "empty",
+      "english_labels": true
+    },
+    {
+      "file": "phase_landscape.pdf",
+      "pages": 1,
+      "metadata": "empty",
+      "english_labels": true
+    },
+    {
+      "file": "physical_mechanism.pdf",
+      "pages": 1,
+      "metadata": "empty",
+      "english_labels": true
+    },
+    {
+      "file": "quench_dynamics.pdf",
+      "pages": 1,
+      "metadata": "empty",
+      "english_labels": true
+    },
+    {
+      "file": "slow_rate.pdf",
+      "pages": 1,
+      "metadata": "empty",
+      "english_labels": true
+    },
+    {
+      "file": "spectrum.pdf",
+      "pages": 1,
+      "metadata": "empty",
+      "english_labels": true
+    },
+    {
+      "file": "transport_atlas.pdf",
+      "pages": 1,
+      "metadata": "empty",
+      "english_labels": true
+    }
+  ]
+}

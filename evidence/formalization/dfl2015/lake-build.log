@@ -1,0 +1,451 @@
+ℹ [8252/8424] Replayed DFL.Targets
+info: DFL/Targets.lean:98:0: DFL.DFL2015UnimodalityConjecture : Prop
+info: DFL/Targets.lean:99:0: DFL.NondegenerateFold (n : ℕ) : Prop
+ℹ [8272/8424] Replayed DFL.Hysteresis.ZeroDirectionODE
+info: DFL/Hysteresis/ZeroDirectionODE.lean:139:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+ℹ [8399/8424] Replayed DFL.GCI.AngularMomentAllAudit
+info: DFL/GCI/AngularMomentAllAudit.lean:3:0: DFL.GCI.threeD_singular_derivative_integrable :
+  IntervalIntegrable DFL.GCI.threeDSingularDerivative✝ MeasureTheory.volume 0 Real.pi
+info: DFL/GCI/AngularMomentAllAudit.lean:4:0: DFL.GCI.momentFlux_three_AC (r : ℝ) : AbsolutelyContinuousOnInterval (DFL.GCI.momentFlux 3 r) 0 Real.pi
+info: DFL/GCI/AngularMomentAllAudit.lean:5:0: DFL.GCI.threeD_remainder_integrable (r : ℝ) (s : DFL.GCI.AngularState) (hs : DFL.GCI.OriginalWeakGCISolution 3 r s) :
+  IntervalIntegrable (fun θ => DFL.GCI.momentRemainderWeight 3 r θ * DFL.GCI.momentPrimitive s θ) MeasureTheory.volume 0
+    Real.pi
+info: DFL/GCI/AngularMomentAllAudit.lean:6:0: DFL.GCI.threeD_ibp_term_integrable (r : ℝ) (s : DFL.GCI.AngularState) (hs : DFL.GCI.OriginalWeakGCISolution 3 r s) :
+  IntervalIntegrable (fun θ => DFL.GCI.momentIBPWeight 3 r θ * DFL.GCI.momentPrimitive s θ) MeasureTheory.volume 0
+    Real.pi
+info: DFL/GCI/AngularMomentAllAudit.lean:7:0: DFL.GCI.weak_solution_moment_identity_three (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 3 r s) :
+  DFL.GCI.originalForcingNorm 3 r = 2 * DFL.GCI.originalGCIDenominator 3 r s + r * DFL.GCI.originalGCINumerator 3 r s
+info: DFL/GCI/AngularMomentAllAudit.lean:8:0: DFL.GCI.weak_solution_moment_identity_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) :
+  DFL.GCI.originalForcingNorm n r =
+    (↑n - 1) * DFL.GCI.originalGCIDenominator n r s + r * DFL.GCI.originalGCINumerator n r s
+info: DFL/GCI/AngularMomentAllAudit.lean:9:0: DFL.GCI.original_GCI_shift_upper_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : DFL.GCI.originalGCICoefficient n r s ≤ DFL.orientationMean (n + 2) r
+info: DFL/GCI/AngularMomentAllAudit.lean:10:0: DFL.GCI.original_GCI_strict_upper_all (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : DFL.GCI.originalGCICoefficient n r s < DFL.orientationMean n r
+info: DFL/GCI/AngularMomentAllAudit.lean:12:0: 'DFL.GCI.threeD_singular_derivative_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/AngularMomentAllAudit.lean:13:0: 'DFL.GCI.momentFlux_three_AC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/AngularMomentAllAudit.lean:14:0: 'DFL.GCI.threeD_remainder_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/AngularMomentAllAudit.lean:15:0: 'DFL.GCI.threeD_ibp_term_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/AngularMomentAllAudit.lean:16:0: 'DFL.GCI.weak_solution_moment_identity_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/AngularMomentAllAudit.lean:17:0: 'DFL.GCI.weak_solution_moment_identity_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/AngularMomentAllAudit.lean:18:0: 'DFL.GCI.original_GCI_shift_upper_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/AngularMomentAllAudit.lean:19:0: 'DFL.GCI.original_GCI_strict_upper_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8400/8424] Replayed DFL.GCI.AngularMomentGeneralAudit
+info: DFL/GCI/AngularMomentGeneralAudit.lean:3:0: DFL.GCI.weak_solution_moment_identity_ge_four (n : ℕ) (hn : 4 ≤ n) (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) :
+  DFL.GCI.originalForcingNorm n r =
+    (↑n - 1) * DFL.GCI.originalGCIDenominator n r s + r * DFL.GCI.originalGCINumerator n r s
+info: DFL/GCI/AngularMomentGeneralAudit.lean:4:0: DFL.GCI.original_GCI_shift_upper_ge_four (n : ℕ) (hn : 4 ≤ n) (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : DFL.GCI.originalGCICoefficient n r s ≤ DFL.orientationMean (n + 2) r
+info: DFL/GCI/AngularMomentGeneralAudit.lean:5:0: DFL.GCI.original_GCI_strict_upper_ge_four (n : ℕ) (hn : 4 ≤ n) (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : DFL.GCI.originalGCICoefficient n r s < DFL.orientationMean n r
+info: DFL/GCI/AngularMomentGeneralAudit.lean:7:0: 'DFL.GCI.weak_solution_moment_identity_ge_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/AngularMomentGeneralAudit.lean:8:0: 'DFL.GCI.original_GCI_shift_upper_ge_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/AngularMomentGeneralAudit.lean:9:0: 'DFL.GCI.original_GCI_strict_upper_ge_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8403/8424] Replayed DFL.GCI.Audit
+info: DFL/GCI/Audit.lean:9:0: DFL.GCI.DFL2015GCIComparison : Prop
+info: DFL/GCI/Audit.lean:10:0: DFL.GCI.OriginalWeakGCISolution (n : ℕ) (r : ℝ) (s : DFL.GCI.AngularState) : Prop
+info: DFL/GCI/Audit.lean:11:0: DFL.GCI.weak_solution_denominator_nonneg (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : 0 ≤ DFL.GCI.originalGCIDenominator n r s
+info: DFL/GCI/Audit.lean:12:0: DFL.GCI.amplitudeOperator_groundFactor (n : ℕ) (r t : ℝ) :
+  DFL.GCI.amplitudeOperatorValue n r t (DFL.GCI.groundFactor n r t) (deriv (DFL.GCI.groundFactor n r) t)
+      (deriv (deriv (DFL.GCI.groundFactor n r)) t) =
+    DFL.GCI.groundFactor n r t * (↑n - 1 + ↑n / (↑n + 1) ^ 2 * r ^ 2 * (1 - t ^ 2))
+info: DFL/GCI/Audit.lean:13:0: DFL.GCI.derivative_equation_of_poisson (n : ℕ) (r t : ℝ) (h0 h1 h2 h3 : ℝ → ℝ) (hd0 : HasDerivAt h0 (h1 t) t)
+  (hd1 : HasDerivAt h1 (h2 t) t) (hd2 : HasDerivAt h2 (h3 t) t)
+  (hpoisson : ∀ (s : ℝ), DFL.GCI.amplitudeOperatorValue n r s (h0 s) (h1 s) (h2 s) = 1) :
+  DFL.GCI.derivativeOperatorValue n r t (h1 t) (h2 t) (h3 t) = -r * h0 t
+info: DFL/GCI/Audit.lean:14:0: DFL.GCI.derivativeOperator_groundFactor (n : ℕ) (r t : ℝ) :
+  DFL.GCI.derivativeOperatorValue n r t (DFL.GCI.derivativeGroundFactor n r t)
+      (deriv (DFL.GCI.derivativeGroundFactor n r) t) (deriv (deriv (DFL.GCI.derivativeGroundFactor n r)) t) =
+    DFL.GCI.derivativeGroundFactor n r t * (2 * ↑n + 3 * ↑n / (↑n + 3) ^ 2 * r ^ 2 * (1 - t ^ 2))
+info: DFL/GCI/Audit.lean:15:0: DFL.GCI.derivativeGround_operator_quotient_pos (n : ℕ) (hn : 2 ≤ n) (r t : ℝ) (ht : t ∈ Set.Icc (-1) 1) :
+  0 < DFL.GCI.derivativeOperatorValue n r t 1 (-(3 * r / (↑n + 3))) ((3 * r / (↑n + 3)) ^ 2)
+info: DFL/GCI/Audit.lean:16:0: DFL.GCI.positiveTestState_mem_energy (n : ℕ) (hn : 2 ≤ n) : DFL.GCI.AngularEnergyDomain n (DFL.GCI.positiveTestState n)
+info: DFL/GCI/Audit.lean:17:0: DFL.GCI.positiveTest_self_energy_integrable (n : ℕ) (hn : 2 ≤ n) (r : ℝ) :
+  IntervalIntegrable
+    (fun θ =>
+      DFL.GCI.angularWeight n r θ *
+        (DFL.GCI.angularDerivative n (DFL.GCI.positiveTestState n) θ *
+            DFL.GCI.angularDerivative n (DFL.GCI.positiveTestState n) θ +
+          DFL.GCI.angularPotential n θ * (DFL.GCI.positiveTestState n).g θ * (DFL.GCI.positiveTestState n).g θ))
+    MeasureTheory.volume 0 Real.pi
+info: DFL/GCI/Audit.lean:18:0: DFL.GCI.weak_solution_denominator_pos (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : 0 < DFL.GCI.originalGCIDenominator n r s
+info: DFL/GCI/Audit.lean:19:0: DFL.GCI.sineTestState_mem_energy (n : ℕ) (hn : 2 ≤ n) : DFL.GCI.AngularEnergyDomain n (DFL.GCI.sineTestState n)
+info: DFL/GCI/Audit.lean:20:0: DFL.GCI.weak_solution_moment_identity_twoD (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) :
+  DFL.GCI.originalForcingNorm 2 r = DFL.GCI.originalGCIDenominator 2 r s + r * DFL.GCI.originalGCINumerator 2 r s
+info: DFL/GCI/Audit.lean:21:0: DFL.GCI.weak_solution_mass_lt_denominator_twoD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) : DFL.GCI.twoDMass r s < DFL.GCI.originalGCIDenominator 2 r s
+info: DFL/GCI/Audit.lean:22:0: DFL.GCI.weak_solution_numerator_pos_twoD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) : 0 < DFL.GCI.originalGCINumerator 2 r s
+info: DFL/GCI/Audit.lean:23:0: DFL.GCI.weak_solution_coefficient_pos_twoD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) : 0 < DFL.GCI.originalGCICoefficient 2 r s
+info: DFL/GCI/Audit.lean:24:0: DFL.GCI.twoDSineEnergy_eq_forcingNorm_add_shiftMoment (r : ℝ) :
+  DFL.GCI.twoDSineEnergy r = DFL.GCI.originalForcingNorm 2 r + r * DFL.GCI.twoDShiftMoment r
+info: DFL/GCI/Audit.lean:25:0: DFL.GCI.weak_solution_energy_cauchy_twoD (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) :
+  DFL.GCI.originalForcingNorm 2 r ^ 2 ≤ DFL.GCI.originalGCIDenominator 2 r s * DFL.GCI.twoDSineEnergy r
+info: DFL/GCI/Audit.lean:26:0: DFL.GCI.weak_solution_coefficient_le_shift_moment_twoD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) :
+  DFL.GCI.originalGCICoefficient 2 r s ≤ DFL.GCI.twoDShiftMoment r / DFL.GCI.originalForcingNorm 2 r
+info: DFL/GCI/Audit.lean:27:0: DFL.GCI.explicit_original_weak_solution_twoD (r : ℝ) (hr : 0 < r) :
+  DFL.GCI.OriginalWeakGCISolution 2 r (DFL.GCI.explicitState r)
+info: DFL/GCI/Audit.lean:28:0: DFL.GCI.weak_solution_g_unique_twoD (r : ℝ) (hr : 0 < r) (s t : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) (ht : DFL.GCI.OriginalWeakGCISolution 2 r t) (θ : ℝ)
+  (hθ : θ ∈ Set.Icc 0 Real.pi) : s.g θ = t.g θ
+info: DFL/GCI/Audit.lean:29:0: DFL.GCI.original_GCI_twoD_exists_unique_positive (r : ℝ) (hr : 0 < r) :
+  ∃ s,
+    DFL.GCI.OriginalWeakGCISolution 2 r s ∧
+      (∀ (v : DFL.GCI.AngularState),
+          DFL.GCI.OriginalWeakGCISolution 2 r v →
+            DFL.GCI.originalGCICoefficient 2 r v = DFL.GCI.originalGCICoefficient 2 r s) ∧
+        0 < DFL.GCI.originalGCIDenominator 2 r s ∧ 0 < DFL.GCI.originalGCICoefficient 2 r s
+info: DFL/GCI/Audit.lean:30:0: DFL.GCI.weak_solution_GCI_comparison_twoD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 2 r s) :
+  0 < DFL.GCI.originalGCICoefficient 2 r s ∧ DFL.GCI.originalGCICoefficient 2 r s < DFL.orientationMean 2 r
+info: DFL/GCI/Audit.lean:31:0: DFL.GCI.original_GCI_twoD_full_comparison (r : ℝ) (hr : 0 < r) :
+  ∃ s,
+    DFL.GCI.OriginalWeakGCISolution 2 r s ∧
+      (∀ (v : DFL.GCI.AngularState),
+          DFL.GCI.OriginalWeakGCISolution 2 r v →
+            DFL.GCI.originalGCICoefficient 2 r v = DFL.GCI.originalGCICoefficient 2 r s) ∧
+        0 < DFL.GCI.originalGCIDenominator 2 r s ∧
+          0 < DFL.GCI.originalGCICoefficient 2 r s ∧ DFL.GCI.originalGCICoefficient 2 r s < DFL.orientationMean 2 r
+info: DFL/GCI/Audit.lean:32:0: DFL.GCI.weak_solution_energy_cauchy (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (s v : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) (hv : DFL.GCI.AngularEnergyDomain n v)
+  (hvint : IntervalIntegrable (DFL.GCI.formIntegrand n r v v) MeasureTheory.volume 0 Real.pi) :
+  DFL.GCI.originalSourcePairing n r v ^ 2 ≤ DFL.GCI.originalGCIDenominator n r s * DFL.GCI.originalWeakForm n r v v
+info: DFL/GCI/Audit.lean:33:0: DFL.GCI.weak_solution_forcing_energy_cauchy (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) :
+  DFL.GCI.originalForcingNorm n r ^ 2 ≤
+    DFL.GCI.originalGCIDenominator n r s *
+      DFL.GCI.originalWeakForm n r (DFL.GCI.sineTestState n) (DFL.GCI.sineTestState n)
+info: DFL/GCI/Audit.lean:34:0: DFL.GCI.sineTest_self_energy_eq_forcing_add_shift (n : ℕ) (hn : 2 ≤ n) (r : ℝ) :
+  DFL.GCI.originalWeakForm n r (DFL.GCI.sineTestState n) (DFL.GCI.sineTestState n) =
+    (↑n - 1) * DFL.GCI.originalForcingNorm n r + r * DFL.GCI.originalShiftMoment n r
+info: DFL/GCI/Audit.lean:35:0: DFL.GCI.orientationMean_shift_eq_angular_shift_ratio (n : ℕ) (hn : 2 ≤ n) (r : ℝ) :
+  DFL.orientationMean (n + 2) r = DFL.GCI.originalShiftMoment n r / DFL.GCI.originalForcingNorm n r
+info: DFL/GCI/Audit.lean:36:0: DFL.GCI.weak_solution_moment_identity_fourD (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 4 r s) :
+  DFL.GCI.originalForcingNorm 4 r = 3 * DFL.GCI.originalGCIDenominator 4 r s + r * DFL.GCI.originalGCINumerator 4 r s
+info: DFL/GCI/Audit.lean:37:0: DFL.GCI.weak_solution_coefficient_lt_orientation_fourD (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution 4 r s) : DFL.GCI.originalGCICoefficient 4 r s < DFL.orientationMean 4 r
+info: DFL/GCI/Audit.lean:38:0: DFL.GCI.weak_solution_coefficient_lt_orientation_of_moment (n : ℕ) (hn : 2 ≤ n) (r : ℝ) (hr : 0 < r)
+  (s : DFL.GCI.AngularState) (hs : DFL.GCI.OriginalWeakGCISolution n r s)
+  (hmoment :
+    DFL.GCI.originalForcingNorm n r =
+      (↑n - 1) * DFL.GCI.originalGCIDenominator n r s + r * DFL.GCI.originalGCINumerator n r s) :
+  DFL.GCI.originalGCICoefficient n r s < DFL.orientationMean n r
+info: DFL/GCI/Audit.lean:40:0: 'DFL.GCI.weak_solution_denominator_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:41:0: 'DFL.GCI.amplitudeOperator_groundFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:42:0: 'DFL.GCI.derivative_equation_of_poisson' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:43:0: 'DFL.GCI.derivativeOperator_groundFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:44:0: 'DFL.GCI.derivativeGround_operator_quotient_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:45:0: 'DFL.GCI.positiveTestState_mem_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:46:0: 'DFL.GCI.positiveTest_self_energy_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:47:0: 'DFL.GCI.weak_solution_denominator_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:48:0: 'DFL.GCI.sineTestState_mem_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:49:0: 'DFL.GCI.weak_solution_moment_identity_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:50:0: 'DFL.GCI.weak_solution_mass_lt_denominator_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:51:0: 'DFL.GCI.weak_solution_numerator_pos_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:52:0: 'DFL.GCI.weak_solution_coefficient_pos_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:53:0: 'DFL.GCI.twoDSineEnergy_eq_forcingNorm_add_shiftMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:54:0: 'DFL.GCI.weak_solution_energy_cauchy_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:55:0: 'DFL.GCI.weak_solution_coefficient_le_shift_moment_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:56:0: 'DFL.GCI.explicit_original_weak_solution_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:57:0: 'DFL.GCI.weak_solution_g_unique_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:58:0: 'DFL.GCI.original_GCI_twoD_exists_unique_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:59:0: 'DFL.GCI.weak_solution_GCI_comparison_twoD' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:60:0: 'DFL.GCI.original_GCI_twoD_full_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:61:0: 'DFL.GCI.weak_solution_energy_cauchy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:62:0: 'DFL.GCI.weak_solution_forcing_energy_cauchy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:63:0: 'DFL.GCI.sineTest_self_energy_eq_forcing_add_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:64:0: 'DFL.GCI.orientationMean_shift_eq_angular_shift_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:65:0: 'DFL.GCI.weak_solution_moment_identity_fourD' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:66:0: 'DFL.GCI.weak_solution_coefficient_lt_orientation_fourD' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/GCI/Audit.lean:67:0: 'DFL.GCI.weak_solution_coefficient_lt_orientation_of_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8405/8424] Replayed DFL.Geometry.Audit
+info: DFL/Geometry/Audit.lean:3:0: DFL.Geometry.area (n : ℕ) : MeasureTheory.Measure ↑(DFL.Geometry.UnitSphere n)
+info: DFL/Geometry/Audit.lean:4:0: DFL.Geometry.coordinateLaw (n : ℕ) (hn : 0 < n) : MeasureTheory.Measure ℝ
+info: DFL/Geometry/Audit.lean:5:0: DFL.Geometry.coordinate_abs_le_one (n : ℕ) (hn : 0 < n) (ω : ↑(DFL.Geometry.UnitSphere n)) :
+  |DFL.Geometry.coordinate n hn ω| ≤ 1
+info: DFL/Geometry/Audit.lean:6:0: DFL.Geometry.coordinateLaw_outside_Icc (n : ℕ) (hn : 0 < n) : (DFL.Geometry.coordinateLaw n hn) (Set.Icc (-1) 1)ᶜ = 0
+info: DFL/Geometry/Audit.lean:7:0: DFL.Geometry.spherePartition_integrable (n : ℕ) (hn : 0 < n) (r : ℝ) :
+  MeasureTheory.Integrable (fun ω => Real.exp (r * DFL.Geometry.coordinate n hn ω)) (DFL.Geometry.area n)
+info: DFL/Geometry/Audit.lean:8:0: DFL.Geometry.sphereFirstMoment_integrable (n : ℕ) (hn : 0 < n) (r : ℝ) :
+  MeasureTheory.Integrable (fun ω => DFL.Geometry.coordinate n hn ω * Real.exp (r * DFL.Geometry.coordinate n hn ω))
+    (DFL.Geometry.area n)
+info: DFL/Geometry/Audit.lean:9:0: DFL.Geometry.spherePartition_pos (n : ℕ) (hn : 0 < n) (r : ℝ) : 0 < DFL.Geometry.spherePartition n hn r
+info: DFL/Geometry/Audit.lean:10:0: DFL.Geometry.spherePartition_eq_coordinateLaw_integral (n : ℕ) (hn : 0 < n) (r : ℝ) :
+  DFL.Geometry.spherePartition n hn r = ∫ (t : ℝ), Real.exp (r * t) ∂DFL.Geometry.coordinateLaw n hn
+info: DFL/Geometry/Audit.lean:11:0: DFL.Geometry.sphereFirstMoment_eq_coordinateLaw_integral (n : ℕ) (hn : 0 < n) (r : ℝ) :
+  DFL.Geometry.sphereFirstMoment n hn r = ∫ (t : ℝ), t * Real.exp (r * t) ∂DFL.Geometry.coordinateLaw n hn
+info: DFL/Geometry/Audit.lean:13:0: 'DFL.Geometry.coordinate_abs_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/Audit.lean:14:0: 'DFL.Geometry.coordinateLaw_outside_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/Audit.lean:15:0: 'DFL.Geometry.spherePartition_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/Audit.lean:16:0: 'DFL.Geometry.sphereFirstMoment_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/Audit.lean:17:0: 'DFL.Geometry.spherePartition_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/Audit.lean:18:0: 'DFL.Geometry.spherePartition_eq_coordinateLaw_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/Audit.lean:19:0: 'DFL.Geometry.sphereFirstMoment_eq_coordinateLaw_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8406/8424] Replayed DFL.Geometry.CircleLawFullAudit
+info: DFL/Geometry/CircleLawFullAudit.lean:3:0: 'DFL.Geometry.coordinateLaw_two_eq_two_smul_measureT' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8407/8424] Replayed DFL.Geometry.LawThreeFullAudit
+info: DFL/Geometry/LawThreeFullAudit.lean:5:0: DFL.Geometry.coordinateLaw_three_eq_smul_volume :
+  DFL.Geometry.coordinateLaw 3 DFL.Geometry.three_pos✝ =
+    ENNReal.ofReal (2 * Real.pi) • MeasureTheory.volume.restrict (Set.Icc (-1) 1)
+info: DFL/Geometry/LawThreeFullAudit.lean:6:0: 'DFL.Geometry.coordinateLaw_three_eq_smul_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8408/8424] Replayed DFL.Geometry.MomentBridgeSuccAudit
+info: DFL/Geometry/MomentBridgeSuccAudit.lean:3:0: 'DFL.Geometry.betaCoordinateMeasure_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/MomentBridgeSuccAudit.lean:4:0: 'DFL.Geometry.sphereMomentBridge_succ_of_coordinateLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8409/8424] Replayed DFL.Geometry.MomentBridgeThreeAudit
+info: DFL/Geometry/MomentBridgeThreeAudit.lean:3:0: DFL.Geometry.sphereMomentBridge_three_of_coordinateLaw
+  (hLaw :
+    DFL.Geometry.coordinateLaw 3 DFL.Geometry.three_pos✝ =
+      ENNReal.ofReal (2 * Real.pi) • MeasureTheory.volume.restrict (Set.Icc (-1) 1)) :
+  DFL.Geometry.SphereMomentBridge 3 DFL.Geometry.three_pos✝¹
+info: DFL/Geometry/MomentBridgeThreeAudit.lean:4:0: 'DFL.Geometry.sphereMomentBridge_three_of_coordinateLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/MomentBridgeThreeAudit.lean:5:0: DFL.Geometry.sphere_isUnimodal_three_of_coordinateLaw
+  (hLaw :
+    DFL.Geometry.coordinateLaw 3 DFL.Geometry.three_pos✝ =
+      ENNReal.ofReal (2 * Real.pi) • MeasureTheory.volume.restrict (Set.Icc (-1) 1)) :
+  DFL.Geometry.SphereIsUnimodal 3 DFL.Geometry.three_pos✝¹
+info: DFL/Geometry/MomentBridgeThreeAudit.lean:6:0: 'DFL.Geometry.sphere_isUnimodal_three_of_coordinateLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8410/8424] Replayed DFL.Geometry.PhysicalSphereThreeAudit
+info: DFL/Geometry/PhysicalSphereThreeAudit.lean:3:0: DFL.Geometry.coordinateLaw_three_eq_smul_volume :
+  DFL.Geometry.coordinateLaw 3 DFL.Geometry.three_pos✝ =
+    ENNReal.ofReal (2 * Real.pi) • MeasureTheory.volume.restrict (Set.Icc (-1) 1)
+info: DFL/Geometry/PhysicalSphereThreeAudit.lean:4:0: 'DFL.Geometry.coordinateLaw_three_eq_smul_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/PhysicalSphereThreeAudit.lean:5:0: DFL.Geometry.sphereMomentBridge_three : DFL.Geometry.SphereMomentBridge 3 DFL.Geometry.three_pos✝
+info: DFL/Geometry/PhysicalSphereThreeAudit.lean:6:0: 'DFL.Geometry.sphereMomentBridge_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/PhysicalSphereThreeAudit.lean:7:0: DFL.Geometry.sphere_isUnimodal_three : DFL.Geometry.SphereIsUnimodal 3 DFL.Geometry.three_pos✝
+info: DFL/Geometry/PhysicalSphereThreeAudit.lean:8:0: 'DFL.Geometry.sphere_isUnimodal_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/PhysicalSphereThreeAudit.lean:9:0: DFL.Geometry.sphere_nondegenerateFold_three :
+  ∃ rStar,
+    0 < rStar ∧
+      (∀ (r : ℝ), 0 < r → r < rStar → deriv (DFL.Geometry.sphereEquilibriumDensity 3 DFL.Geometry.three_pos✝) r < 0) ∧
+        deriv (DFL.Geometry.sphereEquilibriumDensity 3 DFL.Geometry.three_pos✝¹) rStar = 0 ∧
+          (∀ (r : ℝ), rStar < r → 0 < deriv (DFL.Geometry.sphereEquilibriumDensity 3 DFL.Geometry.three_pos✝²) r) ∧
+            0 < deriv (deriv (DFL.Geometry.sphereEquilibriumDensity 3 DFL.Geometry.three_pos✝³)) rStar
+info: DFL/Geometry/PhysicalSphereThreeAudit.lean:10:0: 'DFL.Geometry.sphere_nondegenerateFold_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8411/8424] Replayed DFL.Geometry.PhysicalSphereTwoAudit
+info: DFL/Geometry/PhysicalSphereTwoAudit.lean:3:0: 'DFL.Geometry.sphereMomentBridge_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/PhysicalSphereTwoAudit.lean:4:0: 'DFL.Geometry.sphere_isUnimodal_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/PhysicalSphereTwoAudit.lean:5:0: 'DFL.Geometry.sphere_nondegenerateFold_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8412/8424] Replayed DFL.Geometry.SuccCapAudit
+info: DFL/Geometry/SuccCapAudit.lean:5:0: DFL.Geometry.area_sphereCapSucc_gamma (m : ℕ) (hm : 0 < m) (t : ℝ) (ht : 0 < t) (ht1 : t < 1) :
+  (DFL.Geometry.area (m + 1)) (DFL.Geometry.sphereCapSucc m t) =
+    (↑m + 1) * ∫⁻ (s : ℝ), DFL.Geometry.scalarCapKernel m t s
+info: DFL/Geometry/SuccCapAudit.lean:6:0: 'DFL.Geometry.area_sphereCapSucc_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/SuccCapAudit.lean:7:0: DFL.Geometry.coordinateLaw_succ_Ioi_gamma (m : ℕ) (hm : 0 < m) (t : ℝ) (ht : 0 < t) (ht1 : t < 1) :
+  (DFL.Geometry.coordinateLaw (m + 1) ⋯) (Set.Ioi t) = (↑m + 1) * ∫⁻ (s : ℝ), DFL.Geometry.scalarCapKernel m t s
+info: DFL/Geometry/SuccCapAudit.lean:8:0: 'DFL.Geometry.coordinateLaw_succ_Ioi_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8413/8424] Replayed DFL.Geometry.SuccCapBetaAudit
+info: DFL/Geometry/SuccCapBetaAudit.lean:3:0: 'DFL.Geometry.beta_tail_recursion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/SuccCapBetaAudit.lean:4:0: 'DFL.Geometry.coordinateLaw_succ_Ioi_beta_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8414/8424] Replayed DFL.Geometry.SuccEquatorNullAudit
+info: DFL/Geometry/SuccEquatorNullAudit.lean:3:0: DFL.Geometry.succ_coordinate_hyperplane_volume_zero (m : ℕ) : MeasureTheory.volume {x | x.ofLp ⟨0, ⋯⟩ = 0} = 0
+info: DFL/Geometry/SuccEquatorNullAudit.lean:4:0: DFL.Geometry.area_succ_equator_zero (m : ℕ) :
+  (DFL.Geometry.area (m + 1)) {ω | DFL.Geometry.coordinate (m + 1) ⋯ ω = 0} = 0
+info: DFL/Geometry/SuccEquatorNullAudit.lean:5:0: DFL.Geometry.coordinateLaw_succ_singleton_zero (m : ℕ) : (DFL.Geometry.coordinateLaw (m + 1) ⋯) {0} = 0
+info: DFL/Geometry/SuccEquatorNullAudit.lean:6:0: 'DFL.Geometry.succ_coordinate_hyperplane_volume_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/SuccEquatorNullAudit.lean:7:0: 'DFL.Geometry.area_succ_equator_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Geometry/SuccEquatorNullAudit.lean:8:0: 'DFL.Geometry.coordinateLaw_succ_singleton_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8415/8424] Replayed DFL.Geometry.SuccLawFullAudit
+info: DFL/Geometry/SuccLawFullAudit.lean:3:0: 'DFL.Geometry.coordinateLaw_succ_eq_smul_beta' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8416/8424] Replayed DFL.Probability.PiconeAudit
+info: DFL/Probability/PiconeAudit.lean:3:0: DFL.Probability.picone_integral_identity_ac {a b : ℝ} (u p A : ℝ → ℝ) (hu : AbsolutelyContinuousOnInterval u a b)
+  (hf : AbsolutelyContinuousOnInterval (fun x => p x * A x) a b) (hua : u a = 0) (hub : u b = 0)
+  (hE : IntervalIntegrable (fun x => p x * deriv u x ^ 2) MeasureTheory.volume a b)
+  (hQ : IntervalIntegrable (fun x => p x * (deriv u x - A x * u x) ^ 2) MeasureTheory.volume a b)
+  (hV :
+    IntervalIntegrable (fun x => (-deriv (fun y => p y * A y) x - p x * A x ^ 2) * u x ^ 2) MeasureTheory.volume a b) :
+  ∫ (x : ℝ) in a..b, p x * deriv u x ^ 2 =
+    (∫ (x : ℝ) in a..b, p x * (deriv u x - A x * u x) ^ 2) +
+      ∫ (x : ℝ) in a..b, (-deriv (fun y => p y * A y) x - p x * A x ^ 2) * u x ^ 2
+info: DFL/Probability/PiconeAudit.lean:4:0: 'DFL.Probability.picone_integral_identity_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Probability/PiconeAudit.lean:5:0: DFL.Probability.picone_strict_energy_ac {a b : ℝ} (u p A : ℝ → ℝ) (hab : a < b)
+  (hu : AbsolutelyContinuousOnInterval u a b) (hf : AbsolutelyContinuousOnInterval (fun x => p x * A x) a b)
+  (hua : u a = 0) (hub : u b = 0) (hp : ∀ x ∈ Set.Icc a b, 0 ≤ p x)
+  (hE : IntervalIntegrable (fun x => p x * deriv u x ^ 2) MeasureTheory.volume a b)
+  (hQ : IntervalIntegrable (fun x => p x * (deriv u x - A x * u x) ^ 2) MeasureTheory.volume a b)
+  (hV :
+    IntervalIntegrable (fun x => (-deriv (fun y => p y * A y) x - p x * A x ^ 2) * u x ^ 2) MeasureTheory.volume a b)
+  (hL2 : IntervalIntegrable (fun x => p x * u x ^ 2) MeasureTheory.volume a b)
+  (hR :
+    IntervalIntegrable (fun x => (-deriv (fun y => p y * A y) x - p x * A x ^ 2 - p x) * u x ^ 2) MeasureTheory.volume a
+      b)
+  (hRcont : ContinuousOn (fun x => (-deriv (fun y => p y * A y) x - p x * A x ^ 2 - p x) * u x ^ 2) (Set.Icc a b))
+  (hRnonneg : ∀ x ∈ Set.Ioc a b, 0 ≤ (-deriv (fun y => p y * A y) x - p x * A x ^ 2 - p x) * u x ^ 2)
+  (hRpos : ∃ x ∈ Set.Icc a b, 0 < (-deriv (fun y => p y * A y) x - p x * A x ^ 2 - p x) * u x ^ 2) :
+  ∫ (x : ℝ) in a..b, p x * u x ^ 2 < ∫ (x : ℝ) in a..b, p x * deriv u x ^ 2
+info: DFL/Probability/PiconeAudit.lean:6:0: 'DFL.Probability.picone_strict_energy_ac' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8417/8424] Replayed DFL.Probability.SymmetricTailUniquenessAudit
+info: DFL/Probability/SymmetricTailUniquenessAudit.lean:3:0: 'DFL.Probability.eq_of_symmetric_nonnegative_tails' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8418/8424] Replayed DFL.Spectral.Audit
+info: DFL/Spectral/Audit.lean:7:0: DFL.Spectral.alignedMeasure_probability (d : ℕ) (r : ℝ) :
+  MeasureTheory.IsProbabilityMeasure (DFL.Spectral.alignedMeasure d r)
+info: DFL/Spectral/Audit.lean:8:0: DFL.Spectral.alignedMeasure_zero (d : ℕ) :
+  DFL.Spectral.alignedMeasure d 0 = ((DFL.Spectral.surfaceMeasure d) Set.univ)⁻¹ • DFL.Spectral.surfaceMeasure d
+info: DFL/Spectral/Audit.lean:9:0: DFL.Spectral.integrable_aligned_iff (d : ℕ) (r : ℝ) (g : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hg : MeasureTheory.AEStronglyMeasurable g (DFL.Spectral.surfaceMeasure d)) :
+  MeasureTheory.Integrable g (DFL.Spectral.alignedMeasure d r) ↔
+    MeasureTheory.Integrable g (DFL.Spectral.surfaceMeasure d)
+info: DFL/Spectral/Audit.lean:10:0: DFL.Spectral.square_integrable_aligned_iff (d : ℕ) (r : ℝ) (g : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hg : MeasureTheory.AEStronglyMeasurable g (DFL.Spectral.surfaceMeasure d)) :
+  MeasureTheory.Integrable (fun x => g x ^ 2) (DFL.Spectral.alignedMeasure d r) ↔
+    MeasureTheory.Integrable (fun x => g x ^ 2) (DFL.Spectral.surfaceMeasure d)
+info: DFL/Spectral/Audit.lean:11:0: DFL.Spectral.weighted_higher_angular_integral (d ℓ : ℕ) (hd : 2 ≤ d) (hℓ : 2 ≤ ℓ) (r : ℝ) (y : ℝ → ℝ)
+  (hleft :
+    IntervalIntegrable (fun t => DFL.Spectral.radialWeight d r t * ((↑ℓ - 1) * (↑ℓ + ↑d - 1) * y t ^ 2))
+      MeasureTheory.volume (-1) 1)
+  (hright :
+    IntervalIntegrable
+      (fun t =>
+        DFL.Spectral.radialWeight d r t *
+          ((DFL.Spectral.angularCoefficient d ℓ - DFL.Spectral.angularCoefficient d 1) / (1 - t ^ 2) * y t ^ 2))
+      MeasureTheory.volume (-1) 1) :
+  ∫ (t : ℝ) in -1..1, DFL.Spectral.radialWeight d r t * ((↑ℓ - 1) * (↑ℓ + ↑d - 1) * y t ^ 2) ≤
+    ∫ (t : ℝ) in -1..1,
+      DFL.Spectral.radialWeight d r t *
+        ((DFL.Spectral.angularCoefficient d ℓ - DFL.Spectral.angularCoefficient d 1) / (1 - t ^ 2) * y t ^ 2)
+info: DFL/Spectral/Audit.lean:12:0: DFL.Spectral.sphereVariance_pos_iff_not_ae_constant (d : ℕ) (r : ℝ) (f : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hf : MeasureTheory.MemLp f 2 (DFL.Spectral.alignedMeasure d r)) :
+  0 < DFL.Spectral.sphereVariance d r f ↔ ¬∃ c, f =ᵐ[DFL.Spectral.alignedMeasure d r] fun x => c
+info: DFL/Spectral/Audit.lean:13:0: DFL.Spectral.sphereVariance_pos_iff_not_surface_constant (d : ℕ) (r : ℝ) (f : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hf : MeasureTheory.MemLp f 2 (DFL.Spectral.alignedMeasure d r)) :
+  0 < DFL.Spectral.sphereVariance d r f ↔ ¬∃ c, f =ᵐ[DFL.Spectral.surfaceMeasure d] fun x => c
+info: DFL/Spectral/Audit.lean:14:0: DFL.Spectral.sphereVariance_eq_sInf_const_subtraction (d : ℕ) (r : ℝ) (f : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hf : MeasureTheory.MemLp f 2 (DFL.Spectral.alignedMeasure d r)) :
+  DFL.Spectral.sphereVariance d r f =
+    sInf (Set.range fun c => ∫ (x : ↑(DFL.Spectral.SpherePoint d)), (f x - c) ^ 2 ∂DFL.Spectral.alignedMeasure d r)
+info: DFL/Spectral/Audit.lean:15:0: DFL.Spectral.sphere_const_subtraction_eq_variance_iff (d : ℕ) (r : ℝ) (f : ↑(DFL.Spectral.SpherePoint d) → ℝ) (c : ℝ)
+  (hf : MeasureTheory.MemLp f 2 (DFL.Spectral.alignedMeasure d r)) :
+  ∫ (x : ↑(DFL.Spectral.SpherePoint d)), (f x - c) ^ 2 ∂DFL.Spectral.alignedMeasure d r =
+      DFL.Spectral.sphereVariance d r f ↔
+    c = ∫ (x : ↑(DFL.Spectral.SpherePoint d)), f x ∂DFL.Spectral.alignedMeasure d r
+info: DFL/Spectral/Audit.lean:16:0: DFL.Spectral.surfaceMeasure_isometry_preimage (d : ℕ) (U : DFL.Spectral.Ambient d ≃ₗᵢ[ℝ] DFL.Spectral.Ambient d)
+  (s : Set ↑(DFL.Spectral.SpherePoint d)) (hs : MeasurableSet s) :
+  (DFL.Spectral.surfaceMeasure d) (DFL.Spectral.sphereIsometry d U ⁻¹' s) = (DFL.Spectral.surfaceMeasure d) s
+info: DFL/Spectral/Audit.lean:17:0: DFL.Spectral.sphereCoordinate_square_mean_zero (d : ℕ) (i : Fin (d + 1)) :
+  ∫ (x : ↑(DFL.Spectral.SpherePoint d)), DFL.Spectral.sphereCoordinate d i x ^ 2 ∂DFL.Spectral.alignedMeasure d 0 =
+    1 / (↑d + 1)
+info: DFL/Spectral/Audit.lean:18:0: DFL.Spectral.sphereCoordinate_variance_zero (d : ℕ) (i : Fin (d + 1)) :
+  DFL.Spectral.sphereVariance d 0 (DFL.Spectral.sphereCoordinate d i) = 1 / (↑d + 1)
+info: DFL/Spectral/Audit.lean:19:0: DFL.Spectral.coordinateTangentGradient_pairing (d : ℕ) (i : Fin (d + 1)) (x : ↑(DFL.Spectral.SpherePoint d))
+  (v : DFL.Spectral.Ambient d) (hv : inner ℝ (↑x) v = 0) :
+  inner ℝ (DFL.Spectral.coordinateTangentGradient d i x) v = v.ofLp i
+info: DFL/Spectral/Audit.lean:20:0: DFL.Spectral.coordinateTangentGradient_norm_sq (d : ℕ) (i : Fin (d + 1)) (x : ↑(DFL.Spectral.SpherePoint d)) :
+  ‖DFL.Spectral.coordinateTangentGradient d i x‖ ^ 2 = 1 - DFL.Spectral.sphereCoordinate d i x ^ 2
+info: DFL/Spectral/Audit.lean:21:0: DFL.Spectral.sphereCoordinate_tangent_energy_zero (d : ℕ) (i : Fin (d + 1)) :
+  ∫ (x : ↑(DFL.Spectral.SpherePoint d)),
+      ‖DFL.Spectral.coordinateTangentGradient d i x‖ ^ 2 ∂DFL.Spectral.alignedMeasure d 0 =
+    ↑d / (↑d + 1)
+info: DFL/Spectral/Audit.lean:22:0: DFL.Spectral.transverseCoordinateTrialRatio_eq (d : ℕ) (hd : 0 < d) :
+  DFL.Spectral.sphereCoordinateTrialRatio d (DFL.Spectral.transverseIndex d hd) = ↑d
+info: DFL/Spectral/Audit.lean:24:0: 'DFL.Spectral.alignedMeasure_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:25:0: 'DFL.Spectral.alignedMeasure_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:26:0: 'DFL.Spectral.integrable_aligned_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:27:0: 'DFL.Spectral.square_integrable_aligned_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:28:0: 'DFL.Spectral.weighted_higher_angular_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:29:0: 'DFL.Spectral.sphereVariance_pos_iff_not_ae_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:30:0: 'DFL.Spectral.sphereVariance_pos_iff_not_surface_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:31:0: 'DFL.Spectral.sphereVariance_eq_sInf_const_subtraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:32:0: 'DFL.Spectral.sphere_const_subtraction_eq_variance_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:33:0: 'DFL.Spectral.surfaceMeasure_isometry_preimage' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:34:0: 'DFL.Spectral.sphereCoordinate_square_mean_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:35:0: 'DFL.Spectral.sphereCoordinate_variance_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:36:0: 'DFL.Spectral.coordinateTangentGradient_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:37:0: 'DFL.Spectral.coordinateTangentGradient_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:38:0: 'DFL.Spectral.sphereCoordinate_tangent_energy_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/Audit.lean:39:0: 'DFL.Spectral.transverseCoordinateTrialRatio_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8419/8424] Replayed DFL.Spectral.ClosedFormGapAudit
+info: DFL/Spectral/ClosedFormGapAudit.lean:3:0: DFL.Spectral.closedFormSpace_complete (d : ℕ) (r : ℝ) : CompleteSpace (DFL.Spectral.ClosedFormSpace d r)
+info: DFL/Spectral/ClosedFormGapAudit.lean:4:0: 'DFL.Spectral.closedFormSpace_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ClosedFormGapAudit.lean:5:0: DFL.Spectral.coreGraph_value_norm_sq (d : ℕ) (r : ℝ) (f : DFL.Spectral.SphereC1Core d) :
+  ‖(DFL.Spectral.coreGraph d r f).1‖ ^ 2 = DFL.Spectral.sphereVariance d r (DFL.Spectral.coreValue d f)
+info: DFL/Spectral/ClosedFormGapAudit.lean:6:0: 'DFL.Spectral.coreGraph_value_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ClosedFormGapAudit.lean:7:0: DFL.Spectral.coreGraph_gradient_norm_sq (d : ℕ) (r : ℝ) (f : DFL.Spectral.SphereC1Core d) :
+  ‖(DFL.Spectral.coreGraph d r f).2‖ ^ 2 = DFL.Spectral.coreEnergy d r f
+info: DFL/Spectral/ClosedFormGapAudit.lean:8:0: 'DFL.Spectral.coreGraph_gradient_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ClosedFormGapAudit.lean:9:0: DFL.Spectral.closedFormGap_eq_coreGap (d : ℕ) (r : ℝ) : DFL.Spectral.closedFormGap d r = DFL.Spectral.coreGap d r
+info: DFL/Spectral/ClosedFormGapAudit.lean:10:0: 'DFL.Spectral.closedFormGap_eq_coreGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8420/8424] Replayed DFL.Spectral.ContinuationAudit
+info: DFL/Spectral/ContinuationAudit.lean:5:0: 'DFL.Spectral.hilbertFormSpace_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:6:0: 'DFL.Spectral.hilbertFormGap_eq_coreGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:7:0: 'DFL.Spectral.formValue_orthogonal_constants' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:8:0: 'DFL.Spectral.positive_latitude_eigenfunction_deriv_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:9:0: 'DFL.Spectral.latitude_weight_flux_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:10:0: 'DFL.Spectral.halfDensity_green_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:11:0: 'DFL.Spectral.halfDensity_HF_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:12:0: 'DFL.Spectral.halfDensityApply_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:13:0: 'DFL.Spectral.latitude_HF_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:14:0: 'DFL.Spectral.latitude_eigenpair_parameter_derivative_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:15:0: 'DFL.Spectral.physical_angular_eigenpair_derivative_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:16:0: 'DFL.Spectral.physical_radial_partner_eigenpair_derivative_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:17:0: 'DFL.Spectral.latitudeCore_tangentGradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:18:0: 'DFL.Spectral.aligned_latitude_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:19:0: 'DFL.Spectral.latitudeCore_energy_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/ContinuationAudit.lean:21:0: (DFL.Spectral.HilbertFormSpace 2 1).innerProductSpace
+info: DFL/Spectral/ContinuationAudit.lean:22:0: DFL.Spectral.hilbertFormSpace_complete 2 1
+ℹ [8421/8424] Replayed DFL.Spectral.WeightedMeasureComparisonAudit
+info: DFL/Spectral/WeightedMeasureComparisonAudit.lean:3:0: DFL.Spectral.alignedMeasure_bounds (d : ℕ) (r : ℝ) :
+  ENNReal.ofReal (Real.exp (-2 * |r|)) • DFL.Spectral.alignedMeasure d 0 ≤ DFL.Spectral.alignedMeasure d r ∧
+    DFL.Spectral.alignedMeasure d r ≤ ENNReal.ofReal (Real.exp (2 * |r|)) • DFL.Spectral.alignedMeasure d 0
+info: DFL/Spectral/WeightedMeasureComparisonAudit.lean:4:0: 'DFL.Spectral.alignedMeasure_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8422/8424] Replayed DFL.Spectral.WholeSphereCoreAudit
+info: DFL/Spectral/WholeSphereCoreAudit.lean:3:0: DFL.Spectral.alignedMeasure_bounds (d : ℕ) (r : ℝ) :
+  ENNReal.ofReal (Real.exp (-2 * |r|)) • DFL.Spectral.alignedMeasure d 0 ≤ DFL.Spectral.alignedMeasure d r ∧
+    DFL.Spectral.alignedMeasure d r ≤ ENNReal.ofReal (Real.exp (2 * |r|)) • DFL.Spectral.alignedMeasure d 0
+info: DFL/Spectral/WholeSphereCoreAudit.lean:4:0: 'DFL.Spectral.alignedMeasure_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/WholeSphereCoreAudit.lean:5:0: DFL.Spectral.aligned_integral_bounds (d : ℕ) (r : ℝ) (g : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hg0 : MeasureTheory.Integrable g (DFL.Spectral.alignedMeasure d 0))
+  (hgr : MeasureTheory.Integrable g (DFL.Spectral.alignedMeasure d r))
+  (hgpos : ∀ (x : ↑(DFL.Spectral.SpherePoint d)), 0 ≤ g x) :
+  Real.exp (-2 * |r|) * ∫ (x : ↑(DFL.Spectral.SpherePoint d)), g x ∂DFL.Spectral.alignedMeasure d 0 ≤
+      ∫ (x : ↑(DFL.Spectral.SpherePoint d)), g x ∂DFL.Spectral.alignedMeasure d r ∧
+    ∫ (x : ↑(DFL.Spectral.SpherePoint d)), g x ∂DFL.Spectral.alignedMeasure d r ≤
+      Real.exp (2 * |r|) * ∫ (x : ↑(DFL.Spectral.SpherePoint d)), g x ∂DFL.Spectral.alignedMeasure d 0
+info: DFL/Spectral/WholeSphereCoreAudit.lean:6:0: 'DFL.Spectral.aligned_integral_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/WholeSphereCoreAudit.lean:7:0: DFL.Spectral.sphereVariance_bounds (d : ℕ) (r : ℝ) (f : ↑(DFL.Spectral.SpherePoint d) → ℝ)
+  (hf0 : MeasureTheory.MemLp f 2 (DFL.Spectral.alignedMeasure d 0)) :
+  Real.exp (-2 * |r|) * DFL.Spectral.sphereVariance d 0 f ≤ DFL.Spectral.sphereVariance d r f ∧
+    DFL.Spectral.sphereVariance d r f ≤ Real.exp (2 * |r|) * DFL.Spectral.sphereVariance d 0 f
+info: DFL/Spectral/WholeSphereCoreAudit.lean:8:0: 'DFL.Spectral.sphereVariance_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/WholeSphereCoreAudit.lean:9:0: DFL.Spectral.coreTangentGradient_pairing (d : ℕ) (f : DFL.Spectral.SphereC1Core d) (x : ↑(DFL.Spectral.SpherePoint d))
+  (v : DFL.Spectral.Ambient d) (hv : inner ℝ (↑x) v = 0) :
+  inner ℝ (DFL.Spectral.coreTangentGradient d f x) v = (fderiv ℝ f.toFun ↑x) v
+info: DFL/Spectral/WholeSphereCoreAudit.lean:10:0: 'DFL.Spectral.coreTangentGradient_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/WholeSphereCoreAudit.lean:11:0: DFL.Spectral.coreEnergy_bounds (d : ℕ) (r : ℝ) (f : DFL.Spectral.SphereC1Core d) :
+  Real.exp (-2 * |r|) * DFL.Spectral.coreEnergy d 0 f ≤ DFL.Spectral.coreEnergy d r f ∧
+    DFL.Spectral.coreEnergy d r f ≤ Real.exp (2 * |r|) * DFL.Spectral.coreEnergy d 0 f
+info: DFL/Spectral/WholeSphereCoreAudit.lean:12:0: 'DFL.Spectral.coreEnergy_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/WholeSphereCoreAudit.lean:13:0: DFL.Spectral.coreFormNormSq_bounds (d : ℕ) (r : ℝ) (f : DFL.Spectral.SphereC1Core d) :
+  Real.exp (-2 * |r|) * DFL.Spectral.coreFormNormSq d 0 f ≤ DFL.Spectral.coreFormNormSq d r f ∧
+    DFL.Spectral.coreFormNormSq d r f ≤ Real.exp (2 * |r|) * DFL.Spectral.coreFormNormSq d 0 f
+info: DFL/Spectral/WholeSphereCoreAudit.lean:14:0: 'DFL.Spectral.coreFormNormSq_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/WholeSphereCoreAudit.lean:15:0: DFL.Spectral.coordinateCore_tangentGradient (d : ℕ) (i : Fin (d + 1)) (x : ↑(DFL.Spectral.SpherePoint d)) :
+  DFL.Spectral.coreTangentGradient d (DFL.Spectral.coordinateCore d i) x = DFL.Spectral.coordinateTangentGradient d i x
+info: DFL/Spectral/WholeSphereCoreAudit.lean:16:0: 'DFL.Spectral.coordinateCore_tangentGradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/WholeSphereCoreAudit.lean:17:0: DFL.Spectral.coreGap_nonneg (d : ℕ) (r : ℝ) : 0 ≤ DFL.Spectral.coreGap d r
+info: DFL/Spectral/WholeSphereCoreAudit.lean:18:0: 'DFL.Spectral.coreGap_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/WholeSphereCoreAudit.lean:19:0: DFL.Spectral.coreGap_zero_le_dimension (d : ℕ) : DFL.Spectral.coreGap d 0 ≤ ↑d
+info: DFL/Spectral/WholeSphereCoreAudit.lean:20:0: 'DFL.Spectral.coreGap_zero_le_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/WholeSphereCoreAudit.lean:21:0: DFL.Spectral.coreRayleigh_field_lower (d : ℕ) (r : ℝ) (f : DFL.Spectral.SphereC1Core d)
+  (hv0 : 0 < DFL.Spectral.sphereVariance d 0 (DFL.Spectral.coreValue d f)) :
+  Real.exp (-2 * |r|) ^ 2 * DFL.Spectral.coreRayleigh d 0 f ≤ DFL.Spectral.coreRayleigh d r f
+info: DFL/Spectral/WholeSphereCoreAudit.lean:22:0: 'DFL.Spectral.coreRayleigh_field_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DFL/Spectral/WholeSphereCoreAudit.lean:23:0: DFL.Spectral.coreGap_field_lower (d : ℕ) (r : ℝ) :
+  Real.exp (-2 * |r|) ^ 2 * DFL.Spectral.coreGap d 0 ≤ DFL.Spectral.coreGap d r
+info: DFL/Spectral/WholeSphereCoreAudit.lean:24:0: 'DFL.Spectral.coreGap_field_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8424 jobs).

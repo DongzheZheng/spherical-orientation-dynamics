@@ -1,0 +1,19 @@
+'DFL.Spectral.hilbertFormSpace_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.hilbertFormGap_eq_coreGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.formValue_orthogonal_constants' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.positive_latitude_eigenfunction_deriv_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.latitude_weight_flux_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.halfDensity_green_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.halfDensity_HF_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.halfDensityApply_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.latitude_HF_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.latitude_eigenpair_parameter_derivative_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.physical_angular_eigenpair_derivative_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.physical_radial_partner_eigenpair_derivative_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DFL.Spectral.latitudeCore_tangentGradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.aligned_latitude_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.Spectral.latitudeCore_energy_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+(DFL.Spectral.HilbertFormSpace 2 1).innerProductSpace
+DFL.Spectral.hilbertFormSpace_complete 2 1

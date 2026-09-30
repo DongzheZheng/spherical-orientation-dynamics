@@ -1,0 +1,11 @@
+DFL.GCI.weak_solution_moment_identity_ge_four (n : ℕ) (hn : 4 ≤ n) (r : ℝ) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) :
+  DFL.GCI.originalForcingNorm n r =
+    (↑n - 1) * DFL.GCI.originalGCIDenominator n r s + r * DFL.GCI.originalGCINumerator n r s
+DFL.GCI.original_GCI_shift_upper_ge_four (n : ℕ) (hn : 4 ≤ n) (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : DFL.GCI.originalGCICoefficient n r s ≤ DFL.orientationMean (n + 2) r
+DFL.GCI.original_GCI_strict_upper_ge_four (n : ℕ) (hn : 4 ≤ n) (r : ℝ) (hr : 0 < r) (s : DFL.GCI.AngularState)
+  (hs : DFL.GCI.OriginalWeakGCISolution n r s) : DFL.GCI.originalGCICoefficient n r s < DFL.orientationMean n r
+'DFL.GCI.weak_solution_moment_identity_ge_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.original_GCI_shift_upper_ge_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DFL.GCI.original_GCI_strict_upper_ge_four' depends on axioms: [propext, Classical.choice, Quot.sound]
