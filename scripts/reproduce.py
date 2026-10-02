@@ -23,7 +23,7 @@ def main() -> None:
     }:
         parser.error("Use results/ or a separate output directory to preserve release files.")
     runs = []
-    for name in ("generate", "phase_dynamics", "transport_atlas", "orientation_sphere", "energy_landscape_3d"):
+    for name in ("generate", "phase_dynamics", "transport_atlas", "orientation_sphere", "energy_landscape_3d", "reporting_checks"):
         command = [sys.executable, str(ROOT / "numerics" / f"{name}.py"), "--output-dir", str(output)]
         if name == "transport_atlas":
             command.append("--skip-tex")
@@ -49,7 +49,7 @@ def main() -> None:
                         "--output-dir", str(output)], check=True)
     (output / "reproduction.json").write_text(json.dumps({"runs": runs, "passed": True,
         "reference_comparison": "reference_comparison.json", "tex_figures": args.figures}, indent=2) + "\n")
-    print("Passed: 20 CSVs and 5 validation reports. Outputs are in the selected results directory.")
+    print("Passed: 20 CSVs and 6 validation reports. Outputs are in the selected results directory.")
 
 
 if __name__ == "__main__":

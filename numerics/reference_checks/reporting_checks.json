@@ -1,0 +1,103 @@
+{
+  "model": {
+    "embedding_dimension": 3,
+    "sphere_dimension": 2,
+    "alignment_frequency": "nu(J)=J",
+    "angular_noise": "tau_noise(J)=1/(1+J)",
+    "axisymmetric_initial_density": "rho*M_r_initial",
+    "initial_polarization_direction": "positive axis",
+    "solver": "Scharfetter-Gummel finite volume; lagged-J implicit Euler",
+    "boundary_condition": "zero flux at t=-1 and t=1"
+  },
+  "temporal_refinement": {
+    "fixed_cells": 160,
+    "end": 10.0,
+    "records": [
+      {
+        "rho": 1.9,
+        "r_initial": 1.8,
+        "end": 10.0,
+        "cells": 160,
+        "dt": 0.08,
+        "terminal_polarization": 0.6120042581426056,
+        "terminal_energy_relative_uniform": 0.027746958938494215,
+        "max_mass_error": 5.551115123125783e-14,
+        "max_energy_step_increase": 0.0,
+        "minimum_density": 0.06797441454098266
+      },
+      {
+        "rho": 1.9,
+        "r_initial": 1.8,
+        "end": 10.0,
+        "cells": 160,
+        "dt": 0.04,
+        "terminal_polarization": 0.6145888509621351,
+        "terminal_energy_relative_uniform": 0.02762435026013388,
+        "max_mass_error": 3.597122599785507e-14,
+        "max_energy_step_increase": 0.0,
+        "minimum_density": 0.06581569706687901
+      },
+      {
+        "rho": 1.9,
+        "r_initial": 1.8,
+        "end": 10.0,
+        "cells": 160,
+        "dt": 0.02,
+        "terminal_polarization": 0.6158535172513453,
+        "terminal_energy_relative_uniform": 0.02756999516203229,
+        "max_mass_error": 2.6201263381153694e-14,
+        "max_energy_step_increase": 0.0,
+        "minimum_density": 0.06476863168055944
+      }
+    ],
+    "coarse_fine_polarization_difference": 0.0025845928195294965,
+    "fine_finer_polarization_difference": 0.0012646662892101812,
+    "successive_polarization_difference_ratio": 2.043695512073502
+  },
+  "spatial_refinement": {
+    "fixed_dt": 0.02,
+    "end": 40.0,
+    "records": [
+      {
+        "rho": 1.9,
+        "r_initial": 1.8,
+        "end": 40.0,
+        "cells": 80,
+        "dt": 0.02,
+        "terminal_polarization": 0.6302748650418983,
+        "terminal_energy_relative_uniform": 0.027502629386324307,
+        "max_mass_error": 6.727951529228449e-14,
+        "max_energy_step_increase": 0.0,
+        "minimum_density": 0.053809470381725046
+      },
+      {
+        "rho": 1.9,
+        "r_initial": 1.8,
+        "end": 40.0,
+        "cells": 160,
+        "dt": 0.02,
+        "terminal_polarization": 0.6307784563836334,
+        "terminal_energy_relative_uniform": 0.027245331558024777,
+        "max_mass_error": 5.306866057708248e-14,
+        "max_energy_step_increase": 0.0,
+        "minimum_density": 0.05264591485602339
+      },
+      {
+        "rho": 1.9,
+        "r_initial": 1.8,
+        "end": 40.0,
+        "cells": 320,
+        "dt": 0.02,
+        "terminal_polarization": 0.6309041855788563,
+        "terminal_energy_relative_uniform": 0.027180905720436632,
+        "max_mass_error": 1.3278267374516872e-13,
+        "max_energy_step_increase": 0.0,
+        "minimum_density": 0.052143519255089275
+      }
+    ],
+    "coarse_fine_polarization_difference": 0.0005035913417350546,
+    "fine_finer_polarization_difference": 0.00012572919522291226,
+    "successive_polarization_difference_ratio": 4.0053651885881365
+  },
+  "interpretation": "Refinement differences quantify observed numerical sensitivity."
+}

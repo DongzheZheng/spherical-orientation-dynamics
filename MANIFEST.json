@@ -2,9 +2,9 @@
   "schema_version": 1,
   "title": "Spectral Gap, Hysteresis, and Macroscopic Propagation of the Spherical Orientation Model",
   "repository_name": "spherical-orientation-dynamics",
-  "snapshot_date": "2026-09-30",
-  "file_count": 769,
-  "total_bytes": 7662541,
+  "snapshot_date": "2026-10-02",
+  "file_count": 771,
+  "total_bytes": 7671034,
   "excluded_from_self_hashing": [
     "MANIFEST.json",
     "SHA256SUMS"
@@ -23,17 +23,17 @@
     {
       "path": "CITATION.md",
       "bytes": 310,
-      "sha256": "2d0616e1b73eef43470314ec99881cff708db273257d7ce8485ab665175fd6ce"
+      "sha256": "9a5ded3346059e95aca35e63b4214170909bcaa60537e4055e2b15950eff5cf8"
     },
     {
       "path": "README.md",
-      "bytes": 3645,
-      "sha256": "547a58d47a11b0e9f00a9c1c708c7f453af797c294db546efa45cee4b2961d6d"
+      "bytes": 3686,
+      "sha256": "29d92e765c0a8e2d7484f9b5964790c94059a9668a09051e5bbbcb574ca540ef"
     },
     {
       "path": "REPRODUCIBILITY.md",
-      "bytes": 3114,
-      "sha256": "8ba239f0ba5eba6c095e2d7d15a958ad7c7e650371671ef4c3b54327a65c061d"
+      "bytes": 3690,
+      "sha256": "d0a565ed4268682b99bcf84ffe1b072c21584ba58d180ffc22246abee845e786"
     },
     {
       "path": "RIGHTS.md",
@@ -1041,6 +1041,11 @@
       "sha256": "8cc4e019a9c0f2236ac4dacd6043d857394ab2845efb0fdc5057e99e6d8b9a36"
     },
     {
+      "path": "evidence/formalization/sphere433/strict-sources.txt",
+      "bytes": 5966,
+      "sha256": "9d6b3c9560a5a72706ac9dc064430fa67e849388e018b23754c8e351f308f05f"
+    },
+    {
       "path": "evidence/formalization/sphere433/strict-sources/DFLSphere433.lean.log",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1776,11 +1781,6 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
-      "path": "evidence/formalization/sphere433/strict-sources.txt",
-      "bytes": 5966,
-      "sha256": "9d6b3c9560a5a72706ac9dc064430fa67e849388e018b23754c8e351f308f05f"
-    },
-    {
       "path": "evidence/formalization/sphere433/strict.log",
       "bytes": 252656,
       "sha256": "5fcba79d314b359fdb70ed5f626857027fc666766ce14a6436f66a55044ac2a8"
@@ -1964,6 +1964,11 @@
       "path": "formalization/README.md",
       "bytes": 2850,
       "sha256": "27617a5caf9e6d4fc04d7c78ac5c38076b739bbf8db39bcb5949e2ce09cca134"
+    },
+    {
+      "path": "formalization/dfl2015/DFL.lean",
+      "bytes": 2316,
+      "sha256": "880f230f6e6d7e372d5dc39faea0027c953d78d551df2db6eef63ae84ffd9bde"
     },
     {
       "path": "formalization/dfl2015/DFL/GCI/AngularBarrier2D.lean",
@@ -2841,11 +2846,6 @@
       "sha256": "57a987551a9572e2f094ae9881759579f89587bd46d8ef5cb25e32d68d273097"
     },
     {
-      "path": "formalization/dfl2015/DFL.lean",
-      "bytes": 2316,
-      "sha256": "880f230f6e6d7e372d5dc39faea0027c953d78d551df2db6eef63ae84ffd9bde"
-    },
-    {
       "path": "formalization/dfl2015/README.md",
       "bytes": 3245,
       "sha256": "9eb5f9525ad7028cdfe7764c99c869fb0b1aefb42027844440375a3100adcbe8"
@@ -2879,6 +2879,11 @@
       "path": "formalization/source_mapping.json",
       "bytes": 115630,
       "sha256": "203f8fa32b37582ff2c5700017415a3ef4a3b5bef12b9a43183c3caa9bd94be0"
+    },
+    {
+      "path": "formalization/sphere433/DFLSphere433.lean",
+      "bytes": 78,
+      "sha256": "70e12b4e8acbfd3c8619324626cd19222c08ccb9db91fcd3dba809c747fc461c"
     },
     {
       "path": "formalization/sphere433/DFLSphere433/CompactFormGround.lean",
@@ -2991,14 +2996,14 @@
       "sha256": "60d277d4c09b0998133898741733d47e6d570ce275110da4abe64ef9dcd36564"
     },
     {
-      "path": "formalization/sphere433/DFLSphere433.lean",
-      "bytes": 78,
-      "sha256": "70e12b4e8acbfd3c8619324626cd19222c08ccb9db91fcd3dba809c747fc461c"
-    },
-    {
       "path": "formalization/sphere433/README.md",
       "bytes": 5850,
       "sha256": "e58c82956b0d4390ebd1227b951ee385b85ed1d9914a9336ba8e89f13ca35952"
+    },
+    {
+      "path": "formalization/sphere433/continuation.lean",
+      "bytes": 2193,
+      "sha256": "54ce22e826b5e198df8ecf981605220d98a42f2dc9febce3493e4f7f36248ab5"
     },
     {
       "path": "formalization/sphere433/continuation/ActualDriftBaseline.lean",
@@ -3616,11 +3621,6 @@
       "sha256": "55d66b5393c89cd308a82f8e7a394834c249e1ce2ae8770d7992deb3057ff277"
     },
     {
-      "path": "formalization/sphere433/continuation.lean",
-      "bytes": 2193,
-      "sha256": "54ce22e826b5e198df8ecf981605220d98a42f2dc9febce3493e4f7f36248ab5"
-    },
-    {
       "path": "formalization/sphere433/lake-manifest.json",
       "bytes": 3933,
       "sha256": "f1d06becd2469ba78a56a832083f466619d970bb3cc0a841a1b9731fb09d4130"
@@ -3647,13 +3647,13 @@
     },
     {
       "path": "numerics/PROVENANCE.md",
-      "bytes": 3262,
-      "sha256": "362eef1b07559526a9b274a26cd60024567f729d152efb316451a06c48820554"
+      "bytes": 3853,
+      "sha256": "70aaea69192be8b95c8ac2a60e9b81d4f62a943507ebbb95835c39bc1f6b26a7"
     },
     {
       "path": "numerics/README.md",
-      "bytes": 9344,
-      "sha256": "4ea8a4757eb5e3b97a67f87ff448aaafe2ec622f8c0539613544cad2b2506f3b"
+      "bytes": 10183,
+      "sha256": "f0cf25a8ebf67db29bae77550942716d69d4da30430e74e3ae2e41b4781f4fb8"
     },
     {
       "path": "numerics/compare_reference.py",
@@ -3806,9 +3806,19 @@
       "sha256": "0ca2feec50c884a7b7b8166e781ee3aa56683a4162326f55b3a7875aacfde61d"
     },
     {
+      "path": "numerics/reference_checks/reporting_checks.json",
+      "bytes": 3365,
+      "sha256": "1fdfcc91277c57c369fa363a1b4d376b0ba984252a30b9b99c26349876c8c987"
+    },
+    {
       "path": "numerics/reference_checks/transport_atlas_validation.json",
       "bytes": 6015,
       "sha256": "58ddc5991922af08cf7fdd4921d03369f00dc6596536a92168d842664505f3e9"
+    },
+    {
+      "path": "numerics/reporting_checks.py",
+      "bytes": 3061,
+      "sha256": "5a989bed5541fc88a95a41f95a05cfac618877fcd6189f3cf14a84013a1477ce"
     },
     {
       "path": "numerics/source_correspondence.json",
@@ -3847,8 +3857,8 @@
     },
     {
       "path": "scripts/reproduce.py",
-      "bytes": 2698,
-      "sha256": "c1605048a691b090f67352a9e4517e32d484abdd100e64812000bdfca3e38eb6"
+      "bytes": 2718,
+      "sha256": "38a8398b97e38a0a41f4ce714f29dc9f91823e27fc3ae542fc8e6061a3d80498"
     },
     {
       "path": "scripts/verify_formalization.sh",

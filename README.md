@@ -20,7 +20,7 @@ python -m pip install -r requirements.txt
 python scripts/reproduce.py
 ```
 
-This command runs all five experiments and compares the regenerated data and validation reports with the references. Outputs go to `results/`. The two Python-generated 3D figures are included in this command.
+This command runs all six programs and compares the regenerated data and validation reports with the references. Outputs go to `results/`. The two Python-generated 3D figures and independent spatial and temporal refinements are included in this command.
 
 To also rebuild the ten TikZ/PGFPlots figures, install a TeX distribution with `pdflatex`, `standalone`, TikZ and PGFPlots, then run:
 
@@ -60,7 +60,7 @@ The surface displays the exact free-energy lower envelope at fixed polarization.
 
 ```text
 formalization/       Two version-pinned Lean projects and source hashes
-numerics/            Five experiments, reference CSVs and validation reports
+numerics/            Six programs, reference CSVs and validation reports
 figures/             English plot sources and twelve reference PDFs
 scripts/             Reproduction, comparison, figure and proof verification tools
 evidence/            Compiler audits and numerical validation results
@@ -71,4 +71,4 @@ SHA256SUMS           Portable integrity checks
 
 Formal theorem scope is specified in `formalization/README.md`. Numerical resolution comparisons are floating-point diagnostics. The physical interpretation of each experiment is described in `numerics/README.md` and `docs/SCIENCE.md`.
 
-Snapshot date: 2026-09-30. See [citation guidance](CITATION.md), [rights information](RIGHTS.md) and [third-party dependencies](THIRD_PARTY.md).
+Snapshot date: 2026-10-02. See [citation guidance](CITATION.md), [rights information](RIGHTS.md) and [third-party dependencies](THIRD_PARTY.md).

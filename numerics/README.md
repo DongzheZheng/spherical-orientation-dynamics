@@ -19,6 +19,7 @@ python numerics/phase_dynamics.py
 python numerics/transport_atlas.py --skip-tex
 python numerics/orientation_sphere.py
 python numerics/energy_landscape_3d.py
+python numerics/reporting_checks.py
 python numerics/compare_reference.py
 ```
 
@@ -35,9 +36,10 @@ cross-check against the regenerated stationary-state report. By default,
 `scripts/reproduce.py --figures` copies the other figure sources into
 `results/figures/` before compiling them.
 
-The recorded five-program run completed in 5.4696 seconds, including both
-Matplotlib PDF figures and all default refinement checks. This timing covers
-the Python calculations and plotting. TeX compilation has a separate cost.
+The original five-program run completed in 5.4696 seconds, including both
+Matplotlib PDF figures and the refinements in those programs. This timing covers
+the Python calculations and plotting; it excludes the additional independent
+refinement program. TeX compilation has a separate cost.
 Execution time depends on hardware and numerical libraries.
 
 ## Programs and figure correspondence
@@ -49,6 +51,7 @@ Execution time depends on hardware and numerical libraries.
 | `transport_atlas.py` | First-order SOH wave speeds for three feedback laws, noise boundary, rate threshold and angular fold wedge | `transport_atlas`, `noise_phase_map`, `slow_rate`, `fold_angle_wedge` | `transport_atlas_validation.json` |
 | `orientation_sphere.py` | Unit orientation sphere, vMF density and infinitesimal turning response | `orientation_sphere` | `orientation_sphere_check.json` |
 | `energy_landscape_3d.py` | Two-dimensional polarization-vector section of the exact fixed-polarization free-energy envelope | `energy_landscape_3d` | `energy_landscape_3d_check.json` |
+| `reporting_checks.py` | Independent temporal and spatial refinements of the original axisymmetric PDE | Manuscript refinement table | `reporting_checks.json` |
 
 Figure names in this table omit `.pdf`. `physical_mechanism` is a qualitative
 TeX illustration.
@@ -117,6 +120,13 @@ runs use 160 cells and `dt=0.04`; the two basin trajectories additionally
 compare `(80,0.08)`, `(160,0.04)`, and `(320,0.02)` at `tau=40`. Reports
 record mass, positivity, free-energy changes and polarization refinement.
 
+`reporting_checks.py` separates time and space sensitivity for the ordered-basin
+initial condition `rho=1.90`, `r0=1.80`. At time 10 it keeps 160 cells fixed and
+compares `dt=0.08,0.04,0.02`. At time 40 it keeps `dt=0.02` fixed and compares
+80, 160 and 320 cells. The reference successive polarization-difference ratios
+are 2.0436955 for time and 4.0053652 for space. The report also records relative
+energy, maximum mass drift, minimum density and maximum free-energy step increase.
+
 The fold density is about `1.8602147570`, the numerically located equal-energy
 density is about `1.9258764318`, and uniform-state loss of local stability
 occurs at `rho=3`. These thresholds represent distinct events. The equal-energy
@@ -173,10 +183,11 @@ are represented by literal `nan` in `phase_branches.csv`; each `nan` marks
 a point outside the indicated plotted branch. See [DATA.md](DATA.md) for
 file schemas and [PROVENANCE.md](PROVENANCE.md) for methods and validation records.
 
-`compare_reference.py` compares all supplied CSVs and all five canonical
+`compare_reference.py` compares all supplied CSVs and all six canonical
 check reports. It permits an absolute difference of `1e-9` plus a relative
 difference of `1e-8`, to accommodate library/platform variation. The recorded
-run reproduced every checked numeric value exactly. These floating-point
+five-program run reproduced every checked numeric value exactly, and the added
+independent refinement report is reproduced by its own calculator. These floating-point
 comparisons and refinement checks quantify reproducibility and observed
 discretization sensitivity. Their scope stops short of certified
 interval-arithmetic or continuum error bounds. Mathematical statements

@@ -9,7 +9,7 @@ python scripts/reproduce.py --output-dir results
 python scripts/check_numerics.py --output-dir results
 ```
 
-All five experiments use deterministic quadrature, Galerkin discretization, root finding or time stepping. The comparator checks twenty tables and five validation reports against their reference structure, using `atol=1e-9` and `rtol=1e-8`. The recorded validation run reproduced all numerical entries exactly; its interpreter versions and comparison results are in `evidence/numerics/`.
+All six programs use deterministic quadrature, Galerkin discretization, root finding or time stepping. The comparator checks twenty tables and six validation reports against their reference structure, using `atol=1e-9` and `rtol=1e-8`. The original five-program validation run reproduced all numerical entries exactly; its interpreter versions and comparison results are in `evidence/numerics/`. The sixth program supplies independent spatial and temporal refinements of the ordered-basin trajectory.
 
 For an individual experiment:
 
@@ -19,9 +19,17 @@ python numerics/phase_dynamics.py --output-dir results
 python numerics/transport_atlas.py --output-dir results --skip-tex
 python numerics/orientation_sphere.py --output-dir results
 python numerics/energy_landscape_3d.py --output-dir results
+python numerics/reporting_checks.py --output-dir results
 ```
 
 Run the first two before the energy landscape, which cross-checks the phase data. `scripts/reproduce.py` uses this order automatically. Script paths can be given in full when working from another directory.
+
+The independent refinement calculation uses `rho=1.90` and initial concentration
+`r0=1.80`. It compares `dt=0.08,0.04,0.02` at time 10 with 160 cells, and
+80, 160 and 320 cells at time 40 with `dt=0.02`. Its report includes polarization,
+relative free energy, mass drift, positivity, free-energy step changes and
+successive polarization-difference ratios. These are observed discretization
+sensitivities.
 
 ## Figures
 
