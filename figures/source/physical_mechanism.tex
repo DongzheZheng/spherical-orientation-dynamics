@@ -15,6 +15,13 @@
   tinyarrow/.style={-{Stealth[length=2.2mm]},line width=1.05pt},
   flowarrow/.style={-{Stealth[length=3mm]},line width=1.45pt},
   microdot/.style={circle,inner sep=0pt,minimum size=2.5pt,fill=ink},
+  paneltitle/.style={anchor=west,font=\bfseries\footnotesize,text=ink,
+    text width=4.40cm,align=left,inner sep=0pt},
+  callout/.style={rounded corners=3pt,fill=water,text=ink,
+    font=\footnotesize,text width=4.07cm,align=center,
+    inner xsep=5pt,inner ysep=5pt},
+  basinlabel/.style={align=center,font=\footnotesize,
+    text width=1.80cm,inner sep=1pt},
 }
 
 % An original qualitative diagram: the panels are three descriptions of the
@@ -26,10 +33,10 @@
   \draw[panel] (10.70,0) rectangle (15.65,6.55);
 
   % I. Frozen-field angular dynamics on a sphere.
-  \node[anchor=west,font=\bfseries\small,text=ink] at (.22,6.15)
-    {I\quad Angular relaxation};
-  \node[anchor=west,font=\scriptsize,text=muted] at (.22,5.77)
-    {Noise and aligning torque};
+  \node[paneltitle] at (.22,6.15)
+    {I\quad Frozen-field relaxation};
+  \node[anchor=west,font=\footnotesize,text=muted,text width=4.4cm,align=left] at (.22,5.67)
+    {Rotational noise and alignment};
   \shade[ball color=water,opacity=.48] (2.43,3.52) circle (1.32);
   \draw[ink!45,line width=.75pt] (2.43,3.52) circle (1.32);
   \draw[ink!25,dashed,line width=.6pt] (1.11,3.52) arc[start angle=180,end angle=360,x radius=1.32,y radius=.36];
@@ -44,27 +51,25 @@
   {\fill[blue] (\x,\y) circle (1.35pt);
    \draw[tinyarrow,blue] (\x,\y) -- ++(\angle:.27);}
   \draw[flowarrow,orange] (1.13,2.55) .. controls (.84,3.16) and (1.01,3.90) .. (1.45,4.33);
-  \node[font=\small,text=orange] at (1.10,2.02) {diffusion};
+  \node[font=\small,text=orange] at (1.10,2.02) {Diffusion};
   \draw[flowarrow,teal] (3.63,2.80) .. controls (4.21,3.40) and (4.12,4.05) .. (3.49,4.40);
-  \node[font=\small,text=teal] at (3.54,2.40) {alignment};
+  \node[font=\footnotesize,text=teal] at (3.85,2.02) {Alignment};
   \draw[flowarrow,ink] (1.94,5.12) -- (3.02,5.12);
   \node[anchor=west,font=\small,text=ink] at (3.08,5.12) {$\Omega$};
-  \fill[water,rounded corners=3pt] (.24,.40) rectangle (4.71,1.38);
-  \node[align=center,font=\small,text=ink] at (2.48,.90)
+  \node[callout,minimum height=.98cm] at (2.475,.90)
     {Fixed $J$: $r=k(J)$\\
-     angular rate $\tau_{\rm noise}\lambda_d(r)>0$};
+     Angular rate: $\tau_{\rm noise}\lambda_d(r)>0$};
 
   % II. Self-consistent feedback and two basins at the same density.
   \begin{scope}[shift={(5.35,0)}]
-    \node[anchor=west,font=\bfseries\small,text=ink] at (.22,6.15)
+    \node[paneltitle] at (.22,6.15)
       {II\quad Feedback and basins};
-    \node[anchor=west,font=\scriptsize,text=muted] at (.22,5.77)
-      {Same density, different initial states};
-    \fill[warm,rounded corners=3pt] (.27,4.73) rectangle (4.68,5.45);
-    \node[font=\small,text=ink] at (2.47,5.09)
-      {$J\ \longrightarrow\ r=k(J)\ \longrightarrow\ \rho c_d(r)=J$};
+    \node[anchor=west,font=\footnotesize,text=muted,text width=4.4cm,align=left] at (.22,5.67)
+      {One density, two initial states};
+    \node[callout,fill=warm,minimum height=.72cm] at (2.475,5.09)
+      {$J\to r=k(J)\to\rho c_d(r)=J$};
     \draw[orange!78,densely dashed,line width=.95pt] (2.47,2.24) -- (2.47,4.35);
-    \node[font=\small,text=orange] at (2.47,4.54) {schematic basin boundary};
+    \node[font=\small,text=orange] at (2.47,4.54) {Basin boundary (schematic)};
     % Low-polarization basin.
     \fill[blue!7] (1.19,3.33) circle (.88);
     \draw[blue!55,line width=.8pt] (1.19,3.33) circle (.88);
@@ -83,26 +88,27 @@
       3.49/2.90/8,3.93/2.86/2}
     {\fill[teal] (\x,\y) circle (1.1pt);
      \draw[tinyarrow,teal] (\x,\y) -- ++(\angle:.19);}
-    \node[font=\small,text=blue] at (1.19,2.18) {uniform (global)};
-    \node[font=\scriptsize,text=teal] at (3.76,2.18) {metastable order};
+    \node[basinlabel,text=blue] (uniformlabel) at (1.19,2.06) {Uniform\\(global)};
+    \node[basinlabel,text=teal] (orderedlabel) at (3.76,2.06) {Ordered\\(metastable)};
     \fill[blue] (2.20,.82) circle (2pt);
     \fill[teal] (2.75,.82) circle (2pt);
-    \draw[flowarrow,blue] (2.20,1.00) .. controls (2.03,1.40) and (1.66,1.55) .. (1.33,1.98);
-    \draw[flowarrow,teal] (2.75,1.00) .. controls (2.91,1.40) and (3.28,1.55) .. (3.61,1.98);
-    \node[font=\scriptsize,text=muted] at (2.47,.20) {$\rho=1.90$: homogeneous PDE example};
+    \draw[flowarrow,blue] (2.20,1.00) .. controls (2.03,1.25) and (1.66,1.42) .. ([yshift=-2mm]uniformlabel.south);
+    \draw[flowarrow,teal] (2.75,1.00) .. controls (2.91,1.25) and (3.28,1.42) .. ([yshift=-2mm]orderedlabel.south);
+    \node[font=\footnotesize,text=muted,text width=4.07cm,align=center] at (2.475,.25)
+      {Homogeneous PDE, $\rho=1.90$};
   \end{scope}
 
   % III. Spatial transverse mode of the FIRST-ORDER SOH principal part.
   \begin{scope}[shift={(10.70,0)}]
-    \node[anchor=west,font=\bfseries\small,text=ink] at (.22,6.15)
-      {III\quad Spatial SOH coupling};
-    \node[anchor=west,font=\scriptsize,text=muted] at (.22,5.77)
-      {Density-direction coupling};
-    \fill[water] (.78,2.09) rectangle (4.47,4.89);
-    \fill[blue!18] (.78,3.05) rectangle (4.47,3.87);
-    \draw[ink!48,line width=.8pt] (.78,2.09) rectangle (4.47,4.89);
-    \draw[blue!60,densely dashed] (.78,3.05) -- (4.47,3.05);
-    \draw[blue!60,densely dashed] (.78,3.87) -- (4.47,3.87);
+    \node[paneltitle] at (.22,6.15)
+      {III\quad Transverse response};
+    \node[anchor=west,font=\footnotesize,text=muted,text width=4.4cm,align=left] at (.22,5.67)
+      {Coupled density and orientation};
+    \fill[water] (.92,2.09) rectangle (4.47,4.89);
+    \fill[blue!18] (.92,3.05) rectangle (4.47,3.87);
+    \draw[ink!48,line width=.8pt] (.92,2.09) rectangle (4.47,4.89);
+    \draw[blue!60,densely dashed] (.92,3.05) -- (4.47,3.05);
+    \draw[blue!60,densely dashed] (.92,3.87) -- (4.47,3.87);
     % Fewer particles outside the dense stripe; small slanted arrows inside.
     \foreach \x/\y in {1.14/4.47,2.27/4.32,3.37/4.56,4.08/4.28,1.42/2.55,2.67/2.44,3.83/2.62}
       {\fill[blue] (\x,\y) circle (1.3pt);
@@ -111,18 +117,17 @@
                          3.13/3.25,3.54/3.57,3.96/3.30,4.23/3.58}
       {\fill[teal] (\x,\y) circle (1.3pt);
        \draw[tinyarrow,teal] (\x,\y) -- ++(.24,.085);}
-    \draw[flowarrow,orange] (.34,2.85) -- (.34,4.18);
-    \node[font=\small,text=orange,rotate=90] at (.14,3.49) {$q\perp\Omega$};
+    \draw[flowarrow,orange] (.60,2.85) -- (.60,4.18);
+    \node[font=\footnotesize,text=orange,rotate=90,inner sep=1pt] at (.30,3.49) {$q\perp\Omega$};
     \draw[flowarrow,ink] (3.00,5.13) -- (4.01,5.13);
     \node[font=\small,text=ink,anchor=west] at (4.04,5.13) {$\Omega$};
-    \node[font=\small,text=teal,anchor=west] at (1.15,4.03)
+    \node[font=\footnotesize,text=teal,anchor=west,inner sep=0pt] at (.94,5.13)
       {$\delta\rho,\;\delta\Omega$};
-    \fill[warm,rounded corners=3pt] (.28,1.09) rectangle (4.67,1.78);
-    \node[font=\small,text=orange] at (2.48,1.43)
+    \node[callout,fill=warm,text=orange,minimum height=.69cm] at (2.475,1.43)
       {$\Theta<0\quad\Longrightarrow\quad v_{\pm}\notin\mathbb R$};
-    \node[font=\scriptsize,text=ink] at (2.47,.75)
-      {first-order SOH; transverse waves};
-    \node[font=\small,text=muted] at (2.47,.34)
+    \node[font=\footnotesize,text=ink,text width=4.07cm,align=center] at (2.475,.75)
+      {Transverse first-order SOH};
+    \node[font=\footnotesize,text=muted,text width=4.07cm,align=center] at (2.475,.34)
       {$K_2>0$: diffusive dispersion};
   \end{scope}
 \end{tikzpicture}

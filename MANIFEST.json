@@ -4,7 +4,7 @@
   "repository_name": "spherical-orientation-dynamics",
   "snapshot_date": "2026-10-02",
   "file_count": 771,
-  "total_bytes": 7671034,
+  "total_bytes": 7656381,
   "excluded_from_self_hashing": [
     "MANIFEST.json",
     "SHA256SUMS"
@@ -1847,8 +1847,8 @@
     },
     {
       "path": "figures/preview/physical_mechanism.png",
-      "bytes": 162106,
-      "sha256": "07ac431dfaa4acb98677397ad1825990ac33e3d40e254dcdd7a8cac966e80ee4"
+      "bytes": 156759,
+      "sha256": "e34aefc5cf96ba35e38f7ad1917088124e26f09759e355d26756da14ddb056f0"
     },
     {
       "path": "figures/reference/energy_landscape_3d.pdf",
@@ -1887,8 +1887,8 @@
     },
     {
       "path": "figures/reference/physical_mechanism.pdf",
-      "bytes": 116156,
-      "sha256": "7042131c0902dc1e677de6b723add4d311dea5c80d15ba916ef1e525b767fc4b"
+      "bytes": 106458,
+      "sha256": "cd1e6c0b328f8d0aadb68774cc14d3644afc4d523cc474ed9c168e4e1a2a3c8a"
     },
     {
       "path": "figures/reference/quench_dynamics.pdf",
@@ -1937,8 +1937,8 @@
     },
     {
       "path": "figures/source/physical_mechanism.tex",
-      "bytes": 6559,
-      "sha256": "5e181a9510e4b58c66948237c3af1549419f5a1c4f2ab9bc4cfdaf52db374e0f"
+      "bytes": 6951,
+      "sha256": "e90867f0658b1e0e95fe17d677ee3d156d1619a127a7f28bfb5507ba67c47534"
     },
     {
       "path": "figures/source/quench_dynamics.tex",
