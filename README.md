@@ -1,6 +1,8 @@
-# Spectral Gap, Hysteresis, and Macroscopic Propagation of the Spherical Orientation Model
+# Spectral gap and collective response in a kinetic model of polar alignment
 
-Research code for spectral gaps, hysteresis and macroscopic propagation in sphere orientation models. The package contains Lean proofs, deterministic numerical experiments, reference data and English figures.
+Research code for spectral gaps and collective response in a kinetic model of polar alignment. The package contains Lean proofs, deterministic numerical experiments, reference data and English figures.
+
+The experiments connect angular relaxation and generalized collision-invariant response to self-consistent equilibrium feedback and directional propagation. The equilibrium-branch slope measures density susceptibility and distinguishes collective responses that share the same stationary angular statistics.
 
 ## Start here
 

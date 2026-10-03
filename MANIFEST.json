@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "title": "Spectral Gap, Hysteresis, and Macroscopic Propagation of the Spherical Orientation Model",
+  "title": "Spectral gap and collective response in a kinetic model of polar alignment",
   "repository_name": "spherical-orientation-dynamics",
   "snapshot_date": "2026-10-02",
   "file_count": 771,
-  "total_bytes": 7656381,
+  "total_bytes": 7656785,
   "excluded_from_self_hashing": [
     "MANIFEST.json",
     "SHA256SUMS"
@@ -22,13 +22,13 @@
     },
     {
       "path": "CITATION.md",
-      "bytes": 310,
-      "sha256": "9a5ded3346059e95aca35e63b4214170909bcaa60537e4055e2b15950eff5cf8"
+      "bytes": 296,
+      "sha256": "562f24806ad5ef8fe0240b4b079dbb45ef6476026bc4b5a330c7a36aad05dd55"
     },
     {
       "path": "README.md",
-      "bytes": 3686,
-      "sha256": "29d92e765c0a8e2d7484f9b5964790c94059a9668a09051e5bbbcb574ca540ef"
+      "bytes": 3974,
+      "sha256": "7fd4c0dd98ccc04374bd0fc5017a44bcffef28abf5a2e73318446faaef6e8052"
     },
     {
       "path": "REPRODUCIBILITY.md",
@@ -52,8 +52,8 @@
     },
     {
       "path": "docs/record_metadata.json",
-      "bytes": 784,
-      "sha256": "4c69e35c9320f7e70b61b22610d9560d20d8c4d3f6bdd386470d9ddf49727f83"
+      "bytes": 914,
+      "sha256": "ed14d4a0b0add60ba52383f8423e59433bef18647ab77fae705b2fa2296c2d5e"
     },
     {
       "path": "evidence/formalization/README.md",

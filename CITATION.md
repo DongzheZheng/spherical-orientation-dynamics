@@ -1,6 +1,6 @@
 # Citation
 
-Title: **Spectral Gap, Hysteresis, and Macroscopic Propagation of the Spherical Orientation Model**
+Title: **Spectral gap and collective response in a kinetic model of polar alignment**
 
 Snapshot: **2026-10-02**
 
